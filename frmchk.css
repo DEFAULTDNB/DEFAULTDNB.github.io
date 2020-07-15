@@ -276,9 +276,8 @@ h1 {
   border-radius: 50%;
   border: 2px solid black;
 }
-iframe.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	bottom: 80%;
-	left: 95%;
+iframe {
+	position: absolute;
+	top: 25px;
+	right: 5px;
 }
