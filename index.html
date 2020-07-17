@@ -155,7 +155,10 @@ cnt = 0;
 };
 //----------- lookup functions -----------\\
 function lookup() {
-var keyword = document.getElementById("searchbox").value;
+var keyword = document.getElementById("searchbox").value; //try split by word, try search each word.
+
+var karray = keyword.split(" ");
+
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
 	document.getElementById("FW").selectedIndex = optCount;
 	}
