@@ -22,6 +22,8 @@
 <select id="type" onchange="dropdownthis()">
 	<option value="" disabled selected>Select Game Category:</option>
 	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>	
+	<option id="BACKPORT505" value="5.05 Back Ported">5.05 BACK PORTED</option>
+	<option id="BACKPORT672" value="6.72 Back Ported">6.72 BACK PORTED</option>
 	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
 	<option id="2D" value="2D">2D</option>
 	<option id="ACTION" value="Action">ACTION</option>
@@ -54,6 +56,7 @@
 	<option id="STEALTH" value="Stealth">STEALTH</option>
 	<option id="STRATEGY" value="Strategy">STRATEGY</option>
 	<option id="SURVIVAL" value="Survival">SURVIVAL</option>
+	<option id="TBA" value="TBA">TO BE ANNOUNCED</option>
 	<option id="TPS" value="Third-Person">THIRD PERSON</option>
 	<option id="NOVEL" value="Novel">VISUAL NOVEL</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
@@ -63,7 +66,7 @@
 <div id="clickers"><button id="#">#</button>
 <script>
 //----------- loadup functions -----------\\
-var OFW = 7.51;
+var OFW = 7.51; //get from online....
 var calculate = 100;
 var bclicked = "All Categories";
 for (j = 65; j <= 90; j++){
@@ -92,6 +95,7 @@ document.getElementById("count").innerHTML = "Database entries: <span id='linele
 cnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer"; 
+
 //--------- a-z button function ----------\\
 function reply_click(clicked_id) {
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
@@ -307,7 +311,6 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "5.50-7.02"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex550702 = [
-	"[6.72 Back Ported]"
 	];
 	let str550702; str550702 = lines[i];
 	if (ex550702.some(v => str550702.includes(v))) {
@@ -495,36 +498,33 @@ function colourise() {
 	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	/*
+	// filter test
+	var dayArray = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
+	var monthArray = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+	var yearArray = ["2013","2014","2015","2016","2017","2018","2019","2020","2021"]
+	
+	//day/month/year combos
+	
+	} else if (lines[i].match("monkey|Monkey")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("lime").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
+	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	// end filter test
+	*/
 	} else {
 	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	}
 };
-
-/*function unverifiedcolourise() {
-	if (lines[i].match("DLC")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
-	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	} else {
-	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
-	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	}
-};
-*/
-
-// OLD EXAMPLE // <abbr title="Unverified for 5.05">&#x229B;</abbr></button>' + '<hr>');
-
-//verifiedcolourise ()
 
 function webSearch() {
 var pkgpup;
-if (gName.match("1.01|1.06|1.50|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.50|3.00|3.50|4.00|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.00|5.01|5.02|5.03|5.50|5.53|5.55|6.00|6.02|6.20|6.50|6.51|6.71|6.72|7.00|7.01|7.02|7.50|7.51")){
-pkgpup = "🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝐚𝐛𝐨𝐮𝐭 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
-} else if (gName.match("5.05")){
+if (gName.match("6.72")){
 pkgpup = "🐔 𝗛𝗜𝗚𝗛𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗔𝗕𝗟𝗘 𝗙𝗜𝗥𝗠𝗪𝗔𝗥𝗘\n\n🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝐚𝐛𝐨𝐮𝐭 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
+} else if (gName.match("1.01|1.06|1.50|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.50|3.00|3.50|4.00|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.00|5.01|5.02|5.03|5.05|5.50|5.53|5.55|6.00|6.02|6.20|6.50|6.51|6.71|6.72|7.00|7.01|7.02|7.50|7.51")){
+pkgpup = "🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝐚𝐛𝐨𝐮𝐭 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
 } else {
 pkgpup = "🌐 𝗦𝗲𝗮𝗿𝗰𝗵 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼 𝗳𝗼𝗿 𝗴𝗮𝗺𝗲 𝗣𝗞𝗚:\n\n";
 }
