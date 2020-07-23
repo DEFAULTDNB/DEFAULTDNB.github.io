@@ -155,10 +155,7 @@ cnt = 0;
 };
 //----------- lookup functions -----------\\
 function lookup() {
-var keyword = document.getElementById("searchbox").value; //try split by word, try search each word.
-
-var karray = keyword.split(" ");
-
+var keyword = document.getElementById("searchbox").value;
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
 	document.getElementById("FW").selectedIndex = optCount;
 	}
@@ -171,13 +168,12 @@ document.getElementById("display").innerHTML = "<br>";
 		if (keyword.length == 0) {
 		} else if (keyword == " ") {			
 		} else if (lines[i].match(RegExp(keyword, "gi"))){
-		filter();
 		cnt++;
+		filter();
 		}
 	}	
 	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + (cnt-1) + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> containing <span id='lastclicked'>'" + keyword.toUpperCase() + "'</span>.";
 	move();
-	//BOXART TEST
 	document.getElementById("iconframe").style.display = "block"; 
 	theLink = keyword.split(" ").join("%20");
 	localStorage.setItem("nextlink", theLink);
@@ -257,10 +253,11 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "5.50-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex550672 = [
-	"[5.05 Back Ported]","[6.72 Back Ported]","Death Stranding","Star Wars Jedi Fallen Order"
+	"[5.05 Back Ported]","[6.72 Back Ported]"
 	];
 	let str550672; str550672 = lines[i];
 	if (ex550672.some(v => str550672.includes(v))) {
+	cnt=cnt+1; //fix for OOD games with backport inclusion ((-1) + (+1) = 0)
 		if (lines[i].match("DLC")){
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -310,7 +307,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "5.50-7.02"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex550702 = [
-	"[5.05 Back Ported]","[6.72 Back Ported]","Star Wars Jedi Fallen Order","Death Stranding"
+	"[6.72 Back Ported]"
 	];
 	let str550702; str550702 = lines[i];
 	if (ex550702.some(v => str550702.includes(v))) {
@@ -364,7 +361,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex672 = [
-	"[5.05 Back Ported]","[6.72 Back Ported]","Death Stranding","Star Wars Jedi Fallen Order"
+	"[5.05 Back Ported]","[6.72 Back Ported]"
 	];
 	let str672; str672 = lines[i];
 	if (ex672.some(v => str672.includes(v))) {
