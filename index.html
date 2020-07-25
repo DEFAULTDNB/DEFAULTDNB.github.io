@@ -11,9 +11,9 @@
 <div id="myProgress"><div id="myBar">0%</div></div>
 <select id="FW" onchange="simClick()">
 	<option value="" disabled selected>Select Firmware Range:</option>
-	<option value="5.05">1.01 - 5.05</option>
-	<option value="6.72">1.01 - 6.72</option>
-	<option value="7.02">1.01 - 7.02</option>
+	<option value="1.01-5.05">1.01 - 5.05</option>
+	<option value="1.01-6.72">1.01 - 6.72</option>
+	<option value="1.01-7.02">1.01 - 7.02</option>
 	<option value="5.50-6.72">5.50 - 6.72</option>
 	<option value="5.50-7.02">5.50 - 7.02</option>
 	<option value="7.02-9.99">7.02 - 7.51</option>
@@ -65,8 +65,9 @@
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
-//----------- loadup functions -----------\\
-var OFW = 7.51; //get from online....
+//---------- TO DO: grab online ----------\\
+var OFW = 7.51;
+//----------- Loadup functions -----------\\
 var calculate = 100;
 var bclicked = "All Categories";
 for (j = 65; j <= 90; j++){
@@ -81,10 +82,10 @@ for (j = 65; j <= 90; j++){
 </div>
 <div id="display"></div>
 <script>
-//---------- set up DB location ----------\\
+//---------- Set up DB location ----------\\
 var fileName = "ps4.db";
 //var fileName = "https://DEFAULTDNB.github.io/ps4.db"; 
-//----------- set up functions -----------\\
+//----------- Set up functions -----------\\
 var xmlFile = new XMLHttpRequest;
 xmlFile.open('get', fileName, false);
 xmlFile.send();
@@ -96,7 +97,7 @@ cnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer"; 
 
-//--------- a-z button function ----------\\
+//--------- A-Z button function ----------\\
 function reply_click(clicked_id) {
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
 		document.getElementById("FW").selectedIndex = optCount;
@@ -116,6 +117,9 @@ cnt = 0;
 };
 //--------- FW dropdown functions ---------\\
 function simClick(){
+// Try prevent backport drop down weirdness \\
+//if (document.getElementById("type").selectedIndex == "2"){document.getElementById("fw").selectedIndex = optCount;}
+//------------------------------------------\\
 if (document.getElementById("type").selectedIndex == "0"){document.getElementById("type").selectedIndex = "1";}
 document.getElementById("display").innerHTML = "<br>";
 cnt = 0;
@@ -157,7 +161,7 @@ cnt = 0;
 		}
 	}
 };
-//----------- lookup functions -----------\\
+//----------- Lookup functions -----------\\
 function lookup() {
 var keyword = document.getElementById("searchbox").value;
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
@@ -195,7 +199,11 @@ theLink = lines[r].slice(lines[r],lines[r].indexOf("(")-1).split(" ").join("%20"
 localStorage.setItem("nextlink", theLink);
 iconframe.src = iconframe.src;
 };
-//----------- filter functions -----------\\
+//-- prevent weirdness --\\
+
+
+
+//----------- Filter functions -----------\\
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
 	if (document.getElementById("dates").checked == true){
@@ -203,20 +211,20 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		} else { 
 		dateInfo = lines[i];
 	}
-	if (sel === "5.05"){
+	if (sel === "1.01-5.05"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-	const ex505 = [
+	const ex101505 = [
 	"[5.05 Back Ported]","A Way Out","The American Dream","Anata no Shikihime Kyoudoutan","Ark Park","Assetto Corsa (Racing)",
 	"Atelier Lydie & Suelle","Attack on Titan 2","Azayaka na","Death end re;Quest (Role-Playing)","Diabolik Lovers Grand Edition",
 	"D.S. -Dal Segno-","Earth Defense Force 4.1","Earth Defense Force 5","Everspace (Shooter)","Extinction (Action, Adventure)",
 	"Far Cry 5","Fate/Grand Order VR","Flynn & Freckles","Full Metal Panic!","Gal*Gun 2","Ghostbusters The Video Game Remastered",
 	"God of War (Action, Adventure)","Indivisible","Injustice 2 Legendary","Keep Talking and Nobody Explodes", "Megadimension Neptunia VIIR","Metal Max Xeno (Role-Playing)",
-	"MLB The Show 18","Monkey King Hero","MX vs. ATV All Out","Ni no Kuni II:","Pure Farming 2018","Ryu ga Gotoku: Kiwami 2","Shaq Fu:",
-	"Shining Resonance Refrain","Space Hulk: Deathwing","Street Fighter 30th","Super Robot Wars X","The King of Fighters '98",
+	"MLB The Show 18","Monkey King Hero","MX vs. ATV All Out","Ni no Kuni II","Pure Farming 2018","Ryu ga Gotoku Kiwami 2","Shaq Fu:",
+	"Shining Resonance Refrain","Space Hulk Deathwing","Street Fighter 30th","Super Robot Wars X","The King of Fighters '98",
 	"The 25th Ward","The Raven Remastered","Titan Quest","World of Warriors"
 	];
-	let str505; str505 = lines[i];
-	if (ex505.some(v => str505.includes(v))) {
+	let str101505; str101505 = lines[i];
+	if (ex101505.some(v => str101505.includes(v))) {
 		if (lines[i].match("DLC")){
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#x1F6C8;</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -266,6 +274,8 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+			} else if (lines[i].match("[5.05 Back Ported]")){
+			cnt--;
 			} else {
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -361,13 +371,13 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		cnt--;
 		}
 		//----------- 550-702 date specifics -----------\\
-	} else if (sel === "6.72"){
+	} else if (sel === "1.01-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-	const ex672 = [
+	const ex101672 = [
 	"[5.05 Back Ported]","[6.72 Back Ported]"
 	];
-	let str672; str672 = lines[i];
-	if (ex672.some(v => str672.includes(v))) {
+	let str101672; str101672 = lines[i];
+	if (ex101672.some(v => str101672.includes(v))) {
 		if (lines[i].match("DLC")){
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -405,12 +415,12 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		cnt--;
 		}
 		//----------- 101-672 date specifics -----------\\	
-	} else if (sel === "7.02"){
+	} else if (sel === "1.01-7.02"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-	const ex702 = [
+	const ex101702 = [
 	];
-	let str702; str702 = lines[i];
-	if (ex702.some(v => str702.includes(v))) {
+	let str101702; str101702 = lines[i];
+	if (ex101702.some(v => str101702.includes(v))) {
 		if (lines[i].match("DLC")){
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -570,7 +580,7 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">VERSION: BETA 3.3</div>
+<div id="end">VERSION: BETA 3.4</div>
 <button id="top" onclick="window.scrollTo(0, 0)" class="sticky">BACK TO TOP</button>
 <script>
 if (document.addEventListener) {
