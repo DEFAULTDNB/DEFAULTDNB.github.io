@@ -16,7 +16,7 @@
 	<option value="1.01-7.02">1.01 - 7.02</option>
 	<option value="5.50-6.72">5.50 - 6.72</option>
 	<option value="5.50-7.02">5.50 - 7.02</option>
-	<option value="7.02-9.99">7.02 - 7.51</option>
+	<option value="7.50-9.99">7.50 - 7.51</option>
 	<option value="All">1.01 - 7.51 (ALL)</option>
 </select>
 <select id="type" onchange="dropdownthis()">
@@ -199,10 +199,6 @@ theLink = lines[r].slice(lines[r],lines[r].indexOf("(")-1).split(" ").join("%20"
 localStorage.setItem("nextlink", theLink);
 iconframe.src = iconframe.src;
 };
-//-- prevent weirdness --\\
-
-
-
 //----------- Filter functions -----------\\
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
@@ -274,9 +270,9 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			} else if (lines[i].match("[5.05 Back Ported]")){
+		} else if (lines[i].match("[5.05 Back Ported]")){
 			cnt--;
-			} else {
+		} else {
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -458,12 +454,12 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		cnt--;
 		}
 		//----------- 101-702 date specifics -----------\\
-		} else if (sel === "7.02-9.99"){
+		} else if (sel === "7.50-9.99"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-	const ex702999 = [
+	const ex750999 = [
 	];
-	let str702999; str702999 = lines[i];
-		if (ex702999.some(v => str702999.includes(v))) {
+	let str750999; str750999 = lines[i];
+		if (ex750999.some(v => str750999.includes(v))) {
 			if (lines[i].match("DLC")){
 			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
 			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -474,12 +470,12 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 			}
 		//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\	
-		//----------- 702-999 date specifics -----------\\
+		//----------- 750-999 date specifics -----------\\
 		} else if (lines[i].match("2013|2014|2015|2016|2017|2018|2019")){
 		cnt--;
 		} else if (lines[i].includes("TBA")){
 		colourise(); //included as potential titles
-		} else if (lines[i].includes("2020")){ //<GET 7.02-9.99 = dates (Apr 15, 2020 - today)
+		} else if (lines[i].includes("2020")){ //<GET 7.50-9.99 = dates (Apr 15, 2020 - today)
 			if (lines[i].match("Jan|Feb|Mar")){
 			cnt--;
 			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")){
@@ -490,7 +486,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		} else {
 		cnt--;
 		}
-		//----------- 702-999 date specifics -----------\\			
+		//----------- 750-999 date specifics -----------\\			
 	} else if (sel === "All"){	//1.01-9.99
 		colourise();
 	}
@@ -523,18 +519,23 @@ function colourise() {
 	// end filter test
 	*/
 	} else {
-	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
-	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		if (lines[i].includes("(Firmware)")){
+		document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
+		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		} else {
+		document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
+		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		}
 	}
 };
 
 function webSearch() {
 var pkgpup;
 if (gName.match("6.72")){
-pkgpup = "🐔 𝗛𝗜𝗚𝗛𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗔𝗕𝗟𝗘 𝗙𝗜𝗥𝗠𝗪𝗔𝗥𝗘\n\n🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝐚𝐛𝐨𝐮𝐭 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
+pkgpup = "🐔 𝗛𝗜𝗚𝗛𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗔𝗕𝗟𝗘 𝗙𝗜𝗥𝗠𝗪𝗔𝗥𝗘\n\n🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
 } else if (gName.match("1.01|1.06|1.50|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.50|3.00|3.50|4.00|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.00|5.01|5.02|5.03|5.05|5.50|5.53|5.55|6.00|6.02|6.20|6.50|6.51|6.71|6.72|7.00|7.01|7.02|7.50|7.51")){
-pkgpup = "🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝐚𝐛𝐨𝐮𝐭 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
+pkgpup = "🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
 } else {
 pkgpup = "🌐 𝗦𝗲𝗮𝗿𝗰𝗵 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼 𝗳𝗼𝗿 𝗴𝗮𝗺𝗲 𝗣𝗞𝗚:\n\n";
 }
@@ -580,7 +581,7 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">VERSION: BETA 3.4</div>
+<div id="end">VERSION: BETA 3.5</div>
 <button id="top" onclick="window.scrollTo(0, 0)" class="sticky">BACK TO TOP</button>
 <script>
 if (document.addEventListener) {
