@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
 <body>
-<h1 id="myT" onclick="location.reload()">FRMCHK</h1><!-- LOGO/NAME IN PROGRESS -->
+<h1 id="myT" onclick="location.reload()">FRMCHK  - Firmware Δpproximation</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div>
 <select id="FW" onchange="simClick()">
@@ -261,7 +261,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "5.50-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex550672 = [
-	"[5.05 Back Ported]","[6.72 Back Ported]"
+	"[5.05 Back Ported]","[6.72 Back Ported]","Bee Simulator"
 	];
 	let str550672; str550672 = lines[i];
 	if (ex550672.some(v => str550672.includes(v))) {
@@ -317,6 +317,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "5.50-7.02"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex550702 = [
+	"Bee Simulator"
 	];
 	let str550702; str550702 = lines[i];
 	if (ex550702.some(v => str550702.includes(v))) {
@@ -370,7 +371,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "1.01-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex101672 = [
-	"[5.05 Back Ported]","[6.72 Back Ported]"
+	"[5.05 Back Ported]","[6.72 Back Ported]","Bee Simulator"
 	];
 	let str101672; str101672 = lines[i];
 	if (ex101672.some(v => str101672.includes(v))) {
