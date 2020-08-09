@@ -65,8 +65,6 @@
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
-//---------- TO DO: grab online ----------\\
-var OFW = 7.51;
 //----------- Loadup functions -----------\\
 var calculate = 100;
 var bclicked = "All Categories";
@@ -81,6 +79,7 @@ for (j = 65; j <= 90; j++){
 <abbr class="interact" title="Tip: Search for titles, genres or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Keyword" autofocus></input></abbr><button class="sbut" id="searchbutton" onclick="lookup()">SEARCH</button><abbr title="𝘍𝘦𝘦𝘭𝘪𝘯𝘨 𝘓𝘶𝘤𝘬𝘺?"><button id="sbut" class="sbut" onclick="lucky();">RANDOM</button></abbr><abbr title="𝗦𝗨𝗕𝗠𝗜𝗧 𝗠𝗜𝗦𝗦𝗜𝗡𝗚 𝗚𝗔𝗠𝗘𝗦 𝗛𝗘𝗥𝗘"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜</a></abbr><!--abbr title="𝘓𝘪𝘨𝘩𝘵/𝘋𝘢𝘳𝘬 𝘛𝘰𝘨𝘨𝘭𝘦"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr-->
 </div>
 <div id="display"></div>
+<div id="snackbar">LATEST OFW: 7.51<br><br>HIGHEST KEX: 6.72</div>
 <script>
 //---------- Set up DB location ----------\\
 var fileName = "ps4.db";
@@ -96,7 +95,10 @@ document.getElementById("count").innerHTML = "Database entries: <span id='linele
 cnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer"; 
-
+//----- ESTABLISH FIRMWARE SNACKBAR -----\\
+var x = document.getElementById("snackbar");
+x.className = "show";
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 //--------- A-Z button function ----------\\
 function reply_click(clicked_id) {
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
@@ -582,7 +584,7 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">VERSION: BETA 3.5</div>
+<div id="end">VERSION: BETA 3.6</div>
 <button id="top" onclick="window.scrollTo(0, 0)" class="sticky">BACK TO TOP</button>
 <script>
 if (document.addEventListener) {
