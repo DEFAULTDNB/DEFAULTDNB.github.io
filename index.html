@@ -2,30 +2,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>FRMCHK</title>
+<title>𝗙𝗥𝗠𝗖𝗛𝗞</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
 <body>
-<h1 id="myT" onclick="location.reload()">FRMCHK  - Firmware Δpproximation</h1><!-- LOGO/NAME IN PROGRESS -->
+<h1 id="myT" onclick="location.reload()">𝗙𝗥𝗠𝗖𝗛𝗞 - 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 Δ𝗽𝗽𝗿𝗼𝘅𝗶𝗺𝗮𝘁𝗶𝗼𝗻</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div>
 <select id="FW" onchange="simClick()">
-	<option value="" disabled selected>Select Firmware Range:</option>
-	<option value="1.01-5.05">1.01 - 5.05</option>
-	<option value="1.01-6.72">1.01 - 6.72</option>
-	<option value="1.01-7.02">1.01 - 7.02</option>
-	<option value="5.50-6.72">5.50 - 6.72</option>
-	<option value="5.50-7.02">5.50 - 7.02</option>
-	<option value="7.50-9.99">7.50 - 7.51</option>
-	<option value="All">1.01 - 7.51 (ALL)</option>
+	<option value="" disabled selected>𝗦𝗲𝗹𝗲𝗰𝘁 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗥𝗮𝗻𝗴𝗲:</option>
+	<option value="1.01-5.05">𝟭.𝟬𝟭 - 𝟱.𝟬𝟱</option>
+	<option value="1.01-6.72">𝟭.𝟬𝟭 - 𝟲.𝟳𝟮</option>
+	<option value="1.01-7.02">𝟭.𝟬𝟭 - 𝟳.𝟬𝟮</option>
+	<option value="5.50-6.72">𝟱.𝟱𝟬 - 𝟲.𝟳𝟮</option>
+	<option value="5.50-7.02">𝟱.𝟱𝟬 - 𝟳.𝟬𝟮</option>
+	<option value="7.50-9.99">𝟳.𝟱𝟬 - 𝟳.𝟱𝟭</option>
+	<option value="All">𝟭.𝟬𝟭 - 𝟳.𝟱𝟭 (𝗔𝗟𝗟)</option>
 </select>
 <select id="type" onchange="dropdownthis()">
-	<option value="" disabled selected>Select Game Category:</option>
+	<option value="" disabled selected>𝗦𝗲𝗹𝗲𝗰𝘁 𝗚𝗮𝗺𝗲 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆:</option>
 	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>	
 	<option id="BACKPORT505" value="5.05 Back Ported">5.05 BACK PORTED</option>
 	<option id="BACKPORT672" value="6.72 Back Ported">6.72 BACK PORTED</option>
 	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
-	<option id="2D" value="2D">2D</option>
+	<option id="2D" value="2D,">2D</option>
 	<option id="ACTION" value="Action">ACTION</option>
 	<option id="ADVENTURE" value="Adventure">ADVENTURE</option>
 	<option id="ARCADE" value="Arcade">ARCADE</option>
@@ -79,7 +79,7 @@ for (j = 65; j <= 90; j++){
 <abbr class="interact" title="Tip: Search for titles, genres or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Keyword" autofocus></input></abbr><button class="sbut" id="searchbutton" onclick="lookup()">SEARCH</button><abbr title="𝘍𝘦𝘦𝘭𝘪𝘯𝘨 𝘓𝘶𝘤𝘬𝘺?"><button id="sbut" class="sbut" onclick="lucky();">RANDOM</button></abbr><abbr title="𝗦𝗨𝗕𝗠𝗜𝗧 𝗠𝗜𝗦𝗦𝗜𝗡𝗚 𝗚𝗔𝗠𝗘𝗦 𝗛𝗘𝗥𝗘"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜</a></abbr><!--abbr title="𝘓𝘪𝘨𝘩𝘵/𝘋𝘢𝘳𝘬 𝘛𝘰𝘨𝘨𝘭𝘦"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr-->
 </div>
 <div id="display"></div>
-<div id="snackbar"><span style="font-weight:bold">LATEST OFW: <span>7.51</span><br><br>HIGHEST KEX: <span>6.72</span></span></div>
+<div id="snackbar"><span style="font-weight:bold">𝗟𝗮𝘁𝗲𝘀𝘁 𝗢𝗙𝗪: <span style="color:grey">𝟳.𝟱𝟭</span><br>𝗛𝗶𝗴𝗵𝗲𝘀𝘁 𝗞𝗘𝗫: <span style="color:grey">𝟲.𝟳𝟮</span></span></div>
 <script>
 //---------- Set up DB location ----------\\
 var fileName = "ps4.db";
@@ -95,7 +95,7 @@ document.getElementById("count").innerHTML = "Database entries: <span id='linele
 cnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer"; 
-//----- ESTABLISH FIRMWARE SNACKBAR -----\\
+//---------- FIRMWARE SNACKBAR ----------\\
 var x = document.getElementById("snackbar");
 x.className = "show";
 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
@@ -584,8 +584,8 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">VERSION: BETA 3.6</div>
-<button id="top" onclick="window.scrollTo(0, 0)" class="sticky">BACK TO TOP</button>
+<div id="end">𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 𝗕𝗲𝘁𝗮 𝟯.𝟳</div>
+<button id="top" onclick="window.scrollTo(0, 0)" class="sticky">𝗕𝗔𝗖𝗞 𝗧𝗢 𝗧𝗢𝗣</button>
 <script>
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
