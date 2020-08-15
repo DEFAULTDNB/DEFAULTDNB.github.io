@@ -30,7 +30,6 @@
 	<option id="ADVENTURE" value="Adventure">ADVENTURE</option>
 	<option id="ARCADE" value="Arcade">ARCADE</option>
 	<option id="BEATEMUP" value="Beat 'em up">BEAT 'EM UP</option>
-	<option id="CITY" value="City-Building">CITY BUILDING</option>
 	<option id="DLC" value="DLC">DLC ADD-ON</option>
 	<option id="ENTERTAINMENT" value="Entertainment">ENTERTAINMENT</option>
 	<option id="FIGHTING" value="Fighting">FIGHTING</option>
@@ -61,7 +60,7 @@
 	<option id="NOVEL" value="Novel">VISUAL NOVEL</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
 </select>
-<input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="Data Hide/Show">&#9406;</abbr></input>
+<input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="Hide/Show Info">&#9406;</abbr></input>
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
@@ -512,11 +511,9 @@ function colourise() {
 	var dayArray = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
 	var monthArray = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 	var yearArray = ["2013","2014","2015","2016","2017","2018","2019","2020","2021"]
-	
 	//day/month/year combos
-	
-	} else if (lines[i].match("monkey|Monkey")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("lime").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
+	} else if (lines[i].match("Back Ported")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("gold").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	// end filter test
