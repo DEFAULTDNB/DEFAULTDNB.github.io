@@ -284,9 +284,10 @@ iframe {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  background-color: #17cdc4;
+  background-color: black;
   color: #efefef;
   text-align: center;
+  border: 1px solid #17cdc4;
   border-radius: 2px;
   padding: 16px;
   position: fixed;
