@@ -183,10 +183,15 @@ document.getElementById("display").innerHTML = "<br>";
 	}	
 	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + (cnt-1) + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> containing <span id='lastclicked'>'" + keyword.toUpperCase() + "'</span>.";
 	move();
+	//platform test
+	if (navigator.platform.match("iPhone|iPod|iPad")){
+	} else {
 	document.getElementById("iconframe").style.display = "block"; 
 	theLink = keyword.split(" ").join("%20");
 	localStorage.setItem("nextlink", theLink);
 	iconframe.src = iconframe.src;
+	}
+	
 };
 //---------- Random functions ----------\\
 function lucky() {
@@ -581,7 +586,7 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 𝗕𝗲𝘁𝗮 𝟯.𝟳</div>
+<div id="end">𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 3.8b</div>
 <button id="top" onclick="window.scrollTo(0, 0)" class="sticky">𝗕𝗔𝗖𝗞 𝗧𝗢 𝗧𝗢𝗣</button>
 <script>
 if (document.addEventListener) {
