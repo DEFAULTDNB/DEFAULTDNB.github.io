@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>𝗙𝗥𝗠𝗖𝗛𝗞</title>
+<title>FRMCHK</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
 <body>
-<h1 id="myT" onclick="location.reload()">𝗙𝗥𝗠𝗖𝗛𝗞 - 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 Δ𝗽𝗽𝗿𝗼𝘅𝗶𝗺𝗮𝘁𝗶𝗼𝗻</h1><!-- LOGO/NAME IN PROGRESS -->
+<h1 id="myT" onclick="location.reload()">FRMCHK - FIRWARE ΔPPROXIMATION</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div>
 <select id="FW" onchange="simClick()">
-	<option value="" disabled selected>𝗦𝗲𝗹𝗲𝗰𝘁 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗥𝗮𝗻𝗴𝗲:</option>
+	<option value="" disabled selected>Select Firmware Range:</option>
 	<option value="1.01-5.05">1.01 - 5.05</option>
 	<option value="1.01-6.72">1.01 - 6.72</option>
 	<option value="1.01-7.02">1.01 - 7.02</option>
@@ -20,7 +20,7 @@
 	<option value="All">1.01 - Latest</option>
 </select>
 <select id="type" onchange="dropdownthis()">
-	<option value="" disabled selected>𝗦𝗲𝗹𝗲𝗰𝘁 𝗚𝗮𝗺𝗲 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆:</option>
+	<option value="" disabled selected>Select Game Category:</option>
 	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>	
 	<option id="BACKPORT505" value="5.05 Back Ported">5.05 BACK PORTED</option>
 	<option id="BACKPORT672" value="6.72 Back Ported">6.72 BACK PORTED</option>
@@ -60,7 +60,7 @@
 	<option id="NOVEL" value="Novel">VISUAL NOVEL</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
 </select>
-<input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="𝙃𝙞𝙙𝙚/𝙎𝙝𝙤𝙬 𝙄𝙣𝙛𝙤">&#9406;</abbr></input>
+<input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="Hide/Show info">&#9406;</abbr></input>
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
@@ -75,10 +75,10 @@ for (j = 65; j <= 90; j++){
 	document.getElementById("clickers").appendChild(AZ);
 }
 </script>
-<abbr class="interact" title="𝙏𝙞𝙥: 𝙎𝙚𝙖𝙧𝙘𝙝 𝙛𝙤𝙧 𝙩𝙞𝙩𝙡𝙚𝙨, 𝙜𝙚𝙣𝙧𝙚𝙨 𝙤𝙧 𝙮𝙚𝙖𝙧𝙨"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="𝗞𝗲𝘆𝘄𝗼𝗿𝗱" autofocus></input></abbr><button class="sbut" id="searchbutton" title="𝙎𝙚𝙖𝙧𝙘𝙝 𝙁𝙤𝙧 𝙆𝙚𝙮𝙬𝙤𝙧𝙙𝙨" onclick="lookup()">SEARCH</button><abbr title="𝙇𝙪𝙘𝙠𝙮 𝘿𝙞𝙥"><button id="sbut" class="sbut" onclick="lucky();">RANDOM</button></abbr><abbr title="𝙎𝙪𝙗𝙢𝙞𝙩 𝙈𝙞𝙨𝙨𝙞𝙣𝙜 𝙂𝙖𝙢𝙚𝙨 𝙃𝙚𝙧𝙚"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜</a></abbr><abbr title="𝙒𝙝𝙖𝙩'𝙨 𝙣𝙚𝙬 𝙩𝙤𝙙𝙖𝙮?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr><!--abbr title="𝘓𝘪𝘨𝘩𝘵/𝘋𝘢𝘳𝘬 𝘛𝘰𝘨𝘨𝘭𝘦"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr-->
+<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Keyword" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><abbr title="Lucky dip"><button id="sbut" class="sbut" onclick="lucky();">RANDOM</button></abbr><abbr title="Submit missing games here"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜</a></abbr><abbr title="What's new today?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr><!--abbr title="𝘓𝘪𝘨𝘩𝘵/𝘋𝘢𝘳𝘬 𝘛𝘰𝘨𝘨𝘭𝘦"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr-->
 </div>
 <div id="display"></div>
-<div id="snackbar"><span style="font-weight:bold">𝗟𝗮𝘁𝗲𝘀𝘁 𝗢𝗙𝗪: <span style="color:silver">𝟳.𝟱𝟱</span><br>𝗛𝗶𝗴𝗵𝗲𝘀𝘁 𝗞𝗘𝗫: <span style="color:#17cdc4">𝟲.𝟳𝟮</span></span></div>
+<div id="snackbar"><span style="font-weight:bold">Latest OFW: <span style="color:silver">7.55</span><br>Highest KEX: <span style="color:#17cdc4">6.72</span></span></div>
 <script>
 //---------- Set up DB location ----------\\
 var fileName = "ps4.db";
@@ -593,8 +593,8 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 𝟰.𝟬𝗯</div>
-<button id="top" onclick="window.scrollTo(0, 0)" class="sticky">𝗕𝗔𝗖𝗞 𝗧𝗢 𝗧𝗢𝗣</button>
+<div id="end">Version: 4.1b</div>
+<button id="top" onclick="window.scrollTo(0, 0)" class="sticky">BACK TO TOP</button>
 <script>
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
@@ -695,7 +695,7 @@ document.getElementById("iconframe").style.display = "none";
 //----------------------------------------\\
 </script>
 <br>
-<abbr class="interact" title="𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗺𝘆 𝗲𝗳𝗳𝗼𝗿𝘁𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗞𝗼-𝗙𝗶">
+<abbr class="interact" title="Support my project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/kiiwiiaioguide">
 <div id="test3" class="tooltip" onmouseenter=""><div class="chip"><img src="avatar.jpg" alt="Creator" width="96" height="96">DEFAULTDNB
 </div></div></a></abbr>
