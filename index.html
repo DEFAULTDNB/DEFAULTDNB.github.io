@@ -16,7 +16,7 @@
 	<option value="1.01-7.02">1.01 - 7.02</option>
 	<option value="5.50-6.72">5.50 - 6.72</option>
 	<option value="5.50-7.02">5.50 - 7.02</option>
-	<option value="7.50-9.99">7.50 - 7.51</option>
+	<option value="7.50-9.99">7.50 - 7.55</option>
 	<option value="All">1.01 - Latest</option>
 </select>
 <select id="type" onchange="dropdownthis()">
@@ -60,7 +60,7 @@
 	<option id="NOVEL" value="Novel">VISUAL NOVEL</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
 </select>
-<input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="Hide/Show Info">&#9406;</abbr></input>
+<input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="𝙃𝙞𝙙𝙚/𝙎𝙝𝙤𝙬 𝙄𝙣𝙛𝙤">&#9406;</abbr></input>
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
@@ -75,10 +75,10 @@ for (j = 65; j <= 90; j++){
 	document.getElementById("clickers").appendChild(AZ);
 }
 </script>
-<abbr class="interact" title="Tip: Search for titles, genres or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Keyword" autofocus></input></abbr><button class="sbut" id="searchbutton" onclick="lookup()">SEARCH</button><abbr title="𝘍𝘦𝘦𝘭𝘪𝘯𝘨 𝘓𝘶𝘤𝘬𝘺?"><button id="sbut" class="sbut" onclick="lucky();">RANDOM</button></abbr><abbr title="𝗦𝗨𝗕𝗠𝗜𝗧 𝗠𝗜𝗦𝗦𝗜𝗡𝗚 𝗚𝗔𝗠𝗘𝗦 𝗛𝗘𝗥𝗘"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜</a></abbr><!--abbr title="𝘓𝘪𝘨𝘩𝘵/𝘋𝘢𝘳𝘬 𝘛𝘰𝘨𝘨𝘭𝘦"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr-->
+<abbr class="interact" title="𝙏𝙞𝙥: 𝙎𝙚𝙖𝙧𝙘𝙝 𝙛𝙤𝙧 𝙩𝙞𝙩𝙡𝙚𝙨, 𝙜𝙚𝙣𝙧𝙚𝙨 𝙤𝙧 𝙮𝙚𝙖𝙧𝙨"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="𝗞𝗲𝘆𝘄𝗼𝗿𝗱" autofocus></input></abbr><button class="sbut" id="searchbutton" title="𝙎𝙚𝙖𝙧𝙘𝙝 𝙁𝙤𝙧 𝙆𝙚𝙮𝙬𝙤𝙧𝙙𝙨" onclick="lookup()">SEARCH</button><abbr title="𝙇𝙪𝙘𝙠𝙮 𝘿𝙞𝙥"><button id="sbut" class="sbut" onclick="lucky();">RANDOM</button></abbr><abbr title="𝙎𝙪𝙗𝙢𝙞𝙩 𝙈𝙞𝙨𝙨𝙞𝙣𝙜 𝙂𝙖𝙢𝙚𝙨 𝙃𝙚𝙧𝙚"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜</a></abbr><abbr title="𝙒𝙝𝙖𝙩'𝙨 𝙣𝙚𝙬 𝙩𝙤𝙙𝙖𝙮?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr><!--abbr title="𝘓𝘪𝘨𝘩𝘵/𝘋𝘢𝘳𝘬 𝘛𝘰𝘨𝘨𝘭𝘦"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr-->
 </div>
 <div id="display"></div>
-<div id="snackbar"><span style="font-weight:bold">𝗟𝗮𝘁𝗲𝘀𝘁 𝗢𝗙𝗪: <span style="color:grey">𝟳.𝟱𝟭</span><br>𝗛𝗶𝗴𝗵𝗲𝘀𝘁 𝗞𝗘𝗫: <span style="color:#17cdc4">𝟲.𝟳𝟮</span></span></div>
+<div id="snackbar"><span style="font-weight:bold">𝗟𝗮𝘁𝗲𝘀𝘁 𝗢𝗙𝗪: <span style="color:silver">𝟳.𝟱𝟱</span><br>𝗛𝗶𝗴𝗵𝗲𝘀𝘁 𝗞𝗘𝗫: <span style="color:#17cdc4">𝟲.𝟳𝟮</span></span></div>
 <script>
 //---------- Set up DB location ----------\\
 var fileName = "ps4.db";
@@ -93,7 +93,9 @@ document.getElementById("display").innerHTML = "<br>";
 document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>.";
 cnt = 0;
 optCount = document.getElementById("FW").options.length -1;
-document.getElementById("myT").style.cursor = "pointer"; 
+document.getElementById("myT").style.cursor = "pointer";
+//---------- Firmware 1.00-7.55---------\\ 
+var firmz = 47;
 //---------- FIRMWARE SNACKBAR ----------\\
 var x = document.getElementById("snackbar");
 x.className = "show";
@@ -183,8 +185,9 @@ document.getElementById("display").innerHTML = "<br>";
 	}	
 	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + (cnt-1) + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> containing <span id='lastclicked'>'" + keyword.toUpperCase() + "'</span>.";
 	move();
-	//platform test
+	//platform blacklist
 	if (navigator.platform.match("iPhone|iPod|iPad")){
+	} else if (cnt = "0"){
 	} else {
 	document.getElementById("iconframe").style.display = "block"; 
 	theLink = keyword.split(" ").join("%20");
@@ -196,11 +199,12 @@ document.getElementById("display").innerHTML = "<br>";
 //---------- Random functions ----------\\
 function lucky() {
 document.getElementById("FW").selectedIndex = optCount;
-var r = Math.floor(Math.random() * lines.length) + 46; //after firmwares
+var r = Math.floor(Math.random() * lines.length) + firmz; //after firmwares
 bclicked = lines[r].charAt(0);
 document.getElementById("searchbox").value = lines[r].slice(lines[r],lines[r].indexOf("(")-1);
 lookup();
 	if (navigator.platform.match("iPhone|iPod|iPad")){
+	} else if (cnt = "0"){
 	} else {
 	document.getElementById("iconframe").style.display = "block"; 
 	theLink = lines[r].slice(lines[r],lines[r].indexOf("(")-1).split(" ").join("%20");
@@ -542,7 +546,7 @@ function webSearch() {
 var pkgpup;
 if (gName.match("6.72")){
 pkgpup = "🐔 𝗛𝗜𝗚𝗛𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗔𝗕𝗟𝗘 𝗙𝗜𝗥𝗠𝗪𝗔𝗥𝗘\n\n🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
-} else if (gName.match("1.01|1.06|1.50|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.50|3.00|3.50|4.00|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.00|5.01|5.02|5.03|5.05|5.50|5.53|5.55|6.00|6.02|6.20|6.50|6.51|6.71|6.72|7.00|7.01|7.02|7.50|7.51")){
+} else if (gName.match("1.01|1.06|1.50|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.50|3.00|3.50|4.00|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.00|5.01|5.02|5.03|5.05|5.50|5.53|5.55|6.00|6.02|6.20|6.50|6.51|6.71|6.72|7.00|7.01|7.02|7.50|7.51|7.55")){
 pkgpup = "🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
 } else {
 pkgpup = "🌐 𝗦𝗲𝗮𝗿𝗰𝗵 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼 𝗳𝗼𝗿 𝗴𝗮𝗺𝗲 𝗣𝗞𝗚:\n\n";
@@ -573,7 +577,7 @@ var r = confirm(pkgpup+gName.toUpperCase()+"?\n");
 		window.open("https://www.psdevwiki.com/ps4/"+gName);
 		} else if (gName.match("1.50|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.50|3.00|3.50|4.00|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.00")) { 
 		window.open("https://www.psdevwiki.com/ps4/"+gName+"0.000");
-		} else if (gName.match("5.01|5.02|5.03|5.05|5.50|5.53|5.55|6.00|6.02|6.20|6.50|6.51|6.71|6.72|7.00|7.01|7.02|7.50|7.51")) { 
+		} else if (gName.match("5.01|5.02|5.03|5.05|5.50|5.53|5.55|6.00|6.02|6.20|6.50|6.51|6.71|6.72|7.00|7.01|7.02|7.50|7.51|7.55")) { 
 		window.open("https://www.psdevwiki.com/ps4/0"+gName+"0.000");
 		} else { 
 		window.open("https://serialstation.com/search/?search="+gName+"&system=4");
@@ -589,7 +593,7 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 3.8b</div>
+<div id="end">𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 𝟰.𝟬𝗯</div>
 <button id="top" onclick="window.scrollTo(0, 0)" class="sticky">𝗕𝗔𝗖𝗞 𝗧𝗢 𝗧𝗢𝗣</button>
 <script>
 if (document.addEventListener) {
@@ -681,19 +685,20 @@ document.getElementsByTagName("hr")[0].classList.toggle('alt-mode');
 
 //fix submit button toggle
 }
+//---------- TODAYS INFORMATION ---------\\
+function whatsNew(){
+var testDate = (new Date().toString().slice(4, 10)+", "+new Date().toString().slice(11, 15));
+document.getElementById("searchbox").value = testDate;
+lookup();
+document.getElementById("iconframe").style.display = "none";
+}
+//----------------------------------------\\
 </script>
 <br>
 <abbr class="interact" title="𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗺𝘆 𝗲𝗳𝗳𝗼𝗿𝘁𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗞𝗼-𝗙𝗶">
 <a target="_blank" href="https://ko-fi.com/kiiwiiaioguide">
 <div id="test3" class="tooltip" onmouseenter=""><div class="chip"><img src="avatar.jpg" alt="Creator" width="96" height="96">DEFAULTDNB
-</div></div></a></abbr><br><br>
-<abbr class="interact">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick" target="_blank" />
-<input type="hidden" name="hosted_button_id" value="HWY5CFN6YTAX4" />
-<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" border="0" name="submit" title="𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗺𝘆 𝗲𝗳𝗳𝗼𝗿𝘁𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗣𝗮𝘆𝗽𝗮𝗹" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
-</form></abbr>
+</div></div></a></abbr>
 <iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe>
 </body>
 </html> 
