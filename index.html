@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
 <body>
-<h1 id="myT" onclick="location.reload()">FRMCHK - FIRMWARE ΔPPROXIMATION</h1><!-- LOGO/NAME IN PROGRESS -->
+<h1 id="myT" onclick="location.reload()">FRMCHK - PS4 FIRMWARE ΔPPROXIMATION</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div>
 <select id="FW" onchange="simClick()">
@@ -96,7 +96,7 @@ cnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer";
 //---------- Firmware 1.00-7.55---------\\ 
-var firmz = 47;
+var firmz = 47; //start from line 47
 //---------- FIRMWARE SNACKBAR ----------\\
 var x = document.getElementById("snackbar");
 x.className = "show";
