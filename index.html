@@ -43,7 +43,7 @@
 	<option id="PLATFORM" value="Platform">PLATFORM</option>
 	<option id="PL" value="PLAYLINK">PLAY LINK</option>
 	<option id="POINT" value=" Point-a">POINT & CLICK</option>
-	<option id="PROENHANCED" value="{PRO}">PS4 PRO ENHANCED</option>
+	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
 	<option id="PSN" value="Requires PSN">PSN REQUIRED</option>
 	<option id="PUZZLE" value="Puzzle">PUZZLE</option>
 	<option id="RACING" value="Racing">RACING</option>
@@ -56,8 +56,8 @@
 	<option id="STEALTH" value="Stealth">STEALTH</option>
 	<option id="STRATEGY" value="Strategy">STRATEGY</option>
 	<option id="SURVIVAL" value="Survival">SURVIVAL</option>
-	<option id="TBA" value="TBA">TO BE ANNOUNCED</option>
 	<option id="TPS" value="Third-Person">THIRD PERSON</option>
+	<option id="TBA" value="TBA">UNRELEASED</option>
 	<option id="NOVEL" value="Novel">VISUAL NOVEL</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
 </select>
@@ -643,7 +643,7 @@ cnt = 0;
 bclicked = this.id;
 document.getElementById("searchbox").value = "";
 document.getElementById("display").innerHTML = "<br>";
-	for (i = 45; i < lines.length; i++){
+	for (i = firmz-1; i < lines.length; i++){ //firmware count -1 to hide 'em
 		if (lines[i].charAt(0).match(/^[.#0-9'/]+$/)){
 		cnt++;
 		filter();
