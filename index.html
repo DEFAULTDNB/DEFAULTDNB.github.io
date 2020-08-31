@@ -188,7 +188,6 @@ document.getElementById("display").innerHTML = "<br>";
 	move();
 	//platform blacklist
 	if (navigator.platform.match("iPhone|iPod|iPad")){
-	} else if (cnt = "0"){
 	} else {
 	document.getElementById("iconframe").style.display = "block"; 
 	theLink = keyword.split(" ").join("%20");
@@ -205,7 +204,6 @@ bclicked = lines[r].charAt(0);
 document.getElementById("searchbox").value = lines[r].slice(lines[r],lines[r].indexOf("(")-1);
 lookup();
 	if (navigator.platform.match("iPhone|iPod|iPad")){
-	} else if (cnt = "0"){
 	} else {
 	document.getElementById("iconframe").style.display = "block"; 
 	theLink = lines[r].slice(lines[r],lines[r].indexOf("(")-1).split(" ").join("%20");
@@ -594,7 +592,6 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<div id="end">Version: 4.2b</div>
 <button id="top" onclick="window.scrollTo(0, 0)" class="sticky">BACK TO TOP</button>
 <script>
 if (document.addEventListener) {
@@ -697,9 +694,10 @@ document.getElementById("iconframe").style.display = "none";
 </script>
 <br>
 <abbr class="interact" title="Support my project through Ko-Fi">
-<a target="_blank" href="https://ko-fi.com/kiiwiiaioguide">
-<div id="test3" class="tooltip" onmouseenter=""><div class="chip"><img src="avatar.jpg" alt="Creator" width="96" height="96">DEFAULTDNB
+<a target="_blank" href="https://ko-fi.com/defaultdnb">
+<div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
-<iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe>
+<iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe><br>
+<div id="end">Version: 5b</div>
 </body>
 </html> 

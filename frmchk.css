@@ -313,3 +313,12 @@ iframe {
   from {top: 30px; opacity: 1;} 
   to {top: 0; opacity: 0;}
 }
+#KOFI {
+	position: fixed;
+	left: 1%;
+}
+#end {
+	position: fixed;
+	right: 1%;
+	top: 1%;
+}
