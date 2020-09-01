@@ -1,57 +1,57 @@
-﻿1.01 (Firmware) [Sep 1, 2013] <r27590/release_branches/release_01.010 Aug 7 2013 02:01:45>
-1.05 (Firmware) [Nov 1, 2013] <estimate>
+﻿1.01 (Firmware) [Sep 1, 2013] [r27590/release_branches/release_01.010 Aug 7 2013 02:01:45]
+1.05 (Firmware) [Nov 1, 2013] [estimate]
 1.06 (Firmware) [Nov 14, 2013]
-1.50 (Firmware) [Oct 28, 2013] <r31298/release_branches/release_01.500 Nov 12 2013 05:34:36>
+1.50 (Firmware) [Oct 28, 2013] [r31298/release_branches/release_01.500 Nov 12 2013 05:34:36]
 1.52 (Firmware) [Dec 11, 2013]
-1.60 (Firmware) [Feb 4, 2014] <r34204/release_branches/release_01.600 Jan 29 2014 05:36:34>
+1.60 (Firmware) [Feb 4, 2014] [r34204/release_branches/release_01.600 Jan 29 2014 05:36:34]
 1.61 (Firmware) [Feb 12, 2014]
-1.62 (Firmware) [Mar 10, 2014] <r36286/release_branches/release_01.620 Mar 10 2014 05:37:07>
+1.62 (Firmware) [Mar 10, 2014] [r36286/release_branches/release_01.620 Mar 10 2014 05:37:07]
 1.70 (Firmware) [Apr 30, 2014]
 1.71 (Firmware) [May 28, 2014]
 1.72 (Firmware) [Jun 18, 2014]
 1.74 (Firmware) [Jul 18, 2014]
-1.75 (Firmware) [Jul 29, 2014] <r41581/release_branches/release_01.750 Jul 27 2014 20:36:05>
-1.76 (Firmware) [Sep 2, 2014] <r43234/release_branches/release_01.760 Aug 20 2014 07:45:21>
+1.75 (Firmware) [Jul 29, 2014] [r41581/release_branches/release_01.750 Jul 27 2014 20:36:05]
+1.76 (Firmware) [Sep 2, 2014] [r43234/release_branches/release_01.760 Aug 20 2014 07:45:21]
 2.00 (Firmware) [Oct 28, 2014]
 2.03 (Firmware) [Dec 3, 2014]
 2.50 (Firmware) [Mar 26, 2015]
 3.00 (Firmware) [Sep 30, 2015]
 3.50 (Firmware) [Apr 6, 2016]
-3.55 (Firmware) [Jun 21, 2016] <r72333/release_branches/release_03.550 Jun 14 2016 05:33:20>
-4.00 (Firmware) [Sep 13, 2016] <r75742/release_branches/release_04.000 Sep 8 2016 14:29:38>
+3.55 (Firmware) [Jun 21, 2016] [r72333/release_branches/release_03.550 Jun 14 2016 05:33:20]
+4.00 (Firmware) [Sep 13, 2016] [r75742/release_branches/release_04.000 Sep 8 2016 14:29:38]
 4.01 (Firmware) [Oct 3, 2016]
 4.05 (Firmware) [Oct 26 2016]
 4.06 (Firmware) [Nov 17, 2016]
 4.07 (Firmware) [Dec 8, 2016]
 4.50 (Firmware) [Mar 9, 2017]
-4.55 (Firmware) [Apr 11, 2017] <r82197/release_branches/release_04.550 Mar 29 2017 05:25:42>
+4.55 (Firmware) [Apr 11, 2017] [r82197/release_branches/release_04.550 Mar 29 2017 05:25:42]
 4.70 (Firmware) [May 30, 2017]
 4.71 (Firmware) [Jun 22, 2017]
 4.72 (Firmware) [Jul 11, 2017]
 4.73 (Firmware) [Aug 2, 2017]
-4.74 (Firmware) [Sep 14, 2017] <r86759/release_branches/release_04.740 Sep 12 2017 05:24:58>
-5.00 (Firmware) [Oct 3, 2017] <r87095/release_branches/release_05.000 Sep 26 2017 05:25:25>
-5.01 (Firmware) [Oct 24, 2017] <r87479/release_branches/release_05.010 Oct 18 2017 05:25:14>
+4.74 (Firmware) [Sep 14, 2017] [r86759/release_branches/release_04.740 Sep 12 2017 05:24:58]
+5.00 (Firmware) [Oct 3, 2017] [r87095/release_branches/release_05.000 Sep 26 2017 05:25:25]
+5.01 (Firmware) [Oct 24, 2017] [r87479/release_branches/release_05.010 Oct 18 2017 05:25:14]
 5.03 (Firmware) [Dec 14 2017]
-5.05 (Firmware) [Jan 18, 2018] <r89649/release_branches/release_05.050 Jan 15 2018 05:28:50>
+5.05 (Firmware) [Jan 18, 2018] [r89649/release_branches/release_05.050 Jan 15 2018 05:28:50]
 5.50 (Firmware) [Mar 8, 2018]
-5.53 (Firmware) [Apr 12, 2018] <r91210/release_branches/release_05.530 Mar 28 2018 05:41:01>
+5.53 (Firmware) [Apr 12, 2018] [r91210/release_branches/release_05.530 Mar 28 2018 05:41:01]
 5.53-01 (Firmware) [Apr 24, 2018]
-5.55 (Firmware) [May 17, 2018] <r96810/release_branches/release_05.550 May 10 2018 11:36:21>
+5.55 (Firmware) [May 17, 2018] [r96810/release_branches/release_05.550 May 10 2018 11:36:21]
 5.56 (Firmware) [Aug 31, 2018]
-6.00 (Firmware) [Sep 13, 2018] <r101022/release_branches/release_06.000 Jul 13 2018 05:39:58>
+6.00 (Firmware) [Sep 13, 2018] [r101022/release_branches/release_06.000 Jul 13 2018 05:39:58]
 6.02 (Firmware) [Oct 17, 2018]
-6.20 (Firmware) [Dec 12, 2018] <r109816/release_branches/release_06.200 Nov 2 2018 05:41:33>
-6.50 (Firmware) [Mar 7, 2019] <r118672/release_branches/release_06.500 Mar 1 2019 05:42:45>
+6.20 (Firmware) [Dec 12, 2018] [r109816/release_branches/release_06.200 Nov 2 2018 05:41:33]
+6.50 (Firmware) [Mar 7, 2019] [r118672/release_branches/release_06.500 Mar 1 2019 05:42:45]
 6.51 (Firmware) [Mar 23, 2019]
-6.71 (Firmware) [Jun 4, 2019] <r125276/release_branches/release_06.710 May 31 2019 19:39:22>
-6.72 (Firmware) [Jul 16, 2019] <r128004/release_branches/release_06.720 Jul 9 2019 05:42:32>
-7.00 (Firmware) [Oct 8, 2019] <r135061/release_branches/release_07.000 Oct 2 2019 05:28:54>
+6.71 (Firmware) [Jun 4, 2019] [r125276/release_branches/release_06.710 May 31 2019 19:39:22]
+6.72 (Firmware) [Jul 16, 2019] [r128004/release_branches/release_06.720 Jul 9 2019 05:42:32]
+7.00 (Firmware) [Oct 8, 2019] [r135061/release_branches/release_07.000 Oct 2 2019 05:28:54]
 7.01 (Firmware) [Dec 11, 2019]
-7.02 (Firmware) [Dec 19, 2019] <r141010/release_branches/release_07.020 Dec 16 2019 15:07:40>
-7.50 (Firmware) [Apr 15, 2020] <r149962/release_branches/release_07.500 Apr 8 2020 05:26:31>
+7.02 (Firmware) [Dec 19, 2019] [r141010/release_branches/release_07.020 Dec 16 2019 15:07:40]
+7.50 (Firmware) [Apr 15, 2020] [r149962/release_branches/release_07.500 Apr 8 2020 05:26:31]
 7.51 (Firmware) [May 27, 2020]
-7.55 (Firmware) [Aug 26, 2020] <r158328/release_branches/release_07.550 Aug 5 2020 05:27:21>
+7.55 (Firmware) [Aug 26, 2020] [r158328/release_branches/release_07.550 Aug 5 2020 05:27:21]
 .hack//G.U. Last Recode (Action, Role-Playing) [Nov 1, 2017]
 #killallzombies (Shooter) [Oct 28, 2014]
 #Funtime (Action, Shooter, Twin-Stick) [Jul 16, 2020]
@@ -1861,6 +1861,7 @@ Dragon Ball FighterZ Fused Zamasu (DLC) [May 31, 2018]
 Dragon Ball FighterZ Goku (DLC) [Aug 8, 2018]
 Dragon Ball FighterZ Janemba (DLC) [Aug 8, 2019]
 Dragon Ball FighterZ Jiren (DLC) [Jan 31, 2019]
+Dragon Ball FighterZ Kefla (DLC) [Feb 26, 2020]
 Dragon Ball FighterZ SSGSS Vegito (DLC) [May 31, 2018]
 Dragon Ball FighterZ SSGSS Gogeta (DLC) [Sep 26, 2019]
 Dragon Ball FighterZ Vegeta (DLC) [Aug 8, 2018]

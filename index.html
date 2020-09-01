@@ -505,6 +505,8 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	}
 	if (bclicked === " "){	
 	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + cnt + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>" + bclicked + "</span> <span id='lastclicked'>'All Categories'</span>.";
+	} else if (document.getElementById("type").options[document.getElementById("type").selectedIndex].value === "Firmware") {
+	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + cnt + "</span> firmware updates listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>" + bclicked + "</span> <span id='lastclicked'>'All Categories'</span>.";
 	} else {	
 	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + cnt + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>'" + bclicked + "'</span>.";
 	}
