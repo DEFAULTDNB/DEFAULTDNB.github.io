@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
 <body>
-<h1 id="myT" onclick="location.reload()">FRMCHK - PS4 FIRMWARE ΔPPROXIMATION</h1><!-- LOGO/NAME IN PROGRESS -->
+<h1 id="myT" onclick="location.reload()">FRMCHK - PS4 GΔME FW ΔPPROXIMΔTION</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div>
 <select id="FW" onchange="simClick()">
@@ -82,8 +82,7 @@ for (j = 65; j <= 90; j++){
 <div id="snackbar"><span style="font-weight:bold">Latest OFW: <span style="color:silver">7.55</span><br>Highest KEX: <span style="color:#17cdc4">6.72</span></span></div>
 <script>
 //---------- Set up DB location ----------\\
-var fileName = "ps4.db";
-//var fileName = "https://DEFAULTDNB.github.io/ps4.db"; 
+var fileName = "ps4.db"; 
 //----------- Set up functions -----------\\
 var xmlFile = new XMLHttpRequest;
 xmlFile.open('get', fileName, false);
@@ -95,9 +94,9 @@ document.getElementById("count").innerHTML = "Database entries: <span id='linele
 cnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer";
-//---------- Firmware 1.00-7.55---------\\ 
-var firmz = 55; //start from line 47
-//---------- FIRMWARE SNACKBAR ----------\\
+//--------- Firmware 1.00-Latest --------\\ 
+var firmz = 0; for (i = 0; i < lines.length; i++){if (lines[i].match("(Firmware)")){firmz++;}};
+//---------- Firmware Snackbar ----------\\
 var x = document.getElementById("snackbar");
 x.className = "show";
 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
@@ -637,12 +636,14 @@ document.getElementById("#").addEventListener("mouseenter", function(){bclicked 
 document.getElementById("#").addEventListener("click", function(){
 if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
 	document.getElementById("FW").selectedIndex = optCount;
+} else if (document.getElementById("type").options[document.getElementById("type").selectedIndex].value === "Firmware"){
+document.getElementById("type").selectedIndex = 1;
 }
 cnt = 0;
 bclicked = this.id;
 document.getElementById("searchbox").value = "";
 document.getElementById("display").innerHTML = "<br>";
-	for (i = firmz-1; i < lines.length; i++){ //firmware count -1 to hide 'em
+	for (i = firmz; i < lines.length; i++){
 		if (lines[i].charAt(0).match(/^[.#0-9'/]+$/)){
 		cnt++;
 		filter();
@@ -700,6 +701,6 @@ document.getElementById("iconframe").style.display = "none";
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
 <iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe><br>
-<div id="end">Version: 5b</div>
+<div id="end">Version: 5.1b</div>
 </body>
 </html> 
