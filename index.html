@@ -692,6 +692,7 @@ document.getElementsByTagName("hr")[0].classList.toggle('alt-mode');
 //---------- TODAYS INFORMATION ---------\\
 function whatsNew(){
 var testDate = (new Date().toString().slice(4, 10)+", "+new Date().toString().slice(11, 15));
+if (testDate.charAt(4) === "0") {testDate = testDate.slice(0, 4) + testDate.slice(5);}
 document.getElementById("searchbox").value = testDate;
 lookup();
 document.getElementById("iconframe").style.display = "none";
@@ -704,6 +705,6 @@ document.getElementById("iconframe").style.display = "none";
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
 <iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe><br>
-<div id="end">Version: 5.2b</div>
+<div id="end">Version: 5.3b</div>
 </body>
 </html> 
