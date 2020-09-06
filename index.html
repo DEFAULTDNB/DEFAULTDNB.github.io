@@ -6,11 +6,12 @@
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
 <body>
-<h1 id="myT" onclick="location.reload()">FRMCHK - PS4 GΔME FW ΔPPROXIMΔTION</h1><!-- LOGO/NAME IN PROGRESS -->
+<h1 id="myT" onclick="location.reload()">FRMCHK - PS4 GΔME FW ΔPPROXIMΔTOR</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div>
 <select id="FW" onchange="simClick()">
-	<option value="" disabled selected>Select Firmware Range:</option>
+	<option value="" disabled selected>SELECT FIRMWARE:</option>
+	<optgroup label="FIRMWARE RANGES">
 	<option value="1.01-5.05">1.01 - 5.05</option>
 	<option value="1.01-6.72">1.01 - 6.72</option>
 	<option value="1.01-7.02">1.01 - 7.02</option>
@@ -20,46 +21,50 @@
 	<option value="All">1.01 - Latest</option>
 </select>
 <select id="type" onchange="dropdownthis()">
-	<option value="" disabled selected>Select Game Category:</option>
-	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>	
-	<option id="BACKPORT505" value="5.05 Back Ported">5.05 BACK PORTED</option>
-	<option id="BACKPORT672" value="6.72 Back Ported">6.72 BACK PORTED</option>
-	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
+	<option value="" disabled selected>SELECT CATEGORY:</option>
+	<optgroup label="QUICK DISPLAY">
+	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>
+	<option id="DLC" value="DLC">DLC ADD-ONS</option>
+	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
+	<option id="PS2" value="PS2">PS2 CLASSICS</option>
+	<option id="VR" value="VR">VR COMPATIBLE</option>
+		<optgroup label="BACK PORTED TITLES">
+	<option id="BACKPORT505" value="5.05 Back Ported">5.05 BACK PORTS</option>
+	<option id="BACKPORT672" value="6.72 Back Ported">6.72 BACK PORTS</option>
+		<optgroup label="GAME GENRES">	
 	<option id="2D" value="2D,">2D</option>
 	<option id="ACTION" value="Action">ACTION</option>
 	<option id="ADVENTURE" value="Adventure">ADVENTURE</option>
 	<option id="ARCADE" value="Arcade">ARCADE</option>
 	<option id="BEATEMUP" value="Beat 'em up">BEAT 'EM UP</option>
-	<option id="DLC" value="DLC">DLC ADD-ON</option>
 	<option id="ENTERTAINMENT" value="Entertainment">ENTERTAINMENT</option>
 	<option id="FIGHTING" value="Fighting">FIGHTING</option>
 	<option id="FPS" value="First-Person">FPS</option>
-	<option id="GUN" value="PDP MARS">LIGHT GUN COMPATIBLE</option>
 	<option id="HORROR" value="Horror">HORROR</option>
 	<option id="METROIDVANIA" value="Metroidvania">METROIDVANIA</option>
 	<option id="MUSIC" value="Music">MUSIC</option>
 	<option id="NONOGRAM" value="Nonogram">NONOGRAM</option>
-	<option id="PS2" value="PS2">PS2 CLASSICS</option>
 	<option id="PLATFORM" value="Platform">PLATFORM</option>
-	<option id="PL" value="PLAYLINK">PLAY LINK</option>
 	<option id="POINT" value=" Point-a">POINT & CLICK</option>
-	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
-	<option id="PSN" value="Requires PSN">PSN REQUIRED</option>
 	<option id="PUZZLE" value="Puzzle">PUZZLE</option>
 	<option id="RACING" value="Racing">RACING</option>
-	<option id="RPG" value="Role-Playing">RPG's</option>
+	<option id="RPG" value="Role-Playing">ROLE PLAYING</option>
 	<option id="RHYTHM" value="Rhythm">RHYTHM</option>
 	<option id="ROGUE" value="Roguelike">ROGUELIKE</option>
-	<option id="RUNNGUN" value="Run and Gun">RUN AND GUN</option>
 	<option id="SIMULATION" value="Simulation">SIMULATION</option>
 	<option id="SPORT" value="Sports">SPORT</option>
 	<option id="STEALTH" value="Stealth">STEALTH</option>
 	<option id="STRATEGY" value="Strategy">STRATEGY</option>
 	<option id="SURVIVAL" value="Survival">SURVIVAL</option>
 	<option id="TPS" value="Third-Person">THIRD PERSON</option>
-	<option id="TBA" value="TBA">UNRELEASED</option>
 	<option id="NOVEL" value="Novel">VISUAL NOVEL</option>
-	<option id="VR" value="VR">VR COMPATIBLE</option>
+		<optgroup label="MISCELLANEOUS">
+	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
+	<option id="GUN" value="PDP MARS">LIGHT GUN COMPATIBLE</option>
+	<option id="PL" value="PLAYLINK">PLAY LINK</option>
+	<option id="PSN" value="Requires PSN">PSN REQUIRED</option>
+	<option id="UNIQUE" value="TBA">UNIQUE</option>
+	<option id="TBA" value="TBA">UNRELEASED</option>
 </select>
 <input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="Hide/Show info">&#9406;</abbr></input>
 <br><br>
@@ -715,7 +720,7 @@ document.getElementById("iconframe").style.display = "none";
 }
 //----------- CREDIT SNACKBAR ------------\\
 function showCredz() {
-snackbar.innerHTML = "<span style='font-weight:bold; color:white'>THANKS: <span style='color:silver'><br><br>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369</span></span>"
+snackbar.innerHTML = "<span style='font-weight:bold; color:white'>THANKZ & GREETZ: <span style='color:silver'><br><br>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893</span></span>"
 var x = document.getElementById("snackbar");
 x.className = "show";
 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
@@ -727,6 +732,6 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
 <iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe><br>
-<div id="end">Version: 5.4b</div>
+<div id="end">Version: 5.5b</div>
 </body>
 </html> 
