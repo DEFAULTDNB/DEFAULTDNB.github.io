@@ -96,8 +96,8 @@ var xmlDoc = xmlFile.responseText;
 var lines = xmlDoc.split("\r\n");
 document.getElementById("display").innerHTML = "<br>";
 document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>.";
-firmcnt = 0;
 cnt = 0;
+firmcnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer";
 //--------- Firmware 1.00-Latest --------\\ 
@@ -119,6 +119,7 @@ document.getElementById("searchbox").value = "";
 document.getElementById("type").selectedIndex = "1"
 document.getElementById("display").innerHTML = "<br>";
 cnt = 0;
+firmcnt = 0;
 	for (i = 0; i < lines.length; i++){
 		if (lines[i].charAt(0) == clicked_id){
 		cnt++;
@@ -185,6 +186,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 document.getElementById("type").selectedIndex = "1";
 bclicked = "";
 cnt = 1;
+firmcnt = 0;
 document.getElementById("display").innerHTML = "<br>";
 	for (i = 0; i < lines.length; i++){
 		if (keyword.length == 0) {
@@ -209,6 +211,7 @@ document.getElementById("display").innerHTML = "<br>";
 //---------- Random functions ----------\\
 function lucky() {
 document.getElementById("FW").selectedIndex = optCount;
+firmcnt = 0;
 var r = Math.floor(Math.random() * lines.length) + firmz; //after firmwares
 bclicked = lines[r].charAt(0);
 document.getElementById("searchbox").value = lines[r].slice(lines[r],lines[r].indexOf("(")-1);
@@ -620,16 +623,16 @@ var s = confirm(review+mName.toUpperCase()+"?\n");
 	}
 };
 </script>
-<button id="top" onclick="window.scrollTo(0, 0)" class="sticky">BACK TO TOP</button>
+<button id="top" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'});" class="sticky">BACK TO TOP</button>
 <script>
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
-    window.scrollTo(0, 0);
+	window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    window.scrollTo(0, 0);
+	window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     window.event.returnValue = false;
   });
 }
@@ -715,6 +718,7 @@ document.getElementsByTagName("hr")[0].classList.toggle('alt-mode');
 }
 //---------- TODAYS INFORMATION ---------\\
 function whatsNew(){
+firmcnt = 0;
 var testDate = (new Date().toString().slice(4, 10)+", "+new Date().toString().slice(11, 15));
 if (testDate.charAt(4) === "0") {testDate = testDate.slice(0, 4) + testDate.slice(5);}
 document.getElementById("searchbox").value = testDate;
@@ -735,6 +739,6 @@ setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
 <iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe><br>
-<div id="end">Version: 5.6b</div>
+<div id="end">Version: 5.7b</div>
 </body>
 </html> 
