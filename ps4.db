@@ -588,10 +588,10 @@ Arcslinger (Shooter) [Mar 13, 2019] [VR] <The Arcslinger>
 Area of Darkness Sentinel (Adventure) [TBA] [VR]
 Ariel (Adventure) [TBA] [VR]
 Arise A Simple Story (Adventure) [Dec 3, 2019]
-Arizona Sunshine (Action, Horror) [Jul 5, 2017] [VR] {PRO} 1920X1080 RES MSAA, INCREASED LOD & DRAW DISTANCE
-Arizona Sunshine Dead Man (DLC) [Aug 14, 2018] [VR]
-Arizona Sunshine Deluxe Edition (Action, Horror) [Jun 4, 2020] [VR] [CUSA07980]
-Arizona Sunshine The Damned (DLC) [Oct 3, 2019] [VR]
+Arizona Sunshine (Action, Horror) [Jul 5, 2017] [VR AIM] {PRO} 1920X1080 RES MSAA, INCREASED LOD & DRAW DISTANCE
+Arizona Sunshine Dead Man (DLC) [Aug 14, 2018] [VR AIM]
+Arizona Sunshine Deluxe Edition (Action, Horror) [Jun 4, 2020] [VR AIM] [CUSA07980]
+Arizona Sunshine The Damned (DLC) [Oct 3, 2019] [VR AIM]
 ARK Park (Action, Adventure) [Mar 22, 2018] [VR]
 ARK Park Pterosaur Hill (DLC) [Jun 28, 2018] [VR]
 ARK Survival Evolved (Action, Survival) [Aug 29, 2017] [VR] {PRO} HIGH DETAIL/FRAMERATE OPTION
@@ -888,7 +888,7 @@ Bear With Me (Adventure) [TBA]
 Bear With Me The Lost Robots (Adventure) [Jul 31, 2019]
 Bear With Me The Complete Collection (Adventure, Compilation) [Jul 13, 2019]
 Beast Quest (Role-Playing) [Mar 13, 2018]
-Beat Blaster (Action, Shooter) [Apr 5, 2019] [VR]
+Beat Blaster (Action, Shooter) [Apr 5, 2019] [VR AIM]
 Beat Cop (Simulation) [Mar 5, 2019]
 Beat Saber (Action, Rhythm) [Nov 20, 2018] [VR]
 Beat Saber Monstercat Music Pack (DLC) [Mar 14, 2019] [VR]
@@ -1037,7 +1037,7 @@ Book of Regrets (Role-Playing) [Aug 22, 2017]
 Book of Unwritten Tales 2 (Adventure) [Sep 18, 2015]
 Bookbound Brigade (Adventure) [Jan 30, 2020]
 Border Break (Action, Shooter) [Aug 2, 2018]
-Borderlands 2 VR (Action, Role-Playing, First-Person, Shooter) [Dec 14, 2018] [VR]
+Borderlands 2 VR (Action, Role-Playing, First-Person, Shooter) [Dec 14, 2018] [VR AIM]
 Borderlands 2 Commander Lilith & the Fight for Sanctuary (DLC) [Jun 9, 2019]
 Borderlands 3 (Action, Role-Playing, First-Person, Shooter) [Sep 13, 2019] {PRO} 1080/60FPS OR 30FPS @ HIGHER RESOLUTION
 Borderlands 3 Bounty of Blood (DLC) [Jun 25, 2020]
@@ -1076,7 +1076,7 @@ Brawlhalla (Fighting) [Oct 17, 2017]
 Brawlout (Fighting) [Aug 21, 2018]
 Bread Pub Brawlers (Fighting) [Jun 12, 2015]
 Breakers Collection (Fighting) [TBA]
-Bravo Team (First-Person, Shooter) [Mar 7, 2018] [VR]
+Bravo Team (First-Person, Shooter) [Mar 7, 2018] [VR AIM]
 Breach & Clear Deadline (Tactical Strategy) [Jul 29, 2016]
 Breeder Homegrown Director's Cut (Adventure) [Mar 6, 2020]
 Brick Breaker (Action) [Apr 26, 2020]
@@ -1096,7 +1096,7 @@ Broforce (Platform, Run and Gun) [Mar 1, 2016]
 Broken Age The Complete Adventure (Point-and-Click, Adventure) [Apr 28, 2015]
 Broken Bots (Action, Shooter) [Jun 7, 2016]
 Broken Delusion (Action, Role-Playing) [TBA]
-Brookhaven Experiment (First-Person, Shooter) [Jul 5, 2016] [VR] [CUSA06490] <The Brookhaven Experiment> {PRO} ENHANCED
+Brookhaven Experiment (First-Person, Shooter) [Jul 5, 2016] [VR AIM] [CUSA06490] <The Brookhaven Experiment> {PRO} ENHANCED
 Broomstick League (Sports) [TBA]
 Broken Sword 5 The Serpent's Curse (Point-and-Click, Adventure) [Sep 4, 2015] <Broken Sword 5 The Serpents Curse, Broken Sword VI The Serpent's Curse, Broken Sword VI The Serpents Curse>
 Brothers A Tale of Two Sons (Puzzle, Adventure) [Aug 12, 2015]
@@ -1150,6 +1150,9 @@ Call of Duty Black Ops III - The Giant (DLC) [Nov 6, 2015] <COD BO3, BLOPS3, CAL
 Call of Duty Black Ops III - Zetsubou no Shima (DLC) [Mar 20, 2018] <COD BO3, BLOPS3, CALL OF DUTY BLACK OPS 3>
 Call of Duty Black Ops III - Zombies Chronicles (DLC) [May 16, 2017] <COD BO3, BLOPS3, CALL OF DUTY BLACK OPS 3>
 Call of Duty Black Ops IIII (First-Person, Shooter) [Oct 12, 2018] [5.05 Back Ported] [CUSA12443] <COD BO3, BLOPS4, CALL OF DUTY BLACK OPS 4> {PRO} 4K, 1920X2160 DYNAMIC RESOLUTION, 60FPS, HDR
+Call of Duty Cold War (First-Person, Shooter) [Nov 13, 2020] <COD Cold war, CODCW, COD CW, Call of Duty CW>
+Call of Duty Cold War - Zeus Closed External Alpha (First-Person, Shooter) [Jul 21, 2020] [CUSA20047] <COD Cold war, CODCW, COD CW, Call of Duty CW>
+Call of Duty Cold War Beta (First-Person, Shooter) [Oct 8, 2020] <COD Cold war, CODCW, COD CW, Call of Duty CW>
 Call of Duty Ghosts (First-Person, Shooter) [Nov 15, 2013] <COD GHOSTS>
 Call of Duty Ghosts - Devastation (DLC) [Apr 3, 2014] <COD GHOSTS>
 Call of Duty Ghosts - Gold Edition (First-Person, Shooter) [Mar 24, 2014] <COD GHOSTS>
@@ -1157,22 +1160,22 @@ Call of Duty Ghosts - Invasion (DLC) [Jul 3, 2014] <COD GHOSTS>
 Call of Duty Ghosts - Nemesis (DLC) [Sep 4, 2014] <COD GHOSTS>
 Call of Duty Ghosts - Onslaught (DLC) [Jan 28, 2014] <COD GHOSTS>
 Call of Duty Infinite Warfare (First-Person, Shooter) [Nov 4, 2016] <COD IW> {PRO} UP TO 4K 3840X2160 CHECKERBOARD, DYNAMIC SCALING
-Call of Duty Infinite Warfare - Absolution (DLC) [Jul 6, 2017] <COD IW>
-Call of Duty Infinite Warfare - Continuum (DLC) [Apr 18, 2017] <COD IW>
-Call of Duty Infinite Warfare Jackal Assault (Action) [Nov 4, 2016] [VR] <COD IW>
-Call of Duty Infinite Warfare - Legacy Pro Edition (First-Person, Shooter, Compilation) [Nov 4, 2016] <COD IW>
-Call of Duty Infinite Warfare - Retribution (DLC) [Sep 12, 2017] <COD IW>
-Call of Duty Infinite Warfare - Sabotage (DLC) [Jan 31, 2017] <COD>
+Call of Duty Infinite Warfare - Absolution (DLC) [Jul 6, 2017] <COD IW, COD Infinite Warfare>
+Call of Duty Infinite Warfare - Continuum (DLC) [Apr 18, 2017] <COD IW, COD Infinite Warfare>
+Call of Duty Infinite Warfare Jackal Assault (Action) [Nov 4, 2016] [VR] <COD IW, COD Infinite Warfare>
+Call of Duty Infinite Warfare - Legacy Pro Edition (First-Person, Shooter, Compilation) [Nov 4, 2016] <COD IW, COD Infinite Warfare>
+Call of Duty Infinite Warfare - Retribution (DLC) [Sep 12, 2017] <COD IW, COD Infinite Warfare>
+Call of Duty Infinite Warfare - Sabotage (DLC) [Jan 31, 2017] <COD, COD Infinite Warfare>
 Call of Duty Modern Warfare (First-Person, Shooter) [Oct 25, 2019] [5.05 Back Ported] [DUPLEX FIX] <COD MW> {PRO} 4K, HDR
 Call of Duty Modern Warfare 2 Campaign Remastered (First-Person, Shooter) [Mar 31, 2020] <COD MW2>
 Call of Duty Modern Warfare Remastered (First-Person, Shooter) [Nov 4, 2016] <COD MWR> {PRO} RICHER TEXTURES, DYNAMIC 4K
-Call of Duty Warzone (First-Person, Shooter) [Mar 10, 2020] [Requires PSN]
-Call of Duty WWII (First-Person, Shooter) [Nov 3, 2017] <COD WWII> {PRO} 1620p RESOLUTION
-Call of Duty WWII - Gold Edition (First-Person, Shooter) [May 8, 2018] <COD WWII>
-Call of Duty WWII - Shadow War (DLC) [Aug 24, 2018] <COD WWII>
-Call of Duty WWII - The Resistance (DLC) [Jan 30, 2018] <COD WWII>
-Call of Duty WWII - The War Machine (DLC) [Apr 10, 2018] <COD WWII>
-Call of Duty WWII - United Front (DLC) [Jun 26, 2018] <COD WWII>
+Call of Duty Warzone (First-Person, Shooter) [Mar 10, 2020] [Requires PSN] <CODWZ, COD WZ>
+Call of Duty WWII (First-Person, Shooter) [Nov 3, 2017] <COD WWII, COD WW2, CODWW2> {PRO} 1620p RESOLUTION
+Call of Duty WWII - Gold Edition (First-Person, Shooter) [May 8, 2018] <COD WWII, COD WW2, CODWW2>
+Call of Duty WWII - Shadow War (DLC) [Aug 24, 2018] <COD WWII, COD WW2, CODWW2>
+Call of Duty WWII - The Resistance (DLC) [Jan 30, 2018] <COD WWII, COD WW2, CODWW2>
+Call of Duty WWII - The War Machine (DLC) [Apr 10, 2018] <COD WWII, COD WW2, CODWW2>
+Call of Duty WWII - United Front (DLC) [Jun 26, 2018] <COD WWII, COD WW2, CODWW2>
 Calvino Noir (Adventure) [Aug 25, 2015]
 Candlelight (Platform) [Mar 15, 2016]
 Candleman The Complete Journey (Puzzle) [Aug 21, 2018]
@@ -1266,7 +1269,7 @@ Chocobo's Mystery Dungeon Every Buddy! (Role-Playing) [Mar 20, 2019] <Chocobos M
 Chop is Dish (Platform) [Feb 20, 2020]
 Chorus Rise as One (Simulation) [TBA]
 Chouju Giga Taisen (Action) [Feb 12, 2019]
-ChromaGun (First-Person, Shooter, Puzzle) [Aug 22, 2017] [VR]
+ChromaGun (First-Person, Shooter, Puzzle) [Aug 22, 2017] [VR AIM]
 Chroma Squad (Turn-Based) [May 19, 2017]
 Chronos (Action) [TBA]
 Chronos Before the Ashes (Action) [TBA]
@@ -1430,8 +1433,8 @@ Crimson Keep (Role-Playing) [Mar 5, 2019]
 Crimsonland (Shooter) [Jul 15, 2014]
 Cris Tales (Role-Playing) [TBA]
 Crisis on the Planet of the Apes VR (Action, Shooter) [Apr 3, 2018] [VR]
-Crisis VRigade (Shooter) [Feb 5, 2019] [VR]
-Crisis VRigade 2 (Shooter) [Jul 14, 2020] [VR]
+Crisis VRigade (Shooter) [Feb 5, 2019] [VR AIM]
+Crisis VRigade 2 (Shooter) [Jul 14, 2020] [VR AIM]
 Croc's World (Action, Platform) [Nov 2, 2018] <Crocs World>
 Croc's World 2 (Action, Platform) [Apr 3, 2019] <Crocs World 2>
 Croc's World 3 (Action, Platform) [Jan 7, 2020]  <Crocs World 3>
@@ -1780,8 +1783,8 @@ Diablo IV (Action, Role-Playing, Hack and Slash) [TBA] <Diablo 4>
 Diabolik Lovers Grand Edition (Visual Novel) [Mar 29, 2018]
 Diadra Empty (Action, Shooter) [Feb 27, 2020]
 Dice is cast (Adventure) [Aug 11, 2020] <The Dice is Cast>
-Dick Wilde (Action, Shooter) [May 16, 2017] [VR]
-Dick Wilde 2 (Action, Shooter) [Feb 19, 2019] [VR]
+Dick Wilde (Action, Shooter) [May 16, 2017] [VR AIM]
+Dick Wilde 2 (Action, Shooter) [Feb 19, 2019] [VR AIM]
 Die for Valhalla! (Hack and Slash) [May 29, 2018]
 Digimon Story Cyber Sleuth (Role-Playing) [Mar 21, 2015]
 Digimon Story Cyber Sleuth – Hacker's Memory (Role-Playing) [Aug 9, 2017]
@@ -1886,7 +1889,7 @@ Doom Eternal (First-Person, Shooter) [Mar 20, 2020] {PRO} 4K, 60FPS
 Doom Hell Followed (DLC) [Oct 26, 2016]
 Doom Slayers Collection (First-Person, Shooter) [Dec 10, 2019]
 Doom Unto The Evil (DLC) [Aug 4, 2016]
-Doom VFR (Shooter) [Dec 1, 2017] [VR]
+Doom VFR (Shooter) [Dec 1, 2017] [VR AIM]
 Doom & Destiny (Role-Playing) [Mar 4, 2019]
 Door (Adventure) [Sep 21, 2018] [VR] <The Door>
 Door Kickers Action (Tactical Squad Action) [Oct 24, 2019]
@@ -2014,7 +2017,7 @@ Driveclub VR (Racing) [Sep 21, 2016] [VR] {PRO} ENHANCED
 Driven Out (Action, Adventure) [Oct 18, 2019]
 Driving Essentials (Simulation) [Jul 19, 2019]
 Drone Fighters (Simulation) [TBA]
-Drone Striker (Action, Shooter) [Oct 16, 2018] [VR]
+Drone Striker (Action, Shooter) [Oct 16, 2018] [VR AIM]
 Drowning (Adventure) [Jan 30, 2019]
 Drunkn Bar Fight (Action, Beat 'em up) [Feb 13, 2018] [VR] <Drunken Bar Fight>
 Ducati 90th Anniversary (Racing) [Jun 9, 2016]
@@ -2045,7 +2048,7 @@ Dust An Elysian Tail (Action, Role-Playing) [Oct 7, 2014]
 Dusty Raging Fist (Action, Beat 'em up) [Apr 12, 2018]
 Dustoff Heli Rescue 2 (Action) [Dec 19, 2017]
 Dwarves (Role-Playing) [Dec 1, 2016] <The Dwarves> {PRO} IMPROVED FRAMERATE
-DWVR (Action) [Sep 26, 2017] [VR]
+DWVR (Action) [Sep 26, 2017] [VR AIM]
 Dying Light (Action, Role-Playing, Survival, Horror) [Jan 27, 2015]
 Dying Light - Content Drop #0 (DLC) [Jul 26, 2017]
 Dying Light - Hellraid (DLC) [Aug 14, 2020]
@@ -2215,7 +2218,7 @@ Euro Fishing Urban Edition (Sports) [Jul 21, 2017]
 Euro Fishing Waldsee (DLC) [Jan 9, 2018]
 Evan, Daniel and Friends (Entertainment) [Jul 12, 2020]
 Evan's Remains (Adventure) [Jun 11, 2020] <Evans Remains>
-Evasion (Action, Shooter) [Oct 9, 2018] [VR]
+Evasion (Action, Shooter) [Oct 9, 2018] [VR AIM]
 Eve Gunjack (Action, Shooter) [Oct 13, 2016] [VR] [CUSA05874]
 Eve Rebirth Terror (Visual Novel) [Apr 25, 2019]
 Eve Valkyrie (Simulation) [Oct 13, 2016] [VR] {PRO} IMPROVED RESOLUTION, PARTICLE FX, LOAD TIMES & ADDS DYNAMIC SHADOWS
@@ -2328,7 +2331,7 @@ Farming Simulator 19 Bourgault (DLC) [Mar 10, 2020]
 Farming Simulator 19 Kverneland & Vicon (DLC) [Jun 16, 2020]
 Farming Simulator 19 Platinum Edition (Simulation) [Oct 22, 2019]
 Farming Simulator 19 Straw Harvest (DLC) [Apr 14, 2020]
-Farpoint (First-Person, Shooter) [May 16, 2017] [VR] {PRO} INCREASED RESOLUTION, DETAILS AND TEXTURES
+Farpoint (First-Person, Shooter) [May 16, 2017] [VR AIM] {PRO} INCREASED RESOLUTION, DETAILS AND TEXTURES
 Farside (Battle Royal) [TBA]
 Fast & Furious Crossroads (Action) [Aug 7, 2020] [CUSA18640, CUSA11445] <The Fast and The Furious Crossroads>
 Fast Striker (Shoot 'em up) [Oct 16, 2018]
@@ -2427,9 +2430,9 @@ Firefighters Airport Fire Department (Simulation) [Sep 28, 2017]
 Firefighters Airport Heroes (Simulation) [Jun 24, 2020]
 Firefighters Plant Fire Department (Simulation) [Nov 30, 2017]
 Firefighters The Simulation (Simulation) [Jan 24, 2017]
-Firewall Zero Hour (Action, Shooter) [Aug 28, 2018] [VR]
-Firewall Zero Hour Operation Heartland (DLC) [Oct 22, 2019] [VR]
-Firewall Zero Hour Operation Nightfall (DLC) [May 21, 2019] [VR]
+Firewall Zero Hour (Action, Shooter) [Aug 28, 2018] [VR AIM]
+Firewall Zero Hour Operation Heartland (DLC) [Oct 22, 2019] [VR AIM]
+Firewall Zero Hour Operation Nightfall (DLC) [May 21, 2019] [VR AIM]
 Firewatch (Adventure) [Feb 9, 2016] {PRO} 2560X1440 RESOLUTION, ADVANCED LEVEL OF DETAIL
 First Impact Rise of a Hero (First-Person, Action) [TBA] [VR]
 First Tree Console Edition (Adventure) [Nov 30, 2018]
@@ -2847,6 +2850,7 @@ Hand of Fate 2 The Servant and the Beast (DLC) [Oct 15, 2018]
 Hand of the Gods SMITE Tactics (Turn-Based, Strategy) [Feb 20, 2018]
 Handball 16 (Sports) [Nov 30, 2015]
 Handball 17 (Sports) [Nov 11, 2016]
+Handball 21 (Sports) [Nov 12, 2020]
 Happy Drummer (Music, Rhythm) [Feb 6, 2018] [VR]
 Happy Dungeons (Role-Playing) [Sep 12, 2017]
 Happy Manager (Simulation) [Jan 11, 2018] [VR]
@@ -2919,8 +2923,8 @@ Hellfront Honeymoon (Shoot 'em up) [Dec 19, 2018]
 Hellgate VR (Action, Role-Playing) [TBa] [VR]
 Hellmut The Badass from Hell (Shooter, Roguelike) [Jun 6, 2019]
 Hello Lady! Superior Dynamis (Adventure, Compilation) [Jun 27, 2019]
-Hello Neighbor (Adventure) [Jul 27, 2018]
-Hello Neighbor Hide & Seek (Adventure) [Dec 7, 2018]
+Hello Neighbor (Adventure) [Jul 27, 2018] <Hello Neighbor 1>
+Hello Neighbor Hide & Seek (Adventure) [Dec 7, 2018] <Hello Neighbor 2>
 Hellpoint (Role-Playing) [Jul 30, 2020]
 Hellraid (Action) [TBA]
 Help Will Come Tomorrow (Real-Time, Strategy) [Apr 21, 2020]
@@ -3011,8 +3015,8 @@ Homefront The Revolution - Beyond the Walls (DLC) [Mar 8, 2017]
 HomestarVR (First-Person, Adventure) [Jun 28, 2018] [VR]
 Hong Kong Massacre (Shooter) [Jan 22, 2019]
 Honkowa Presents Nogizaka46 VR Horror House (Horror) [Jul 3, 2017] [VR] <Honkowa Presents Nogizaka 46 VR Horror House>
-Honor and Duty Arcade Edition (First-Person, Shooter) [Nov 1, 2016] [VR]
-Honor and Duty D-Day (First-Person, Shooter) [Feb 26, 2019] [VR]
+Honor and Duty Arcade Edition (First-Person, Shooter) [Nov 1, 2016] [VR AIM]
+Honor and Duty D-Day (First-Person, Shooter) [Feb 26, 2019] [VR AIM]
 Hookbots (Action) [Aug 29, 2019]
 Hopalong The Badlands (First-Person, Shooter) [Jul 17, 2018] [VR]
 HoPiKo (Platform) [Sep 21, 2016]
@@ -4515,7 +4519,7 @@ Onrush (Racing) [Jun 5, 2018]
 oOo Ascension (Action) [Jan 31, 2020]
 Operation Highjump (2D, Action, Platform) [TBA]
 Operation Tango (Action, Adventure) [TBA]
-Operation Warcade (Action, Shooter) [Apr 11, 2018] [VR]
+Operation Warcade (Action, Shooter) [Apr 11, 2018] [VR AIM]
 Operation7 Revolution (First-Person, Shooter) [Jun 22, 2017]
 Operencia The Stolen Sun (Role-Playing) [Mar 31, 2020]
 Orangeblood (Role-Playing) [TBA]
@@ -4572,7 +4576,7 @@ Oxenfree (Adventure) [May 31, 2016] {PRO} 60FPS
 Pac-Man 256 (Action) [Jun 21, 2016]
 Pac-Man Championship Edition 2 (Action) [Sep 13, 2016]
 Paladins (Action, Shooter) [May 2, 2017] [CUSA05078] {PRO} 4K WITH DYNAMIC TEXTURE SCALING
-Pancake House (Action, Shooter) [Jul 23, 2020] [VR] [CUSA17601]
+Pancake House (Action, Shooter) [Jul 23, 2020] [VR AIM] [CUSA17601]
 Pang Adventures (Platform, Puzzle) [Apr 19, 2016]
 Pankapu (Adventure, Platform) [Sep 19, 2017]
 Paper Beast (Adventure) [TBA] [VR]
@@ -4611,7 +4615,7 @@ Penn and Teller VR F U, U, U and U (Party) [Jul 9, 2020] [VR]
 Perception (Adventure, Horror) [Jun 7, 2017]
 Perfect (Unique) [Dec 13, 2016] [VR]
 Perfect Angle (Puzzle) [Feb 28, 2018]
-Perfect Sniper (Shooter) [Aug 9, 2018] [VR] [CUSA10906] <The Perfect Sniper>
+Perfect Sniper (Shooter) [Aug 9, 2018] [VR AIM] [CUSA10906] <The Perfect Sniper>
 Perfect Universe Play with Gravity (Action, Puzzle) [May 17, 2016]
 Persian Nights Sands of Wonders (Hidden Object) [Aug 17, 2018]
 Persistence (First-Person, Shooter) [Jul 24, 2018] [VR] [5.05 Back Ported] [CUSA07814] <The Persistence>
@@ -4990,6 +4994,7 @@ Ride (Racing) [Mar 20, 2015]
 Ride 2 (Racing) [Feb 14, 2017]
 Ride 3 (Racing) [Nov 30, 2018]
 Ride 4 (Racing) [Oct 8, 2020]
+Riders Republic (Sports) [Feb 25, 2021]
 Rift Keeper (2D, Action, Platform) [Dec 10, 2019]
 Riftbreaker (Role-Playing) [TBA]
 RiftStar Raiders (Shoot 'em up) [Feb 27, 2018]
@@ -5080,7 +5085,7 @@ RollerCoaster Legends II Thor's Hammer (Unique) [Jun 5, 2018] [VR] <RollerCoaste
 RollerCoaster Tycoon Joyride (Strategy) [Dec 13, 2018] [VR]
 Rollers of the Realm (Pinball) [Nov 26, 2014]
 Rolling Bob (Action, Adventure) [Nov 24, 2016]
-ROM Extraction (Action, Shooter) [TBA] [VR]
+ROM Extraction (Action, Shooter) [TBA] [VR AIM]
 Roman Rumble Lost in Las Vegum Asterix & Obelix XXL 2 (2D, Action, Platform) [Oct 1, 2019] <Roman Rumble Lost in Las Vegum Asterix and Obelix XXL 2>
 Romance of the Three Kingdoms XIII (Turn-Based, Strategy) [Dec 10, 2015]
 Romance of the Three Kingdoms XIV (Turn-Based, Strategy) [Jan 16, 2020] [CUSA17406, CUSA17343] <ì‚¼êµ­ì§€14, ä¸‰åœ‹å¿—14>
@@ -5201,7 +5206,7 @@ School Swan Song (Survival, Horror) [TBA] [VR]
 Score Rush Extended (Shooter) [May 31, 2016]
 Scrabble (Board Game) [Jun 30, 2015]
 Scram Kitty DX (Platform, Shooter) [Feb 25, 2015]
-Scraper First Strike (First-Person, Shooter) [Jul 2, 2019] [VR]
+Scraper First Strike (First-Person, Shooter) [Jul 2, 2019] [VR AIM]
 Screencheat (First-Person, Shooter) [Mar 1, 2016]
 Scribblenauts Showdown (Puzzle, Action) [Mar 6, 2018]
 Scribblenauts Megapack (Puzzle, Action) [Sep 18, 2018]
@@ -5575,7 +5580,7 @@ Spartan (2D, Action, Platform) [Aug 23, 2017]
 Spartan Fist (Action) [Feb 28, 2020]
 Speakeasy (Action) [Nov 25, 2014]
 Spear of Destiny the Kaiseki (Action) [Apr 18, 2017]
-Special Delivery (Action) [Jun 6, 2017] [VR]
+Special Delivery (Action) [Jun 6, 2017] [VR AIM]
 Spectrum (2D, Action, Platform) [Aug 21, 2018]
 Spectrum Retreat (First-Person, Adventure) [Jul 10, 2018] [CUSA12242] [5.05 Back Ported] <The Spectrum Retreat>
 Speed 3 Grand Prix (Racing) [TBA]
@@ -5996,7 +6001,7 @@ Tekken 7 - DLC12 Leroy Smith (DLC) [Dec 10, 2019]
 Tekken 7 - DLC13 Frame Data Display (DLC) [Dec 10, 2019]
 Tekken 7 - DLC14 Fahkumram (DLC) [Mar 24, 2020]
 Tekken 7 - DLC15 Cave of Enlightenment (DLC) [Mar 24, 2020]
-Telefrag VR (Action, Shooter) [Jul 19, 2019] [VR]
+Telefrag VR (Action, Shooter) [Jul 19, 2019] [VR AIM]
 Telling Lies (Adventure) [Apr 28, 2020]
 Telltale Batman Shadows Edition - Batman The Telltale Series (Action, Adventure, Compliation) [Dec 20, 2019]
 Telltale Project (Action, Adventure) [TBA]
@@ -6357,7 +6362,7 @@ Underworld Ascendant (Role-Playing) [Jun 20, 2019]
 Undying (Survival) [TBA]
 Unearthed Inc The lost Temple (Adventure, Puzzle) [TBA] [VR]
 Unearthing Mars (Action, Adventure) [Mar 7, 2017] [VR]
-Unearthing Mars 2 The Ancient War (Action, Adventure) [Sep 18, 2018] [VR]
+Unearthing Mars 2 The Ancient War (Action, Adventure) [Sep 18, 2018] [VR AIM]
 Unepic (Platform, Role-Playing) [Mar 29, 2016]
 Unexplored Unlocked Edition (Role-Playing) [Feb 19, 2019]
 Unfinished Swan (Puzzle) [Oct 23, 2014]
@@ -6528,7 +6533,7 @@ Wasteland 3 (Role-Playing) [May 19, 2020]
 Watch Dogs (Action, Adventure) [May 27, 2014]
 Watch Dogs Complete Edition (Action, Adventure) [Sep 18, 2015]
 Watch Dogs 2 (Action, Adventure) [Nov 15, 2016] {PRO} 3200X1800 CHECKERBOARD, IMPROVED DRAW DISTANCE/SUPERSAMPLING/OCCLUSION & SHADOWS
-Watch Dogs Legion (Action, Adventure) [TBA]
+Watch Dogs Legion (Action, Adventure) [Oct 29, 2020]
 WatchVR (Entertainment) [Mar 10, 2020] [CUSA17764] [VR]
 Water Balloon Mania (Puzzle) [Aug 7, 2020]
 Wattam (Action) [Dec 17, 2019]
@@ -6616,7 +6621,7 @@ World War Z (Third-Person, Shooter) [Apr 16, 2019] [5.05 Back Ported] [CUSA13930
 World War Z Game Of The Year Edition (Third-Person, Shooter) [May 5, 2020]
 World War Z Marseilles (DLC) [May 5, 2020]
 Worse Than Death (Adventure, Horror) [Oct 8, 2019]
-Wraith (Horror, Shooter, Action) [May 29, 2018] [VR]
+Wraith (Horror, Shooter, Action) [May 29, 2018] [VR AIM]
 WRC 5 (Racing) [Oct 13, 2015] <World Rally Championship 5>
 WRC 5 eSports Edition (Racing) [Oct 13, 2015] <World Rally Championship 5 eSports Edition>
 WRC 6 (Racing) [Oct 7, 2016] <FIA World Rally Championship 6>
