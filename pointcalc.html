@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-body {background-color:dimgrey;}
+body {background-color:dimgrey;font-family: Arial, Helvetica, sans-serif;}
 h1 {color:black;}
 h2 {color:white;}
 #spend {width:100px;font-size:30px;}
@@ -35,10 +35,10 @@ if (event.keyCode >= 65 && event.keyCode <= 90) {
 }
 var str = document.getElementById('spend').value;
 if (str.match(/[^a-zA-Z]/)) {
-pt1.innerHTML = "1% or £" + (spend.value/100).toFixed(2) + " back on " + "<span style='color:violet;font-weight:bold'>ANY SPEND</span><br>";
-pt2.innerHTML = "2% or £" + (spend.value/100*2).toFixed(2) + " back on " + "<span style='color:violet;font-weight:bold'>TRADE-INS & DIGITAL CREDIT</span><br>";
-pt4.innerHTML = "4% or £" + (spend.value/100*4).toFixed(2) + " back on " + "<span style='color:violet;font-weight:bold'>HARDWARE & TECH</span><br>";
-pt10.innerHTML = "10% or £" + (spend.value/100*10).toFixed(2) + " back on " + "<span style='color:violet;font-weight:bold'>GAMES/ACCESSORIES/MERCH</span><br>";
+pt1.innerHTML = "<span style='font-weight:bold'> 1% or £" + (spend.value/100).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>ANY SPEND</span><br>";
+pt2.innerHTML = "<span style='font-weight:bold'> 2% or £" + (spend.value/100*2).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>TRADE-INS & DIGITAL CREDIT</span><br>";
+pt4.innerHTML = "<span style='font-weight:bold'> 4% or £" + (spend.value/100*4).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>HARDWARE & TECH</span><br>";
+pt10.innerHTML = "<span style='font-weight:bold'> 10% or £" + (spend.value/100*10).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>GAMES/ACCESSORIES/MERCH</span><br>";
 } else {
 }
 
