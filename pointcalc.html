@@ -5,7 +5,17 @@
 body {background-color:dimgrey;font-family: Arial, Helvetica, sans-serif;}
 h1 {color:black;}
 h2 {color:white;}
-#spend {width:100px;font-size:30px;}
+#spend {width:120px;font-size:30px;}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>POINT CALC</title>
@@ -13,7 +23,8 @@ h2 {color:white;}
 <body>
 <center>
 <h1> IF YOU SPEND £: </h1>
-<input id="spend" type="number" onkeyup="calc()" placeholder="" max="999.99" autofocus></input><br><br>
+<input id="spend" type="number" onkeyup="calc()" onkeypress="if(this.value.length==7) return false;" placeholder="" autofocus></input><br><br>
+(Enter A Numeric Value)
 <h2> LOYALTY EARNS YOU: </h2>
 <div id="pt1"></div>
 <h2> ELITE EARNS YOU:</h2>
@@ -24,18 +35,15 @@ h2 {color:white;}
 function calc() {
 var regExp = /^[a-zA-Z]/g;
 var str = parseInt(document.getElementById('spend').value);
+if (spend.value==""){ spend.value = "";pt1.innerHTML="";pt2.innerHTML="";pt4.innerHTML="";pt10.innerHTML="";}
 if(regExp.test(str)){
-alert("Enter Numbers only");
 spend.value = "";pt1.innerHTML="";pt2.innerHTML="";pt4.innerHTML="";pt10.innerHTML="";
-//location.reload();
 } else {
-pt1.innerHTML = "<span style='font-weight:bold'> 1% or £" + (spend.value/100).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>ANY SPEND</span><br>";
-pt2.innerHTML = "<span style='font-weight:bold'> 2% or £" + (spend.value/100*2).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>TRADE-INS & DIGITAL CREDIT</span><br>";
-pt4.innerHTML = "<span style='font-weight:bold'> 4% or £" + (spend.value/100*4).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>HARDWARE & TECH</span><br>";
-pt10.innerHTML = "<span style='font-weight:bold'> 10% or £" + (spend.value/100*10).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>GAMES/ACCESSORIES/MERCH</span><br>";
-}
-};
-
+pt1.innerHTML = "<span style='font-weight:bold'> 1% or £" + (spend.value/100).toFixed(2) + " in points on " + "</span><br><span style='color:violet;font-weight:bold'>ANY SPEND</span><br>";
+pt2.innerHTML = "<span style='font-weight:bold'> 2% or £" + (spend.value/100*2).toFixed(2) + " in points on " + "</span><br><span style='color:violet;font-weight:bold'>TRADE-INS & DIGITAL CREDIT</span><br>";
+pt4.innerHTML = "<span style='font-weight:bold'> 4% or £" + (spend.value/100*4).toFixed(2) + " in points on " + "</span><br><span style='color:violet;font-weight:bold'>HARDWARE & TECH</span><br>";
+pt10.innerHTML = "<span style='font-weight:bold'> 10% or £" + (spend.value/100*10).toFixed(2) + " in points on " + "</span><br><span style='color:violet;font-weight:bold'>GAMES/ACCESSORIES/MERCH</span><br>";
+}};
 </script>
 </center>
 </body>
