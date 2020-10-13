@@ -13,7 +13,7 @@ h2 {color:white;}
 <body>
 <center>
 <h1> IF YOU SPEND £: </h1>
-<input id="spend" type="number" maxlength="6" onkeyup="calc()" placeholder="" autofocus></input><br><br>
+<input id="spend" type="number" onkeyup="calc()" placeholder="" max="999.99" autofocus></input><br><br>
 <h2> LOYALTY EARNS YOU: </h2>
 <div id="pt1"></div>
 <h2> ELITE EARNS YOU:</h2>
@@ -22,26 +22,18 @@ h2 {color:white;}
 <div id="pt10"></div>
 <script>
 function calc() {
-if (event.keyCode >= 65 && event.keyCode <= 90) {
-    // Alphabet upper case
-	alert("Enter Numbers only");
-	spend.value = "";
-	location.reload();
-} else if (event.keyCode >= 97 && event.keyCode <= 122) {
-    // Alphabet lower case
-	alert("Enter Numbers only");
-	spend.value = "";
-	location.reload();
-}
-var str = document.getElementById('spend').value;
-if (str.match(/[^a-zA-Z]/)) {
+var regExp = /^[a-zA-Z]/g;
+var str = parseInt(document.getElementById('spend').value);
+if(regExp.test(str)){
+alert("Enter Numbers only");
+spend.value = "";
+location.reload();
+} else {
 pt1.innerHTML = "<span style='font-weight:bold'> 1% or £" + (spend.value/100).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>ANY SPEND</span><br>";
 pt2.innerHTML = "<span style='font-weight:bold'> 2% or £" + (spend.value/100*2).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>TRADE-INS & DIGITAL CREDIT</span><br>";
 pt4.innerHTML = "<span style='font-weight:bold'> 4% or £" + (spend.value/100*4).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>HARDWARE & TECH</span><br>";
 pt10.innerHTML = "<span style='font-weight:bold'> 10% or £" + (spend.value/100*10).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>GAMES/ACCESSORIES/MERCH</span><br>";
-} else {
 }
-
 };
 
 </script>
