@@ -26,8 +26,8 @@ var regExp = /^[a-zA-Z]/g;
 var str = parseInt(document.getElementById('spend').value);
 if(regExp.test(str)){
 alert("Enter Numbers only");
-spend.value = "";
-location.reload();
+spend.value = "";pt1.innerHTML="";pt2.innerHTML="";pt4.innerHTML="";pt10.innerHTML="";
+//location.reload();
 } else {
 pt1.innerHTML = "<span style='font-weight:bold'> 1% or £" + (spend.value/100).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>ANY SPEND</span><br>";
 pt2.innerHTML = "<span style='font-weight:bold'> 2% or £" + (spend.value/100*2).toFixed(2) + " back on " + "</span><br><span style='color:violet;font-weight:bold'>TRADE-INS & DIGITAL CREDIT</span><br>";
