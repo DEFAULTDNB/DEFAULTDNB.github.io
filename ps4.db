@@ -52,7 +52,7 @@
 5.07 (Firmware) [Pre-installed on DOP consoles 8-18th June 2018] [r90177/release_branches/release_05.070 Jan 30 2018 12:20:10] [OFW507]
 5.50 (Firmware) [Mar 8, 2018] [r90807/release_branches/release_05.500 Mar 2 2018 05:40:21] [SYS 8abac7c4f978907e8a73f844936ad420] [REC 58e6f0ae956c1bb1798ea86da051554d] [OFW550]
 5.53 (Firmware) [Apr 12, 2018] [r91210/release_branches/release_05.530 Mar 28 2018 05:41:01] [SYS 353dd0c9f62bdf16a9e843e6d3edfcfd] [REC 06aa639dea5aaa531c112e3d05a54989] [OFW553]
-5.53-01 (Firmware) [Apr 24, 2018] [Patch Firmware] [SYS e79552b7c98fd6709910e31d7f950fa2] [REC ] [OFW553]
+5.53-01 (Firmware) [Apr 24, 2018] [SYS e79552b7c98fd6709910e31d7f950fa2] [REC A08289BBE095C889B4257FF88F67F0C5] [PATCH c44d0ed5b2fe3e76c3131d33efc65144] [OFW553]
 5.55 (Firmware) [May 17, 2018] [r96810/release_branches/release_05.550 May 10 2018 11:36:21] [SYS ee98baebca4fec9f9d9e85fdeb2cd0d0] [REC 484773c0ee36ae22c9e4e4c051968861] [OFW555]
 5.56 (Firmware) [Aug 31, 2018] [SYS 9b38dea86563802c01ff9bae366b6559] [REC 4a0b3c61f03f5f9fdbf94b91ec11e88d] [OFW556]
 6.00 (Firmware) [Sep 13, 2018] [r101022/release_branches/release_06.000 Jul 13 2018 05:39:58] [SYS 6295afecdf8d8fab58371b2d644d5692] [REC 27d68a196469972b7d2939d0279262e6] [OFW600]  [PSVR UPDATE 4.10]
@@ -750,7 +750,7 @@ Atelier Lydie & Suelle The Alchemists and the Mysterious Paintings Ilmeria Von L
 Atelier Lydie & Suelle The Alchemists and the Mysterious Paintings Lucia Voltaire (Role-Playing) [Mar 8, 2018]
 Atelier Meruru The Apprentice of Arland (Role-Playing) [Sep 20, 2018]
 Atelier Rorona The Alchemist of Arland (Role-Playing) [Sep 20, 2018]
-Atelier Ryza Ever Darkness & the Secret Hideout (Role-Playing) [Sep 26, 2019] [CUSA17628, CUSA16015, CUSA16458, CUSA16463, CUSA16472] [OFW672]
+Atelier Ryza Ever Darkness & the Secret Hideout (Role-Playing) [Sep 26, 2019] [DUMPED V1.01] [5.05 Back Ported] [CUSA17628, CUSA16015, CUSA16458, CUSA16463, CUSA16472] [OFW672]
 Atelier Ryza 2 Lost Legends & the Secret Fairy (Role-Playing) [Jan 26, 2021]
 Atelier Shallie Alchemists of the Dusk Sea DX (Role-Playing) [Dec 25, 2019] [CUSA16826, CUSA16877, CUSA16895, CUSA16923] [OFW700]
 Atelier Sophie The Alchemist of the Mysterious Book (Role-Playing) [Nov 19, 2015] [DUMPED V1.00] <Atelier Sophie Fushigi na Hon no Renkinjutsushi>
@@ -1049,7 +1049,7 @@ Blade Arcus from Shining EX (Fighting) [Nov 26, 2015] [DUMPED V1.00] [CUSA02968]
 Blade Arcus Rebellion from Shining (Fighting) [Mar 14, 2019] [DUMPED V1.00] [CUSA14471]
 Blade Ballet (Action) [Aug 9, 2016]
 Blade Runner Enhanced Edition (Point-and-Click, Adventure) [UNRELEASED]
-Blade Strangers (Fighting) [Aug 28, 2018]
+Blade Strangers (Fighting) [Aug 28, 2018] [DUMPED V1.00] [5.05 Back Ported] [CUSA12440]
 Bladed Fury (2D, Action) [Oct 20, 2020]
 Bladestorm Nightmare (Real-Time, Tactics) [Jan 29, 2015] [DUMPED V1.00]
 Blair Witch The Game (Survival, Horror) [Dec 3, 2019] [CUSA18085, CUSA18142] [OFW700]
@@ -4367,7 +4367,7 @@ Marvel vs. Capcom Infinite Black Widow (DLC) [Dec 5, 2017] [DUMPED V1.06] <Marve
 Marvel vs. Capcom Infinite Monster Hunter (DLC) [Oct 17, 2017] [DUMPED V1.06] <Marvel vs Capcom Infinite>
 Marvel vs. Capcom Infinite Sigma (DLC) [Oct 17, 2017] [DUMPED V1.06] <Marvel vs Capcom Infinite>
 Marvel vs. Capcom Infinite Venom (DLC) [Dec 5, 2017] [DUMPED V1.06] <Marvel vs Capcom Infinite>
-Marvel vs. Capcom Infinite Winter Soldier (DLC) [Dec 5 2017] [DUMPED V1.06] <Marvel vs Capcom Infinite>
+Marvel vs. Capcom Infinite Winter Soldier (DLC) [Dec 5, 2017] [DUMPED V1.06] <Marvel vs Capcom Infinite>
 Marvel's Avengers (Action) [Sep 4, 2020] <Marvels Avengers>
 Marvel's Avengers Deluxe Edition (Action) [Sep 1, 2020] <Marvels Avengers Deluxe Edition>
 Marvel's Avengers Earth's Mightiest Edition (Action) [Sep 1, 2020] <Marvels Avengers Earths Mightiest Edition>
@@ -5027,6 +5027,7 @@ North (First-Person, Adventure) [Mar 6, 2018]
 Northgard (Real-Time Strategy) [Sep 26, 2019] [CUSA16538, CUSA16549] [OFW672]
 Nostos (Adventure) [Dec 4, 2020]
 No Straight Roads (Action, Adventure, Open-World) [Aug 25, 2020] <NSR>
+No Thing (Action) [Dec 11, 2020]
 No Time to Explain (Platform) [Mar 29, 2016]
 No Way Out A Dead Realm Tale (First-Person, Action) [Sep 30, 2019] [CUSA15254, CUSA14828] [OFW671] [VR] <NoWayOut>
 Noahmund (Action, Adventure) [UNRELEASED]
@@ -6183,6 +6184,7 @@ Shadowgate (Point-and-Click, Adventure) [Apr 11, 2019]
 Shadows Awakening (Action) [Aug 31, 2018] [DUMPED V1.00] [CUSA10346]
 Shadows Awakening Necrophage's Curse (DLC) [Dec 13, 2018] <Shadows Awakening Necrophages Curse>
 Shadwen (Action, Adventure) [May 17, 2016] [DUMPED V1.00] [CUSA04540] [NOTPS5]
+Shady Part of Me (Adventure) [Dec 10, 2020]
 Shakedown Hawaii (Action, Adventure) [May 7, 2019]
 Shalnor Legends Sacred Lands (Action, Adventure, Open-World) [Sep 6, 2019] [CUSA16816] [OFW672]
 Shanky The Vegan`s Nightmare (2D, Action, Platform) [Feb 5, 2020]
@@ -6854,7 +6856,7 @@ Swordbreaker The Game (Visual Novel) [Sep 30, 2020]
 Swords & Soldiers II Shawarmageddon (Real-Time Strategy) [Nov 13, 2018]
 Swords of Ditto (Action, Role-Playing) [Apr 24, 2018]
 Swords of Ditto Mormo's Curse (Role-Playing) [Apr 24, 2018] <Swords of Ditto Mormos Curse>
-Swords of Gargantua (Action) [Dec 8, 2020]
+Swords of Gargantua (Action) [Dec 8, 2020] [VR]
 Swordsman VR (Action) [Sep 25, 2020] [VR]
 Syberia 3 (Adventure) [Apr 20, 2017] [DUMPED V1.00] [CUSA05545]
 Syberia 3 An Automaton with a Plan (DLC) [Nov 9, 2017]
@@ -6895,7 +6897,7 @@ Tales of Berseria (Role-Playing) [Aug 18, 2016] [DUMPED V1.00] [CUSA05258]
 Tales of the Neon Sea (Adventure) [UNRELEASED]
 Tales of the Tiny Planet (Puzzle) [Jun 19, 2018]
 Tales of Vesperia (Role-Playing) [Jan 11, 2019] [DUMPED V1.00] [CUSA12287]
-Tales of Vesperia Definitive Edition (Role-Playing) [Jan 11, 2019] [DUMPED V1.00] [CUSA12287]
+Tales of Vesperia Definitive Edition (Role-Playing) [Jan 11, 2019] [DUMPED V1.00] [5.05 Back Ported] [CUSA12287]
 Tales of Zestiria (Role-Playing) [Oct 16, 2015] [DUMPED V1.00] [CUSA02461]
 Tales of Zestiria Bonus Chapter Alisha's Conviction (DLC) [Oct 20, 2015]
 Talisman Digital Edition (Board Game, Card Game) [Mar 7, 2017]
