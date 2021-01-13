@@ -14,6 +14,21 @@
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="EXACT:">
 	<option value="soon">COMING SOON!</option>
+	<option value="OFW 5.05" hidden>OFW 5.05</option>
+	<option value="OFW 5.50" hidden>OFW 5.50</option>
+	<option value="OFW 5.53" hidden>OFW 5.53</option>
+	<option value="OFW 5.55" hidden>OFW 5.55</option>
+	<option value="OFW 6.00" hidden>OFW 6.00</option>
+	<option value="OFW 6.02" hidden>OFW 6.02</option>
+	<option value="OFW 6.20" hidden>OFW 6.20</option>
+	<option value="OFW 6.51" hidden>OFW 6.51</option>
+	<option value="OFW 6.71" hidden>OFW 6.71</option>
+	<option value="OFW 6.72" hidden>OFW 6.72</option>
+	<option value="OFW 7.00" hidden>OFW 7.00</option>
+	<option value="OFW 7.02" hidden>OFW 7.02</option>
+	<option value="OFW 7.50" hidden>OFW 7.50</option>
+	<option value="OFW 7.55" hidden>OFW 7.55</option>
+	<option value="OFW 8.00" hidden>OFW 8.00</option>
 	<optgroup label="RANGE:">
 	<option value="1.01-5.05">1.01 - 5.05</option><!--DONE-->
 	<option value="1.01-6.72">1.01 - 6.72</option><!--DONE-->
@@ -35,6 +50,7 @@
 	<optgroup label="QUICK DISPLAY">
 	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>
 	<option id="DLC" value="DLC">DLC ADD-ONS</option>
+	<option id=" PSHITS" value="PSHITS">HITS COLLECTION</option>
 	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
 	<option id="PS2" value="PS2">PS2 CLASSICS</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
@@ -924,7 +940,8 @@ function iconSave() {
 var link = document.createElement('a');
 link.href = document.getElementById("CUSART").src;
 link.download = cName+'.jpg';
-var s = confirm("🌐 𝗜𝗰𝗼𝗻 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Save " + cName + " image to file?");
+//var s = confirm("🌐 𝗜𝗰𝗼𝗻 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Save " + cName + " image to file?");
+var s = confirm("🌐 𝗜𝗰𝗼𝗻 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n View " + cName + " icon image?");
 if (s == true) {
 document.body.appendChild(link);
 link.click();
@@ -936,6 +953,7 @@ document.body.removeChild(link);
 </script>
 <button id="top" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'});" class="sticky">BACK TO TOP</button>
 <script>
+/*
 //---------------- SCROLLING BEHAVIOUR ----------------\\
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
@@ -960,6 +978,7 @@ if (document.addEventListener) {
   });
 }
 //-------------------------------------------------------\\
+*/
 document.getElementById("searchbox").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
