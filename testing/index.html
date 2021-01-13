@@ -13,33 +13,39 @@
 <select id="FW" onchange="simClick()">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="EXACT:">
-	<option value="OFW 5.05">OFW 5.05</option>
-	<option value="OFW 5.50">OFW 5.50</option>
-	<option value="OFW 5.53">OFW 5.53</option>
-	<option value="OFW 5.55">OFW 5.55</option>
-	<option value="OFW 6.00">OFW 6.00</option>
-	<option value="OFW 6.02">OFW 6.02</option>
-	<option value="OFW 6.20">OFW 6.20</option>
-	<option value="OFW 6.51">OFW 6.51</option>
-	<option value="OFW 6.71">OFW 6.71</option>
-	<option value="OFW 6.72">OFW 6.72</option>
-	<option value="OFW 7.00">OFW 7.00</option>
-	<option value="OFW 7.02">OFW 7.02</option>
-	<option value="OFW 7.50">OFW 7.50</option>
-	<option value="OFW 7.55">OFW 7.55</option>
-	<option value="OFW 8.00">OFW 8.00</option>
+	<option value="soon">COMING SOON!</option>
+	<option value="OFW 5.05" hidden>OFW 5.05</option>
+	<option value="OFW 5.50" hidden>OFW 5.50</option>
+	<option value="OFW 5.53" hidden>OFW 5.53</option>
+	<option value="OFW 5.55" hidden>OFW 5.55</option>
+	<option value="OFW 6.00" hidden>OFW 6.00</option>
+	<option value="OFW 6.02" hidden>OFW 6.02</option>
+	<option value="OFW 6.20" hidden>OFW 6.20</option>
+	<option value="OFW 6.51" hidden>OFW 6.51</option>
+	<option value="OFW 6.71" hidden>OFW 6.71</option>
+	<option value="OFW 6.72" hidden>OFW 6.72</option>
+	<option value="OFW 7.00" hidden>OFW 7.00</option>
+	<option value="OFW 7.02" hidden>OFW 7.02</option>
+	<option value="OFW 7.50" hidden>OFW 7.50</option>
+	<option value="OFW 7.55" hidden>OFW 7.55</option>
+	<option value="OFW 8.00" hidden>OFW 8.00</option>
 	<optgroup label="RANGE:">
-	<option value="1.01-5.05">1.01 - 5.05</option>
-	<option value="1.01-6.72">1.01 - 6.72</option>
-	<option value="1.01-7.02">1.01 - 7.02</option>
-	<option value="5.50-6.72">5.50 - 6.72</option>
-	<option value="5.50-7.02">5.50 - 7.02</option>
-	<option value="6.72-7.02">6.72 - 7.02</option>
-	<option value="7.50-9.99"></option>
+	<option value="1.01-5.05">1.01 - 5.05</option><!--DONE-->
+	<option value="1.01-6.72">1.01 - 6.72</option><!--DONE-->
+	<option value="1.01-7.02">1.01 - 7.02</option><!--DONE-->
+	<option value="1.01-7.55">1.01 - 7.55</option><!--DONE-->
+	<option value="5.50-6.72">5.50 - 6.72</option><!--DONE-->
+	<option value="5.50-7.02">5.50 - 7.02</option><!--DONE-->
+	<option value="5.50-7.55">5.50 - 7.55</option><!--DONE-->
+	<option value="6.72-7.02">6.72 - 7.02</option><!--DONE-->
+	<option value="6.72-7.55">6.72 - 7.55</option><!--DONE-->
+	
+	<option value="7.02-7.55">7.02 - 7.55</option>
+	
+	<option value="8.00-LATEST"></option>
 	<option value="All"></option>
 </select>
 <select id="type" onchange="dropdownthis()">
-	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
 	<option value="" disabled selected>SELECT CATEGORY:</option>
 	<optgroup label="QUICK DISPLAY">
 	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>
@@ -155,7 +161,7 @@ var firmz = 0;for (i = 0; i < lines.length; i++){if (lines[i].match("(Firmware)"
 var latestOFW = lines[firmz-1].slice(0,4);
 for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].slice(0,4));}};
 document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+ latestOFW; //1.00-Latest
-document.getElementById("FW").options[optCount-1].innerHTML = "7.50 - "+ latestOFW; //7.50-Latest
+document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+ latestOFW; //8.00-Latest
 //---------- Firmware Snackbar ----------\\
 snackbar.innerHTML = "<span style='font-weight:bold'>Latest OFW: <span style='color:silver'>"+latestOFW+"</span><br>Highest KEX: <span style='color:#17cdc4'>"+kexFW+"</span></span>"
 var x = document.getElementById("snackbar");
@@ -278,7 +284,7 @@ lookup();
 //----------- Filter functions -----------\\
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
-	if (document.getElementById("dates").checked == true){ //NEEDS REMOVING: for true/false clicked toggle instead.
+	if (document.getElementById("dates").checked == true){ //NEEDS CHANGING: for true/false clicked toggle instead.
 		dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
 		} else { 
 		dateInfo = lines[i];
@@ -402,6 +408,45 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		cnt--;
 		}
 		//----------- 550-702 date specifics -----------\\
+	} else if (sel === "5.50-7.55"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex550755 = [
+	
+	];
+	let str550755; str550755 = lines[i];
+	if (ex550755.some(v => str550755.includes(v))) {
+	cnt=cnt+1;
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		//----------- 550-702 date specifics -----------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]")){ 
+		cnt--;
+		} if (lines[i].includes("2018]")){ //Mar 8, 2018[5.50] 
+			if (lines[i].match("Jan |Feb ")) {
+			cnt--;
+			} else if (lines[i].match("Mar 1,|Mar 2,|Mar 3,|Mar 4,|Mar 5,|Mar 6,|Mar 7,")) {
+			cnt--;
+			} else if (lines[i].match("Mar 8,|Mar 9,|Mar 10,|Mar 11,|Mar 12,|Mar 13,|Mar 14,|Mar 15,|Mar 16,|Mar 17,|Mar 18,|Mar 19,|Mar 20,|Mar 21,|Mar 22,|Mar 23,|Mar 24,|Mar 25,|Mar 26,|Mar 27,|Mar 28,|Mar 29,|Mar 30,")){
+			colourise();
+			} else if (lines[i].match("Apr |May |Jun |Jul |Aug |Sep |Oct |Nov |Dec ")) {
+			colourise();
+			} 
+		} else if (lines[i].includes("2019]")){
+			colourise();
+		} else if (lines[i].includes("2020]")){//Oct 14, 2020 [8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
+			colourise(); 
+			} else if (lines[i].includes("Oct 14,")) {
+			colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("UNRELEASED")){
+		cnt--;
+		}
+		//----------- 550-755 date specifics -----------\\
 		} else if (sel === "6.72-7.02"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex672702 = [
@@ -438,6 +483,78 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		cnt--;
 		}
 		//----------- 672-702 date specifics -----------\\
+	} else if (sel === "6.72-7.55"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex672755 = [
+	
+	];
+	let str672755; str672755 = lines[i];
+	if (ex672755.some(v => str672755.includes(v))) {
+	cnt=cnt+1;
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]")){ 
+		cnt--;
+		} if (lines[i].includes("2019]")){ //Jul 16, 2019 [6.72] 
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun ")) {
+			cnt--;
+			} else if (lines[i].match("Jul 1,|Jul 2,|Jul 3,|Jul 4,|Jul 5,|Jul 6,|Jul 7,|Jul 8,|Jul 9,|Jul 10,|Jul 11,|Jul 12,|Jul 13,|Jul 14,|Jul 15,")) {
+			cnt--;
+			} else if (lines[i].match("Jul 16,|Jul 17,|Jul 18,|Jul 19,|Jul 20,|Jul 21,|Jul 22,|Jul 23,|Jul 24,|Jul 25,|Jul 26,|Jul 27,|Jul 28,|Jul 29,|Jul 30,|Jul 31,")){
+			colourise();
+			} else if (lines[i].match("Aug |Sep |Oct |Nov |Dec ")) {
+			colourise();
+			} 
+		} else if (lines[i].includes("2020]")){//Oct 14, 2020 [8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
+			colourise(); 
+			} else if (lines[i].includes("Oct 14,")) {
+				colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
+		cnt--;
+		}
+		//----------- 702-755 date specifics -----------\\
+	} else if (sel === "7.02-7.55"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex702755 = [
+	"[OFW751]","[OFW751]","[OFW755]",
+	];
+	let str702755; str702755 = lines[i];
+	if (ex702755.some(v => str702755.includes(v))) {
+	cnt=cnt+1;
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]")){ 
+		cnt--;
+		} if (lines[i].includes("2019]")){ //DEC 19, 2019 [7.02] 
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep |Oct |Nov ")) {
+			cnt--;
+			} else if (lines[i].match("Dec 1,|Dec 2,|Dec 3,|Dec 4,|Dec 5,|Dec 6,|Dec 7,|Dec 8,|Dec 9,|Dec 10,|Dec 11,|Dec 12,|Dec 13,|Dec 14,|Dec 15,|Dec 16,|Dec 17,|Dec 18,")) {
+			cnt--;
+			} else if (lines[i].match("Dec 19,|Dec 20,|Dec 21,|Dec 22,|Dec 23,|Dec 24,|Dec 25,|Dec 26,|Dec 27,|Dec 28,|Dec 29,|Dec 30,|Dec 31,")){
+			colourise();
+			} else if (lines[i].match("Aug |Sep |Oct |Nov |Dec ")) {
+			colourise();
+			} 
+		} else if (lines[i].includes("2020]")){//Oct 14, 2020 [8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
+			colourise(); 
+			} else if (lines[i].includes("Oct 14,")) {
+				colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
+		cnt--;
+		}
+		//----------- 702-755 date specifics -----------\\
 	} else if (sel === "1.01-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex101672 = [
@@ -493,25 +610,55 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		} else {
 		cnt--;
 		}
-		//----------- 101-702 date specifics -----------\\
-		} else if (sel === "7.50-9.99"){
+		//----------- 101-755 date specifics -----------\\
+	} else if (sel === "1.01-7.55"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-	const ex750999 = [
+	const ex101755 = [
+	"[OFW701]","[OFW702]","[OFW750]","[OFW751]","[OFW755]"
 	];
-	let str750999; str750999 = lines[i];
-		if (ex750999.some(v => str750999.includes(v))) {
+	let str101755; str101755 = lines[i];
+	if (ex101755.some(v => str101755.includes(v))) {
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]|2019]")) {
+		colourise();
+		//----------- 101-755 date specifics -----------\\
+		} else if (lines[i].includes("2020]")){ //<Oct 14, 2020 [8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,|")){
+			colourise();
+			} else if (lines[i].includes("Oct 14,")) {
+			colourise2();
+			} else {
+			cnt--;
+			}
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
+		cnt--;
+		} else {
+		cnt--;
+		}
+		//----------- 101-755 date specifics -----------\\
+		
+		} else if (sel === "8.00-LATEST"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex800999 = [
+	];
+	let str800999; str750999 = lines[i];
+		if (ex800999.some(v => str800999.includes(v))) {
 		cnt=cnt+1;
 		colourise();
 		//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\	
-		//----------- 750-999 date specifics -----------\\
+		//----------- 800-999 date specifics -----------\\
 		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]|2019]")){
 		cnt--;
 		} else if (lines[i].includes("UNRELEASED")){
-		colourise(); //included as potential titles
-		} else if (lines[i].includes("2020]")){ //<GET 7.50-9.99 = dates (Apr 15, 2020 - today)
-			if (lines[i].match("Jan |Feb |Mar ")){
+		//colourise(); //included as potential titles
+		cnt--; //remove entirely
+		} else if (lines[i].includes("2020]")){ //<GET 8.00-9.99 = dates (Oct 14, 2020 - today)
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")){
 			cnt--;
-			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")){
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
 			cnt--;
 			} else {
 			colourise();
@@ -519,7 +666,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		} else {
 		cnt--;
 		}
-		//----------- 750-999 date specifics -----------\\			
+		//----------- 800-999 date specifics -----------\\			
 	} else if (sel === "All"){	//1.01-9.99
 		colourise();
 	}
