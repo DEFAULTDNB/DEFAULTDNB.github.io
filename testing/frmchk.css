@@ -59,6 +59,22 @@ button.alt-mode:hover {
 	background-color: rgba(0,0,0,0.0);
 	color: white;
 }
+.interactstore {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	color: #17cdc4;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 1px 1px;
+}
+/*
+.interactstore:hover {
+	background-color: rgba(0,0,0,0.0);
+	color: white;
+}
+*/
 .interact.alt-mode {
 	background-color: rgba(0,0,0,0);
 	color: #17cdc4;
