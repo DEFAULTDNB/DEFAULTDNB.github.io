@@ -5,22 +5,45 @@
 <title>FRMCHK</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
-<body>
-<h1 id="myT" onclick="location.reload()">FRMCHK - PS4 GΔME FW DΔTΔ</h1><!-- LOGO/NAME IN PROGRESS -->
+<body onload=""><!--set this up-->
+<input type="text" value="" id="myInput" style="opacity:0%;">
+<h1 id="myT" onclick="location.reload()">PS4 GΔME FIRMWΔRE DΔTΔ</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
-<div id="myProgress"><div id="myBar">0%</div></div>
+<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span></div>
 <select id="FW" onchange="simClick()">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="EXACT:">
-	<option value="" disabled>COMING SOON!</option>
-	<optgroup label="RANGES:">
-	<option value="1.01-5.05">1.01 - 5.05</option>
-	<option value="1.01-6.72">1.01 - 6.72</option>
-	<option value="1.01-7.02">1.01 - 7.02</option>
-	<option value="5.50-6.72">5.50 - 6.72</option>
-	<option value="5.50-7.02">5.50 - 7.02</option>
-	<option value="6.72-7.02">6.72 - 7.02</option>
-	<option value="7.50-9.99"></option>
+	<option value="soon">COMING SOON!</option>
+	<option value="OFW 5.05" hidden>OFW 5.05</option>
+	<option value="OFW 5.50" hidden>OFW 5.50</option>
+	<option value="OFW 5.53" hidden>OFW 5.53</option>
+	<option value="OFW 5.55" hidden>OFW 5.55</option>
+	<option value="OFW 6.00" hidden>OFW 6.00</option>
+	<option value="OFW 6.02" hidden>OFW 6.02</option>
+	<option value="OFW 6.20" hidden>OFW 6.20</option>
+	<option value="OFW 6.51" hidden>OFW 6.51</option>
+	<option value="OFW 6.71" hidden>OFW 6.71</option>
+	<option value="OFW 6.72" hidden>OFW 6.72</option>
+	<option value="OFW 7.00" hidden>OFW 7.00</option>
+	<option value="OFW 7.02" hidden>OFW 7.02</option>
+	<option value="OFW 7.50" hidden>OFW 7.50</option>
+	<option value="OFW 7.55" hidden>OFW 7.55</option>
+	<option value="OFW 8.00" hidden>OFW 8.00</option>
+	<optgroup label="RANGE:">
+	<option value="1.01-5.05">1.01 - 5.05</option><!--DONE-->
+	<option value="1.01-6.72">1.01 - 6.72</option><!--DONE-->
+	<option value="1.01-7.02">1.01 - 7.02</option><!--DONE-->
+	<option value="1.01-7.55">1.01 - 7.55</option><!--DONE-->
+	<option value="5.50-6.72">5.50 - 6.72</option><!--DONE-->
+	<option value="5.50-7.02">5.50 - 7.02</option><!--DONE-->
+	<option value="5.50-7.55">5.50 - 7.55</option><!--DONE-->
+	
+	<option value="7.00-7.02">7.00 - 7.02</option><!--DONE-->
+	<option value="7.00-7.55">7.00 - 7.55</option><!--DONE-->
+	
+	<option value="7.50-7.55">7.50 - 7.55</option>
+	
+	<option value="8.00-LATEST"></option>
 	<option value="All"></option>
 </select>
 <select id="type" onchange="dropdownthis()">
@@ -28,13 +51,16 @@
 	<optgroup label="QUICK DISPLAY">
 	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>
 	<option id="DLC" value="DLC">DLC ADD-ONS</option>
+	<option id="F2P" value="F2P">F2P ONLINE</option>
+	<option id=" PSHITS" value="PSHITS">HITS COLLECTION</option>
 	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
 	<option id="PS2" value="PS2">PS2 CLASSICS</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
+	<option id="DUMPED" value="DUMPED">DUMPED GAMES</option>
 	<optgroup label="BACK PORTED TITLES">
 	<option id="BACKPORT505" value="505BP">5.05 BACK PORTS</option>
 	<option id="BACKPORT672" value="672BP">6.72 BACK PORTS</option>
-	<option id="BPISSUES" value="BP ISSUE">BACK PORT ISSUES</option>
+	<option id="BPISSUE" value="BP ISSUE">BACK PORT ISSUES</option>
 	<optgroup label="GAME GENRES">	
 	<option id="2D" value="2D,">2D</option>
 	<option id="ACTION" value="Action">ACTION</option>
@@ -68,12 +94,18 @@
 	<option id="LTDRUN" value="LTDRUN">LIMITED RUN GAMES</option>
 	<option id="PL" value="PLAYLINK">PLAY LINK</option>
 	<option id="PSN" value="Requires PSN">PSN REQUIRED</option>
-	<option id="UNIQUE" value="Unique">UNIQUE</option>
 	<option id="TBA" value="UNRELEASED">UNRELEASED</option>
+	<option id="DEMO" value="Demo/Trial">DEMO/TRIAL</option>
+	<optgroup label="PLAYSTATION 5">
+	<option id="FULLPS5" value="FULLPS5">WORKING ON PS5</option>
+	<option id="BOOTPS5" value="BOOTPS5">ISSUES ON PS5</option>
+	<option id="NOTPS5" value="NOTPS5">BROKEN ON PS5</option>
 	<optgroup label="★DEBUG">
 	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
+	<option id="PSNREQ" value="Requires PSN">PSN REQUIRED</option>
+	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
 </select>
-<input type="checkbox" id="dates" onclick="simClick()" checked><abbr class="interact" onclick="document.getElementById('dates').click()" title="Hide/Show info">&nbsp&#9406;</abbr></input><abbr class="interact" onclick="document.getElementsByTagName('abbr')[firmcnt+7].scrollIntoView({behavior: 'smooth', block: 'start'});" title="Scroll to games">&nbsp⟱</abbr>
+<input type="checkbox" id="dates" onclick="simClick()" checked hidden><abbr class="interact" onclick="document.getElementById('dates').click()" title="Hide/Show info">&nbsp&#9406;</abbr></input><!--abbr class="interact" onclick="document.getElementsByTagName('abbr')[firmcnt+7].scrollIntoView({behavior: 'smooth', block: 'start'});" title="Scroll to games">&nbsp&#10225;</abbr--><abbr id="dbSort" class="interact" onclick="alphaDate()" onmouseenter="sortType()" title="Sort by date/alpha">&nbsp&#10033;</abbr><abbr id="dlc" class="interact" onclick="dlcHide();" onmouseenter="" title="Show/Hide DLC">&nbsp&#10026;</abbr>
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
@@ -88,23 +120,45 @@ for (j = 65; j <= 90; j++){
 	document.getElementById("clickers").appendChild(AZ);
 }
 </script>
-<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><abbr title="Lucky dip"><button id="sbut" class="sbut" onclick="lucky();">RANDOM</button></abbr><abbr title="Who Helped?"><button id="credz" class="sbut2" onclick="showCredz();">Ⓒ&nbsp </button></abbr><abbr title="What's new today?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr><abbr title="Submit missing games here"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜&nbsp </a></abbr><!--abbr title="𝘓𝘪𝘨𝘩𝘵/𝘋𝘢𝘳𝘬 𝘛𝘰𝘨𝘨𝘭𝘦"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr-->
+<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><abbr title="Lucky dip"><button id="sbut" class="sbut" onclick="lucky();">?</button></abbr><abbr title="Who Helped?"><button id="credz" class="sbut2" onclick="showCredz();">Ⓒ&nbsp </button></abbr><!--abbr title="What's new today?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr--><abbr title="Submit missing games here"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜&nbsp </a></abbr><abbr title="Light/Dark Toggle"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr>
 </div>
 <div id="display"></div>
+<img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
 <div id="snackbar"></div>
 <script>
+//---------- Set up Light/Dark -----------\\
+
 //---------- Set up DB location ----------\\
-var fileName = "ps4.db"; 
+if (localStorage.DBtype==null) {localStorage.DBtype='ps4alpha.db';}
+var fileName = localStorage.DBtype;
+if (localStorage.DBtype=='ps4alpha.db') { 
+document.getElementById("sortstatus").innerHTML = "SORT: A-Z";
+document.getElementById("dbSort").setAttribute('title', 'Sort by Date');
+}
+if (localStorage.DBtype=='ps4date.db') {
+document.getElementById("sortstatus").innerHTML = "SORT: DATE";
+document.getElementById("dbSort").setAttribute('title', 'Sort by A-Z');
+}
+//---------- Set up DLC show/hide---------\\
+if (localStorage.DLC==null) {localStorage.DLC='true';}
+if (localStorage.DLC=='true') { 
+document.getElementById("dlcstatus").innerHTML = "DLC: SHOWN";
+document.getElementById("dlc").setAttribute('title', 'Hide DLC items');
+}
+if (localStorage.DLC=='false') {
+document.getElementById("dlcstatus").innerHTML = "DLC: HIDDEN";
+document.getElementById("dlc").setAttribute('title', 'Show DLC items');
+}
 //----------- Set up functions -----------\\
+var vHEN = "7.02";
 var xmlFile = new XMLHttpRequest;
 xmlFile.open('get', fileName, false);
 xmlFile.send();
 var xmlDoc = xmlFile.responseText;
 var lines = xmlDoc.split("\r\n");
 document.getElementById("display").innerHTML = "<br>";
-document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>.";
-cnt = 0;
-firmcnt = 0;
+document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>";
+cnt = 0;firmcnt = 0;
 optCount = document.getElementById("FW").options.length -1;
 document.getElementById("myT").style.cursor = "pointer";
 //--------- Firmware 1.00-Latest --------\\ 
@@ -112,7 +166,7 @@ var firmz = 0;for (i = 0; i < lines.length; i++){if (lines[i].match("(Firmware)"
 var latestOFW = lines[firmz-1].slice(0,4);
 for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].slice(0,4));}};
 document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+ latestOFW; //1.00-Latest
-document.getElementById("FW").options[optCount-1].innerHTML = "7.50 - "+ latestOFW; //7.50-Latest
+document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+ latestOFW; //8.00-Latest
 //---------- Firmware Snackbar ----------\\
 snackbar.innerHTML = "<span style='font-weight:bold'>Latest OFW: <span style='color:silver'>"+latestOFW+"</span><br>Highest KEX: <span style='color:#17cdc4'>"+kexFW+"</span></span>"
 var x = document.getElementById("snackbar");
@@ -139,9 +193,6 @@ firmcnt = 0;
 };
 //--------- FW dropdown functions ---------\\
 function simClick(){
-// Try prevent backport drop down weirdness \\
-//if (document.getElementById("type").selectedIndex == "2"){document.getElementById("fw").selectedIndex = optCount;}
-//------------------------------------------\\
 if (document.getElementById("type").selectedIndex == "0"){document.getElementById("type").selectedIndex = "1";}
 document.getElementById("display").innerHTML = "<br>";
 cnt = 0;
@@ -171,17 +222,35 @@ firmcnt = 0;
 //-------- TYPE dropdown functions ----------\\
 function dropdownthis() {
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
-	document.getElementById("FW").selectedIndex = optCount;
+	document.getElementById("FW").selectedIndex = optCount;//auto select ALL FW
+	} else {
+	document.getElementById("FW").selectedIndex = document.getElementById("FW").selectedIndex;
 	}
 bclicked = document.getElementById("type").options[document.getElementById("type").selectedIndex].value;
 document.getElementById("searchbox").value = "";
 document.getElementById("display").innerHTML = "<br>";
 cnt = 0;
 firmcnt = 0;
-	for (i = 0; i < lines.length; i++){
-		if (lines[i].match(RegExp(bclicked, "gi"))){
-		cnt++;
-		filter();
+	if (document.getElementById("type").options[document.getElementById("type").selectedIndex].value === "Firmware"){
+		for (i = 0; i < firmz; i++){
+			cnt++;
+			filter();
+		}
+		//PLAYABLE RELIES ON 100% POPULATED DATA....
+	} else if (document.getElementById("type").options[document.getElementById("type").selectedIndex].value === "PLAYABLE"){
+		for (i = firmz; i < lines.length; i++){
+			if (lines[i].match("OFW803|OFW801|OFW800|OFW755|OFW750|OFW751")){	
+			} else {
+			cnt++;
+			filter();
+			}
+		}
+	} else {
+		for (i = firmz; i < lines.length; i++){
+			if (lines[i].match(RegExp(bclicked, "gi"))){
+			cnt++;
+			filter();
+			}
 		}
 	}
 };
@@ -205,17 +274,8 @@ document.getElementById("display").innerHTML = "<br>";
 		filter();
 		}
 	}	
-	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + (cnt-1) + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> containing <span id='lastclicked'>'" + keyword.toUpperCase() + "'</span>.";
+	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span> <span id='counted'>" + (cnt-1) + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> containing <span id='lastclicked'>'" + keyword.toUpperCase() + "'</span>.";
 	move();
-	//platform blacklist
-	if (navigator.platform.match("iPhone|iPod|iPad")){
-	} else {
-	document.getElementById("iconframe").style.display = "block"; 
-	theLink = keyword.split(" ").join("%20");
-	localStorage.setItem("nextlink", theLink);
-	iconframe.src = iconframe.src;
-	}
-	
 };
 //---------- Random functions ----------\\
 function lucky() {
@@ -225,26 +285,27 @@ var r = Math.floor(Math.random() * lines.length) + firmz; //after firmwares
 bclicked = lines[r].charAt(0);
 document.getElementById("searchbox").value = lines[r].slice(lines[r],lines[r].indexOf("(")-1);
 lookup();
-	if (navigator.platform.match("iPhone|iPod|iPad")){
-	} else {
-	document.getElementById("iconframe").style.display = "block"; 
-	theLink = lines[r].slice(lines[r],lines[r].indexOf("(")-1).split(" ").join("%20");
-	localStorage.setItem("nextlink", theLink);
-	iconframe.src = iconframe.src;
-	}
 };
 //----------- Filter functions -----------\\
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
-	if (document.getElementById("dates").checked == true){
+	if (document.getElementById("dates").checked == true){ //NEEDS CHANGING: for true/false clicked toggle instead.
 		dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
 		} else { 
 		dateInfo = lines[i];
 	}
-	if (sel === "1.01-5.05"){
+	//============================== Exact firmware ==================================\\
+	if (sel.match("OFW 5.05|OFW 5.50|OFW 5.53|OFW 5.55|OFW 6.00|OFW 6.02|OFW 6.20|OFW 6.51|OFW 6.71|OFW 6.72|OFW 7.00|OFW 7.01|OFW 7.02|OFW 7.50|OFW 7.55|OFW 8.00")){
+	if (lines[i].match(sel.replace(/[. ]/g, ''))) {
+		colourise();
+	} else {
+		cnt--;
+	}	
+	//==================================================================================\\		
+	} else if (sel === "1.01-5.05"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex101505 = [
-	"[5.05 Back Ported]","A Way Out","The American Dream","Anata no Shikihime Kyoudoutan","Ark Park","Assetto Corsa (Racing)",
+	"[505BP]","A Way Out","The American Dream","Anata no Shikihime Kyoudoutan","Ark Park","Assetto Corsa (Racing)",
 	"Atelier Lydie & Suelle","Attack on Titan 2","Azayaka na","Death end re;Quest (Role-Playing)","Diabolik Lovers Grand Edition",
 	"D.S. -Dal Segno-","Earth Defense Force 4.1","Earth Defense Force 5","Everspace (Shooter)","Extinction (Action, Adventure)",
 	"Far Cry 5","Fate/Grand Order VR","Flynn & Freckles","Full Metal Panic!","Gal*Gun 2","Ghostbusters The Video Game Remastered",
@@ -255,17 +316,9 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	];
 	let str101505; str101505 = lines[i];
 	if (ex101505.some(v => str101505.includes(v))) {
-		if (lines[i].match("DLC")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#x1F6C8;</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		}
+	colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-		} else if (lines[i].match("2013|2014|2015|2016|2017")) {
+		} else if (lines[i].match("2013|2014|2015|2016|2017]")) {
 		colourise();
 		//----------- 505 date specifics -----------\\
 		} else if (lines[i].includes("2018")){ //<Mar 8 2018 = safe 5.05
@@ -274,22 +327,11 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 			} else if (lines[i].match("Mar 1,|Mar 2,|Mar 3,|Mar 4,|Mar 5,|Mar 6,|Mar 7,")) {
 			colourise();
 			} else if (lines[i].match("Mar 8,")) {
-				if (lines[i].match("DLC")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else if (lines[i].includes("(Firmware)")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else {
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				}
+			colourise2();
 			} else {
 			cnt--;
 			}
-		} else if (lines[i].match("2019|2020|TBA")) {
+		} else if (lines[i].match("2019|2020|2021|2022|UNRELEASED")) {
 		cnt--;
 		} else {
 		colourise();
@@ -298,25 +340,17 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (sel === "5.50-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex550672 = [
-	"[5.05 Back Ported]","[6.72 Back Ported]","Bee Simulator"
+	"[505BP]","[672BP]","Bee Simulator"
 	]; //bee sim not showing....hmmmm....
 	let str550672; str550672 = lines[i];
 	if (ex550672.some(v => str550672.includes(v))) {
 	cnt=cnt+1; //fix for OOD games with backport inclusion ((-1) + (+1) = 0)
-		if (lines[i].match("DLC")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		}
+		colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	//----------- 550-672 date specifics -----------\\
-	} else if (lines[i].match("2013|2014|2015|2016|2017")){ 
+	} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]")){ 
 		cnt--;
-		} if (lines[i].includes("2018")){ //Mar 8, 2018[5.50] 
+		} if (lines[i].includes("2018]")){ //Mar 8, 2018[5.50] 
 			if (lines[i].match("Jan |Feb ")) {
 			cnt--;
 			} else if (lines[i].match("Mar 1,|Mar 2,|Mar 3,|Mar 4,|Mar 5,|Mar 6,|Mar 7,")) {
@@ -332,22 +366,11 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,")){
 			colourise();
 			} else if (lines[i].includes("Oct 8,")) {
-				if (lines[i].match("DLC")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else if (lines[i].includes("(Firmware)")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else {
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				}
+			colourise2();
 			} else {
 			cnt--;
 			}			
-		} else if (lines[i].match("2020|TBA")){
+		} else if (lines[i].match("2020]|2021]|2022]|UNRELEASED")){
 		cnt--;
 		}
 		//----------- 550-672 date specifics -----------\\	
@@ -359,20 +382,12 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	let str550702; str550702 = lines[i];
 	if (ex550702.some(v => str550702.includes(v))) {
 	cnt=cnt+1;
-		if (lines[i].match("DLC")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		}
+	colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 		//----------- 550-702 date specifics -----------\\
-		} else if (lines[i].match("2013|2014|2015|2016|2017")){ 
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]")){ 
 		cnt--;
-		} if (lines[i].includes("2018")){ //Mar 8, 2018[5.50] 
+		} if (lines[i].includes("2018]")){ //Mar 8, 2018[5.50] 
 			if (lines[i].match("Jan |Feb ")) {
 			cnt--;
 			} else if (lines[i].match("Mar 1,|Mar 2,|Mar 3,|Mar 4,|Mar 5,|Mar 6,|Mar 7,")) {
@@ -382,132 +397,192 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 			} else if (lines[i].match("Apr |May |Jun |Jul |Aug |Sep |Oct |Nov |Dec ")) {
 			colourise();
 			} 
-		} else if (lines[i].includes("2019")){
+		} else if (lines[i].includes("2019]")){
 			colourise();
-		} else if (lines[i].includes("2020")){//Apr 15, 2020 [7.50]
+		} else if (lines[i].includes("2020]")){//Apr 15, 2020 [7.50]
 			if (lines[i].match("Jan |Feb |Mar ")) {
 			colourise();
 			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")){
 			colourise(); 
 			} else if (lines[i].includes("Apr 15,")) {
-				if (lines[i].match("DLC")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else if (lines[i].includes("(Firmware)")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else {
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				}
-		} else {
-		cnt--;
-		}			
-		} else if (lines[i].match("TBA")){
+			colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("UNRELEASED")){
 		cnt--;
 		}
 		//----------- 550-702 date specifics -----------\\
-		} else if (sel === "6.72-7.02"){
+	} else if (sel === "5.50-7.55"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-	const ex672702 = [
-	"Dragon Ball FighterZ Ultra Instinct Goku (DLC)"
+	const ex550755 = [
+	
 	];
-	let str672702; str672702 = lines[i];
-	if (ex672702.some(v => str672702.includes(v))) {
+	let str550755; str550755 = lines[i];
+	if (ex550755.some(v => str550755.includes(v))) {
 	cnt=cnt+1;
-		if (lines[i].match("DLC")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		}
+	colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-		} else if (lines[i].match("2013|2014|2015|2016|2017|2018")){ 
+		//----------- 550-702 date specifics -----------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]")){ 
 		cnt--;
-		} if (lines[i].includes("2019")){ //Jul 16, 2019[6.72] 
-			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun ")) {
+		} if (lines[i].includes("2018]")){ //Mar 8, 2018[5.50] 
+			if (lines[i].match("Jan |Feb ")) {
 			cnt--;
-			} else if (lines[i].match("Jul 1,|Jul 2,|Jul 3,|Jul 4,|Jul 5,|Jul 6,|Jul 7,|Jul 8,|Jul 9,|Jul 10,|Jul 11,|Jul 12,|Jul 13,|Jul 14,|Jul 15,")) {
+			} else if (lines[i].match("Mar 1,|Mar 2,|Mar 3,|Mar 4,|Mar 5,|Mar 6,|Mar 7,")) {
 			cnt--;
-			} else if (lines[i].match("Jul 16,|Jul 17,|Jul 18,|Jul 19,|Jul 20,|Jul 21,|Jul 22,|Jul 23,|Jul 24,|Jul 25,|Jul 26,|Jul 27,|Jul 28,|Jul 29,|Jul 30,|Jul 31,")){
+			} else if (lines[i].match("Mar 8,|Mar 9,|Mar 10,|Mar 11,|Mar 12,|Mar 13,|Mar 14,|Mar 15,|Mar 16,|Mar 17,|Mar 18,|Mar 19,|Mar 20,|Mar 21,|Mar 22,|Mar 23,|Mar 24,|Mar 25,|Mar 26,|Mar 27,|Mar 28,|Mar 29,|Mar 30,")){
 			colourise();
-			} else if (lines[i].match("Aug |Sep |Oct |Nov |Dec ")) {
+			} else if (lines[i].match("Apr |May |Jun |Jul |Aug |Sep |Oct |Nov |Dec ")) {
 			colourise();
 			} 
-		} else if (lines[i].includes("2019")){
+		} else if (lines[i].includes("2019]")){
 			colourise();
-		} else if (lines[i].includes("2020")){//Apr 15, 2020 [7.50]
+		} else if (lines[i].includes("2020]")){//Oct 14, 2020 [8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
+			colourise(); 
+			} else if (lines[i].includes("Oct 14,")) {
+			colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("UNRELEASED")){
+		cnt--;
+		}
+		//----------- 550-755 date specifics -----------\\
+		} else if (sel === "7.00-7.02"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex700702 = [
+	"[OFW700]","[OFW701]","[OFW702]"
+	];
+	let str700702; str700702 = lines[i];
+	if (ex700702.some(v => str700702.includes(v))) {
+	cnt=cnt+1;
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]")){ 
+		cnt--;
+		} if (lines[i].includes("2019]")){ // Oct 8, 2019 [7.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			cnt--;
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,")) {
+			cnt--;
+			} else if (lines[i].match("Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,|Oct 14,|Oct 15,Oct 16,|Oct 17,|Oct 18,|Oct 19,|Oct 20,|Oct 21,|Oct 22,|Oct 23,|Oct 24,|Oct 25,|Oct 26,|Oct 27,|Oct 28,|Oct 29,|Oct 30,|Oct 31,")){
+			colourise();
+			} else if (lines[i].match("Nov |Dec ")) {
+			colourise();
+			} 
+		} else if (lines[i].includes("2020]")){//Apr 15, 2020 [First day of 7.50]
 			if (lines[i].match("Jan |Feb |Mar ")) {
 			colourise();
 			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")){
 			colourise(); 
 			} else if (lines[i].includes("Apr 15,")) {
-				if (lines[i].match("DLC")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else if (lines[i].includes("(Firmware)")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else {
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				}
-		} else {
-		cnt--;
-		}			
-		} else if (lines[i].match("TBA")){
+			colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
 		cnt--;
 		}
-		//----------- 672-702 date specifics -----------\\
+		//----------- 700-702 date specifics -----------\\
+	} else if (sel === "7.00-7.55"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex700755 = [
+	"[OFW700]","[OFW701]","[OFW702]","[OFW750]","[OFW751]","[OFW755]"
+	];
+	let str700755; str700755 = lines[i];
+	if (ex700755.some(v => str6700755.includes(v))) {
+	cnt=cnt+1;
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]")){ 
+		cnt--;
+		} if (lines[i].includes("2019]")){ // Oct 8, 2019 [7.00] 
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			cnt--;
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,")) {
+			cnt--;
+			} else if (lines[i].match("Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,|Oct 14,|Oct 15,Oct 16,|Oct 17,|Oct 18,|Oct 19,|Oct 20,|Oct 21,|Oct 22,|Oct 23,|Oct 24,|Oct 25,|Oct 26,|Oct 27,|Oct 28,|Oct 29,|Oct 30,|Oct 31,")){
+			colourise();
+			} else if (lines[i].match("Nov |Dec ")) {
+			colourise();
+			} 
+		} else if (lines[i].includes("2020]")){//Oct 14, 2020 [First day of 8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
+			colourise(); 
+			} else if (lines[i].includes("Oct 14,")) {
+			colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
+		cnt--;
+		}
+		//----------- 700-755 date specifics -----------\\
+	} else if (sel === "7.50-7.55"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex750755 = [
+	"[OFW750]","[OFW751]","[OFW755]"
+	];
+	let str750755; str750755 = lines[i];
+	if (ex750755.some(v => str750755.includes(v))) {
+	cnt=cnt+1;
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]")){ 
+		cnt--;
+		} if (lines[i].includes("2019]")){ //Apr 15, 2020 [7.50] 
+			if (lines[i].match("Jan |Feb |Mar ")) {
+			cnt--;
+			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")) {
+			cnt--;
+			} else if (lines[i].match("Apr 15,|Apr 16,|Apr 17,|Apr 18,|Apr 19,|Apr 20,|Apr 21,|Apr 22,|Apr 23,|Apr 24,|Apr 25,|Apr 26,|Apr 27,|Apr 28,|Apr 29,|Apr 30,")){
+			colourise();
+			} else if (lines[i].match("|May |Jun |Jul |Aug |Sep |Oct |Nov |Dec ")) {
+			colourise();
+			} 
+		} else if (lines[i].includes("2020]")){//Oct 14, 2020 [First day of 8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
+			colourise(); 
+			} else if (lines[i].includes("Oct 14,")) {
+			colourise2();
+			} else {
+			cnt--;
+			}			
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
+		cnt--;
+		}
+		//----------- 702-755 date specifics -----------\\
 	} else if (sel === "1.01-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex101672 = [
-	"[5.05 Back Ported]","[6.72 Back Ported]","Bee Simulator"
+	"[505BP]","[672BP]","Bee Simulator"
 	];
 	let str101672; str101672 = lines[i];
 	if (ex101672.some(v => str101672.includes(v))) {
-		if (lines[i].match("DLC")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		}
+	colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-		} else if (lines[i].match("2013|2014|2015|2016|2017|2018")) {
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]")) {
 		colourise();
 		//----------- 101-702 date specifics -----------\\
-		} else if (lines[i].includes("2019")){ //<Oct 8, 2019 [7.00]
+		} else if (lines[i].includes("2019]")){ //<Oct 8, 2019 [First day of 7.00]
 			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
 			colourise();
 			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,")){
 			colourise();
 			} else if (lines[i].includes("Oct 8,")) {
-				if (lines[i].match("DLC")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else if (lines[i].includes("(Firmware)")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else {
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				}
+			colourise2();
 			} else {
 			cnt--;
 			}
-		} else if (lines[i].match("2020|TBA")){
+		} else if (lines[i].match("2020]|2021]|2022]|UNRELEASED")){
 		cnt--;
 		} else {
 		cnt--;
@@ -520,72 +595,75 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	];
 	let str101702; str101702 = lines[i];
 	if (ex101702.some(v => str101702.includes(v))) {
-		if (lines[i].match("DLC")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		}
+	colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-		} else if (lines[i].match("2013|2014|2015|2016|2017|2018|2019")) {
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]|2019]")) {
 		colourise();
 		//----------- 101-702 date specifics -----------\\
-		} else if (lines[i].includes("2020")){ //<Apr 15, 2020 [7.50]
+		} else if (lines[i].includes("2020]")){ //<Apr 15, 2020 [First day of 7.50]
 			if (lines[i].match("Jan |Feb |Mar ")) {
 			colourise();
 			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")){
 			colourise();
 			} else if (lines[i].includes("Apr 15,")) {
-				if (lines[i].match("DLC")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else if (lines[i].includes("(Firmware)")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				} else {
-				document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("orange").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button style="font-size:26px" class="interact" onclick="" ><abbr title="Unverified for '+sel+'">&#x229B;</abbr></button>' + '<hr>');
-				document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				}
+			colourise2();
 			} else {
 			cnt--;
 			}
-		} else if (lines[i].match("TBA")){
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
 		cnt--;
 		} else {
 		cnt--;
 		}
-		//----------- 101-702 date specifics -----------\\
-		} else if (sel === "7.50-9.99"){
+		//----------- 101-755 date specifics -----------\\
+	} else if (sel === "1.01-7.55"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-	const ex750999 = [
+	const ex101755 = [
+	"[OFW701]","[OFW702]","[OFW750]","[OFW751]","[OFW755]"
 	];
-	let str750999; str750999 = lines[i];
-		if (ex750999.some(v => str750999.includes(v))) {
-		cnt=cnt+1;
-			if (lines[i].match("DLC")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	let str101755; str101755 = lines[i];
+	if (ex101755.some(v => str101755.includes(v))) {
+	colourise();
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]|2019]")) {
+		colourise();
+		//----------- 101-755 date specifics -----------\\
+		} else if (lines[i].includes("2020]")){ //<Oct 14, 2020 [8.00]
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")) {
+			colourise();
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,|")){
+			colourise();
+			} else if (lines[i].includes("Oct 14,")) {
+			colourise2();
 			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<button class="interact"><abbr title="Verified working on '+sel+'">&#9745;</abbr></button>' + '<hr>');
-			document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			}
-		//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\	
-		//----------- 750-999 date specifics -----------\\
-		} else if (lines[i].match("2013|2014|2015|2016|2017|2018|2019")){
-		cnt--;
-		} else if (lines[i].includes("TBA")){
-		colourise(); //included as potential titles
-		} else if (lines[i].includes("2020")){ //<GET 7.50-9.99 = dates (Apr 15, 2020 - today)
-			if (lines[i].match("Jan |Feb |Mar ")){
 			cnt--;
-			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")){
+			}
+		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
+		cnt--;
+		} else {
+		cnt--;
+		}
+		//----------- 101-755 date specifics -----------\\
+		
+		} else if (sel === "8.00-LATEST"){
+	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
+	const ex800999 = [
+	];
+	let str800999; str750999 = lines[i];
+		if (ex800999.some(v => str800999.includes(v))) {
+		cnt=cnt+1;
+		colourise();
+		//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\	
+		//----------- 800-999 date specifics -----------\\
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]|2019]")){
+		cnt--;
+		} else if (lines[i].includes("UNRELEASED")){
+		//colourise(); //included as potential titles
+		cnt--; //remove entirely
+		} else if (lines[i].includes("2020]")){ //<GET 8.00-9.99 = dates (Oct 14, 2020 - today)
+			if (lines[i].match("Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep ")){
+			cnt--;
+			} else if (lines[i].match("Oct 1,|Oct 2,|Oct 3,|Oct 4,|Oct 5,|Oct 6,|Oct 7,|Oct 8,|Oct 9,|Oct 10,|Oct 11,|Oct 12,|Oct 13,")){
 			cnt--;
 			} else {
 			colourise();
@@ -593,51 +671,267 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		} else {
 		cnt--;
 		}
-		//----------- 750-999 date specifics -----------\\			
+		//----------- 800-999 date specifics -----------\\			
 	} else if (sel === "All"){	//1.01-9.99
 		colourise();
 	}
 	if (bclicked === " "){	
-	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + cnt + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>" + bclicked + "</span> <span id='lastclicked'>'All Categories'</span>.";
+	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span> <span id='counted'>" + cnt + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>" + bclicked + "</span> <span id='lastclicked'>'All Categories'</span>.";
 	} else if (document.getElementById("type").options[document.getElementById("type").selectedIndex].value === "Firmware") {
-	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + cnt + "</span> firmware updates listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>" + bclicked + "</span> <span id='lastclicked'>'All Categories'</span>.";
+	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span> <span id='counted'>" + cnt + "</span> firmware updates listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>" + bclicked + "</span> <span id='lastclicked'>'All Categories'</span>.";
 	} else {	
-	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>. <span id='counted'>" + cnt + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>'" + bclicked + "'</span>.";
+	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span> <span id='counted'>" + cnt + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> under <span id='lastclicked'>'" + bclicked + "'</span>.";
 	}
 	calculate = (cnt / lines.length) * 100;
 	move();
-	document.getElementById("iconframe").style.display = "none"; 
 };
+var hash = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+var bpVer = "";
+var bpIssue = "";
+//---------- COLORISING RESULTS -------------\\			
 function colourise() {
 	if (lines[i].match("DLC")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("blue").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
+		if (localStorage.DLC=='true') {
+			if (lines[i].match("DUMPED")){
+				if (lines[i].match("BP ISSUE")){
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);	
+				} else if (lines[i].match("505BP")){
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				} else if (lines[i].match("672BP")){
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				} else {
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+			}
+		} else {
+			document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+			document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+			document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+			document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+			document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+			document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+		}
+		} else if (localStorage.DLC=='false'){
+			cnt--;
+		}	
+	} else if (lines[i].match("505BP")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("672BP")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("BP ISSUE")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button title="test" id="bpID" class="interact" onclick="bpName = this.id; bpDesc = this.title; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');	
+	document.getElementById('bpID').title = lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1);	
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);	
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("DUMPED")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("Demo/Trial")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("purple").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("Entertainment")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("mediumpurple").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("UNRELEASED")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("dimgrey").bold() + '</span>&nbsp<button id="uID" class="interact" onclick="uName = this.id; unrel();"><abbr title="Unreleased game">&#8856;</abbr></button>' + '<hr>');
+	document.getElementById('uID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	} else {
-	
 		if (lines[i].includes("(Firmware)")){
-		document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button>' + '<hr>');
+			if (lines[i].includes("HEN")){
+			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("black").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button><span class="unreleased" style="color:gold">[🐔]</span>' + '<hr>');
+			} else {
+			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("black").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+			}
 		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+		document.getElementById('fID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+		document.getElementById('fID2').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+		hash = lines[i].slice(lines[i].indexOf("SYS ")+4, lines[i].indexOf("SYS ")+36).toUpperCase();
+		hash2 = lines[i].slice(lines[i].indexOf("REC ")+4, lines[i].indexOf("REC ")+36).toUpperCase();
+		document.getElementById('fID').id = hash;
+		document.getElementById('fID2').id = hash2;	
 		firmcnt++;
 		} else {
-		document.getElementById('display').insertAdjacentHTML('beforeend', dateInfo.fontcolor("black").bold() + '	<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Find PKG/PUP info online">&#9406</abbr></button><button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Find reviews online">&#9415;</abbr></button>' + '<hr>');
-		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+		document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+		document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
 		}
-	}
+	}	
+};
+function colourise2() { // If release falls on FIRMWARE release date.
+	if (lines[i].match("DLC")){
+		if (localStorage.DLC=='true') {
+			if (lines[i].match("DUMPED")){
+				if (lines[i].match("BP ISSUE")){
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);	
+				} else if (lines[i].match("505BP")){
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				} else if (lines[i].match("672BP")){
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				} else {
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+			}
+		} else {
+			document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+			document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+			document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+			document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+			document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+			document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+		}
+		} else if (localStorage.DLC=='false'){
+			cnt--;
+		}	
+	} else if (lines[i].match("505BP")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("672BP")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("BP ISSUE")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button title="test" id="bpID" class="interact" onclick="bpName = this.id; bpDesc = this.title; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');	
+	document.getElementById('bpID').title = lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1);	
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);	
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("DUMPED")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("Demo/Trial")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("Entertainment")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	} else if (lines[i].match("UNRELEASED")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span>&nbsp<button id="uID" class="interact" onclick="uName = this.id; unrel();"><abbr title="Unreleased game">&#8856;</abbr></button>' + '<hr>');
+	document.getElementById('uID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	} else {
+		if (lines[i].includes("(Firmware)")){
+			if (lines[i].includes("HEN")){
+			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button><span class="unreleased" style="color:gold">[🐔]</span>' + '<hr>');
+			} else {
+			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+		}
+		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+		document.getElementById('fID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+		document.getElementById('fID2').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+		hash = lines[i].slice(lines[i].indexOf("SYS ")+4, lines[i].indexOf("SYS ")+36).toUpperCase();
+		hash2 = lines[i].slice(lines[i].indexOf("REC ")+4, lines[i].indexOf("REC ")+36).toUpperCase();
+		document.getElementById('fID').id = hash;
+		document.getElementById('fID2').id = hash2;	
+		firmcnt++;
+		} else {
+		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+		document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+		document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+		}
+	}	
 };
 function webSearch() {
 var pkgpup;
-if (gName.match("7.02")){
+if (gName.match(vHEN)){
 pkgpup = "🐔 𝗛𝗜𝗚𝗛𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗔𝗕𝗟𝗘 𝗙𝗜𝗥𝗠𝗪𝗔𝗥𝗘\n\n🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
 } else if (gName.match(/^[+-]?\d+(\.\d+)?$/)){
 pkgpup = "🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
 } else {
 pkgpup = "🌐 𝗦𝗲𝗮𝗿𝗰𝗵 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼 𝗳𝗼𝗿 𝗴𝗮𝗺𝗲 𝗣𝗞𝗚:\n\n";
 }
-var r = confirm(pkgpup+gName.toUpperCase()+"?\n");
+var r = confirm(pkgpup+gName+"?\n");
 	if (r == true) {
 		//-- SEARCH FIXES --\\
+		//Maybe try: https://serialstation.com/games/?system=4&system_op=AND&title= //
 		if (gName === "#killallzombies") {
 		window.open("https://serialstation.com/search/?search=killallzombies&system=4");
 		} else if (gName === "N++") { 
@@ -656,29 +950,108 @@ var r = confirm(pkgpup+gName.toUpperCase()+"?\n");
 		window.open("https://serialstation.com/search/?search=RER2%20Episode%20Four:%20Metamorphosis&system=4");
 		} else if (gName === "Galak-Z The Void / Skulls of the Shogun Bone-A-Fide Edition - Platinum Pack") {
 		window.open("https://serialstation.com/search/?search=Skulls%20of%20the%20Shogun&system=4");
+		} else if (gName === "Under Night In-Birth Exe Late[cl-r]") {
+		window.open("https://serialstation.com/search/?search=Under%20Night%20In-Birth%20Exe:Late[cl-r]&system=4");
+		} else if (gName === "Under Night In-Birth Exe Late[st]") {
+		window.open("https://serialstation.com/search/?search=Under%20Night%20In-Birth%20Exe:Late[st]&system=4");
 		//-- OFW PUP INFO --\\
 		} else if (gName.match("1.01|1.05|1.06|1.07")) {
 		window.open("https://www.psdevwiki.com/ps4/"+gName);
-		} else if (gName.match("1.50|1.51|1.52|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.01|2.02|2.03|2.04|2.50|2.51|2.52|2.55|2.56|2.57|3.00|3.10|3.11|3.15|3.50|3.55|4.00|4.01|4.05|4.06|4.07|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.00")) { 
+		} else if (gName.match("1.501")) {
+		window.open("https://www.psdevwiki.com/ps4/"+gName+".000");
+		} else if (gName.match("5.02|5.07|6.00|6.02|6.20|6.50|6.70|6.71|6.72|8.01|8.03")) {
+		alert("🌐 𝗡𝗼 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗲𝘅𝗶𝘀𝘁𝘀 𝗳𝗼𝗿: "+gName);
+		} else if (gName.match("1.50|1.51|1.52|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.01|2.02|2.03|2.04|2.51|2.52|2.55|2.56|2.57|3.10|3.11|3.15|3.50|3.55|4.00|4.01|4.05|4.06|4.07|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.01|5.03|5.05|5.53|5.53-01|5.55|5.56|6.50|6.51|7.01|7.02|7.51|7.55")) { 
 		window.open("https://www.psdevwiki.com/ps4/"+gName+"0.000");
-		} else if (gName.match("5.01|5.02|5.03|5.05|5.07|5.50|5.53|5.53-01|5.55|5.56|6.00|6.02|6.20|6.50|6.51|6.70|6.71|6.72|7.00|7.01|7.02|7.50|7.51|7.55")) { 
-		window.open("https://www.psdevwiki.com/ps4/0"+gName+"0.000");
+		} else if (gName.match("2.50|3.00|5.00|5.50|7.00|7.50|8.00")) {
+		window.open("https://www.psdevwiki.com/ps4/"+gName+"8.000");
 		} else { 
 		window.open("https://serialstation.com/search/?search="+gName+"&system=4");
 		}
 	}
 };
-function critique() {
-var review = "🌐 𝗙𝗶𝗻𝗱 𝗿𝗲𝘃𝗶𝗲𝘄𝘀 𝗳𝗼𝗿 𝘁𝗵𝗲 𝘁𝗶𝘁𝗹𝗲:\n\n";
-var s = confirm(review+mName.toUpperCase()+"?\n");
-	if (s == true) {
-	window.open("https://www.metacritic.com/search/game/"+mName+"/results?plats[72496]=1&search_type=advanced");
-	} else { 
+function critique() {var s = confirm("🌐 𝗙𝗶𝗻𝗱 𝗮𝗴𝗴𝗿𝗲𝗴𝗮𝘁𝗲𝗱 𝗿𝗲𝘃𝗶𝗲𝘄𝘀 𝗼𝗻𝗹𝗶𝗻𝗲 𝗳𝗼𝗿:\n\n"+mName+"?\n");if(s==true){window.open("https://www.metacritic.com/search/game/"+mName+"/results?plats[72496]=1&search_type=advanced");}else{}};
+function dumpinfo() {alert("👍 𝗔 𝗱𝘂𝗺𝗽 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝘁𝗼 𝗲𝘅𝗶𝘀𝘁 𝗳𝗼𝗿:\n\n"+dName+"\n\n 𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
+function bpinfo() {alert("❌ 𝗧𝗵𝗶𝘀 𝘁𝗶𝘁𝗹𝗲 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝘁𝗼 𝗵𝗮𝘃𝗲 𝗶𝘀𝘀𝘂𝗲𝘀 𝘄𝗵𝗲𝗻 𝗯𝗮𝗰𝗸𝗽𝗼𝗿𝘁𝗲𝗱!\n\n"+bpName+" is not fully playable on older firmwares.\n\n𝗥𝗘𝗔𝗦𝗢𝗡: "+bpDesc+"\n\n𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
+function bpgood() {alert("✅ 𝗧𝗵𝗶𝘀 𝘁𝗶𝘁𝗹𝗲 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝗳𝘂𝗹𝗹𝘆 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝘄𝗵𝗲𝗻 𝗯𝗮𝗰𝗸𝗽𝗼𝗿𝘁𝗲𝗱!\n\n"+bpName+" is fully playable without issues on "+bpVer+".\n\n𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
+function unrel() {alert("❗ 𝗡𝗼 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲.\n\nThis game has not been released.");};
+
+function sysGrab() {
+let sysVer = document.getElementById(fName).getAttribute("data");
+var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [SYS] UPDATE.PUP?\n\nMD5: "+fName+"\n\n(Hash will be copied to clipboard for verification)");
+if (s == true) {window.open("https://archive.midnightchannel.net/SonyPS/Firmware/download/"+fName);
+document.getElementById("myInput").value = fName;
+var copyText = document.getElementById("myInput");
+copyText.select();
+copyText.setSelectionRange(0, 99999)
+document.execCommand("copy");
+} else {}};
+
+function recGrab() {
+let sysVer = document.getElementById(fName2).getAttribute("data");
+var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [REC] UPDATE.PUP?\n\nMD5: "+fName2+"\n\n(Hash will be copied to clipboard for verification)");
+if (s == true) {window.open("https://archive.midnightchannel.net/SonyPS/Firmware/download/"+fName2);
+document.getElementById("myInput").value = fName2;
+var copyText = document.getElementById("myInput");
+copyText.select();
+copyText.setSelectionRange(0, 99999)
+document.execCommand("copy");
+} else {}};
+
+function storeFind() {
+let sName = document.getElementById(cName).getAttribute("data");
+var s = confirm("🌐 𝗣𝗦 𝗦𝘁𝗼𝗿𝗲 𝗟𝗶𝗻𝗸:\n\n View information for "+sName+" on:\n\n 𝗦𝗧𝗢𝗥𝗘.𝗣𝗟𝗔𝗬𝗦𝗧𝗔𝗧𝗜𝗢𝗡.𝗖𝗢𝗠?");
+if (s == true) {sName = sName.replaceAll(" ", "%2B");window.open("https://duckduckgo.com/?q=!ducky+"+sName+"+store.playstation.com");
+} else {}};
+
+function cusaResolve() {document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "generic.png";document.getElementById(cName).setAttribute('title', cName+": Click for PSN info");document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"+cName+"_00/image?w=250&amp;h=250"};
+
+function cusaKill() {document.getElementById('CUSART').src="";document.getElementById('CUSART').style.display='none';};
+
+function md5Resolve(e) {
+    if (e.getAttribute("title").includes("SYS")){
+	document.getElementById(fName).setAttribute('title', "D/L SYS FIRM: "+fName);
+	} else if (e.getAttribute("title").includes("REC")){
+	document.getElementById(fName2).setAttribute('title', "D/L REC FIRM: "+fName2);
 	}
+}
+
+function hashCopy(){
+	document.getElementById("myInput").value = hName.slice(4, 37);
+    var copyText = document.getElementById("myInput");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999)
+	document.execCommand("copy");
+	alert("SYS MD5 COPIED: " + copyText.value);
+};
+/* //REMOVED UNTIL FIXED\\
+function iconSave() {
+var link = document.createElement('a');
+link.href = document.getElementById("CUSART").src;
+link.download = cName+'.jpg';
+//var s = confirm("🌐 𝗜𝗰𝗼𝗻 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Save " + cName + " image to file?");
+var s = confirm("🌐 𝗜𝗰𝗼𝗻 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n View " + cName + " icon image?");
+if (s == true) {
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+} else {
+}
+};
+*/ //REMOVED UNTIL FIXED\\
+function hideButtons() {
+  var x = document.getElementById(hidID+'div');
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
 };
 </script>
 <button id="top" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'});" class="sticky">BACK TO TOP</button>
 <script>
+/*
+//---------------- SCROLLING BEHAVIOUR ----------------\\
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
 	window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -690,6 +1063,19 @@ if (document.addEventListener) {
     window.event.returnValue = false;
   });
 }
+if (document.addEventListener) {
+  document.addEventListener('dblclick', function(e) {
+	window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+    e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('dblclick', function() {
+	window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+    window.event.returnValue = false;
+  });
+}
+//-------------------------------------------------------\\
+*/
 document.getElementById("searchbox").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
@@ -720,9 +1106,7 @@ document.getElementById("#").addEventListener("mouseenter", function(){bclicked 
 document.getElementById("#").addEventListener("click", function(){
 if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
 	document.getElementById("FW").selectedIndex = optCount;
-} else if (document.getElementById("type").options[document.getElementById("type").selectedIndex].value === "Firmware"){
-document.getElementById("type").selectedIndex = 1;
-}
+} 
 cnt = 0;
 bclicked = this.id;
 document.getElementById("searchbox").value = "";
@@ -743,33 +1127,12 @@ move();
 </script>
 <Script>
 function lightDark(){
-document.body.classList.toggle('alt-mode');
-document.getElementById("top").classList.toggle('alt-mode'); //button back to top
-document.getElementById("clickers").classList.toggle('alt-mode'); //button backing bar
-document.getElementById("myBar").classList.toggle('alt-mode'); //% bar
-document.getElementById("myProgress").classList.toggle('alt-mode');
-document.getElementById("display").classList.toggle('alt-mode'); // text area
-document.getElementById("searchbutton").classList.toggle('alt-mode'); //searchbutton
-document.getElementById("sbut").classList.toggle('alt-mode'); //lucky button
-document.getElementById("sbut2").classList.toggle('alt-mode'); //light/dark button
-document.getElementById("#").classList.toggle('alt-mode'); //# button
-document.getElementsByClassName("interact")[0].classList.toggle('alt-mode'); //I button at top
-document.getElementById("linelength").classList.toggle('alt-mode'); //db count text
-for (V = 65; V <= 90; V++){ //alpha buttons
-var alpha = String.fromCharCode(V);
-document.getElementById(alpha).classList.toggle('alt-mode');
+//------ Swap CSS ------\\
+//localStorage.CSStype="frmchk.css"; rename to light.css
+//localStorage.CSStype="dark.css";
+alert("💡 Coming Soon");
 }
-//not working as intended
-/*
-for (L = 0; L <= 200; L++){
-document.getElementsByClassName("interact")[L].classList.toggle('alt-mode');
-}
-document.getElementsByClassName("sbut")[0].classList.toggle('alt-mode');
-document.getElementsByTagName("hr")[0].classList.toggle('alt-mode');
-*/
-
 //fix submit button toggle
-}
 //---------- TODAYS INFORMATION ---------\\
 function whatsNew(){
 firmcnt = 0;
@@ -777,22 +1140,42 @@ var testDate = (new Date().toString().slice(4, 10)+", "+new Date().toString().sl
 if (testDate.charAt(4) === "0") {testDate = testDate.slice(0, 4) + testDate.slice(5);}
 document.getElementById("searchbox").value = testDate;
 lookup();
-document.getElementById("iconframe").style.display = "none";
 }
 //----------- CREDIT SNACKBAR ------------\\
 function showCredz() {
-snackbar.innerHTML = "<span style='font-weight:bold; color:white'>THANKZ & GREETZ: <span style='color:silver'><br><br>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893</span></span>"
+snackbar.innerHTML = "<span style='font-weight:bold; color:white'>THANKZ & GREETZ: <span style='color:silver'><br><br>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893<br>Darthsternie<br>OfficialAhmed</span></span>"
 var x = document.getElementById("snackbar");
 x.className = "show";
 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 }
+function alphaDate() {
+if (localStorage.DBtype=='ps4date.db') {
+localStorage.DBtype='ps4alpha.db';
+} else { 
+if (localStorage.DBtype=='ps4alpha.db') {
+localStorage.DBtype='ps4date.db';
+}}
+location.reload();
+};
+function dlcHide() {
+if (localStorage.DLC=='true') {
+document.getElementById("dlcstatus").innerHTML = "DLC: HIDDEN";
+document.getElementById("dlc").setAttribute('title', 'Show DLC items');
+localStorage.DLC='false';
+} else {
+if (localStorage.DLC=='false') {
+document.getElementById("dlcstatus").innerHTML = "DLC: SHOWN";
+document.getElementById("dlc").setAttribute('title', 'Hide DLC items');
+localStorage.DLC='true';
+}}
+location.reload();
+};
 </script>
 <br>
 <abbr class="interact" title="Support my project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
-<iframe id="iconframe" src="boxart.html" width="210px" height="114px" scrolling="no" frameBorder="0" class="sticky" style="display:none"></iframe><br>
-<div id="end">Version: 5.9 (BETΔ)</div>
+<div id="end">Version: 6.1 (BETΔ)</div>
 </body>
 </html> 

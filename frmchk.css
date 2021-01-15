@@ -59,6 +59,32 @@ button.alt-mode:hover {
 	background-color: rgba(0,0,0,0.0);
 	color: white;
 }
+.interactstore {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	color: #17cdc4;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 1px 1px;
+}
+.unreleased {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	color: #17cdc4;
+	position: relative;
+	display: inline-block;
+	cursor: default;
+	font-size: 16px;
+	padding: 1px 1px;
+}
+/*
+.interactstore:hover {
+	background-color: rgba(0,0,0,0.0);
+	color: white;
+}
+*/
 .interact.alt-mode {
 	background-color: rgba(0,0,0,0);
 	color: #17cdc4;
@@ -133,6 +159,10 @@ hr.alt-mode {
 	border: 1px solid red;
 	opacity: 1;
 }
+#smallinfo {
+	font-size: 12px;
+	color: #efefef;
+}
 #searchbox {
 	border: none;
 }
@@ -199,11 +229,11 @@ h1 {
 	font-weight: bold;
 }
 #myProgress {
-  width: 140px;
+  width: 200px;
   background-color: #6e767f;
 }
 #myProgress.alt-mode {
-  width: 140px;
+  width: 200px;
   background-color: #efefef;
 }
 #myBar {
@@ -256,6 +286,19 @@ h1 {
   background-color: black;
   background-size: 200px 104px;
   border: 1px solid #efefef;
+}
+img.sticky {
+  position: fixed;
+  top: 40%;
+  left: 80%;
+  width: 250px;
+  height: 250px;
+}
+#capt.sticky {
+  position: fixed;
+  top: 40%;
+  left: 85%;
+  color: #17cdc4;
 }
 .chip {
   display: inline-block;
@@ -321,4 +364,9 @@ iframe {
 	position: fixed;
 	right: 1%;
 	top: 1%;
+}
+#smallinfo {
+	position: fixed;
+	right: 1%;
+	top: 5%;
 }
