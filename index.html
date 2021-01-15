@@ -37,10 +37,8 @@
 	<option value="5.50-6.72">5.50 - 6.72</option><!--DONE-->
 	<option value="5.50-7.02">5.50 - 7.02</option><!--DONE-->
 	<option value="5.50-7.55">5.50 - 7.55</option><!--DONE-->
-	
 	<option value="7.00-7.02">7.00 - 7.02</option><!--DONE-->
 	<option value="7.00-7.55">7.00 - 7.55</option><!--DONE-->
-	
 	<option value="7.50-7.55">7.50 - 7.55</option>
 	
 	<option value="8.00-LATEST"></option>
@@ -494,7 +492,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	"[OFW700]","[OFW701]","[OFW702]","[OFW750]","[OFW751]","[OFW755]"
 	];
 	let str700755; str700755 = lines[i];
-	if (ex700755.some(v => str6700755.includes(v))) {
+	if (ex700755.some(v => str700755.includes(v))) {
 	cnt=cnt+1;
 	colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
