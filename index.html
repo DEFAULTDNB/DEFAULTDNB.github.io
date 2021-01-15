@@ -699,28 +699,28 @@ function colourise() {
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);	
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 				} else if (lines[i].match("505BP")){
 				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 				} else if (lines[i].match("672BP")){
 				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 				} else {
 				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 			}
 		} else {
 			document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
@@ -728,7 +728,7 @@ function colourise() {
 			document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 			document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 			document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-			document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+			if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 		}
 		} else if (localStorage.DLC=='false'){
 			cnt--;
@@ -739,14 +739,14 @@ function colourise() {
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("672BP")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("BP ISSUE")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button title="test" id="bpID" class="interact" onclick="bpName = this.id; bpDesc = this.title; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');	
 	document.getElementById('bpID').title = lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1);	
@@ -754,27 +754,27 @@ function colourise() {
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("DUMPED")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("Demo/Trial")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("purple").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("Entertainment")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("mediumpurple").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("mediumpurple").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("UNRELEASED")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("dimgrey").bold() + '</span>&nbsp<button id="uID" class="interact" onclick="uName = this.id; unrel();"><abbr title="Unreleased game">&#8856;</abbr></button>' + '<hr>');
 	document.getElementById('uID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -796,11 +796,12 @@ function colourise() {
 		document.getElementById('fID2').id = hash2;	
 		firmcnt++;
 		} else {
-		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 		document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
-		document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+		document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+		if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 		}
 	}	
 };
@@ -814,28 +815,28 @@ function colourise2() { // If release falls on FIRMWARE release date.
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);	
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 				} else if (lines[i].match("505BP")){
 				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 				} else if (lines[i].match("672BP")){
 				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 				} else {
 				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 				document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 				document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-				document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+				if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 			}
 		} else {
 			document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
@@ -843,7 +844,7 @@ function colourise2() { // If release falls on FIRMWARE release date.
 			document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 			document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 			document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-			document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+			if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 		}
 		} else if (localStorage.DLC=='false'){
 			cnt--;
@@ -854,14 +855,14 @@ function colourise2() { // If release falls on FIRMWARE release date.
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("672BP")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("BP ISSUE")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button title="test" id="bpID" class="interact" onclick="bpName = this.id; bpDesc = this.title; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');	
 	document.getElementById('bpID').title = lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1);	
@@ -869,27 +870,27 @@ function colourise2() { // If release falls on FIRMWARE release date.
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("DUMPED")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("Demo/Trial")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("Entertainment")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 	} else if (lines[i].match("UNRELEASED")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span>&nbsp<button id="uID" class="interact" onclick="uName = this.id; unrel();"><abbr title="Unreleased game">&#8856;</abbr></button>' + '<hr>');
 	document.getElementById('uID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -911,11 +912,11 @@ function colourise2() { // If release falls on FIRMWARE release date.
 		document.getElementById('fID2').id = hash2;	
 		firmcnt++;
 		} else {
-		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="iconSave();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/ PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 		document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
-		document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+		if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 		}
 	}	
 };
