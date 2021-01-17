@@ -118,7 +118,7 @@ for (j = 65; j <= 90; j++){
 	document.getElementById("clickers").appendChild(AZ);
 }
 </script>
-<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><abbr title="Lucky dip"><button id="sbut" class="sbut" onclick="lucky();">?</button></abbr><abbr title="Who Helped?"><button id="credz" class="sbut2" onclick="showCredz();">Ⓒ&nbsp </button></abbr><!--abbr title="What's new today?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr--><abbr title="Submit missing games here"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜&nbsp </a></abbr><abbr title="Light/Dark Toggle"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr>
+<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><abbr title="Lucky dip"><button id="sbut" class="sbut" onclick="lucky();">?</button></abbr><abbr title="Who Helped?"><button id="credz" class="sbut2" onclick="showCredz();">Ⓒ&nbsp </button></abbr><!--abbr title="What's new today?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr--><abbr title="Submit missing games here"><a class="sbut2" style="text-decoration:none;" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">➜</a>&nbsp&</abbr><abbr title="Light/Dark Toggle"><button id="sbut2" class="sbut2" onclick="lightDark()">&#9680;</button></abbr>
 </div>
 <div id="display"></div>
 <img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
@@ -999,7 +999,7 @@ document.execCommand("copy");
 
 function storeFind() {
 let sName = document.getElementById(cName).getAttribute("data");
-var s = confirm("🌐 𝗣𝗦 𝗦𝘁𝗼𝗿𝗲 𝗟𝗶𝗻𝗸:\n\n View information for "+sName+" on:\n\n 𝗦𝗧𝗢𝗥𝗘.𝗣𝗟𝗔𝗬𝗦𝗧𝗔𝗧𝗜𝗢𝗡.𝗖𝗢𝗠?");
+var s = confirm("🌐 𝗣𝗦 𝗦𝘁𝗼𝗿𝗲 𝗟𝗶𝗻𝗸:\n\n Attempt to find information for "+sName+"?");
 if (s == true) {sName = sName.replaceAll(" ", "%2B");window.open("https://duckduckgo.com/?q=!ducky+"+sName+"+store.playstation.com");
 } else {}};
 
