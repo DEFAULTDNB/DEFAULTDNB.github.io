@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>FRMCHK</title>
+<title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
 <body onload=""><!--set this up-->
@@ -167,10 +167,10 @@ for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].s
 document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+ latestOFW; //1.00-Latest
 document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+ latestOFW; //8.00-Latest
 //---------- Firmware Snackbar ----------\\
-snackbar.innerHTML = "<span style='font-weight:bold'>Latest OFW: <span style='color:silver'>"+latestOFW+"</span><br>Latest KEX: <span style='color:white'>"+kexFW+"</span><br>Stable KEX: <span style='color:#17cdc4'>5.05</span></span>"
+snackbar.innerHTML = "<span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span>"
 var x = document.getElementById("snackbar");
 x.className = "show";
-setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 7000);
 //--------- A-Z button function ----------\\
 function reply_click(clicked_id) {
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
@@ -1144,7 +1144,7 @@ function showCredz() {
 snackbar.innerHTML = "<span style='font-weight:bold; color:white'>THANKZ & GREETZ: <span style='color:silver'><br><br>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893<br>Darthsternie<br>OfficialAhmed</span></span>"
 var x = document.getElementById("snackbar");
 x.className = "show";
-setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 7000);
 }
 function alphaDate() {
 if (localStorage.DBtype=='ps4date.db') {
