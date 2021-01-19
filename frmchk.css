@@ -66,6 +66,7 @@ button.alt-mode:hover {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
+	font-family: verdana;
 	font-size: 16px;
 	padding: 1px 1px;
 }
@@ -76,15 +77,10 @@ button.alt-mode:hover {
 	position: relative;
 	display: inline-block;
 	cursor: default;
+	font-family: verdana;
 	font-size: 16px;
 	padding: 1px 1px;
 }
-/*
-.interactstore:hover {
-	background-color: rgba(0,0,0,0.0);
-	color: white;
-}
-*/
 .interact.alt-mode {
 	background-color: rgba(0,0,0,0);
 	color: #17cdc4;
@@ -192,6 +188,7 @@ body {
 body.alt-mode {
   background-color: #fefefe;
   color: black;
+  text-size-adjust: none;
 }
 #display {
 	background-color: #efefef;
@@ -277,6 +274,9 @@ h1 {
 .menu {
 	background-color: #efefef;
 	color: #414b5a;
+}
+mark { 
+  background-color: #17cdc4;
 }
 #gamepic {
   color: #0cff15; 
