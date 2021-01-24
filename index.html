@@ -9,7 +9,7 @@
 <input type="text" value="" id="myInput" style="opacity:0%;">
 <h1 id="myT" onclick="location.reload()">PS4 GΔME FIRMWΔRE DΔTΔ</h1><!-- LOGO/NAME IN PROGRESS -->
 <div id="count"></div>
-<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span></div>
+<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span></div>
 <select id="FW" onchange="simClick()">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="EXACT:">
@@ -30,15 +30,15 @@
 	<option value="OFW 7.55" hidden>OFW 7.55</option>
 	<option value="OFW 8.00" hidden>OFW 8.00</option>
 	<optgroup label="RANGE:">
-	<option value="1.01-5.05">1.01 - 5.05</option><!--DONE-->
-	<option value="1.01-6.72">1.01 - 6.72</option><!--DONE-->
-	<option value="1.01-7.02">1.01 - 7.02</option><!--DONE-->
-	<option value="1.01-7.55">1.01 - 7.55</option><!--DONE-->
-	<option value="5.50-6.72">5.50 - 6.72</option><!--DONE-->
-	<option value="5.50-7.02">5.50 - 7.02</option><!--DONE-->
-	<option value="5.50-7.55">5.50 - 7.55</option><!--DONE-->
-	<option value="7.00-7.02">7.00 - 7.02</option><!--DONE-->
-	<option value="7.00-7.55">7.00 - 7.55</option><!--DONE-->
+	<option value="1.01-5.05">1.01 - 5.05</option>
+	<option value="1.01-6.72">1.01 - 6.72</option>
+	<option value="1.01-7.02">1.01 - 7.02</option>
+	<option value="1.01-7.55">1.01 - 7.55</option>
+	<option value="5.50-6.72">5.50 - 6.72</option>
+	<option value="5.50-7.02">5.50 - 7.02</option>
+	<option value="5.50-7.55">5.50 - 7.55</option>
+	<option value="7.00-7.02">7.00 - 7.02</option>
+	<option value="7.00-7.55">7.00 - 7.55</option>
 	<option value="7.50-7.55">7.50 - 7.55</option>
 	
 	<option value="8.00-LATEST"></option>
@@ -97,13 +97,13 @@
 	<optgroup label="PLAYSTATION 5">
 	<option id="FULLPS5" value="FULLPS5">WORKING ON PS5</option>
 	<option id="BOOTPS5" value="BOOTPS5">ISSUES ON PS5</option>
-	<option id="NOTPS5" value="NOTPS5">BROKEN ON PS5</option>
+	<option id="NOTPS5" value="NOTPS5">NOT COMPATIBLE</option>
 	<optgroup label="★DEBUG">
 	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
 	<option id="PSNREQ" value="Requires PSN">PSN REQUIRED</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
 </select>
-<input type="checkbox" id="dates" onclick="simClick()" checked hidden><abbr class="interact" onclick="document.getElementById('dates').click()" title="Hide/Show info">&nbsp&#9406;</abbr></input><!--abbr class="interact" onclick="document.getElementsByTagName('abbr')[firmcnt+7].scrollIntoView({behavior: 'smooth', block: 'start'});" title="Scroll to games">&nbsp&#10225;</abbr--><abbr id="dbSort" class="interact" onclick="alphaDate()" onmouseenter="sortType()" title="Sort by date/alpha">&nbsp&#10033;</abbr><abbr id="dlc" class="interact" onclick="dlcHide();" onmouseenter="" title="Show/Hide DLC">&nbsp&#10026;</abbr>
+<abbr id="iLen" class="interact" onclick="infoType();" title="Show more info">&nbsp&#9406;</abbr><abbr id="dbSort" class="interact" onclick="alphaDate()" onmouseenter="sortType()" title="Sort by date/alpha">&nbsp&#10033;</abbr><abbr id="dlc" class="interact" onclick="dlcHide();" onmouseenter="" title="Show/Hide DLC">&nbsp&#10026;</abbr>
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
@@ -118,7 +118,7 @@ for (j = 65; j <= 90; j++){
 	document.getElementById("clickers").appendChild(AZ);
 }
 </script>
-<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><abbr title="Lucky dip"><button id="sbut" class="sbut" onclick="lucky();">?</button></abbr><abbr title="Who Helped?"><button id="credz" class="sbut2" onclick="showCredz();">Ⓒ&nbsp</button></abbr><!--abbr title="What's new today?"><button id="new" class="sbut2" onclick="whatsNew();">？</button></abbr--><abbr title="Submit missing games here"><a class="sbut2" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68" style="text-decoration:none;padding:1px 0px;">&#8694;</a>&nbsp </abbr><abbr title="Light/Dark Toggle"><button id="toggleLD" class="sbut2" onclick="lightDark()">&#9680;</button></abbr>
+<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><button title="Lucky dip" class="sbut" onclick="lucky();">?</button><abbr  id="credz" class="sbut2" onclick="showCredz();" title="Who Helped?">Ⓒ&nbsp </abbr><abbr title="Submit missing games here"><a class="sbut2" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">&#8694;</a>&nbsp </abbr><abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr>
 </div>
 <div id="display"></div>
 <img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
@@ -128,6 +128,16 @@ for (j = 65; j <= 90; j++){
 var vHEN = "7.02";
 //---------- Set up Light/Dark -----------\\
 
+//---------- Set up info length ----------\\
+if (localStorage.infoLen==null) {localStorage.infoLen='short';}
+if (localStorage.infoLen=='short') { 
+document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
+document.getElementById("iLen").setAttribute('title', 'Show more info');
+}
+if (localStorage.infoLen=='long') {
+document.getElementById("infoLength").innerHTML = "INFO: ALL INFORMATION";
+document.getElementById("iLen").setAttribute('title', 'Show less info');
+}
 //---------- Set up DB location ----------\\
 if (localStorage.DBtype==null) {localStorage.DBtype='ps4alpha.db';}
 var fileName = localStorage.DBtype;
@@ -288,9 +298,9 @@ lookup();
 //----------- Filter functions -----------\\
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
-	if (document.getElementById("dates").checked == true){ //NEEDS CHANGING: for true/false clicked toggle instead.
+	if (localStorage.infoLen=='short'){
 		dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
-		} else { 
+	} else if (localStorage.infoLen=='long') { 
 		dateInfo = lines[i];
 	}
 	//============================== Exact firmware ==================================\\
@@ -779,10 +789,10 @@ function colourise() {
 	} else {
 		if (lines[i].includes("(Firmware)")){
 			if (lines[i].match("KEX")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased"><mark>' + dateInfo.fontcolor("black").bold() + '</mark></span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button><span class="interact" title="Exploitable FW">🐔</span>' + '<hr>');
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased"><mark>' + dateInfo.fontcolor("black").bold() + '</mark></span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button><span class="interact" title="Exploitable FW">🐔</span>' + '<hr>');
 			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("black").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-		}
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("black").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+			}
 		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
@@ -894,9 +904,9 @@ function colourise2() { // If release falls on FIRMWARE release date.
 	} else {
 		if (lines[i].includes("(Firmware)")){
 			if (lines[i].includes("HEN")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button><span class="unreleased" style="color:gold">[🐔]</span>' + '<hr>');
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button><span class="unreleased" style="color:gold">[🐔]</span>' + '<hr>');
 			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+				document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("orange").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 		}
 		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -934,17 +944,17 @@ var r = confirm(pkgpup+gName+"?\n");
 		window.open("https://serialstation.com/search/?search=killallzombies&system=4");
 		} else if (gName === "N++") { 
 		window.open("https://serialstation.com/search/?search=N%2B%2B&system=4");
-		} else if (gName === "Resident Evil Revelations 2 - Extra Episode 1") { 
+		} else if (gName === "Resident Evil Revelations 2 Extra Episode 1 Struggle") { 
 		window.open("https://serialstation.com/search/?search=RER2%20Extra%20Episode:%20The%20Struggle&system=4");
-		} else if (gName === "Resident Evil Revelations 2 - Extra Episode 2") { 
+		} else if (gName === "Resident Evil Revelations 2 Extra Episode 2 Little Miss") { 
 		window.open("https://serialstation.com/search/?search=RER2%20Extra%20Episode:%20Little%20Miss&system=4");
-		} else if (gName === "Resident Evil Revelations 2 - Episode 1") { 
+		} else if (gName === "Resident Evil Revelations 2 Episode 1 Penal Colony") { 
 		window.open("https://serialstation.com/search/?search=Resident%20Evil%20Revelations%202%20(Episode%20One:%20Penal%20Colony)&system=4");
-		} else if (gName === "Resident Evil Revelations 2 - Episode 2") { 
+		} else if (gName === "Resident Evil Revelations 2 Episode 2 Contemplation") { 
 		window.open("https://serialstation.com/search/?search=%20RER2%20Episode%20Two:%20Contemplation&system=4");
-		} else if (gName === "Resident Evil Revelations 2 - Episode 3") { 
+		} else if (gName === "Resident Evil Revelations 2 Episode 3 Judgment") { 
 		window.open("https://serialstation.com/search/?search=RER2%20Episode%20Three:%20Judgment&system=4");
-		} else if (gName === "Resident Evil Revelations 2 - Episode 4") { 
+		} else if (gName === "Resident Evil Revelations 2 Episode 4 Metamorphosis") { 
 		window.open("https://serialstation.com/search/?search=RER2%20Episode%20Four:%20Metamorphosis&system=4");
 		} else if (gName === "Galak-Z The Void / Skulls of the Shogun Bone-A-Fide Edition - Platinum Pack") {
 		window.open("https://serialstation.com/search/?search=Skulls%20of%20the%20Shogun&system=4");
@@ -1125,9 +1135,6 @@ move();
 </script>
 <Script>
 function lightDark(){
-//------ Swap CSS ------\\
-//localStorage.CSStype="frmchk.css"; rename to light.css
-//localStorage.CSStype="dark.css";
 alert("💡 Coming Soon");
 }
 //fix submit button toggle
@@ -1146,6 +1153,19 @@ var x = document.getElementById("snackbar");
 x.className = "show";
 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 7000);
 }
+//////////////////////////////TESTING\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+function infoType() {
+if (localStorage.infoLen=='short') {
+localStorage.infoLen='long';
+document.getElementById("infoLength").innerHTML = "INFO: ALL INFORMATION";
+} else {
+if (localStorage.infoLen=='long') {
+localStorage.infoLen='short';
+document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
+}}
+location.reload();
+};
+/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 function alphaDate() {
 if (localStorage.DBtype=='ps4date.db') {
 localStorage.DBtype='ps4alpha.db';

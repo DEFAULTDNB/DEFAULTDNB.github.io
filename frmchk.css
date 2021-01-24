@@ -64,6 +64,7 @@ button.alt-mode:hover {
 	border: none;
 	color: #17cdc4;
 	position: relative;
+	text-align: left;
 	display: inline-block;
 	cursor: pointer;
 	font-family: verdana;
@@ -75,6 +76,7 @@ button.alt-mode:hover {
 	border: none;
 	color: #17cdc4;
 	position: relative;
+	text-align: left;
 	display: inline-block;
 	cursor: default;
 	font-family: verdana;
