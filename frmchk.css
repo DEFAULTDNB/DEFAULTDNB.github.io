@@ -13,13 +13,6 @@ button.sticky.alt-mode {
   padding: 15px;
   border: none;
 }
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  left: 33%;
-  padding: 15px;
-}
 button {
   background-color: #17cdc4;
   border: 1px solid #17cdc4;
@@ -52,12 +45,20 @@ button.alt-mode:hover {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
-	font-size: 22px;
+	font-size: 23px;
 	padding: 1px 1px;
 }
 .interact:hover {
 	background-color: rgba(0,0,0,0.0);
 	color: white;
+}
+.interact.alt-mode {
+	background-color: rgba(0,0,0,0);
+	color: #17cdc4;
+}
+.interact.alt-mode:hover {
+	background-color: rgba(0,0,0,0);
+	color: #414b5a;
 }
 .interactstore {
 	background-color: rgba(0,0,0,0);
@@ -67,29 +68,18 @@ button.alt-mode:hover {
 	text-align: left;
 	display: inline-block;
 	cursor: pointer;
-	font-family: verdana;
-	font-size: 16px;
 	padding: 1px 1px;
+	font-size: 16px;
 }
 .unreleased {
 	background-color: rgba(0,0,0,0);
 	border: none;
-	color: #17cdc4;
 	position: relative;
-	text-align: left;
+	text-align: right;
 	display: inline-block;
 	cursor: default;
-	font-family: verdana;
-	font-size: 16px;
 	padding: 1px 1px;
-}
-.interact.alt-mode {
-	background-color: rgba(0,0,0,0);
-	color: #17cdc4;
-}
-.interact.alt-mode:hover {
-	background-color: rgba(0,0,0,0);
-	color: #414b5a;
+	font-size: 16px;
 }
 .sbut {
 	background-color: #efefef;
@@ -190,11 +180,13 @@ body {
 body.alt-mode {
   background-color: #fefefe;
   color: black;
-  text-size-adjust: none;
 }
 #display {
+	border: none;
 	background-color: #efefef;
 	padding-left: 25px;
+	font-family: verdana;
+	font-size: 16px;
 }
 #display.alt-mode {
 	background-color: lightgrey;
@@ -202,10 +194,6 @@ body.alt-mode {
 }
 h1 {
 	color: white;
-}
-#numbers {
-	color: #414b5a;
-	font-weight: bold;
 }
 #linelength {
 	color: #efefef;
@@ -241,8 +229,8 @@ h1 {
   background-color: #17cdc4;
   font-size: 8px;
   font-weight: bold;
-  text-align: center; /* To center it horizontally (if you want) */
-  line-height: 10px; /* To center it vertically */
+  text-align: center;
+  line-height: 10px;
   color: #efefef;
 }
 #myBar.alt-mode {
@@ -251,8 +239,8 @@ h1 {
   background-color: #6e767f;
   font-size: 8px;
   font-weight: bold;
-  text-align: center; /* To center it horizontally (if you want) */
-  line-height: 10px; /* To center it vertically */
+  text-align: center;
+  line-height: 10px;
   color: #17cdc4;
 }
 .tooltip {
@@ -280,19 +268,10 @@ h1 {
 mark { 
   background-color: #17cdc4;
 }
-#gamepic {
-  color: #0cff15; 
-  background-image: url('loader.gif');
-  -webkit-background-image: url('loader.gif');
-  background-repeat: no-repeat;
-  background-color: black;
-  background-size: 200px 104px;
-  border: 1px solid #efefef;
-}
 img.sticky {
   position: fixed;
-  top: 40%;
-  left: 80%;
+  top: 50%;
+  right: 0%;
   width: 250px;
   height: 250px;
 }
@@ -320,10 +299,19 @@ img.sticky {
   border-radius: 50%;
   border: 2px solid black;
 }
-iframe {
-	position: absolute;
-	top: 25px;
-	right: 5px;
+#KOFI {
+	position: fixed;
+	left: 1%;
+}
+#end {
+	position: fixed;
+	right: 1%;
+	top: 1%;
+}
+#smallinfo {
+	position: fixed;
+	right: 1%;
+	top: 5%;
 }
 #snackbar {
   visibility: hidden;
@@ -357,18 +345,4 @@ iframe {
 @-webkit-keyframes fadeout {
   from {top: 30px; opacity: 1;} 
   to {top: 0; opacity: 0;}
-}
-#KOFI {
-	position: fixed;
-	left: 1%;
-}
-#end {
-	position: fixed;
-	right: 1%;
-	top: 1%;
-}
-#smallinfo {
-	position: fixed;
-	right: 1%;
-	top: 5%;
 }
