@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" >
-<meta name="author" content="DEFAULTDNB">
-<meta name="description" content="FRMCHK is an all in one tool to verify game firmware data. I have compiled as much as I can so you can access a lot of relevant information in one place!">
+<meta charset="UTF-8">
+<meta name="description" content="FRMCHK is an all-in-one tool to verify game firmware. I've compiled as much data as possible so that you can access it all in one place!">
 <title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
@@ -545,16 +544,16 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	cnt=cnt+1;
 	colourise();
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
-		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]")){ 
+		} else if (lines[i].match("2013]|2014]|2015]|2016]|2017]|2018]|2019]")){ 
 		cnt--;
-		} if (lines[i].includes("2019]")){ //Apr 15, 2020 [7.50] 
+		} if (lines[i].includes("2020]")){ //Apr 15, 2020 [7.50] 
 			if (lines[i].match("Jan |Feb |Mar ")) {
 			cnt--;
 			} else if (lines[i].match("Apr 1,|Apr 2,|Apr 3,|Apr 4,|Apr 5,|Apr 6,|Apr 7,|Apr 8,|Apr 9,|Apr 10,|Apr 11,|Apr 12,|Apr 13,|Apr 14,")) {
 			cnt--;
 			} else if (lines[i].match("Apr 15,|Apr 16,|Apr 17,|Apr 18,|Apr 19,|Apr 20,|Apr 21,|Apr 22,|Apr 23,|Apr 24,|Apr 25,|Apr 26,|Apr 27,|Apr 28,|Apr 29,|Apr 30,")){
 			colourise();
-			} else if (lines[i].match("|May |Jun |Jul |Aug |Sep |Oct |Nov |Dec ")) {
+			} else if (lines[i].match("May |Jun |Jul |Aug |Sep |Oct |Nov |Dec ")) {
 			colourise();
 			} 
 		} else if (lines[i].includes("2020]")){//Oct 14, 2020 [First day of 8.00]
@@ -570,7 +569,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		} else if (lines[i].match("2021]|2022]|UNRELEASED")){
 		cnt--;
 		}
-		//----------- 702-755 date specifics -----------\\
+		//----------- 750-755 date specifics -----------\\
 	} else if (sel === "1.01-6.72"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex101672 = [
@@ -655,7 +654,6 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 		cnt--;
 		}
 		//----------- 101-755 date specifics -----------\\
-		
 		} else if (sel === "8.00-LATEST"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex800999 = [
