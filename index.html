@@ -24,7 +24,7 @@
 	<option value="OFW 6.20" hidden>OFW 6.20</option>
 	<option value="OFW 6.51" hidden>OFW 6.51</option>
 	<option value="OFW 6.71" hidden>OFW 6.71</option>
-	<option value="OFW 6.72" hidden>OFW 6.72</option>
+	<option value="OFW 6.72" hidden >OFW 6.72</option>
 	<option value="OFW 7.00" hidden>OFW 7.00</option>
 	<option value="OFW 7.02" hidden>OFW 7.02</option>
 	<option value="OFW 7.50" hidden>OFW 7.50</option>
@@ -100,6 +100,7 @@
 	<option id="BOOTPS5" value="BOOTPS5">ISSUES ON PS5</option>
 	<option id="NOTPS5" value="NOTPS5">NOT COMPATIBLE</option>
 	<optgroup label="★DEBUG">
+	<option id="CROSSPLAY" value="CROSSPLAY">CROSSPLAY</option>
 	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
 	<option id="PSNREQ" value="Requires PSN">PSN REQUIRED</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
@@ -304,13 +305,18 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (localStorage.infoLen=='long') { 
 		dateInfo = lines[i];
 	}
+	
+	////////////////TESTING SWITCH VS ELSE\\\\\\\\\\\\\\\\\\
+	//////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+	
 	//============================== Exact firmware ==================================\\
 	if (sel.match("OFW 5.05|OFW 5.50|OFW 5.53|OFW 5.55|OFW 6.00|OFW 6.02|OFW 6.20|OFW 6.51|OFW 6.71|OFW 6.72|OFW 7.00|OFW 7.01|OFW 7.02|OFW 7.50|OFW 7.55|OFW 8.00")){
 	if (lines[i].match(sel.replace(/[. ]/g, ''))) {
 		colourise();
 	} else {
 		cnt--;
-	}	
+	}
 	//==================================================================================\\		
 	} else if (sel === "1.01-5.05"){
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
