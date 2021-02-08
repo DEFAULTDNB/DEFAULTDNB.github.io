@@ -184,7 +184,7 @@ body.alt-mode {
 .callout {
   position: fixed;
   top: 10px;
-  left: 65%;
+  left: 50%;
   margin-left: 20px;
   border: 1px solid #17cdc4;
 }
