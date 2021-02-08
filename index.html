@@ -6,9 +6,14 @@
 <title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
-<body onload=""><!--set this up-->
+<body onload="closeTimer();">
 <input type="text" value="" id="myInput" style="opacity:0%;">
-<h1 id="myT" onclick="location.reload()">PS4 GΔME FIRMWΔRE DΔTΔ</h1><!-- LOGO/NAME IN PROGRESS -->
+<h1 id="myT" onclick="location.reload()">PS4 GΔME FIRMWΔRE DΔTΔ</h1>
+<div class="callout" id="callout">
+  <div class="callout-header" id="titleshout">FRMCHK NEWS</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container" id="shout"></div>
+</div>
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span></div>
 <select id="FW" onchange="simClick()">
@@ -24,7 +29,7 @@
 	<option value="OFW 6.20" hidden>OFW 6.20</option>
 	<option value="OFW 6.51" hidden>OFW 6.51</option>
 	<option value="OFW 6.71" hidden>OFW 6.71</option>
-	<option value="OFW 6.72" hidden >OFW 6.72</option>
+	<option value="OFW 6.72" hidden>OFW 6.72</option>
 	<option value="OFW 7.00" hidden>OFW 7.00</option>
 	<option value="OFW 7.02" hidden>OFW 7.02</option>
 	<option value="OFW 7.50" hidden>OFW 7.50</option>
@@ -51,7 +56,7 @@
 	<option id="ALL" value=" " onclick="dropdownthis()">ALL CATEGORIES</option>
 	<option id="DLC" value="DLC">DLC ADD-ONS</option>
 	<option id="F2P" value="F2P">F2P ONLINE</option>
-	<option id=" PSHITS" value="PSHITS">HITS COLLECTION</option>
+	<option id="PSHITS" value="PSHITS">HITS COLLECTION</option>
 	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
 	<option id="PS2" value="PS2">PS2 CLASSICS</option>
 	<option id="VR" value="VR">VR COMPATIBLE</option>
@@ -72,7 +77,6 @@
 	<option id="HORROR" value="Horror">HORROR</option>
 	<option id="METROIDVANIA" value="Metroidvania">METROIDVANIA</option>
 	<option id="MUSIC" value="Music">MUSIC</option>
-	<option id="NONOGRAM" value="Nonogram">NONOGRAM</option>
 	<option id="PLATFORM" value="Platform">PLATFORM</option>
 	<option id="POINT" value=" Point-a">POINT & CLICK</option>
 	<option id="PUZZLE" value="Puzzle">PUZZLE</option>
@@ -101,6 +105,7 @@
 	<option id="NOTPS5" value="NOTPS5">NOT COMPATIBLE</option>
 	<optgroup label="★DEBUG">
 	<option id="CROSSPLAY" value="CROSSPLAY">CROSSPLAY</option>
+	<option id="Demo" value="Demo/Trial">DEMO AVAILABLE</option>
 	<option id="FIRMWARE" value="Firmware">FIRMWARE</option>
 	<option id="PSNREQ" value="Requires PSN">PSN REQUIRED</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
@@ -120,11 +125,10 @@ for (j = 65; j <= 90; j++){
 	document.getElementById("clickers").appendChild(AZ);
 }
 </script>
-<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><button title="Lucky dip" class="sbut" onclick="lucky();">?</button><abbr  id="credz" class="sbut2" onclick="showCredz();" title="Who Helped?">Ⓒ&nbsp </abbr><abbr title="Submit missing games here"><a class="sbut2" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">&#8694;</a>&nbsp </abbr><abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr>
+<abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><button title="Lucky dip" class="sbut" onclick="lucky();">?</button><abbr  id="credz" class="sbut2" onclick="showGreetz();" title="Who Helped?">Ⓒ&nbsp </abbr><abbr title="Submit missing games here"><a class="sbut2" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">&#8694;</a>&nbsp </abbr><abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr>
 </div>
 <div id="display" class="stripey"></div>
 <img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
-<div id="snackbar"></div>
 <script>
 //----------- Set Highest KEX ------------\\
 var vHEN = "7.02";
@@ -178,11 +182,8 @@ var latestOFW = lines[firmz-1].slice(0,4);
 for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].slice(0,4));}};
 document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+ latestOFW; //1.00-Latest
 document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+ latestOFW; //8.00-Latest
-//---------- Firmware Snackbar ----------\\
-snackbar.innerHTML = "<span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span>"
-var x = document.getElementById("snackbar");
-x.className = "show";
-setTimeout(function(){ x.className = x.className.replace("show", ""); }, 7000);
+//---------- Firmware Shout ----------\\
+document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span></center>";
 //--------- A-Z button function ----------\\
 function reply_click(clicked_id) {
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
@@ -305,11 +306,6 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	} else if (localStorage.infoLen=='long') { 
 		dateInfo = lines[i];
 	}
-	
-	////////////////TESTING SWITCH VS ELSE\\\\\\\\\\\\\\\\\\
-	//////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	
-	
 	//============================== Exact firmware ==================================\\
 	if (sel.match("OFW 5.05|OFW 5.50|OFW 5.53|OFW 5.55|OFW 6.00|OFW 6.02|OFW 6.20|OFW 6.51|OFW 6.71|OFW 6.72|OFW 7.00|OFW 7.01|OFW 7.02|OFW 7.50|OFW 7.55|OFW 8.00")){
 	if (lines[i].match(sel.replace(/[. ]/g, ''))) {
@@ -322,11 +318,11 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex101505 = [
 	"[505BP]","A Way Out","The American Dream","Anata no Shikihime Kyoudoutan","Ark Park","Assetto Corsa (Racing)",
-	"Atelier Lydie & Suelle","Attack on Titan 2","Azayaka na","Death end re;Quest (Role-Playing)","Diabolik Lovers Grand Edition",
-	"D.S. -Dal Segno-","Earth Defense Force 4.1","Earth Defense Force 5","Everspace (Shooter)","Extinction (Action, Adventure)",
+	"Atelier Lydie & Suelle The","Attack on Titan 2","Azayaka na","Death end re;Quest (Role-Playing)","Diabolik Lovers Grand Edition",
+	"D.S. -Dal Segno-","Earth Defense Force 4.1","Earth Defense Force 5","Everspace","Extinction (Action, Adventure)",
 	"Far Cry 5","Fate/Grand Order VR","Flynn & Freckles","Full Metal Panic!","Gal*Gun 2","Ghostbusters The Video Game Remastered",
 	"God of War 2018","Hello Neighbour 1","Indivisible","Injustice 2 Legendary","Keep Talking and Nobody Explodes", "Megadimension Neptunia VIIR","Metal Max Xeno (Role-Playing)",
-	"MLB The Show 18","Monkey King Hero","MX vs. ATV All Out","Ni no Kuni II","Pure Farming 2018","Ryu ga Gotoku Kiwami 2","Shaq Fu:",
+	"MLB The Show 18","Monkey King Hero","MX vs. ATV All Out","Ni no Kuni II","Pure Farming 2018","Ryu ga Gotoku Kiwami 2","Shaq Fu",
 	"Shining Resonance Refrain","Space Hulk Deathwing","Street Fighter 30th","Super Robot Wars X","The King of Fighters '98",
 	"The 25th Ward","The Raven Remastered","Titan Quest","World of Warriors"
 	];
@@ -357,7 +353,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 	//------------------------------------------- EXCEPTIONS-----------------------------------------------------\\
 	const ex550672 = [
 	"[505BP]","[672BP]","Bee Simulator"
-	]; //bee sim not showing....hmmmm....
+	];
 	let str550672; str550672 = lines[i];
 	if (ex550672.some(v => str550672.includes(v))) {
 	cnt=cnt+1; //fix for OOD games with backport inclusion ((-1) + (+1) = 0)
@@ -1143,7 +1139,6 @@ move();
 function lightDark(){
 alert("💡 Coming Soon");
 }
-//fix submit button toggle
 //---------- TODAYS INFORMATION ---------\\
 function whatsNew(){
 firmcnt = 0;
@@ -1152,14 +1147,13 @@ if (testDate.charAt(4) === "0") {testDate = testDate.slice(0, 4) + testDate.slic
 document.getElementById("searchbox").value = testDate;
 lookup();
 }
-//----------- CREDIT SNACKBAR ------------\\
-function showCredz() {
-snackbar.innerHTML = "<span style='font-weight:bold; color:white'>THANKZ & GREETZ: <span style='color:silver'><br><br>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893<br>Darthsternie<br>OfficialAhmed</span></span>"
-var x = document.getElementById("snackbar");
-x.className = "show";
-setTimeout(function(){ x.className = x.className.replace("show", ""); }, 7000);
+//----------- Greets Shout ------------\\
+function showGreetz() {
+document.getElementById("titleshout").innerHTML = "<center>Greets</center>";
+document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893<br>Darthsternie<br>OfficialAhmed</span></span></center>";
+document.getElementById('callout').style.display='initial';
+closeTimer();
 }
-//////////////////////////////TESTING\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 function infoType() {
 if (localStorage.infoLen=='short') {
 localStorage.infoLen='long';
@@ -1171,7 +1165,6 @@ document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
 }}
 location.reload();
 };
-/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 function alphaDate() {
 if (localStorage.DBtype=='ps4date.db') {
 localStorage.DBtype='ps4alpha.db';
@@ -1194,12 +1187,15 @@ localStorage.DLC='true';
 }}
 location.reload();
 };
+function closeTimer(){
+setTimeout(function(){document.getElementById('callout').style.display='none';}, 10000);
+};
 </script>
 <br>
 <abbr class="interact" title="Support my project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
-<div id="end">Version: 6.1 (BETΔ)</div>
+<div id="end">Version: 6.2 (BETΔ)</div>
 </body>
 </html> 
