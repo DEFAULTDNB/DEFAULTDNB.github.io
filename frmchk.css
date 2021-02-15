@@ -5,14 +5,6 @@ button.sticky {
   left: 66%;
   padding: 15px;
 }
-button.sticky.alt-mode {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  left: 66%;
-  padding: 15px;
-  border: none;
-}
 button {
   background-color: #17cdc4;
   border: 1px solid #17cdc4;
@@ -29,15 +21,6 @@ button:hover {
 	background-color: white;
 	color: #018a9a;
 }
-button.alt-mode {
-	background-color: #414b5a;
-	border: 1px solid #414b5a;
-	color: white;
-}
-button.alt-mode:hover {
-	background-color: white;
-	color: #414b5a;
-}
 .interact {
 	background-color: rgba(0,0,0,0);
 	border: none;
@@ -52,14 +35,6 @@ button.alt-mode:hover {
 	background-color: rgba(0,0,0,0.0);
 	color: white;
 }
-.interact.alt-mode {
-	background-color: rgba(0,0,0,0);
-	color: #17cdc4;
-}
-.interact.alt-mode:hover {
-	background-color: rgba(0,0,0,0);
-	color: #414b5a;
-}
 .interactstore {
 	background-color: rgba(0,0,0,0);
 	border: none;
@@ -69,7 +44,7 @@ button.alt-mode:hover {
 	display: inline-block;
 	cursor: pointer;
 	padding: 1px 1px;
-	font-size: 16px;
+	font-size: 100%;
 }
 .unreleased {
 	background-color: rgba(0,0,0,0);
@@ -79,7 +54,7 @@ button.alt-mode:hover {
 	display: inline-block;
 	cursor: default;
 	padding: 1px 1px;
-	font-size: 16px;
+	font-size: 100%;
 }
 .sbut {
 	background-color: #efefef;
@@ -93,16 +68,6 @@ button.alt-mode:hover {
 .sbut:hover {
 	background-color: #414b5a;
 	color: #efefef;
-}
-#sbut.alt-mode {
-	background-color: #414b5a;
-	color: #efefef;
-	border: 1px solid #17cdc4;
-}
-#sbut.alt-mode:hover {
-	background-color: #efefef;
-	color: #414b5a;
-	border: 1px solid #17cdc4;
 }
 .sbut2 {
 	padding: 1px 1px;
@@ -122,14 +87,6 @@ button.alt-mode:hover {
 	color: #414b5a;
 	background-color: #17cdc4;
 }
-#sbut2.alt-mode {
-	background-color: #414b5a;
-	color: white;
-}
-#sbut2.alt-mode:hover {
-	background-color: rgba(0,0,0,0);
-	color: #17cdc4;
-}
 abbr {
 	text-decoration: none !important;
 	border-bottom: 0px !important;
@@ -143,10 +100,6 @@ hr {
 	border: 1px solid #d1cdc6;
 	opacity: 0.5;
 }
-hr.alt-mode {
-	border: 1px solid red;
-	opacity: 1;
-}
 #smallinfo {
 	font-size: 12px;
 	color: #efefef;
@@ -154,32 +107,15 @@ hr.alt-mode {
 #searchbox {
 	border: none;
 }
-#searchbutton.alt-mode{
-	background-color: #414b5a;
-	color: #efefef;
-	border: 1px solid #17cdc4;
-}
-#searchbutton.alt-mode:hover {
-	background-color: #efefef;
-	color: #414b5a;
-	border: 1px solid #17cdc4;
-}
 #clickers {
 	background-color: #17cdc4;
 	display: inline-block;
 	width: 100%;
 }
-#clickers.alt-mode {
-	background-color: #414b5a;
-}
 body {
 	background-color: #414b5a;
 	color: #efefef;
 	font-family: verdana;
-}
-body.alt-mode {
-  background-color: #fefefe;
-  color: black;
 }
 .callout {
   position: fixed;
@@ -187,17 +123,20 @@ body.alt-mode {
   left: 50%;
   margin-left: 20px;
   border: 1px solid #17cdc4;
+  z-index: 999;
 }
 .callout-header {
   padding: 10px 10px;
   background: #17cdc4;
   font-size: 22px;
   color: white;
+  z-index: 999;
 }
 .callout-container {
   padding: 15px;
   background-color: black;
   color: white;
+  z-index: 999;
 }
 .closebtn {
   position: absolute;
@@ -206,17 +145,15 @@ body.alt-mode {
   color: white;
   font-size: 30px;
   cursor: pointer;
+  z-index: 999;
 }
 .closebtn:hover {
   color: lightgrey;
+  z-index: 999;
 }
 #display {
 	border: none;
 	background-color: #efefef;
-	padding-left: 25px;
-}
-#display.alt-mode {
-	background-color: lightgrey;
 	padding-left: 25px;
 }
 h1 {
@@ -224,10 +161,6 @@ h1 {
 }
 #linelength {
 	color: #efefef;
-	font-weight: bold;
-}
-#linelength.alt-mode {
-	color: #17cdc4;
 	font-weight: bold;
 }
 #counted {
@@ -246,10 +179,6 @@ h1 {
   width: 200px;
   background-color: #6e767f;
 }
-#myProgress.alt-mode {
-  width: 200px;
-  background-color: #efefef;
-}
 #myBar {
   width: 0px;
   height: 10px;
@@ -259,16 +188,6 @@ h1 {
   text-align: center;
   line-height: 10px;
   color: #efefef;
-}
-#myBar.alt-mode {
-  width: 0px;
-  height: 10px;
-  background-color: #6e767f;
-  font-size: 8px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 10px;
-  color: #17cdc4;
 }
 .tooltip {
   position: relative;
