@@ -114,7 +114,6 @@
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
-//----------- Loadup functions -----------\\
 var calculate = 100;
 var bclicked = "All Categories";
 for (j = 65; j <= 90; j++){
@@ -130,11 +129,7 @@ for (j = 65; j <= 90; j++){
 <div id="display" class="stripey"></div>
 <img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
 <script>
-//----------- Set Highest KEX ------------\\
 var vHEN = "7.02";
-//---------- Set up Light/Dark -----------\\
-
-//---------- Set up info length ----------\\
 if (localStorage.infoLen==null) {localStorage.infoLen='short';}
 if (localStorage.infoLen=='short') { 
 document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
@@ -144,7 +139,6 @@ if (localStorage.infoLen=='long') {
 document.getElementById("infoLength").innerHTML = "INFO: ALL INFORMATION";
 document.getElementById("iLen").setAttribute('title', 'Show less info');
 }
-//---------- Set up DB location ----------\\
 if (localStorage.DBtype==null) {localStorage.DBtype='ps4alpha.db';}
 var fileName = localStorage.DBtype;
 if (localStorage.DBtype=='ps4alpha.db') { 
@@ -155,7 +149,6 @@ if (localStorage.DBtype=='ps4date.db') {
 document.getElementById("sortstatus").innerHTML = "SORT: DATE";
 document.getElementById("dbSort").setAttribute('title', 'Sort by A-Z');
 }
-//---------- Set up DLC show/hide---------\\
 if (localStorage.DLC==null) {localStorage.DLC='true';}
 if (localStorage.DLC=='true') { 
 document.getElementById("dlcstatus").innerHTML = "DLC: SHOWN";
@@ -165,7 +158,6 @@ if (localStorage.DLC=='false') {
 document.getElementById("dlcstatus").innerHTML = "DLC: HIDDEN";
 document.getElementById("dlc").setAttribute('title', 'Show DLC items');
 }
-//----------- Set up functions -----------\\
 var xmlFile = new XMLHttpRequest;
 xmlFile.open('get', fileName, false);
 xmlFile.send();
@@ -182,7 +174,6 @@ var latestOFW = lines[firmz-1].slice(0,4);
 for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].slice(0,4));}};
 document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+ latestOFW; //1.00-Latest
 document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+ latestOFW; //8.00-Latest
-//---------- Firmware Shout ----------\\
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span></center>";
 //--------- A-Z button function ----------\\
 function reply_click(clicked_id) {
@@ -266,7 +257,6 @@ firmcnt = 0;
 		}
 	}
 };
-//----------- Lookup functions -----------\\
 function lookup() {
 var keyword = document.getElementById("searchbox").value;
 	if (document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value === ""){
@@ -289,7 +279,6 @@ document.getElementById("display").innerHTML = "<br>";
 	document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span> <span id='counted'>" + (cnt-1) + "</span> games listed for <span id='selected'>'" + sel + " FW'</span> containing <span id='lastclicked'>'" + keyword.toUpperCase() + "'</span>.";
 	move();
 };
-//---------- Random functions ----------\\
 function lucky() {
 document.getElementById("FW").selectedIndex = optCount;
 firmcnt = 0;
@@ -298,7 +287,6 @@ bclicked = lines[r].charAt(0);
 document.getElementById("searchbox").value = lines[r].slice(lines[r],lines[r].indexOf("(")-1);
 lookup();
 };
-//----------- Filter functions -----------\\
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
 	if (localStorage.infoLen=='short'){
@@ -698,8 +686,7 @@ var sel = document.getElementById("FW").options[document.getElementById("FW").se
 };
 var hash = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 var bpVer = "";
-var bpIssue = "";
-//---------- COLORISING RESULTS -------------\\			
+var bpIssue = "";	
 function colourise() {
 	if (lines[i].match("DLC")){
 		if (localStorage.DLC=='true') {
@@ -921,10 +908,11 @@ function colourise2() { // If release falls on FIRMWARE release date.
 		document.getElementById('fID2').id = hash2;	
 		firmcnt++;
 		} else {
-		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("orange").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
+		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 		document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+		document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
 		if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
 		}
 	}	
@@ -985,7 +973,6 @@ function dumpinfo() {alert("👍 𝗔 𝗱𝘂𝗺𝗽 𝗶𝘀 𝗰𝗼𝗻𝗳
 function bpinfo() {alert("❌ 𝗧𝗵𝗶𝘀 𝘁𝗶𝘁𝗹𝗲 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝘁𝗼 𝗵𝗮𝘃𝗲 𝗶𝘀𝘀𝘂𝗲𝘀 𝘄𝗵𝗲𝗻 𝗯𝗮𝗰𝗸𝗽𝗼𝗿𝘁𝗲𝗱!\n\n"+bpName+" is not fully playable on older firmwares.\n\n𝗥𝗘𝗔𝗦𝗢𝗡: "+bpDesc+"\n\n𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
 function bpgood() {alert("✅ 𝗧𝗵𝗶𝘀 𝘁𝗶𝘁𝗹𝗲 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝗳𝘂𝗹𝗹𝘆 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝘄𝗵𝗲𝗻 𝗯𝗮𝗰𝗸𝗽𝗼𝗿𝘁𝗲𝗱!\n\n"+bpName+" is fully playable without issues on "+bpVer+".\n\n𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
 function unrel() {alert("❗ 𝗡𝗼 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲.\n\nThis game has not been released.");};
-
 function sysGrab() {
 let sysVer = document.getElementById(fName).getAttribute("data");
 var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [SYS] UPDATE.PUP?\n\nMD5: "+fName+"\n\n(Hash will be copied to clipboard for verification)");
@@ -996,7 +983,6 @@ copyText.select();
 copyText.setSelectionRange(0, 99999)
 document.execCommand("copy");
 } else {}};
-
 function recGrab() {
 let sysVer = document.getElementById(fName2).getAttribute("data");
 var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [REC] UPDATE.PUP?\n\nMD5: "+fName2+"\n\n(Hash will be copied to clipboard for verification)");
@@ -1007,17 +993,13 @@ copyText.select();
 copyText.setSelectionRange(0, 99999)
 document.execCommand("copy");
 } else {}};
-
 function storeFind() {
 let sName = document.getElementById(cName).getAttribute("data");
 var s = confirm("🌐 𝗣𝗦 𝗦𝘁𝗼𝗿𝗲 𝗟𝗶𝗻𝗸:\n\n Attempt to find information for "+sName+"?");
 if (s == true) {sName = sName.replaceAll(" ", "%2B");window.open("https://duckduckgo.com/?q=!ducky+"+sName+"+store.playstation.com");
 } else {}};
-
 function cusaResolve() {document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "generic.png";document.getElementById(cName).setAttribute('title', cName+": Click for PSN info");document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"+cName+"_00/image?w=250&amp;h=250"};
-
 function cusaKill() {document.getElementById('CUSART').src="";document.getElementById('CUSART').style.display='none';};
-
 function md5Resolve(e) {
     if (e.getAttribute("title").includes("SYS")){
 	document.getElementById(fName).setAttribute('title', "D/L SYS FIRM: "+fName);
@@ -1025,7 +1007,6 @@ function md5Resolve(e) {
 	document.getElementById(fName2).setAttribute('title', "D/L REC FIRM: "+fName2);
 	}
 }
-
 function hashCopy(){
 	document.getElementById("myInput").value = hName.slice(4, 37);
     var copyText = document.getElementById("myInput");
@@ -1139,7 +1120,6 @@ move();
 function lightDark(){
 alert("💡 Coming Soon");
 }
-//---------- TODAYS INFORMATION ---------\\
 function whatsNew(){
 firmcnt = 0;
 var testDate = (new Date().toString().slice(4, 10)+", "+new Date().toString().slice(11, 15));
@@ -1147,7 +1127,6 @@ if (testDate.charAt(4) === "0") {testDate = testDate.slice(0, 4) + testDate.slic
 document.getElementById("searchbox").value = testDate;
 lookup();
 }
-//----------- Greets Shout ------------\\
 function showGreetz() {
 document.getElementById("titleshout").innerHTML = "<center>Greets</center>";
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893<br>Darthsternie<br>OfficialAhmed</span></span></center>";
