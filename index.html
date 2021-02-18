@@ -114,6 +114,7 @@
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
+var vHEN = "7.02";
 var calculate = 100;
 var bclicked = "All Categories";
 for (j = 65; j <= 90; j++){
@@ -123,13 +124,32 @@ for (j = 65; j <= 90; j++){
 	AZ.onclick = function(){reply_click(this.id); bclicked = this.id; return false;};
 	document.getElementById("clickers").appendChild(AZ);
 }
+var qluid = "";
 </script>
 <abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><button title="Lucky dip" class="sbut" onclick="lucky();">?</button><abbr  id="credz" class="sbut2" onclick="showGreetz();" title="Who Helped?">Ⓒ&nbsp </abbr><abbr title="Submit missing games here"><a class="sbut2" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">&#8694;</a>&nbsp </abbr><abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr>
 </div>
 <div id="display" class="stripey"></div>
+<div style="display:flex">
+<div id="userbuttons" style="display:flex">
+<button class="qlu">QUICK LOOK:</button></div>
+<button class="add" id="addyourown" title="Add your own" onclick="fillout();">+</button><button class="add" title="Clear localStorage" onclick="clearStorage();">&#10071;</button></div>
 <img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
 <script>
-var vHEN = "7.02";
+if (localStorage.userButtons==null){
+var userButtons = new Array("Assassins Creed", "Battlefield", "Call of Duty", "FIFA", "Final Fantasy", "Hitman", "Resident Evil", "Tomb Raider");
+localStorage.setItem("userButtons", JSON.stringify(userButtons));
+userButtons2 = JSON.parse(localStorage.getItem("userButtons"));
+} else {
+userButtons2 = JSON.parse(localStorage.getItem("userButtons"));
+}
+for (k = 0; k <= userButtons2.length-1; k++) {
+	UG = document.createElement("BUTTON");
+	UG.innerHTML = userButtons2[k];
+	UG.id = userButtons2[k];
+	UG.onclick = function(){qluid = this.id; series();};
+	UG.oncontextmenu = function(){qluid = this.id; remove(); return false;};
+	document.getElementById("userbuttons").appendChild(UG);
+}
 if (localStorage.infoLen==null) {localStorage.infoLen='short';}
 if (localStorage.infoLen=='short') { 
 document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
@@ -286,6 +306,43 @@ var r = Math.floor(Math.random() * lines.length) + firmz; //after firmwares
 bclicked = lines[r].charAt(0);
 document.getElementById("searchbox").value = lines[r].slice(lines[r],lines[r].indexOf("(")-1);
 lookup();
+};
+function series() {
+document.getElementById("FW").selectedIndex = optCount;
+firmcnt = 0;
+document.getElementById("searchbox").value = qluid;
+lookup();
+};
+function fillout() {
+  var usergame = prompt("Enter Game Name", "");
+	if (usergame === "") {
+	alert("Nothing has been added.");
+	} else if (usergame) {
+	UG = document.createElement("BUTTON");
+	UG.innerHTML = usergame;
+	UG.id = usergame;
+	UG.onclick = function(){qluid = this.id; series();};
+	UG.oncontextmenu = function(){qluid = this.id; remove(); return false;};
+	document.getElementById("userbuttons").appendChild(UG);
+	userButtons2.push(usergame);
+	localStorage.setItem("userButtons", JSON.stringify(userButtons2));
+	} else {
+	}
+};
+function remove() {
+	var r = confirm("Remove tab: "+qluid+"?");
+	if (r == true) {
+	document.getElementById(qluid).remove();
+	userButtons2.splice(userButtons2.indexOf(qluid), 1);
+	localStorage.setItem("userButtons", JSON.stringify(userButtons2));
+	}
+};
+function clearStorage() {
+	var r = confirm("WARNING:\n\nThis will reset all quick look tabs\nand clear all localStorage.\n\nProceed?");
+	if (r == true) {
+	localStorage.clear();
+	location.reload();
+	}
 };
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
@@ -771,7 +828,7 @@ function colourise() {
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("mediumpurple").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';	
 	} else if (lines[i].match("UNRELEASED")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("dimgrey").bold() + '</span>&nbsp<button id="uID" class="interact" style="display:inline;" onclick="uName = this.id; unrel();"><abbr title="Unreleased game">&#8856;</abbr></button>' + '<hr>');
 	document.getElementById('uID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -1175,6 +1232,6 @@ setTimeout(function(){document.getElementById('callout').style.display='none';},
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">Support via ko-fi/defaultdnb
 </div></div></a></abbr>
-<div id="end">Version: 6.2 (BETΔ)</div>
+<div id="end">Version: 6.3 (BETΔ)</div>
 </body>
 </html> 
