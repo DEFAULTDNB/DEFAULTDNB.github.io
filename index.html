@@ -146,6 +146,7 @@ for (k = 0; k <= userButtons2.length-1; k++) {
 	UG = document.createElement("BUTTON");
 	UG.innerHTML = userButtons2[k];
 	UG.id = userButtons2[k];
+	UG.className = "testbuttons";
 	UG.onclick = function(){qluid = this.id; series();};
 	UG.oncontextmenu = function(){qluid = this.id; remove(); return false;};
 	document.getElementById("userbuttons").appendChild(UG);
@@ -344,6 +345,54 @@ function clearStorage() {
 	location.reload();
 	}
 };
+
+for (h = 1; h <= userButtons2.length; h++){
+var node = document.getElementsByClassName("testbuttons")[h];
+var longpress = false;
+var presstimer = null;
+var longtarget = null;
+var cancel = function(e) {
+    if (presstimer !== null) {
+        clearTimeout(presstimer);
+        presstimer = null;
+    }
+    this.classList.remove("longpress");
+};
+var click = function(e) {
+    if (presstimer !== null) {
+        clearTimeout(presstimer);
+        presstimer = null;
+    }
+    this.classList.remove("longpress");
+    if (longpress) {
+        return false;
+    }
+};
+var start = function(e) {
+	qluid = this.id;
+    console.log(e);
+    if (e.type === "click" && e.button !== 0) {
+        return;
+    }
+    longpress = false;
+    this.classList.add("longpress");
+    if (presstimer === null) {
+        presstimer = setTimeout(function() {
+			remove();
+            longpress = true;
+        }, 800);
+    }
+    return false;
+};
+node.addEventListener("mousedown", start);
+node.addEventListener("touchstart", start);
+node.addEventListener("click", click);
+node.addEventListener("mouseout", cancel);
+node.addEventListener("touchend", cancel);
+node.addEventListener("touchleave", cancel);
+node.addEventListener("touchcancel", cancel);
+}
+
 function filter(){
 var sel = document.getElementById("FW").options[document.getElementById("FW").selectedIndex].value;
 	if (localStorage.infoLen=='short'){
