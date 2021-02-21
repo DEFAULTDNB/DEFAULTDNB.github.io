@@ -128,10 +128,10 @@ var qluid = "";
 </script>
 <abbr class="interact" title="Tip: Search for genres, title, or years"><input id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookup()">SEARCH</button><button title="Lucky dip" class="sbut" onclick="lucky();">?</button><abbr  id="credz" class="sbut2" onclick="showGreetz();" title="Who Helped?">Ⓒ&nbsp </abbr><abbr title="Submit missing games here"><a class="sbut2" target="_blank" href="https://forms.gle/8rZgh3cfkmRKG1d68">&#8694;</a>&nbsp </abbr><abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr>
 </div>
-<div id="display" class="stripey"></div>
+<div id="display"></div>
 <div style="display:flex">
 <div id="userbuttons" style="display:flex">
-<button class="qlu">QUICK LOOK:</button></div>
+<button id="qlubutton" class="qlu" onclick="">QUICK LOOK:</button></div>
 <button class="add" id="addyourown" title="Add your own" onclick="fillout();">+</button><button class="add" title="Clear localStorage" onclick="clearStorage();">&#10071;</button></div>
 <img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
 <script>
@@ -384,7 +384,7 @@ var start = function(e) {
     }
     return false;
 };
-node.addEventListener("mousedown", start);
+//node.addEventListener("mousedown", start);
 node.addEventListener("touchstart", start);
 node.addEventListener("click", click);
 node.addEventListener("mouseout", cancel);
