@@ -130,8 +130,7 @@ var qluid = "";
 </div>
 <div id="display"></div>
 <div style="display:flex">
-<div id="userbuttons" style="display:flex">
-<button id="qlubutton" class="qlu" onclick="">QUICK LOOK:</button></div>
+<button id="qlubutton" class="qlu" onclick="">QUICK LOOK:</button><div id="userbuttons" style="display:flex"></div>
 <button class="add" id="addyourown" title="Add your own" onclick="fillout();">+</button><button class="add" title="Clear localStorage" onclick="clearStorage();">&#10071;</button></div>
 <img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
 <script>
@@ -142,15 +141,19 @@ userButtons2 = JSON.parse(localStorage.getItem("userButtons"));
 } else {
 userButtons2 = JSON.parse(localStorage.getItem("userButtons"));
 }
+makeButtons();
+function makeButtons() {
+userButtons2.sort();
 for (k = 0; k <= userButtons2.length-1; k++) {
 	UG = document.createElement("BUTTON");
-	UG.innerHTML = userButtons2[k];
-	UG.id = userButtons2[k];
+	UG.innerHTML = userButtons2[k][0].toUpperCase() + userButtons2[k].substring(1).toLowerCase();
+	UG.id = userButtons2[k][0].toUpperCase() + userButtons2[k].substring(1).toLowerCase();
 	UG.className = "testbuttons";
 	UG.onclick = function(){qluid = this.id; series();};
 	UG.oncontextmenu = function(){qluid = this.id; remove(); return false;};
 	document.getElementById("userbuttons").appendChild(UG);
 }
+};
 if (localStorage.infoLen==null) {localStorage.infoLen='short';}
 if (localStorage.infoLen=='short') { 
 document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
@@ -319,14 +322,12 @@ function fillout() {
 	if (usergame === "") {
 	alert("Nothing has been added.");
 	} else if (usergame) {
-	UG = document.createElement("BUTTON");
-	UG.innerHTML = usergame;
-	UG.id = usergame;
-	UG.onclick = function(){qluid = this.id; series();};
-	UG.oncontextmenu = function(){qluid = this.id; remove(); return false;};
-	document.getElementById("userbuttons").appendChild(UG);
-	userButtons2.push(usergame);
-	localStorage.setItem("userButtons", JSON.stringify(userButtons2));
+	while (document.getElementById("userbuttons").firstChild) {
+    document.getElementById("userbuttons").removeChild(document.getElementById("userbuttons").lastChild);
+	}
+	userButtons2.push(usergame[0].toUpperCase() + usergame.substring(1).toLowerCase());
+	localStorage.setItem("userButtons", JSON.stringify(userButtons2));	
+	makeButtons();
 	} else {
 	}
 };
@@ -339,9 +340,9 @@ function remove() {
 	}
 };
 function clearStorage() {
-	var r = confirm("WARNING:\n\nThis will reset all quick look tabs\nand clear all localStorage.\n\nProceed?");
+	var r = confirm("WARNING:\n\nThis will reset all quick look tabs.\n\nProceed?");
 	if (r == true) {
-	localStorage.clear();
+	localStorage.removeItem("userButtons"); 
 	location.reload();
 	}
 };
