@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="FRMCHK is an all-in-one tool to verify game firmware. I've compiled as much data as possible so that you can access it all in one place!">
+<meta name="description" content="FRMCHK is an all-in-one tool to verify game firmware. I have compiled as much data as possible so that you can access it all in one place!">
 <title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 </head>
@@ -763,7 +763,7 @@ function unrel() {alert("❗ 𝗡𝗼 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼�
 function sysGrab() {
 let sysVer = document.getElementById(fName).getAttribute("data");
 var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [SYS] UPDATE.PUP?\n\nMD5: "+fName+"\n\n(Hash will be copied to clipboard for verification)");
-if (s == true) {window.open("https://archive.midnightchannel.net/SonyPS/Firmware/download/"+fName);
+if (s == true) {window.open("https://archive.org/download/PS4-System-Firmwares/Firmware%20"+sysVer+"/PS4UPDATE.PUP");
 document.getElementById("myInput").value = fName;
 var copyText = document.getElementById("myInput");
 copyText.select();
@@ -773,7 +773,7 @@ document.execCommand("copy");
 function recGrab() {
 let sysVer = document.getElementById(fName2).getAttribute("data");
 var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [REC] UPDATE.PUP?\n\nMD5: "+fName2+"\n\n(Hash will be copied to clipboard for verification)");
-if (s == true) {window.open("https://archive.midnightchannel.net/SonyPS/Firmware/download/"+fName2);
+if (s == true) {window.open("https://archive.org/download/PS4-Recovery-Firmwares/Firmware%20"+sysVer+"/PS4UPDATE.PUP");
 document.getElementById("myInput").value = fName2;
 var copyText = document.getElementById("myInput");
 copyText.select();
