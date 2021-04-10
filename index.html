@@ -208,9 +208,9 @@ userButtons2 = JSON.parse(localStorage.getItem("userButtons"));
 userButtons2 = JSON.parse(localStorage.getItem("userButtons"));
 }
 makeButtons();
-function makeButtons() {
+function makeButtons(){
 userButtons2.sort();
-for (k = 0; k <= userButtons2.length-1; k++) {
+for (k = 0; k <= userButtons2.length-1; k++){
 	UG = document.createElement("BUTTON");
 	UG.innerHTML = userButtons2[k][0].toUpperCase() + userButtons2[k].substring(1).toLowerCase();
 	UG.id = userButtons2[k][0].toUpperCase() + userButtons2[k].substring(1).toLowerCase();
@@ -220,31 +220,31 @@ for (k = 0; k <= userButtons2.length-1; k++) {
 	UG.oncontextmenu = function(){qluid = this.id; remove(); return false;};
 	document.getElementById("userbuttons").appendChild(UG);
 }};
-if (localStorage.infoLen==null) {localStorage.infoLen='short';}
-if (localStorage.infoLen=='short') { 
+if (localStorage.infoLen==null){localStorage.infoLen='short';}
+if (localStorage.infoLen=='short'){ 
 document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
 document.getElementById("iLen").setAttribute('title', 'Show more info?');
 document.getElementById("togLen").checked = false;
 }
-if (localStorage.infoLen=='long') {
+if (localStorage.infoLen=='long'){
 document.getElementById("infoLength").innerHTML = "INFO: ALL INFORMATION";
 document.getElementById("iLen").setAttribute('title', 'Show less info?');
 document.getElementById("togLen").checked = true;
 }
-if (localStorage.DBtype==null) {localStorage.DBtype='ps4alpha.db';}
-if (localStorage.DBtype=='ps4alpha.db') { 
+if (localStorage.DBtype==null){localStorage.DBtype='ps4alpha.db';}
+if (localStorage.DBtype=='ps4alpha.db'){ 
 document.getElementById("sortstatus").innerHTML = "SORT: A-Z";
 document.getElementById("dbSort").setAttribute('title', 'Sort by Date?');
 document.getElementById("togSort").checked = false;
 }
-if (localStorage.DBtype=='ps4date.db') {
+if (localStorage.DBtype=='ps4date.db'){
 document.getElementById("sortstatus").innerHTML = "SORT: DATE";
 document.getElementById("dbSort").setAttribute('title', 'Sort by A-Z?');
 document.getElementById("togSort").checked = true;
 }
 let fileName = localStorage.DBtype;
-if (localStorage.DLC==null) {localStorage.DLC='true';}
-if (localStorage.DLC=='true') { 
+if (localStorage.DLC==null){localStorage.DLC='true';}
+if (localStorage.DLC=='true'){ 
 document.getElementById("dlcstatus").innerHTML = "DLC: SHOWN";
 document.getElementById("dlc").setAttribute('title', 'Hide DLC items?');
 document.getElementById("togDLC").checked = true;
@@ -270,8 +270,8 @@ document.getElementById("myT").style.cursor = "pointer";
 var firmz = 0;for (i = 0; i < lines.length; i++){if (lines[i].match("(Firmware)")){firmz++;}};
 var latestOFW = lines[firmz-1].slice(0,4);
 for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].slice(0,4));}};
-document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+ latestOFW; //1.00-Latest
-document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+ latestOFW; //8.00-Latest
+document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+ latestOFW;
+document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+ latestOFW;
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span></center>";
 //--------- A-Z button function ----------\\
 function reply_click(clicked_id) {
@@ -293,12 +293,11 @@ function reply_click(clicked_id) {
 	} else {
 	cclicked = document.getElementById("type").value;
 	}
-	//FIRMWARE RANGE
 	if (fclicked.includes('-')) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
-				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) { //fwMin to fwMax
-					if (lines[i].match("EST"+f || "OFW"+f || f+"5BP" || f+"2BP" )){					
+				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) {
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0) == bclicked){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -306,7 +305,7 @@ function reply_click(clicked_id) {
 									colourise();
 								} else {
 								}
-							}		
+							}
 						} else {
 							if (lines[i].charAt(0) == bclicked){
 							cnt++;
@@ -317,7 +316,6 @@ function reply_click(clicked_id) {
 				}
 			}
 	} else {
-	//INDIVIDUAL FIRMWARE
 	fclicked = fclicked.replace(/[. ]/g, '');
 		for (i = firmz; i < lines.length; i++){
 			if (document.getElementById("type").value == "ALL"){
@@ -333,9 +331,9 @@ function reply_click(clicked_id) {
 					cnt++;
 					colourise();
 					}
-				}	
-			}				
-		}	
+				}
+			}
+		}
 	}
 	summary();
 };
@@ -357,12 +355,11 @@ document.getElementById("#").addEventListener("click", function(){
 	} else {
 	cclicked = document.getElementById("type").value;
 	}
-	//FIRMWARE RANGE
 	if (fclicked.includes('-')) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
-			for (i = firmz; i < lines.length; i++){
-				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) { //fwMin to fwMax
-					if (lines[i].match("EST"+f || "OFW"+f || f+"5BP" || f+"2BP" )){					
+			for (i = firmz; i < lines.length; i++){	
+				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0).match(/^[.#0-9'/]+$/)){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -370,18 +367,17 @@ document.getElementById("#").addEventListener("click", function(){
 									colourise();
 								} else {
 								}
-							}		
+							}
 						} else {
 							if (lines[i].charAt(0).match(/^[.#0-9'/]+$/)){
 							cnt++;
 							colourise();
 							}
-						}	
+						}
 					}
 				}
 			}
 	} else {
-	//INDIVIDUAL FIRMWARE
 	fclicked = fclicked.replace(/[. ]/g, '');
 		for (i = firmz; i < lines.length; i++){
 			if (document.getElementById("type").value == "ALL"){
@@ -397,9 +393,9 @@ document.getElementById("#").addEventListener("click", function(){
 					cnt++;
 					colourise();
 					}
-				}	
-			}				
-		}	
+				}
+			}
+		}
 	}
 	summary();
 });
@@ -409,7 +405,6 @@ document.getElementById("overlaytext").innerHTML = "Searching DB";
 document.getElementById("overlay").style.display = "block";
 sDelay = setInterval(function(){ evaluationTest();}, 10)
 };
-//--------- FW EVALUATION PROCESS ---------\\
 function evaluationTest(){
 clearInterval(sDelay);
 cnt = firmcnt = 0;
@@ -437,8 +432,8 @@ document.getElementById("display").innerHTML = "<br>";
 	//SPECIAL CASES
 	if (cclicked == "PLAYABLE"){
 		for (i = firmz; i < lines.length; i++){
-			for (f=100; f<756; f++){
-				if (lines[i].match("EST"+f || "OFW"+f)){
+			for (f=1; f<8; f++){
+				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
 				cnt++;
 				colourise();
 				document.getElementById("titleshout").innerHTML = "PLAYABLE:";
@@ -454,30 +449,28 @@ document.getElementById("display").innerHTML = "<br>";
 			cnt++;
 			colourise();
 			}
-			for (f=756; f <804; f++){
-				if (lines[i].match("EST"+f || "OFW"+f)){
+			for (f=76; f <=80; f++){
+				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 				cnt++;
 				colourise();
 				}
 			}
 		}
 	} else if (cclicked == "Firmware"){
-		for (i = 0; i < lines.length; i++){
+		for (i = 0; i <firmz; i++){
 			if (lines[i].match("Firmware")){
 			cnt++;
 			colourise();
 			}
 		}
-	}	
-	//FIRMWARE RANGE
+	}
 	if (fclicked.includes('-')) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
-				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) { //fwMin to fwMax
-					if (lines[i].match("EST"+f || "OFW"+f || f+"5BP" || f+"2BP" )){					
+				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(cclicked, "gi"))){
-							//add in letter or keyword here
 								cnt++;
 								colourise();
 								} else {
@@ -485,12 +478,11 @@ document.getElementById("display").innerHTML = "<br>";
 						} else {
 							cnt++;
 							colourise();
-						}	
+						}
 					}
 				}
 			}
 	} else {
-	//INDIVIDUAL FIRMWARE
 	fclicked = fclicked.replace(/[. ]/g, '');
 		for (i = firmz; i < lines.length; i++){
 			if (document.getElementById("type").value == "ALL"){
@@ -508,7 +500,7 @@ document.getElementById("display").innerHTML = "<br>";
 				}
 			}
 		}
-	}	
+	}
 	summary();
 };
 function lookupDelay(){
@@ -516,7 +508,7 @@ function lookupDelay(){
 	document.getElementById("overlay").style.display = "block";
 	sDelay = setInterval(function(){ lookup();}, 5)
 };
-function lookup() {
+function lookup(){
 clearInterval(sDelay);
 cnt = firmcnt = 0;
 document.getElementById("display").innerHTML = "<br>";
@@ -573,7 +565,7 @@ document.getElementById("display").innerHTML = "<br>";
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = 0; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) { //fwMin to fwMax
-					if (lines[i].match("EST"+f || "OFW"+f || f+"5BP" || f+"2BP" )){					
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(aWord, "gi"))){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -581,13 +573,13 @@ document.getElementById("display").innerHTML = "<br>";
 									colourise();
 								} else {
 								}
-							}		
+							}
 						} else {
 							if (lines[i].match(RegExp(aWord, "gi"))){
 							cnt++;
 							colourise();
 							}
-						}	
+						}
 					}
 				}
 			}
@@ -608,21 +600,21 @@ document.getElementById("display").innerHTML = "<br>";
 					cnt++;
 					colourise();
 					}
-				}	
-			}				
-		}	
+				}
+			}
+		}
 	}
 	} //blacklist
 	summary();
 };
-function series() {
+function series(){
 	document.getElementById("FW").value = "1.00-8.03";
 	document.getElementById("type").value = "ALL";
 	firmcnt = 0;
 	document.getElementById("searchbox").value = qluid;
 	lookupDelay();
 };
-function fillout() {
+function fillout(){
 	var usergame = prompt("✏️ 𝗘𝗻𝘁𝗲𝗿 𝗴𝗮𝗺𝗲 𝗻𝗮𝗺𝗲:", "");
 	if (usergame === "") {
 	alert("⚠️ 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗲𝗻𝘁𝗲𝗿𝗲𝗱:\n\nNo tab was created.");
@@ -636,7 +628,7 @@ function fillout() {
 	} else {
 	}
 };
-function remove() {
+function remove(){
 	var r = confirm("⚠️ 𝗥𝗲𝗺𝗼𝘃𝗲 𝘁𝗮𝗯:\n\n"+qluid+"?");
 	if (r == true) {
 	document.getElementById(qluid).remove();
@@ -644,7 +636,7 @@ function remove() {
 	localStorage.setItem("userButtons", JSON.stringify(userButtons2));
 	}
 };
-function removeAll() {
+function removeAll(){
 	if (userButtons2.length !=1) {
 	var nTab = " tabs will be deleted.";
 	} else {
@@ -709,10 +701,10 @@ node.addEventListener("touchend", cancel);
 node.addEventListener("touchleave", cancel);
 node.addEventListener("touchcancel", cancel);
 }	
-function colourise() {
+function colourise(){
 	if (localStorage.infoLen=='short'){
 	dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
-	} else if (localStorage.infoLen=='long') { 
+	} else if (localStorage.infoLen=='long') {
 	dateInfo = lines[i];
 	}
 	if (lines[i].match("DLC")){
@@ -772,7 +764,7 @@ function colourise() {
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("mediumpurple").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
 	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';	
+	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	} else if (lines[i].match("UNRELEASED")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("dimgrey").bold() + '</span>&nbsp<button id="uID" class="interact" style="display:inline;" onclick="uName = this.id; unrel();"><abbr title="Unreleased game">&#8856;</abbr></button>' + '<hr>');
 	document.getElementById('uID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
@@ -796,7 +788,7 @@ function colourise() {
 		hash = lines[i].slice(lines[i].indexOf("SYS ")+4, lines[i].indexOf("SYS ")+36).toUpperCase();
 		hash2 = lines[i].slice(lines[i].indexOf("REC ")+4, lines[i].indexOf("REC ")+36).toUpperCase();
 		document.getElementById('fID').id = hash;
-		document.getElementById('fID2').id = hash2;	
+		document.getElementById('fID2').id = hash2;
 		firmcnt++;
 		} else {
 		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="oID" class="interact" onclick="oName = this.id; opSearch();"><abbr title="Find Update Patches">&#9413;</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
@@ -1050,7 +1042,7 @@ window.location.reload();
 } else {}
 };
 function base64(){
-	var b64 = prompt("✏️ 𝗣𝗮𝘀𝘁𝗲 𝗯𝗮𝘀𝗲𝟲𝟰 𝗲𝗻𝗰𝗿𝘆𝗽𝘁𝗲𝗱 𝗹𝗶𝗻𝗸 𝗵𝗲𝗿𝗲:\r`", "");	
+	var b64 = prompt("✏️ 𝗣𝗮𝘀𝘁𝗲 𝗯𝗮𝘀𝗲𝟲𝟰 𝗲𝗻𝗰𝗿𝘆𝗽𝘁𝗲𝗱 𝗹𝗶𝗻𝗸 𝗵𝗲𝗿𝗲:\r", "");	
 	if (b64 === "") {
 	alert("⚠️ 𝗡𝗼 𝗯𝗮𝘀𝗲𝟲𝟰 𝗹𝗶𝗻𝗸 𝗲𝗻𝘁𝗲𝗿𝗲𝗱!:\n\nNothing decrypted.");
 	} else if (b64) {	
@@ -1093,7 +1085,7 @@ document.getElementById("overlay").style.display = "block";
 	lookupDelay();	
     def.resolve({
       hashResult: hashAlgorithm.end(),
-    });	  
+    });
   };
   fileReader.onerror = function(e) {
     def.reject(e);
@@ -1115,7 +1107,6 @@ function calculateAll() {
   var bufferSize = Math.pow(1024, 2) * 500; 
   calculateMD5Hash(file, bufferSize).then(
   function(result) {
-  //console.log(result);
   },
   function(err) {
   },
@@ -1128,11 +1119,11 @@ function calculateAll() {
 	document.getElementById('callout').style.display='initial';
 }
 </script>
-<input type="file" id="file" onchange="calculateAll();" accept=".pup,.PUP"hidden></input>
+<input type="file" id="file" onchange="calculateAll();" accept=".pup"hidden></input>
 <abbr class="interact" title="Support this project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.7.0 (BETΔ)</div>
+<div id="end">Version: 0.7.1 (BETΔ)</div>
 </body>
 </html> 
