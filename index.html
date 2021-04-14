@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="FRMCHK is an all-in-one tool to verify game firmware. I've compiled as much data as possible so that you can access it all in one place!">
+<meta name="description" content="FRMCHK is a web-based all-in-one tool to confirm game firmware. I've compile as much data as I possibly can every week so that you can access it all in one place!">
 <title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
 <link rel="stylesheet" type="text/css" href="frmchk.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.4.1/q.js"></script>
@@ -159,7 +159,7 @@
 	<option id="NOTPS5" value="NOTPS5">NOT COMPATIBLE</option>
 	<optgroup label="★DEBUG">
 	<option id="CROSSPLAY" value="CROSSPLAY">CROSSPLAY</option>
-	<option id="FIRMWARE" value="Firmware" >FIRMWARE</option>
+	<option id="FIRMWARE" value="FIRMWARE" >FIRMWARE</option>
 	<option id="PSNREQ" value="Requires PSN">PSN REQUIRED</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
 	<option id="PLAYABLE" value="PLAYABLE">PLAYABLE</option>
@@ -279,6 +279,7 @@ function reply_click(clicked_id) {
 	document.getElementById("overlay").style.display = "block";
 	document.getElementById("searchbox").value = "";
 	bclicked = clicked_id;
+	aWord = "None";
 	cnt = firmcnt = 0;
 	document.getElementById("display").innerHTML = "<br>";
 	if (document.getElementById("FW").value == ""){
@@ -297,7 +298,7 @@ function reply_click(clicked_id) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) {
-					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
+					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0) == bclicked){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -340,6 +341,7 @@ function reply_click(clicked_id) {
 //---------- # button function -----------\\
 document.getElementById("#").addEventListener("click", function(){
 	bclicked = this.id;
+	aWord = "None";
 	document.getElementById("searchbox").value = "";
 	cnt = firmcnt = 0;
 	document.getElementById("display").innerHTML = "<br>";
@@ -359,7 +361,7 @@ document.getElementById("#").addEventListener("click", function(){
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){	
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
-					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
+					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0).match(/^[.#0-9'/]+$/)){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -430,7 +432,14 @@ document.getElementById("display").innerHTML = "<br>";
 	aWord = "None";
 	}
 	//SPECIAL CASES
-	if (cclicked == "PLAYABLE"){
+	if (cclicked == "FIRMWARE"){
+		for (i = 0; i < firmz; i++){
+			if (lines[i].match("Firmware")){
+			cnt++;
+			colourise();
+			}
+		}
+	} else if (cclicked == "PLAYABLE"){
 		for (i = firmz; i < lines.length; i++){
 			for (f=1; f<8; f++){
 				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
@@ -456,19 +465,12 @@ document.getElementById("display").innerHTML = "<br>";
 				}
 			}
 		}
-	} else if (cclicked == "Firmware"){
-		for (i = 0; i <firmz; i++){
-			if (lines[i].match("Firmware")){
-			cnt++;
-			colourise();
-			}
-		}
-	}
+	} 
 	if (fclicked.includes('-')) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
-					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
+					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){// ||  || ){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(cclicked, "gi"))){
 								cnt++;
@@ -479,7 +481,7 @@ document.getElementById("display").innerHTML = "<br>";
 							cnt++;
 							colourise();
 						}
-					}
+					}	
 				}
 			}
 	} else {
@@ -525,7 +527,7 @@ document.getElementById("display").innerHTML = "<br>";
 	cclicked = document.getElementById("type").value;
 	}
 	if (bclicked == ""){
-	bclicked = "None Clicked";
+	bclicked = "None";
 	}else{
 	}
 	aWord = document.getElementById("searchbox").value;
@@ -534,25 +536,14 @@ document.getElementById("display").innerHTML = "<br>";
 	}
 	//Special cases:
 	if (aWord == MD5result){
-		for (i = 0; i < lines.length; i++){
+		for (i = 0; i < firmz; i++){
 			if (lines[i].match(MD5result)){
-			cnt++;
-			colourise();
 			document.getElementById("titleshout").innerHTML = "ALERT:";
 			document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>MD5: </span><span style='color:#17cdc4'>"+MD5result+"<br><br><span style='color:white'>Confirmed as: </span>"+lines[i].slice(0,(lines[i].indexOf(" ")))+" "+lines[i].slice( (lines[i].indexOf(MD5result)-4) , (lines[i].indexOf(MD5result)-1) )+" Update PUP</span></span></center>";
 			document.getElementById('callout').style.display='initial';
 			}
 		}
 	}
-	if (aWord == "Firmware" || aWord == "FIRMWARE"){
-		for (i = 0; i < lines.length; i++){
-			if (lines[i].match("Firmware")){
-			cnt++;
-			colourise();
-			}
-		}
-	}
-	//Blacklist
 	if (/^[:; <>{}]+$/.test(aWord)){
 	aWord = "Disallowed";
 	document.getElementById("titleshout").innerHTML = "ALERT:";
@@ -565,7 +556,7 @@ document.getElementById("display").innerHTML = "<br>";
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = 0; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) { //fwMin to fwMax
-					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
+					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(aWord, "gi"))){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -604,10 +595,12 @@ document.getElementById("display").innerHTML = "<br>";
 			}
 		}
 	}
-	} //blacklist
+	}
 	summary();
 };
 function series(){
+	document.getElementById("overlaytext").innerHTML = "Searching DB";
+	document.getElementById("overlay").style.display = "block";
 	document.getElementById("FW").value = "1.00-8.03";
 	document.getElementById("type").value = "ALL";
 	firmcnt = 0;
@@ -703,6 +696,7 @@ node.addEventListener("touchcancel", cancel);
 }	
 function colourise(){
 	if (localStorage.infoLen=='short'){
+	//dateInfo = lines[i].slice(lines[i],lines[i].indexOf("(")-1); //shorter
 	dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
 	} else if (localStorage.infoLen=='long') {
 	dateInfo = lines[i];
@@ -1124,6 +1118,6 @@ function calculateAll() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.7.1 (BETΔ)</div>
+<div id="end">Version: 0.7.2 (BETΔ)</div>
 </body>
 </html> 
