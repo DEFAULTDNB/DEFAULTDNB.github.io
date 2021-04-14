@@ -101,7 +101,7 @@
 	<option value="7.00-7.55">7.00 - 7.55</option>
 	<option value="7.50-7.55">7.50 - 7.55</option>
 	<option value="8.00-LATEST"></option>
-	<option value="1.00-8.03"></option>
+	<option value="1.00-8.50"></option>
 </select>
 <select id="type" onchange="evalDelay()">
 	<option value="" disabled selected>SELECT CATEGORY:</option>
@@ -283,8 +283,8 @@ function reply_click(clicked_id) {
 	cnt = firmcnt = 0;
 	document.getElementById("display").innerHTML = "<br>";
 	if (document.getElementById("FW").value == ""){
-	document.getElementById("FW").value = "1.00-8.03";
-	fclicked = "1.00-8.03";
+	document.getElementById("FW").value = "1.00-8.50";
+	fclicked = "1.00-8.50";
 	} else {
 	fclicked = document.getElementById("FW").value;
 	}
@@ -346,8 +346,8 @@ document.getElementById("#").addEventListener("click", function(){
 	cnt = firmcnt = 0;
 	document.getElementById("display").innerHTML = "<br>";
 	if (document.getElementById("FW").value == ""){
-	document.getElementById("FW").value = "1.00-8.03";
-	fclicked = "1.00-8.03";
+	document.getElementById("FW").value = "1.00-8.50";
+	fclicked = "1.00-8.50";
 	} else {
 	fclicked = document.getElementById("FW").value;
 	}
@@ -412,8 +412,8 @@ clearInterval(sDelay);
 cnt = firmcnt = 0;
 document.getElementById("display").innerHTML = "<br>";
 	if (document.getElementById("FW").value == ""){
-	document.getElementById("FW").value = "1.00-8.03";
-	fclicked = "1.00-8.03";
+	document.getElementById("FW").value = "1.00-8.50";
+	fclicked = "1.00-8.50";
 	} else {
 	fclicked = document.getElementById("FW").value;
 	}
@@ -446,7 +446,7 @@ document.getElementById("display").innerHTML = "<br>";
 				cnt++;
 				colourise();
 				document.getElementById("titleshout").innerHTML = "PLAYABLE:";
-				document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Only available for <br><span style='color:#17cdc4;'>1.00-8.03</span> selection!</span></span></center>";
+				document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Only available for <br><span style='color:#17cdc4;'>1.00-8.50</span> selection!</span></span></center>";
 				document.getElementById('callout').style.display='initial';
 				closeTimer();
 				}
@@ -515,8 +515,8 @@ clearInterval(sDelay);
 cnt = firmcnt = 0;
 document.getElementById("display").innerHTML = "<br>";
 	if (document.getElementById("FW").value == ""){
-	document.getElementById("FW").value = "1.00-8.03";
-	fclicked = "1.00-8.03";
+	document.getElementById("FW").value = "1.00-8.50";
+	fclicked = "1.00-8.50";
 	} else {
 	fclicked = document.getElementById("FW").value;
 	}
@@ -601,7 +601,7 @@ document.getElementById("display").innerHTML = "<br>";
 function series(){
 	document.getElementById("overlaytext").innerHTML = "Searching DB";
 	document.getElementById("overlay").style.display = "block";
-	document.getElementById("FW").value = "1.00-8.03";
+	document.getElementById("FW").value = "1.00-8.50";
 	document.getElementById("type").value = "ALL";
 	firmcnt = 0;
 	document.getElementById("searchbox").value = qluid;
