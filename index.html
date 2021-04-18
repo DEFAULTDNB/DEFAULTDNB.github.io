@@ -301,7 +301,8 @@ function reply_click(clicked_id) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) {
-					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
+					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0) == bclicked){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -364,7 +365,8 @@ document.getElementById("#").addEventListener("click", function(){
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){	
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
-					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
+					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0).match(/^[.#0-9'/]+$/)){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -468,12 +470,20 @@ document.getElementById("display").innerHTML = "<br>";
 				}
 			}
 		}
-	} 
+	} else if (cclicked == "UNRELEASED"){
+		for (i = firmz; i < lines.length; i++){
+			if (lines[i].match("UNRELEASED")){
+			cnt++;
+			colourise();
+			}
+		}
+	} 	
 	if (fclicked.includes('-')) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
-					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){// ||  || ){
+					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){// ||  || ){
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(cclicked, "gi"))){
 								cnt++;
@@ -559,7 +569,8 @@ document.getElementById("display").innerHTML = "<br>";
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = 0; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) { //fwMin to fwMax
-					if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
+					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
+					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(aWord, "gi"))){
 								if (lines[i].match(RegExp(cclicked, "gi"))){
