@@ -2,22 +2,54 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="FRMCHK is a web-based all-in-one tool to confirm game firmware. I've compile as much data as I possibly can every week so that you can access it all in one place!">
+<meta name="description" content="FRMCHK is a web-based all-in-one tool to confirm game firmware. I compile as much data as I possibly can every week so that you can access it all in one place!">
 <title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
-<link rel="stylesheet" type="text/css" href="frmchk.css">
-<link rel="shortcut icon" type="image/png" href="favicon.png" />
-<link rel="apple-touch-icon" href="favicon.png">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.4.1/q.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/2.0.2/spark-md5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="config/frmchk.css">
+<link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
+<link rel="apple-touch-icon" href="icons/favicon.png" />
+<script src="config/q.js"></script>
+<script src="config/spark-md5.min.js"></script>
 </head>
 <body onload="closeTimer();">
 <input type="text" value="" id="myInput" style="opacity:0%;">
 <div id="overlay"><div id="overlaytext" style="font-size: 22px"></div></div>
 <h1 id="myT" onclick="location.reload()">PS4 GΔME FIRMWΔRE DΔTΔ</h1>
-<div class="callout" id="callout" draggable="true">
+<div class="callout" id="callout">
   <div class="callout-header" id="titleshout">FRMCHK NEWS</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
   <div class="callout-container" id="shout"></div>
+</div>
+<div class="card" id="card" onmouseleave="this.style.display='none';">
+  <div class="card-header" id="cardtitle">GAME TITLE</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <center><div class="card-header2" id="gamecusa">GAME ID/NAME</div><img id="additionalImage" src="icons/pad.png" onerror="this.src='icons/pad.png';" alt=" " style="width:50px"></center>
+  <div class="card-container" id="infocontainer">
+		<img id="CUSART" src="icons/generic.png" onerror="this.src='icons/generic.png';" alt=" " style="width:200px">
+	<div id="gameinfo">
+	<div id="i0"><span id="minReq"></span></div><br>
+	<div id="i1"><span id="gameDump"></span></div><br>
+	<div id="i2"><span id="gameBackport"></span></div>
+	<div id="i3"><button title="Look up Reviews" id="gameReview" class="interact">&#10148;</button><span id="r1"></span></div>
+	<div id="i4"><button title="Find PKG Info" id="gamePKG" class="interact" onclick="">&#10148;</button><span id="p1"></span></div>
+	<div id="i5"><button title="Find PSN Info" id="gamePSN" class="interact" onclick="">&#10148;</button><span id="p2"></span></div>
+	<div id="i6"><button title="Find Patches" id="gamePatch" class="interact" onclick="">&#10148;</button><span id="p3"></span></div><br>
+	</div>
+  </div>
+</div>
+<div class="card" id="fcard" onmouseleave="this.style.display='none';">
+  <div class="card-header" id="fcardtitle">FIRMWARE</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <center><div class="card-header2" id="fwversion">FW VERSION</div><img id="additionalImage" src="ICONS/UPDATE.PNG" onerror="this.src='icons/pad.png';" alt=" " style="width:50px"></center>
+  <div class="card-container" id="finfocontainer">
+		<img id="CUSART" src="icons/firm.png" onerror="this.src='icons/generic.png';" alt=" " style="width:200px">
+	<div id="firminfo">
+	<div id="f0"><span id="rDate"></span></div><br>
+	<div id="f1"><span id="kString"></span></div>
+	<div id="f2"><button title="D/L SYS PUP" id="fSYS" class="interact">&#10148;</button><span id="link1">SYSTEM</span></div>
+	<div id="f3"><button title="D/L REC PUP" id="fREC" class="interact" onclick="">&#10148;</button><span id="link2">RECOVERY</span></div>
+	<div id="f4"><button title="D/L PATCH PUP" id="fPAT" class="interact" onclick="">&#10148;</button><span id="link3">PATCH</span></div>
+	</div>
+  </div>
 </div>
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span></div>
@@ -114,6 +146,7 @@
 	<option id="F2P" value="F2P">F2P ONLINE</option>
 	<option id="PSHITS" value="PSHITS">HITS COLLECTION</option>
 	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
+	<option id="REMASTERED" value="REMASTERED">REMASTERED</option>
 	<option id="PS2" value="PS2">PS2 CLASSICS</option>
 	<option id="VR" value="VR">PSVR COMPAT.</option>
 	<option id="3DRUD" value="3DRUD">3DRUDDER COMPAT.</option>
@@ -161,9 +194,9 @@
 	<option id="BOOTPS5" value="BOOTPS5">ISSUES ON PS5</option>
 	<option id="NOTPS5" value="NOTPS5">NOT COMPATIBLE</option>
 	<optgroup label="★DEBUG">
+	<option id="60FPS" value="MOD60FPS">60FPS MOD</option>
 	<option id="CROSSPLAY" value="CROSSPLAY">CROSSPLAY</option>
 	<option id="FIRMWARE" value="FIRMWARE" >FIRMWARE</option>
-	<option id="PSNREQ" value="Requires PSN">PSN REQUIRED</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
 	<option id="PLAYABLE" value="PLAYABLE">PLAYABLE</option>
 	<option id="UNPLAYABLE" value="UNPLAYABLE">UNPLAYABLE</option>
@@ -172,12 +205,14 @@
 <label class="switch" title="" id="iLen"><input id="togLen" type="checkbox" checked onclick="infoType();"><span class="slider round"></span></label>&nbspInfo
 <label class="switch" title="" id="dbSort"><input id="togSort" type="checkbox" checked onclick="alphaDate();"><span class="slider round"></span></label>&nbspSort
 <label class="switch" title="" id="dlc"><input id="togDLC" type="checkbox" checked onclick="dlcHide();"><span class="slider round"></span></label>&nbspDLC
-<button class="interact" title="Reset search" id="nuke" onclick="nukeEm();" style="font-size:16px">&nbspReset</button>
+<button class="interact" title="Reset search" id="nuke" onclick="nukeEm();" style="font-size:16px">&nbsp Reset</button>
 <br><br>
 <div id="clickers"><button id="#">#</button>
 <script>
 document.getElementById("overlaytext").innerHTML = "Loading DB";
 document.getElementById("overlay").style.display = "block";
+document.getElementById("card").style.display = "none";
+document.getElementById("fcard").style.display = "none";
 var calculate = 100;
 var myTimer;
 var bclicked = "";
@@ -201,7 +236,6 @@ var qluid = "";
 <div style="display:flex">
 <button id="qlubutton" class="qlu" onclick="">QUICK LOOK:</button><div id="userbuttons" style="display:flex"></div>
 <button class="add" id="addyourown" title="Add custom tab" onmousedown="fillout();"><span class="rotate">&#9587;</span></button><button class="add" title="Remove all tabs" onmousedown="removeAll();">&#9587;</button><button class="add" title="Reset tabs" onmousedown="clearStorage();"><span class="redtext">&#9587;</span></button></div>
-<img id="CUSART" src="" class="sticky" onerror="this.src='generic.png';" alt=" " hidden><p id="caption" class="sticky"></p>
 <script>
 if (localStorage.userButtons==null){
 var userButtons = new Array("Assassins", "Battlefield", "Call of Duty", "FIFA", "Final Fantasy", "Hitman", "Resident Evil", "Tomb Raider");
@@ -461,11 +495,7 @@ document.getElementById("display").innerHTML = "<br>";
 		}
 	} else if (cclicked == "UNPLAYABLE"){
 		for (i = firmz; i < lines.length; i++){
-			if (lines[i].match("UNRELEASED")){
-			cnt++;
-			colourise();
-			}
-			for (f=76; f <=85; f++){
+			for (f=80; f <=99; f++){
 				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 				cnt++;
 				colourise();
@@ -712,228 +742,202 @@ node.addEventListener("touchcancel", cancel);
 }	
 function colourise(){
 	if (localStorage.infoLen=='short'){
-	//dateInfo = lines[i].slice(lines[i],lines[i].indexOf("(")-1); //shorter
 	dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
 	} else if (localStorage.infoLen=='long') {
 	dateInfo = lines[i];
 	}
 	if (lines[i].match("DLC")){
 		if (localStorage.DLC=='true') {
-			if (lines[i].match("DUMPED")){
-				if (lines[i].match("BP ISSUE")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				genericAttribs();
-				} else if (lines[i].match("505BP")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				genericAttribs();
-				} else if (lines[i].match("672BP")){
-				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				genericAttribs();
-				} else {
-				document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-				document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-				genericAttribs();
-			}
-		} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("blue").bold() + '</button>&nbsp<span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-			document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-			genericAttribs();
-			}
+		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();" onmouseleave="alert("gone");">' + dateInfo.fontcolor("blue").bold() + '</button>' + '<hr>');	
+		genericAttribs();
 		} else if (localStorage.DLC=='false'){
 			cnt--;
-		}	
-	} else if (lines[i].match("505BP")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="oID" class="interact" onmouseenter="oName = this.id" onclick="opSearch();"><abbr title="Find Update Patches">&#9413;</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 5.05; bpgood();"><abbr title="Backport info [5.05]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');	
-	if (lines[i].match("CUSA")){document.getElementById('oID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('oID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
-	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	genericAttribs();
-	} else if (lines[i].match("672BP")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="oID" class="interact" onclick="oName = this.id; opSearch();"><abbr title="Find Update Patches">&#9413;</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button id="bpID" class="interact" onclick="bpName = this.id; bpVer = 6.72; bpgood();"><abbr title="Backport info [6.72]">&#9745;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-	if (lines[i].match("CUSA")){document.getElementById('oID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('oID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
-	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	genericAttribs();
-	} else if (lines[i].match("BP ISSUE")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="oID" class="interact" onclick="oName = this.id; opSearch();"><abbr title="Find Update Patches">&#9413;</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button>&nbsp<button title="test" id="bpID" class="interact" onclick="bpName = this.id; bpDesc = this.title; bpinfo();"><abbr title="Backport information">&#9746;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');	
-	document.getElementById('bpID').title = lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1);	
-	if (lines[i].match("CUSA")){document.getElementById('oID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('oID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
-	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = document.getElementById('bpID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);	
-	genericAttribs();
-	} else if (lines[i].match("DUMPED")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="oID" class="interact" onclick="oName = this.id; opSearch();"><abbr title="Find Update Patches">&#9413;</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button>&nbsp<button id="dID" class="interact" onclick="dName = this.id; dumpinfo();"><abbr title="Dump information">&#9401;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-	if (lines[i].match("CUSA")){document.getElementById('oID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('oID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
-	document.getElementById('bID').id = document.getElementById('mID').id = document.getElementById('dID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	genericAttribs();
+		}
 	} else if (lines[i].match("Demo/Trial")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("purple").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();">' + dateInfo.fontcolor("purple").bold() + '</button>' + '<hr>');	
 	genericAttribs();
 	} else if (lines[i].match("Entertainment")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("mediumpurple").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-	document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();">' + dateInfo.fontcolor("mediumpurple").bold() + '</button>' + '<hr>');
+	genericAttribs();
+	
 	} else if (lines[i].match("UNRELEASED")){
-	document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("dimgrey").bold() + '</span>&nbsp<button id="uID" class="interact" style="display:inline;" onclick="uName = this.id; unrel();"><abbr title="Unreleased game">&#8856;</abbr></button>' + '<hr>');
-	document.getElementById('uID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="whatever" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();">' + dateInfo.fontcolor("dimgrey").bold() + '</button>' + '<hr>');
+	genericAttribs();
+	} else if (lines[i].includes("(Firmware)")){
+		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="whatever" id="fID" class="interactstore" onclick="fName = this.id;firmResolve();">' + dateInfo.fontcolor("black").bold() + '</button>' + '<hr>');
+		firmAttribs();
+		firmcnt++
 	} else {
-		if (lines[i].includes("(Firmware)")){
-			if (lines[i].match("PAT")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("black").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="pID" title="PATCH NO HASH INFORMATION AVAILABLE" class="interact" onclick="patGrab();" onmouseover="pName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-			document.getElementById('pID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-			patch = lines[i].slice(lines[i].indexOf("PAT ")+4, lines[i].indexOf("PAT ")+36).toUpperCase();
-			document.getElementById('pID').id = patch;
-			} else if (lines[i].match("KEX")){
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased"><mark>' + dateInfo.fontcolor("black").bold() + '</mark></span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button><span class="interact" title="Exploitable FW">🐔</span>' + '<hr>');
-			} else {
-			document.getElementById('display').insertAdjacentHTML('beforeend', '<span class="unreleased">' + dateInfo.fontcolor("black").bold() + '</span><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="fID" title="SYS NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="sysGrab();" onmouseover="fName = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button>&nbsp<button id="fID2" title="REC NO HASH INFORMATION IS AVAILABLE" class="interact" onclick="recGrab();" onmouseover="fName2 = this.id; md5Resolve(this);"><abbr>&#10225;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-			}
-		document.getElementById('bID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
-		document.getElementById('fID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-		document.getElementById('fID2').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-		hash = lines[i].slice(lines[i].indexOf("SYS ")+4, lines[i].indexOf("SYS ")+36).toUpperCase();
-		hash2 = lines[i].slice(lines[i].indexOf("REC ")+4, lines[i].indexOf("REC ")+36).toUpperCase();
-		document.getElementById('fID').id = hash;
-		document.getElementById('fID2').id = hash2;
-		firmcnt++;
-		} else {
-		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="CUSA NEEDED" id="cID" class="interactstore" onmouseenter="cName = this.id; cusaResolve();" onmouseleave="cusaKill();" onclick="storeFind();">' + dateInfo.fontcolor("black").bold() + '</button><span id="divID" style="display:none">&nbsp<button id="bID" class="interact" onclick="gName = this.id; webSearch();"><abbr title="Information for PKG/PUP">&#9406</abbr></button>&nbsp<button id="oID" class="interact" onclick="oName = this.id; opSearch();"><abbr title="Find Update Patches">&#9413;</abbr></button>&nbsp<button id="mID" class="interact" onclick="mName = this.id; critique();"><abbr title="Reviews for this title">&#9415;</abbr></button></span><button id="hider" title="Show/Hide info" class="interact" onclick="hidID = this.id;hideButtons();">&nbsp&#8666;</button>' + '<hr>');
-		if (lines[i].match("CUSA")){document.getElementById('oID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('oID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
-		document.getElementById('bID').id = document.getElementById('mID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-		genericAttribs();
-		}
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();" onmouseleave="alert("gone");">' + dateInfo.fontcolor("black").bold() + '</button>' + '<hr>');	
+	genericAttribs();
 	}
 };
 function genericAttribs(){
-	document.getElementById("hider").id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
-	document.getElementById('divID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1)+'div';
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
-	if (lines[i].match("CUSA")){document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);}else{document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);}
-}
-function opSearch() {
-let oPatch = document.getElementById(oName).getAttribute("data");
-	if (oName.includes("CUSA")) {	
-	var r = confirm("📁 𝗙𝗶𝗻𝗱 𝗹𝗲𝗴𝗶𝘁 𝘂𝗽𝗱𝗮𝘁𝗲𝘀:\n\nTry to find update pkgs for "+oPatch+"?\n\n𝗡𝗢𝗧𝗘: Only update your legit disc or psn game/app to: "+kexFW+" max!");
-		if (r == true) {
-		window.open("https://orbispatches.com/"+oName);
+	document.getElementById('cID').setAttribute("eVersion", lines[i].slice(lines[i].indexOf("EST"),lines[i].indexOf("EST")+6));
+	document.getElementById('cID').setAttribute("oVersion", lines[i].slice(lines[i].indexOf("OFW"),lines[i].indexOf("OFW")+6));
+	//priority high to low
+	if (lines[i].match("UNRELEASED")){
+	document.getElementById('cID').setAttribute("vrConf", "ICONS/UNREL.PNG");
+	} else if (lines[i].match("VR AIM")){
+	document.getElementById('cID').setAttribute("vrConf", "ICONS/AIM.PNG");
+	} else if (lines[i].match("VR")){
+	document.getElementById('cID').setAttribute("vrConf", 'ICONS/PSVR.PNG');
+	} else if (lines[i].match("DLC")){
+	document.getElementById('cID').setAttribute("vrConf", "ICONS/DLC.PNG");
+		if (lines[i].match("505BP")){
+		//document.getElementById('cID').setAttribute("oVersion", "OFW505");
+		//DEAL WITH THIS IF NEEDED\\
+		//DLC WORKING WITH BACKPORTS\\
+		}else{
 		}
+	} else if (lines[i].match("Requires PSN")||(lines[i].match("F2P"))){
+	document.getElementById('cID').setAttribute("vrConf", 'ICONS/PSN.PNG');
+	};
+	if (lines[i].match("DUMPED V")){
+	document.getElementById('cID').setAttribute("dVersion", lines[i].slice(lines[i].indexOf("DUMPED V")+8,lines[i].indexOf("DUMPED V")+13));
+	};
+	if (lines[i].match("BP ISSUE")){
+	document.getElementById('cID').setAttribute("bpIssue", lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1));
+	}else if (lines[i].match("505BP")){
+	document.getElementById('cID').setAttribute("bpIssue", 'WORKING PERFECT ON 5.05');
+	}else if (lines[i].match("672BP")){
+	document.getElementById('cID').setAttribute("bpIssue", 'WORKING PERFECT ON 6.72 (ISSUES ON 5.05)');
+	}else{
+	document.getElementById('cID').setAttribute("bpIssue", 'NO INFORMATION');
+	};
+	//CUSA MUST GO AT THE BOTTOM OF THIS FUNCTION
+	if (lines[i].match("CUSA")){
+	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
+	}else{
+	document.getElementById('cID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
+	};
+}
+function firmAttribs(){
+	document.getElementById('fID').setAttribute("fdata", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
+	document.getElementById('fID').setAttribute("fHash1", lines[i].slice(lines[i].indexOf("SYS ")+4, lines[i].indexOf("SYS ")+36).toUpperCase());
+	document.getElementById('fID').setAttribute("fHash2", lines[i].slice(lines[i].indexOf("REC ")+4, lines[i].indexOf("REC ")+36).toUpperCase());
+	document.getElementById('fID').setAttribute("rdate", lines[i].slice(lines[i].indexOf(") [")+3, lines[i].indexOf("] [")));
+	if (lines[i].match("PATCH")){
+	document.getElementById('fID').setAttribute("fHash3", lines[i].slice(lines[i].indexOf("PATCH ")+6, lines[i].indexOf("PATCH ")+38).toUpperCase());
+	}else{
+	document.getElementById('fID').setAttribute("fHash3", "NO PATCH FIRMWARE EXISTS");
+	}
+	if (lines[i].match("KEX")){
+	document.getElementById('fID').setAttribute("fKEX", 'true');
 	} else {
-	var r = confirm("📁 𝗙𝗶𝗻𝗱 𝗹𝗲𝗴𝗶𝘁 𝘂𝗽𝗱𝗮𝘁𝗲𝘀:\n\nTry to find update pkgs for "+document.getElementById(oName).getAttribute("data")+"?\n\n𝗡𝗢𝗧𝗘: Only update your legit disc or psn game/app to: "+kexFW+" max!");
-		if (r == true) {
-		window.open("https://orbispatches.com/");
-		}
-	}
+	document.getElementById('fID').setAttribute("fKEX", 'false');
+	};
+	if (lines[i].match("branches")){
+	document.getElementById('fID').setAttribute("kString", lines[i].slice(lines[i].indexOf("release_branches")-7, lines[i].indexOf("SYS")-3).toUpperCase());
+	} else {
+	document.getElementById('fID').setAttribute("kString", "NOT AVAILABLE");
+	};
+	//MUST GO AT THE BOTTOM OF THIS FUNCTION
+	document.getElementById('fID').id = lines[i].slice(lines[i],lines[i].indexOf("(")-1);
 };
-function webSearch() {
-var pkgpup;
-if (gName.match(kexFW)){
-pkgpup = "🐔 𝗛𝗜𝗚𝗛𝗘𝗦𝗧 𝗛𝗔𝗖𝗞𝗔𝗕𝗟𝗘 𝗙𝗜𝗥𝗠𝗪𝗔𝗥𝗘\n\n🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
-} else if (gName.match(/^[+-]?\d+(\.\d+)?$/)){
-pkgpup = "🌐 𝐒𝐞𝐚𝐫𝐜𝐡 𝐦𝐨𝐫𝐞 𝐢𝐧𝐟𝐨 𝗳𝗼𝗿 𝐏𝐔𝐏 𝐯𝐞𝐫𝐬𝐢𝐨𝐧:\n\n\t\t\t\t";
-} else {
-pkgpup = "🌐 𝗦𝗲𝗮𝗿𝗰𝗵 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼 𝗳𝗼𝗿 𝗴𝗮𝗺𝗲 𝗣𝗞𝗚:\n\n";
-}
-var r = confirm(pkgpup+gName+"?\n");
-	if (r == true) {
-		//-- SEARCH FIXES --\\
-		//Maybe try: https://serialstation.com/games/?system=4&system_op=AND&title= //
-		if (gName === "#killallzombies") {
-		window.open("https://serialstation.com/search/?search=killallzombies&system=4");
-		} else if (gName === "N++") { 
-		window.open("https://serialstation.com/search/?search=N%2B%2B&system=4");
-		} else if (gName === "Resident Evil Revelations 2 Extra Episode 1 Struggle") { 
-		window.open("https://serialstation.com/search/?search=RER2%20Extra%20Episode:%20The%20Struggle&system=4");
-		} else if (gName === "Resident Evil Revelations 2 Extra Episode 2 Little Miss") { 
-		window.open("https://serialstation.com/search/?search=RER2%20Extra%20Episode:%20Little%20Miss&system=4");
-		} else if (gName === "Resident Evil Revelations 2 Episode 1 Penal Colony") { 
-		window.open("https://serialstation.com/search/?search=Resident%20Evil%20Revelations%202%20(Episode%20One:%20Penal%20Colony)&system=4");
-		} else if (gName === "Resident Evil Revelations 2 Episode 2 Contemplation") { 
-		window.open("https://serialstation.com/search/?search=%20RER2%20Episode%20Two:%20Contemplation&system=4");
-		} else if (gName === "Resident Evil Revelations 2 Episode 3 Judgment") { 
-		window.open("https://serialstation.com/search/?search=RER2%20Episode%20Three:%20Judgment&system=4");
-		} else if (gName === "Resident Evil Revelations 2 Episode 4 Metamorphosis") { 
-		window.open("https://serialstation.com/search/?search=RER2%20Episode%20Four:%20Metamorphosis&system=4");
-		} else if (gName === "Galak-Z The Void / Skulls of the Shogun Bone-A-Fide Edition - Platinum Pack") {
-		window.open("https://serialstation.com/search/?search=Skulls%20of%20the%20Shogun&system=4");
-		} else if (gName === "Under Night In-Birth Exe Late[cl-r]") {
-		window.open("https://serialstation.com/search/?search=Under%20Night%20In-Birth%20Exe:Late[cl-r]&system=4");
-		} else if (gName === "Under Night In-Birth Exe Late[st]") {
-		window.open("https://serialstation.com/search/?search=Under%20Night%20In-Birth%20Exe:Late[st]&system=4");
-		//-- OFW PUP INFO --\\
-		} else if (gName.match("1.01|1.05|1.06|1.07")) {
-		window.open("https://www.psdevwiki.com/ps4/"+gName);
-		} else if (gName.match("1.501")) {
-		window.open("https://www.psdevwiki.com/ps4/"+gName+".000");
-		} else if (gName.match("5.02|5.07|6.00|6.02|6.20|6.50|6.70|6.71|6.72|8.01|8.03")) {
-		alert("🌐 𝗡𝗼 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗲𝘅𝗶𝘀𝘁𝘀 𝗳𝗼𝗿: "+gName);
-		} else if (gName.match("1.50|1.51|1.52|1.60|1.61|1.62|1.70|1.71|1.72|1.74|1.75|1.76|2.00|2.01|2.02|2.03|2.04|2.51|2.52|2.55|2.56|2.57|3.10|3.11|3.15|3.50|3.55|4.00|4.01|4.05|4.06|4.07|4.50|4.55|4.70|4.71|4.72|4.73|4.74|5.01|5.03|5.05|5.53|5.53-01|5.55|5.56|6.50|6.51|7.01|7.02|7.51|7.55")) { 
-		window.open("https://www.psdevwiki.com/ps4/"+gName+"0.000");
-		} else if (gName.match("2.50|3.00|5.00|5.50|7.00|7.50|8.00")) {
-		window.open("https://www.psdevwiki.com/ps4/"+gName+"8.000");
-		} else { 
-		window.open("https://serialstation.com/search/?search="+gName+"&system=4");
-		}
-	}
-};
-function critique() {var s = confirm("🌐 𝗙𝗶𝗻𝗱 𝗮𝗴𝗴𝗿𝗲𝗴𝗮𝘁𝗲𝗱 𝗿𝗲𝘃𝗶𝗲𝘄𝘀 𝗼𝗻𝗹𝗶𝗻𝗲 𝗳𝗼𝗿:\n\n"+mName+"?\n");if(s==true){window.open("https://www.metacritic.com/search/game/"+mName+"/results?plats[72496]=1&search_type=advanced");}else{}};
-function dumpinfo() {alert("👍 𝗔 𝗱𝘂𝗺𝗽 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝘁𝗼 𝗲𝘅𝗶𝘀𝘁 𝗳𝗼𝗿:\n\n"+dName+"\n\n 𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
-function bpinfo() {alert("❌ 𝗧𝗵𝗶𝘀 𝘁𝗶𝘁𝗹𝗲 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝘁𝗼 𝗵𝗮𝘃𝗲 𝗶𝘀𝘀𝘂𝗲𝘀 𝘄𝗵𝗲𝗻 𝗯𝗮𝗰𝗸𝗽𝗼𝗿𝘁𝗲𝗱!\n\n"+bpName+" is not fully playable on older firmwares.\n\n𝗥𝗘𝗔𝗦𝗢𝗡: "+bpDesc+"\n\n𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
-function bpgood() {alert("✅ 𝗧𝗵𝗶𝘀 𝘁𝗶𝘁𝗹𝗲 𝗶𝘀 𝗰𝗼𝗻𝗳𝗶𝗿𝗺𝗲𝗱 𝗳𝘂𝗹𝗹𝘆 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝘄𝗵𝗲𝗻 𝗯𝗮𝗰𝗸𝗽𝗼𝗿𝘁𝗲𝗱!\n\n"+bpName+" is fully playable without issues on "+bpVer+".\n\n𝗡𝗼 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗯𝘆 𝗙𝗥𝗠𝗖𝗛𝗞!");};
-function unrel() {alert("❗ 𝗡𝗼 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲.\n\nThis game has not been released.");};
-function sysGrab() {
-document.getElementById("myInput").value = fName;
-hash2cb();
-let sysVer = document.getElementById(fName).getAttribute("data");
-var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [SYS] UPDATE.PUP?\n\nMD5: "+fName+"\n\n(Hash will be copied to clipboard for verification)");
-if (s == true) {window.open("https://archive.org/download/PS4-System-Firmwares/Firmware%20"+sysVer+"/PS4UPDATE.PUP");
-} else {}};
-function recGrab() {
-document.getElementById("myInput").value = fName2;
-hash2cb();
-let sysVer = document.getElementById(fName2).getAttribute("data");
-var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [REC] UPDATE.PUP?\n\nMD5: "+fName2+"\n\n(Hash will be copied to clipboard for verification)");
-if (s == true) {window.open("https://archive.org/download/PS4-Recovery-Firmwares/Firmware%20"+sysVer+"/PS4UPDATE.PUP");
-} else {}};
-function patGrab() {
-document.getElementById("myInput").value = pName;
-hash2cb();
-let sysVer = document.getElementById(pName).getAttribute("data");
-var s = confirm("🌐 𝗙𝗶𝗿𝗺𝘄𝗮𝗿𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱:\n\n Download "+sysVer+" [PATCH] UPDATE.PUP?\n\nMD5: "+pName+"\n\n(Hash will be copied to clipboard for verification)");
-if (s == true) {window.open("https://archive.org/download/PS4-Patch-Firmwares/5.53%20to%205.53.1/PS4UPDATE.PUP");
-} else {}};
 function hash2cb() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand("copy");
+var copyText = document.getElementById("myInput");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+	document.getElementById("titleshout").innerHTML = "MD5:";
+	document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:#17cdc4'>"+copyText.value+"<br></span><span style='color:white'>COPIED TO CLIPBOARD!</span></center>";
+	document.getElementById('callout').style.display='initial';
+	closeTimer(); 
 };
-function storeFind() {
-let sName = document.getElementById(cName).getAttribute("data");
-var s = confirm("🌐 𝗣𝗦 𝗦𝘁𝗼𝗿𝗲 𝗟𝗶𝗻𝗸:\n\n Attempt to find information for "+sName+"?");
-if (s == true) {sName = sName.replaceAll(" ", "%2B");window.open("https://duckduckgo.com/?q=!ducky+"+sName+"+store.playstation.com");
-} else {}};
-function cusaResolve() {document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "generic.png";document.getElementById(cName).setAttribute('title', cName+": Click for PSN info");document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"+cName+"_00/image?w=250&amp;h=250"};
-function cusaKill() {document.getElementById('CUSART').src="";document.getElementById('CUSART').style.display='none';};
-function md5Resolve(e) {
-    if (e.getAttribute("title").includes("SYS")){
-	document.getElementById(fName).setAttribute('title', "D/L SYS FIRM: "+fName);
-	} else if (e.getAttribute("title").includes("REC")){
-	document.getElementById(fName2).setAttribute('title', "D/L REC FIRM: "+fName2);
+function cusaResolve() {
+	document.getElementById("card").style.display='inline';
+	let sName = document.getElementById(cName).getAttribute("data");
+	let eMin = document.getElementById(cName).getAttribute("eVersion");
+	let oMin = document.getElementById(cName).getAttribute("oVersion");
+	let vrSet = document.getElementById(cName).getAttribute("vrConf");
+	let dMax = document.getElementById(cName).getAttribute("dVersion");
+	let backPort = document.getElementById(cName).getAttribute("bpIssue");
+	let region = "US";
+	let language = "en";
+	let testVar = document.getElementById("cardtitle").innerHTML.slice(7 , document.getElementById("cardtitle").innerHTML.length);
+	document.getElementById("cardtitle").innerHTML = sName;
+	if (cName.match("CUSAXXXXX")){
+	document.getElementById("gamecusa").innerHTML = "DE-LISTED FROM PSN";
+	}else if (cName.match("CUSA")){
+	document.getElementById("gamecusa").innerHTML = cName;
+	}else{
+	document.getElementById("gamecusa").innerHTML = "CUSA REQUIRED";
+	};
+	document.getElementById("r1").innerHTML = " SEARCH FOR REVIEWS (Metacritic)";
+	document.getElementById("p1").innerHTML = " FIND PKG INFO (Serialstation)";
+	document.getElementById("p2").innerHTML = " OFFICIAL PLAYSTATION PAGE";
+	document.getElementById("p3").innerHTML = " FIND LEGIT UPDATES (Orbispatches)";
+	document.getElementById("gameReview").addEventListener("click", function(){ window.open("https://www.metacritic.com/search/game/"+document.getElementById(cName).getAttribute("data")+"/results?plats[72496]=1&search_type=advanced"); }); 
+	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
+	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
+	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
+	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#10060;";
 	} else {
-	document.getElementById(pName).setAttribute('title', "D/L PATCH FIRM: "+pName);
+	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#9989;";
+	};
+	if (dMax == null){
+	document.getElementById("gameDump").innerHTML = "NO KNOWN DUMP";
+	} else {
+		if (dMax.includes("]")){
+		dMax = dMax.slice(0, -1); 
+		} 
+		document.getElementById("gameDump").innerHTML = "VERSION DUMPED: <span style='color:lime'>" + dMax + "</span>";
 	}
+	document.getElementById("gameBackport").innerHTML = "BACKPORT INFO: " + backPort;
+	if (vrSet == 'ICONS/DLC.PNG'){
+	document.getElementById("CUSART").src = 'ICONS/ADDON.PNG';
+	document.getElementById("gamecusa").innerHTML = "DLC ITEM";
+	document.getElementById("gameBackport").innerHTML = "*USE DLC WITH HIGHEST UPDATE DUMPED*";
+	} else if (vrSet == 'ICONS/UNREL.PNG'){
+	document.getElementById("CUSART").src = 'ICONS/UNREL.PNG';
+	document.getElementById("gamecusa").innerHTML = "UNRELEASED ITEM";
+	document.getElementById("gameBackport").innerHTML = "*NO RELEASE DATE SCHEDULED*";
+	}else{
+	document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/"+region+"/"+language+"/999/"+cName+"_00/image?w=250&amp;h=250"
+	};
+	//WORKING EXAMPLES:
+	// https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/hk/en/999/CUSA18099_00/image?w=250&amp;h=250
+	document.getElementById("gamePKG").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://serialstation.com/titles/CUSA/'+cName.slice(4,cName.length));}else{window.open('https://serialstation.com/search/?search='+cName);}});
+	document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com');});
+	document.getElementById("gamePatch").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://orbispatches.com/'+cName);}else{window.open('https://orbispatches.com/');}}); 
 };
-function hideButtons() {
-  var x = document.getElementById(hidID+'div');
-  if (x.style.display === "none") {
-    x.style.display = "inline";
-  } else {
-    x.style.display = "none";
-  }
+function firmResolve(){
+	document.getElementById("fcard").style.display='inline';
+	let fData = document.getElementById(fName).getAttribute("fdata");
+	let sysHash = document.getElementById(fName).getAttribute("fHash1");
+	let recHash = document.getElementById(fName).getAttribute("fHash2");
+	let patHash = document.getElementById(fName).getAttribute("fHash3");
+	let sploited = document.getElementById(fName).getAttribute("fKEX");
+	let kStrings = document.getElementById(fName).getAttribute("kString");
+	let fwreldate = document.getElementById(fName).getAttribute("rdate");
+	if (fData==kexFW){document.getElementById("fcardtitle").innerHTML=fData+" OFW (Highest Exploitable Firmware)";
+	}else if (fData=="5.05"){document.getElementById("fcardtitle").innerHTML=fData+" OFW (Stable Exploitable Firmware)";
+	}else{
+	document.getElementById("fcardtitle").innerHTML = fData + " OFW";
+	};
+	if (sploited == 'true'){document.getElementById("fwversion").innerHTML = "<br><span style='color:lime'>FULL EXPLOIT CHAIN</span>";}else{document.getElementById("fwversion").innerHTML = "<br><span style='color:red'>NOT EXPLOITABLE</span>";}
+	document.getElementById("rDate").innerHTML = "RELEASED: "+fwreldate;
+	document.getElementById("kString").innerHTML = "KERNEL STRING: "+kStrings;
+	document.getElementById("link1").innerHTML = sysHash;
+	document.getElementById("fSYS").addEventListener("click", function(){
+	document.getElementById("myInput").value = sysHash; hash2cb();
+	window.open('https://archive.org/download/PS4-System-Firmwares/Firmware%20'+fData+'/PS4UPDATE.PUP');
+	});
+	document.getElementById("link2").innerHTML = recHash;
+	document.getElementById("fREC").addEventListener("click", function(){
+	document.getElementById("myInput").value = recHash;	hash2cb();
+	window.open("https://archive.org/download/PS4-Recovery-Firmwares/Firmware%20"+fData+"/PS4UPDATE.PUP");
+	});
+	document.getElementById("link3").innerHTML = patHash;
+	if (fData == "5.53-01"){
+	document.getElementById("fPAT").addEventListener("click", function(){
+	document.getElementById("myInput").value = patHash; hash2cb();
+	window.open("https://archive.org/download/PS4-Patch-Firmwares/5.53%20to%205.53.1/PS4UPDATE.PUP");
+	});
+	}else{
+	}
 };
 </script>
 <button id="top" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'});" class="sticky">BACK TO TOP</button>
@@ -975,12 +979,6 @@ document.getElementById("titleshout").innerHTML = "ALERT:";
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Dark mode:<br><br><span style='color:#17cdc4;font-size:22px;'>💡</span>  coming soon!</span></span></center>";
 document.getElementById('callout').style.display='initial';
 }
-function tip(){
-document.getElementById("titleshout").innerHTML = "TIP:";
-document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Faster searches:<br><br>Toggle <span style='color:#17cdc4;font-size:22px;'>&#9406;</span> to show<br>less information.</span></span></center>";
-document.getElementById('callout').style.display='initial';
-closeTimer();
-};
 function showGreetz() {
 document.getElementById("titleshout").innerHTML = "GREETZ:";
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Leeful<br>The Darkprogramer<br>squeak<br>Landcross<br>Whovian9369<br>Opoisso893<br>Darthsternie<br>OfficialAhmed<br>0x199</span></span></center>";
@@ -1129,11 +1127,11 @@ function calculateAll() {
 	document.getElementById('callout').style.display='initial';
 }
 </script>
-<input type="file" id="file" onchange="calculateAll();" accept=".pup"hidden></input>
+<input type="file" id="file" onchange="calculateAll();" accept=".pup" hidden></input>
 <abbr class="interact" title="Support this project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
-<div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='kofi.png';" onmouseleave="window.document.kofi.src='avatar.jpg';"><div class="chip"><img src="avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
+<div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.7.2 (BETΔ)</div>
+<div id="end">Version: 0.8.0 (BETΔ)</div>
 </body>
 </html> 
