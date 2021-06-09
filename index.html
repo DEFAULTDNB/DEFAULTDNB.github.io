@@ -41,7 +41,7 @@
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
   <center><div class="card-header2" id="fwversion">FW VERSION</div><img id="additionalImage" src="icons/update.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px"></center>
   <div class="card-container" id="finfocontainer">
-		<img id="CUSART" src="icons/firm.png" onerror="this.src='icons/generic.png';" alt=" " style="width:200px">
+		<img id="CUSART" src="icons/FIRM.png" onerror="this.src='icons/generic.png';" alt=" " style="width:200px">
 	<div id="firminfo">
 	<div id="f0"><span id="rDate"></span></div><br>
 	<div id="f1"><span id="kString"></span></div>
@@ -778,13 +778,13 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("oVersion", lines[i].slice(lines[i].indexOf("OFW"),lines[i].indexOf("OFW")+6));
 	//priority high to low
 	if (lines[i].match("UNRELEASED")){
-	document.getElementById('cID').setAttribute("vrConf", "ICONS/UNREL.PNG");
+	document.getElementById('cID').setAttribute("vrConf", "icons/UNREL.png");
 	} else if (lines[i].match("VR AIM")){
-	document.getElementById('cID').setAttribute("vrConf", "ICONS/AIM.PNG");
+	document.getElementById('cID').setAttribute("vrConf", "icons/AIM.png");
 	} else if (lines[i].match("VR")){
-	document.getElementById('cID').setAttribute("vrConf", 'ICONS/PSVR.PNG');
+	document.getElementById('cID').setAttribute("vrConf", 'icons/PSVR.png');
 	} else if (lines[i].match("DLC")){
-	document.getElementById('cID').setAttribute("vrConf", "ICONS/DLC.PNG");
+	document.getElementById('cID').setAttribute("vrConf", "icons/DLC.png");
 		if (lines[i].match("505BP")){
 		//document.getElementById('cID').setAttribute("oVersion", "OFW505");
 		//DEAL WITH THIS IF NEEDED\\
@@ -792,7 +792,7 @@ function genericAttribs(){
 		}else{
 		}
 	} else if (lines[i].match("Requires PSN")||(lines[i].match("F2P"))){
-	document.getElementById('cID').setAttribute("vrConf", 'ICONS/PSN.PNG');
+	document.getElementById('cID').setAttribute("vrConf", 'icons/PSN.png');
 	};
 	if (lines[i].match("DUMPED V")){
 	document.getElementById('cID').setAttribute("dVersion", lines[i].slice(lines[i].indexOf("DUMPED V")+8,lines[i].indexOf("DUMPED V")+13));
