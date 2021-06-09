@@ -1,2 +1,2 @@
-# https://defaultdnb.github.io/
-# Let's make something useful!
+# Let's make something useful (:
+# 0.8.0b
