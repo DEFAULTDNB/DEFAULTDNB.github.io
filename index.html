@@ -215,7 +215,7 @@ document.getElementById("card").style.display = "none";
 document.getElementById("fcard").style.display = "none";
 var calculate = 100;
 var myTimer;
-var bclicked = "";
+var bclicked = "None";
 var fclicked = "";
 var cclicked = "";
 var aWord = "";
@@ -464,15 +464,17 @@ document.getElementById("display").innerHTML = "<br>";
 	} else {
 	cclicked = document.getElementById("type").value;
 	}
-	//if (bclicked == ""){
-	bclicked = "None";
-	//}else{
-	//}
-	aWord = document.getElementById("searchbox").value;
-	if (aWord == ""){
-	aWord = "None";
-	}
-	//SPECIAL CASES
+	if (bclicked != "None"){
+    reply_click(bclicked);
+    return;
+    }
+    aWord = document.getElementById("searchbox").value;
+    if (aWord != ""){
+    lookupDelay();
+    return;
+    }
+    else aWord = "None";
+    //SPECIAL CASES
 	if (cclicked == "FIRMWARE"){
 		for (i = 0; i < firmz; i++){
 			if (lines[i].match("Firmware")){
@@ -551,9 +553,10 @@ document.getElementById("display").innerHTML = "<br>";
 	summary();
 };
 function lookupDelay(){
-	document.getElementById("overlaytext").innerHTML = "Searching DB";
-	document.getElementById("overlay").style.display = "block";
-	sDelay = setInterval(function(){ lookup();}, 5)
+    bclicked = "None";
+    document.getElementById("overlaytext").innerHTML = "Searching DB";
+    document.getElementById("overlay").style.display = "block";
+    sDelay = setInterval(function(){ lookup();}, 5)
 };
 function lookup(){
 clearInterval(sDelay);
@@ -779,32 +782,43 @@ function genericAttribs(){
 	//priority high to low
 	if (lines[i].match("UNRELEASED")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/UNREL.png");
-	} else if (lines[i].match("VR AIM")){
-	document.getElementById('cID').setAttribute("vrConf", "icons/AIM.png");
-	} else if (lines[i].match("VR")){
-	document.getElementById('cID').setAttribute("vrConf", 'icons/PSVR.png');
+	
 	} else if (lines[i].match("DLC")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/DLC.png");
-		if (lines[i].match("505BP")){
+	
+		/*if (lines[i].match("505BP")){
 		//document.getElementById('cID').setAttribute("oVersion", "OFW505");
 		//DEAL WITH THIS IF NEEDED\\
 		//DLC WORKING WITH BACKPORTS\\
 		}else{
-		}
-	} else if (lines[i].match("Requires PSN")||(lines[i].match("F2P"))){
+		}*/
+		
+	} else if (lines[i].match("VR AIM")){
+	document.getElementById('cID').setAttribute("vrConf", "icons/AIM.png");
+	} else if (lines[i].match("VR")){
+	document.getElementById('cID').setAttribute("vrConf", 'icons/PSVR.png');
+	} else if (lines[i].match("Requires PSN") || lines[i].match("F2P")){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/PSN.png');
 	};
+	
 	if (lines[i].match("DUMPED V")){
 	document.getElementById('cID').setAttribute("dVersion", lines[i].slice(lines[i].indexOf("DUMPED V")+8,lines[i].indexOf("DUMPED V")+13));
 	};
 	if (lines[i].match("BP ISSUE")){
 	document.getElementById('cID').setAttribute("bpIssue", lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1));
 	}else if (lines[i].match("505BP")){
-	document.getElementById('cID').setAttribute("bpIssue", 'WORKING PERFECT ON 5.05');
+	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON 5.05');
 	}else if (lines[i].match("672BP")){
-	document.getElementById('cID').setAttribute("bpIssue", 'WORKING PERFECT ON 6.72 (ISSUES ON 5.05)');
+	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON 6.72 (ISSUES ON 5.05)');
 	}else{
 	document.getElementById('cID').setAttribute("bpIssue", 'NO INFORMATION');
+	};
+	if (lines[i].match("FULLPS5")){
+	document.getElementById('cID').setAttribute("ps5bc", 'works');
+	}else if (lines[i].match("BOOTPS5")){
+	document.getElementById('cID').setAttribute("ps5bc", 'issue');
+	}else{
+	document.getElementById('cID').setAttribute("ps5bc", 'fail');
 	};
 	//CUSA MUST GO AT THE BOTTOM OF THIS FUNCTION
 	if (lines[i].match("CUSA")){
@@ -854,23 +868,36 @@ function cusaResolve() {
 	let vrSet = document.getElementById(cName).getAttribute("vrConf");
 	let dMax = document.getElementById(cName).getAttribute("dVersion");
 	let backPort = document.getElementById(cName).getAttribute("bpIssue");
+	let backCompat = document.getElementById(cName).getAttribute("ps5bc");
 	let region = "US";
 	let language = "en";
 	let testVar = document.getElementById("cardtitle").innerHTML.slice(7 , document.getElementById("cardtitle").innerHTML.length);
+	
 	document.getElementById("cardtitle").innerHTML = sName;
+	
 	if (cName.match("CUSAXXXXX")){
+	//get second CUSA, and state (Delisted)
 	document.getElementById("gamecusa").innerHTML = "DE-LISTED FROM PSN";
 	}else if (cName.match("CUSA")){
 	document.getElementById("gamecusa").innerHTML = cName;
 	}else{
-	document.getElementById("gamecusa").innerHTML = "CUSA REQUIRED";
+	document.getElementById("gamecusa").innerHTML = "CUSA UNKNOWN";
 	};
+	
+	if (backCompat == 'works') {
+	document.getElementById("gamecusa").innerHTML += '<span id="PS5label">&nbsp;PS5: &#9989;</span>';
+	} else {
+	document.getElementById("gamecusa").innerHTML += '<span id="PS5label">&nbsp;PS5: &#10060;</span>';
+	};
+	
 	document.getElementById("r1").innerHTML = " SEARCH FOR REVIEWS (Metacritic)";
 	document.getElementById("p1").innerHTML = " FIND PKG INFO (Serialstation)";
 	document.getElementById("p2").innerHTML = " OFFICIAL PLAYSTATION PAGE";
 	document.getElementById("p3").innerHTML = " FIND LEGIT UPDATES (Orbispatches)";
 	document.getElementById("gameReview").addEventListener("click", function(){ window.open("https://www.metacritic.com/search/game/"+document.getElementById(cName).getAttribute("data")+"/results?plats[72496]=1&search_type=advanced"); }); 
+	
 	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
+	
 	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
 	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
 	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#10060;";
@@ -885,13 +912,14 @@ function cusaResolve() {
 		} 
 		document.getElementById("gameDump").innerHTML = "VERSION DUMPED: <span style='color:lime'>" + dMax + "</span>";
 	}
-	document.getElementById("gameBackport").innerHTML = "BACKPORT INFO: " + backPort;
-	if (vrSet == 'ICONS/DLC.PNG'){
-	document.getElementById("CUSART").src = 'ICONS/ADDON.PNG';
-	document.getElementById("gamecusa").innerHTML = "DLC ITEM";
+	document.getElementById("gameBackport").innerHTML = "BACKPORT INFO: " + backPort;	
+	if (vrSet == 'icons/DLC.png'){
+	document.getElementById("CUSART").src = 'icons/ADDON.png';
+	document.getElementById("gamecusa").innerHTML = "DLC ITEM: " + cName;
 	document.getElementById("gameBackport").innerHTML = "*USE DLC WITH HIGHEST UPDATE DUMPED*";
-	} else if (vrSet == 'ICONS/UNREL.PNG'){
-	document.getElementById("CUSART").src = 'ICONS/UNREL.PNG';
+	
+	} else if (vrSet == 'icons/UNREL.png'){
+	document.getElementById("CUSART").src = 'icons/UNREL.png';
 	document.getElementById("gamecusa").innerHTML = "UNRELEASED ITEM";
 	document.getElementById("gameBackport").innerHTML = "*NO RELEASE DATE SCHEDULED*";
 	}else{
@@ -1132,6 +1160,6 @@ function calculateAll() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.0 (BETΔ)</div>
+<div id="end">Version: 0.8.1 (BETΔ)</div>
 </body>
-</html> 
+</html>
