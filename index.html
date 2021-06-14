@@ -785,13 +785,6 @@ function genericAttribs(){
 	
 	} else if (lines[i].match("DLC")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/DLC.png");
-	
-		/*if (lines[i].match("505BP")){
-		//document.getElementById('cID').setAttribute("oVersion", "OFW505");
-		//DEAL WITH THIS IF NEEDED\\
-		//DLC WORKING WITH BACKPORTS\\
-		}else{
-		}*/
 		
 	} else if (lines[i].match("VR AIM")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/AIM.png");
@@ -800,6 +793,13 @@ function genericAttribs(){
 	} else if (lines[i].match("Requires PSN") || lines[i].match("F2P")){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/PSN.png');
 	};
+	
+	if (lines[i].match("DELISTED")){
+	document.getElementById('cID').setAttribute("removed", "true");
+	} else {
+	document.getElementById('cID').setAttribute("removed", "false");
+	};
+
 	
 	if (lines[i].match("DUMPED V")){
 	document.getElementById('cID').setAttribute("dVersion", lines[i].slice(lines[i].indexOf("DUMPED V")+8,lines[i].indexOf("DUMPED V")+13));
@@ -869,35 +869,30 @@ function cusaResolve() {
 	let dMax = document.getElementById(cName).getAttribute("dVersion");
 	let backPort = document.getElementById(cName).getAttribute("bpIssue");
 	let backCompat = document.getElementById(cName).getAttribute("ps5bc");
+	let psnDelist = document.getElementById(cName).getAttribute("removed");
 	let region = "US";
 	let language = "en";
-	let testVar = document.getElementById("cardtitle").innerHTML.slice(7 , document.getElementById("cardtitle").innerHTML.length);
-	
 	document.getElementById("cardtitle").innerHTML = sName;
 	
-	if (cName.match("CUSAXXXXX")){
-	//get second CUSA, and state (Delisted)
-	document.getElementById("gamecusa").innerHTML = "DE-LISTED FROM PSN";
-	}else if (cName.match("CUSA")){
+	if (psnDelist == 'true'){
+	document.getElementById("cardtitle").innerHTML += " (DELISTED PSN)";
+	}
+	if (cName.match("CUSA")){
 	document.getElementById("gamecusa").innerHTML = cName;
 	}else{
 	document.getElementById("gamecusa").innerHTML = "CUSA UNKNOWN";
 	};
-	
 	if (backCompat == 'works') {
 	document.getElementById("gamecusa").innerHTML += '<span id="PS5label">&nbsp;PS5: &#9989;</span>';
 	} else {
 	document.getElementById("gamecusa").innerHTML += '<span id="PS5label">&nbsp;PS5: &#10060;</span>';
 	};
-	
 	document.getElementById("r1").innerHTML = " SEARCH FOR REVIEWS (Metacritic)";
 	document.getElementById("p1").innerHTML = " FIND PKG INFO (Serialstation)";
 	document.getElementById("p2").innerHTML = " OFFICIAL PLAYSTATION PAGE";
 	document.getElementById("p3").innerHTML = " FIND LEGIT UPDATES (Orbispatches)";
 	document.getElementById("gameReview").addEventListener("click", function(){ window.open("https://www.metacritic.com/search/game/"+document.getElementById(cName).getAttribute("data")+"/results?plats[72496]=1&search_type=advanced"); }); 
-	
 	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
-	
 	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
 	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
 	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#10060;";
@@ -915,9 +910,12 @@ function cusaResolve() {
 	document.getElementById("gameBackport").innerHTML = "BACKPORT INFO: " + backPort;	
 	if (vrSet == 'icons/DLC.png'){
 	document.getElementById("CUSART").src = 'icons/ADDON.png';
-	document.getElementById("gamecusa").innerHTML = "DLC ITEM";
 	document.getElementById("gameBackport").innerHTML = "*USE DLC WITH HIGHEST UPDATE DUMPED*";
-	
+		if (cName.includes("CUSA")){
+		document.getElementById("gamecusa").innerHTML = "DLC ITEM: " + cName;
+		}else{
+		document.getElementById("gamecusa").innerHTML = "DLC ITEM";
+		};
 	} else if (vrSet == 'icons/UNREL.png'){
 	document.getElementById("CUSART").src = 'icons/UNREL.png';
 	document.getElementById("gamecusa").innerHTML = "UNRELEASED ITEM";
@@ -1160,6 +1158,6 @@ function calculateAll() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.1 (BETΔ)</div>
+<div id="end">Version: 0.8.2 (BETΔ)</div>
 </body>
 </html>
