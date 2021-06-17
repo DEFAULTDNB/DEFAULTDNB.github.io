@@ -52,7 +52,7 @@
   </div>
 </div>
 <div id="count"></div>
-<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span></div>
+<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-7.55 (playable)<br>&#10060;&#xFE0E;: 8.00-8.50 (unplayable)</div>
 <select id="FW" onchange="evalDelay();">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="EXACT:">
@@ -744,11 +744,19 @@ node.addEventListener("touchleave", cancel);
 node.addEventListener("touchcancel", cancel);
 }	
 function colourise(){
+
 	if (localStorage.infoLen=='short'){
-	dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
+	
+		if (lines[i].match("Firmware")){
+		dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1);
+		}else{
+		dateInfo = lines[i].slice(lines[i],lines[i].lastIndexOf(")")+1) + " " + lines[i].slice(lines[i].length-8,lines[i].length);
+		}
+		
 	} else if (localStorage.infoLen=='long') {
 	dateInfo = lines[i];
 	}
+	
 	if (lines[i].match("DLC")){
 		if (localStorage.DLC=='true') {
 		document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();" onmouseleave="alert("gone");">' + dateInfo.fontcolor("blue").bold() + '</button>' + '<hr>');	
@@ -762,7 +770,6 @@ function colourise(){
 	} else if (lines[i].match("Entertainment")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();">' + dateInfo.fontcolor("mediumpurple").bold() + '</button>' + '<hr>');
 	genericAttribs();
-	
 	} else if (lines[i].match("UNRELEASED")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="whatever" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();">' + dateInfo.fontcolor("dimgrey").bold() + '</button>' + '<hr>');
 	genericAttribs();
@@ -773,7 +780,7 @@ function colourise(){
 	} else {
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();" onmouseleave="alert("gone");">' + dateInfo.fontcolor("black").bold() + '</button>' + '<hr>');	
 	genericAttribs();
-	}
+	}	
 };
 function genericAttribs(){
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
@@ -894,11 +901,13 @@ function cusaResolve() {
 	document.getElementById("gameReview").addEventListener("click", function(){ window.open("https://www.metacritic.com/search/game/"+document.getElementById(cName).getAttribute("data")+"/results?plats[72496]=1&search_type=advanced"); }); 
 	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
 	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
+	
 	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
 	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#10060;";
 	} else {
 	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#9989;";
 	};
+	
 	if (dMax == null){
 	document.getElementById("gameDump").innerHTML = "NO KNOWN DUMP";
 	} else {
@@ -926,7 +935,8 @@ function cusaResolve() {
 	//WORKING EXAMPLES:
 	// https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/hk/en/999/CUSA18099_00/image?w=250&amp;h=250
 	document.getElementById("gamePKG").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://serialstation.com/titles/CUSA/'+cName.slice(4,cName.length));}else{window.open('https://serialstation.com/search/?search='+cName);}});
-	document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com');});
+	//document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com');});
+	document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://store.playstation.com/en-gb/search/'+sName);});
 	document.getElementById("gamePatch").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://orbispatches.com/'+cName);}else{window.open('https://orbispatches.com/');}}); 
 };
 function firmResolve(){
@@ -943,7 +953,7 @@ function firmResolve(){
 	}else{
 	document.getElementById("fcardtitle").innerHTML = fData + " OFW";
 	};
-	if (sploited == 'true'){document.getElementById("fwversion").innerHTML = "<br><span style='color:lime'>FULL EXPLOIT CHAIN</span>";}else{document.getElementById("fwversion").innerHTML = "<br><span style='color:red'>NOT EXPLOITABLE</span>";}
+	if (sploited == 'true'){document.getElementById("fwversion").innerHTML = "<span style='color:lime'>FULL EXPLOIT CHAIN</span>";}else{document.getElementById("fwversion").innerHTML = "<span style='color:red'>NOT EXPLOITABLE</span>";}
 	document.getElementById("rDate").innerHTML = "RELEASED: "+fwreldate;
 	document.getElementById("kString").innerHTML = "KERNEL STRING: "+kStrings;
 	document.getElementById("link1").innerHTML = sysHash;
@@ -1158,6 +1168,6 @@ function calculateAll() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.2 (BETΔ)</div>
+<div id="end">Version: 0.8.3 (BETΔ)</div>
 </body>
 </html>
