@@ -142,6 +142,7 @@ hr {
 	position: fixed;
 	right: 1%;
 	top: 5%;
+	z-index:-1;
 }
 #searchbox {
 	border: none;
@@ -219,6 +220,10 @@ body {
   color: white;
   z-index: 999;
   font-size: 12px;
+}
+#PS5label {
+	position: static;
+	float: left;
 }
 #CUSART {
   float: left;
@@ -333,6 +338,7 @@ img.sticky {
 	position: fixed;
 	right: 1%;
 	top: 1%;
+	color: #17cdc4;
 }
 #overlay {
   position: fixed;
