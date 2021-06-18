@@ -935,8 +935,8 @@ function cusaResolve() {
 	//WORKING EXAMPLES:
 	// https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/hk/en/999/CUSA18099_00/image?w=250&amp;h=250
 	document.getElementById("gamePKG").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://serialstation.com/titles/CUSA/'+cName.slice(4,cName.length));}else{window.open('https://serialstation.com/search/?search='+cName);}});
-	//document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com');});
-	document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://store.playstation.com/en-gb/search/'+sName);});
+	//document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com');}); //NO LONGER WORKING
+	document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://store.playstation.com/en-gb/search/'+document.getElementById("cardtitle").innerHTML);});
 	document.getElementById("gamePatch").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://orbispatches.com/'+cName);}else{window.open('https://orbispatches.com/');}}); 
 };
 function firmResolve(){
