@@ -124,6 +124,7 @@
 	<option value="OFW 8.01" >OFW 8.01</option>
 	<option value="OFW 8.03" >OFW 8.03</option>
 	<option value="OFW 8.50" >OFW 8.50</option>
+	<option value="OFW 8.50" >OFW 8.52</option>
 	<optgroup label="RANGE:">
 	<option value="1.00-5.05">1.00 - 5.05</option>
 	<option value="1.00-6.72">1.00 - 6.72</option>
@@ -196,6 +197,7 @@
 	<optgroup label="★DEBUG">
 	<option id="60FPS" value="MOD60FPS">60FPS MOD</option>
 	<option id="CROSSPLAY" value="CROSSPLAY">CROSSPLAY</option>
+	<option id="PSCOMP" value="PSCOMP">PS TOURNAMENTS</option>
 	<option id="FIRMWARE" value="FIRMWARE" >FIRMWARE</option>
 	<option id="DELISTED" value="DELISTED" >DELISTED FROM PSN</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
@@ -564,8 +566,8 @@ clearInterval(sDelay);
 cnt = firmcnt = 0;
 document.getElementById("display").innerHTML = "<br>";
 	if (document.getElementById("FW").value == ""){
-	document.getElementById("FW").value = "1.00-8.50";
-	fclicked = "1.00-8.50";
+	document.getElementById("FW").value = "1.00-"+latestOFW;
+	fclicked = "1.00-"+latestOFW;
 	} else {
 	fclicked = document.getElementById("FW").value;
 	}
@@ -1095,7 +1097,8 @@ function base64(){
 		if (result == true) {
 		document.getElementById("myInput").value = window.atob(b64);
 		hash2cb();
-		alert("💾 𝗟𝗶𝗻𝗸 𝗰𝗼𝗽𝗶𝗲𝗱 𝘁𝗼 𝗰𝗹𝗶𝗽𝗯𝗼𝗮𝗿𝗱:\n\n" + window.atob(b64));
+		//alert("💾 𝗟𝗶𝗻𝗸 𝗰𝗼𝗽𝗶𝗲𝗱 𝘁𝗼 𝗰𝗹𝗶𝗽𝗯𝗼𝗮𝗿𝗱:\n\n" + window.atob(b64));
+		window.open(document.getElementById("myInput").value);
 		} else {
 		alert("⚠️ 𝗡𝗼 𝗯𝗮𝘀𝗲𝟲𝟰 𝗹𝗶𝗻𝗸 𝗲𝗻𝘁𝗲𝗿𝗲𝗱!:\n\nNothing decrypted.");
 		}
@@ -1169,6 +1172,6 @@ function calculateAll() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.3 (BETΔ)</div>
+<div id="end">Version: 0.8.4 (BETΔ)</div>
 </body>
 </html>
