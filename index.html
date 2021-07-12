@@ -796,6 +796,9 @@ function genericAttribs(){
 	} else if (lines[i].match("DLC")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/DLC.png");
 		
+	} else if (lines[i].match("PS2")){
+	document.getElementById('cID').setAttribute("vrConf", "icons/PS2.png");
+		
 	} else if (lines[i].match("VR AIM")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/AIM.png");
 	} else if (lines[i].match("VR")){
@@ -904,20 +907,23 @@ function cusaResolve() {
 	document.getElementById("gameReview").addEventListener("click", function(){ window.open("https://www.metacritic.com/search/game/"+document.getElementById(cName).getAttribute("data")+"/results?plats[72496]=1&search_type=advanced"); }); 
 	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
 	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
-	
 	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
 	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#10060;";
 	} else {
 	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#9989;";
 	};
-	
-	if (dMax == null){
-	document.getElementById("gameDump").innerHTML = "NO KNOWN DUMP";
+	if (sName.match("/")){
+	document.getElementById("gameDump").innerHTML = "<span style='color:orange'>*LOOKUP INDIVIDUAL TITLES*</span>";
+	document.getElementById("gamecusa").innerHTML = "MULTI CUSA PACK";
 	} else {
-		if (dMax.includes("]")){
-		dMax = dMax.slice(0, -1); 
-		} 
-		document.getElementById("gameDump").innerHTML = "VERSION DUMPED: <span style='color:lime'>" + dMax + "</span>";
+		if (dMax == null){
+		document.getElementById("gameDump").innerHTML = "NO KNOWN DUMP";
+		} else {
+			if (dMax.includes("]")){
+			dMax = dMax.slice(0, -1); 
+			} 
+			document.getElementById("gameDump").innerHTML = "VERSION DUMPED: <span style='color:lime'>" + dMax + "</span>";
+		}
 	}
 	document.getElementById("gameBackport").innerHTML = "BACKPORT INFO: " + backPort;	
 	if (vrSet == 'icons/DLC.png'){
