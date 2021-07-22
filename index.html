@@ -52,9 +52,11 @@
   </div>
 </div>
 <div id="count"></div>
-<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-7.55 (Playable)<br>&#10060;&#xFE0E;: 8.00-8.50 (Unplayable)</div>
+<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-7.55 (Playable)<br>&#10060;&#xFE0E;: 8.00-<span id="rangeMax"></span> (Unplayable)</div>
 <select id="FW" onchange="evalDelay();">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
+	<optgroup label="ALL IN DB:">
+	<option value="1.00-9.99" onclick="showAll();">1.00 - 9.99</option>
 	<optgroup label="EXACT:">
 	<option value="OFW 1.00" >OFW 1.00</option>
 	<option value="OFW 1.05" >OFW 1.05</option>
@@ -315,6 +317,7 @@ document.getElementById("FW").options[optCount].value = "1.00-"+latestOFW;
 document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+latestOFW;
 document.getElementById("FW").options[optCount-1].value = "8.00-"+latestOFW;
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span></center>";
+document.getElementById("rangeMax").innerHTML = latestOFW;
 //--------- A-Z button function ----------\\
 function reply_click(clicked_id) {
 	document.getElementById("overlaytext").innerHTML = "Searching DB";
@@ -789,6 +792,7 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("data", lines[i].slice(lines[i],lines[i].indexOf("(")-1));
 	document.getElementById('cID').setAttribute("eVersion", lines[i].slice(lines[i].indexOf("EST"),lines[i].indexOf("EST")+6));
 	document.getElementById('cID').setAttribute("oVersion", lines[i].slice(lines[i].indexOf("OFW"),lines[i].indexOf("OFW")+6));
+	document.getElementById('cID').setAttribute("releaseDate", lines[i].slice(lines[i].indexOf("[")+1,lines[i].indexOf("]")));
 	//priority high to low
 	if (lines[i].match("UNRELEASED")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/UNREL.png");
@@ -883,6 +887,7 @@ function cusaResolve() {
 	let backPort = document.getElementById(cName).getAttribute("bpIssue");
 	let backCompat = document.getElementById(cName).getAttribute("ps5bc");
 	let psnDelist = document.getElementById(cName).getAttribute("removed");
+	let showDate = document.getElementById(cName).getAttribute("releaseDate");
 	let region = "US";
 	let language = "en";
 	document.getElementById("cardtitle").innerHTML = sName;
@@ -891,9 +896,9 @@ function cusaResolve() {
 	document.getElementById("cardtitle").innerHTML += " (DELISTED PSN)";
 	}
 	if (cName.match("CUSA")){
-	document.getElementById("gamecusa").innerHTML = cName;
+	document.getElementById("gamecusa").innerHTML = cName + "  <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
 	}else{
-	document.getElementById("gamecusa").innerHTML = "CUSA UNKNOWN";
+	document.getElementById("gamecusa").innerHTML = "CUSA UNKNOWN" + "  <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
 	};
 	if (backCompat == 'works') {
 	document.getElementById("gamecusa").innerHTML += '<span id="PS5label">&nbsp;PS5: &#9989;</span>';
@@ -1172,12 +1177,19 @@ function calculateAll() {
 	document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:#17cdc4'>Calculating..</span><br><br><span style='color:white'>This could take a while!</span></span></center>";
 	document.getElementById('callout').style.display='initial';
 }
+function showAll(){
+document.getElementById("titleshout").innerHTML = "ALL DB ENTRIES:";
+document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>Scanning all " + (lines.length-firmz) + " entries in <br>the DB using range: <span style='color:#17cdc4;'>1.00-9.99</span>.<br><br>Please wait...</span></span></center>";
+document.getElementById('callout').style.display='initial';
+closeTimer();
+};
+				
 </script>
 <input type="file" id="file" onchange="calculateAll();" accept=".pup" hidden></input>
 <abbr class="interact" title="Support this project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.4 (BETΔ)</div>
+<div id="end">Version: 0.8.5 (BETΔ)</div>
 </body>
 </html>
