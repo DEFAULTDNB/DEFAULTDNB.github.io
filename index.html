@@ -311,7 +311,7 @@ document.getElementById("myT").style.cursor = "pointer";
 //--------- Firmware 1.00-Latest --------\\ 
 var firmz = 0;for (i = 0; i < lines.length; i++){if (lines[i].match("(Firmware)")){firmz++;}};
 var latestOFW = lines[firmz-1].slice(0,4);
-var latestBETA = "9.00b2";
+var latestBETA = "9.00b";
 for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].slice(0,4));}};
 document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+latestOFW;
 document.getElementById("FW").options[optCount].value = "1.00-"+latestOFW;
