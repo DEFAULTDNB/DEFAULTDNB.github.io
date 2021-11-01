@@ -317,7 +317,11 @@ document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+latestOFW;
 document.getElementById("FW").options[optCount].value = "1.00-"+latestOFW;
 document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+latestOFW;
 document.getElementById("FW").options[optCount-1].value = "8.00-"+latestOFW;
-document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span></center>";
+if (lines[i].match(latestOFW)){var lastFW = Date.parse(lines[i].slice(lines[i].indexOf("[")+1,lines[i].indexOf("]")));};
+var todayFW = Date.parse(new Date());
+var Difference_In_Time = todayFW - lastFW;
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br><span style='color:dimgrey'>(Released: "+parseInt(Difference_In_Days)+" Days Ago)</span><br><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span></center>";
 document.getElementById("rangeMax").innerHTML = latestOFW;
 //--------- A-Z button function ----------\\
 function azDelay(){
@@ -1209,6 +1213,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7 (BETΔ)</div>
+<div id="end">Version: 0.8.7-1 (BETΔ)</div>
 </body>
 </html>
