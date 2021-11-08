@@ -139,6 +139,7 @@
 	<option value="7.00-7.02">7.00 - 7.02</option>
 	<option value="7.00-7.55">7.00 - 7.55</option>
 	<option value="7.50-7.55">7.50 - 7.55</option>
+	<option value="8.00-8.53">8.00 - 8.53</option>
 	<option value="8.00-LATEST"></option>
 	<option value="1.00-LATEST"></option>
 </select>
@@ -1084,7 +1085,7 @@ function summary(){
 p = 0;
 calculate = (cnt / lines.length) * 100;
 move();
-document.getElementById("count").innerHTML =  "DB entries: <span id='linelength'>"+lines.length+" ("+firmz+" Firmwares).</span> <span id='counted'>"+cnt+"</span> results found under: <span id='selected'>"+fclicked+"</span> in: <span id='selected'>"+cclicked+ "</span> (bclicked: <span id='lastclicked'>"+bclicked+"</span>). Keyword: <span id='lastclicked'>"+aWord+"</span>";
+document.getElementById("count").innerHTML =  "DB entries: <span id='linelength'>"+lines.length+" ("+firmz+" Firmwares).</span> <span id='counted'>"+cnt+"</span> results within: <span id='selected'>"+fclicked+"</span> Category: <span id='selected'>"+cclicked+ "</span> (Letter: <span id='lastclicked'>"+bclicked+"</span>). Keyword: <span id='lastclicked'>"+aWord+"</span>";
 	if (localStorage.DLC=='false') {
 	document.getElementById("titleshout").innerHTML = "ALERT:";
 	document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:white'>DLC is hidden!<br><br>Toggle DLC to <span style='color:#17cdc4;font-size:18px;'>SHOWN</span><br>to see DLC results.</span></span></center>";
@@ -1213,6 +1214,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7-1 (BETΔ)</div>
+<div id="end">Version: 0.8.7-2 (BETΔ)</div>
 </body>
 </html>
