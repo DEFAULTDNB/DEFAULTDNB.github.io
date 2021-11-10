@@ -139,7 +139,7 @@
 	<option value="7.00-7.02">7.00 - 7.02</option>
 	<option value="7.00-7.55">7.00 - 7.55</option>
 	<option value="7.50-7.55">7.50 - 7.55</option>
-	<option value="8.00-8.52">8.00 - 8.52</option>
+	<option value="8.00-8.53">8.00 - 8.52</option>
 	<option value="8.00-LATEST"></option>
 	<option value="1.00-LATEST"></option>
 </select>
@@ -156,6 +156,7 @@
 	<option id="VR" value="VR">PSVR COMPAT.</option>
 	<option id="3DRUD" value="3DRUD">3DRUDDER COMPAT.</option>
 	<option id="DUMPED" value="DUMPED">DUMPED GAMES</option>
+	<option id="UNDUMPED" value="UNDUMPED">UNDUMPED GAMES</option>
 	<optgroup label="BACK PORTED TITLES">
 	<option id="BACKPORT505" value="505BP">5.05 BACK PORTS</option>
 	<option id="BACKPORT672" value="672BP">6.72 BACK PORTS</option>
@@ -535,7 +536,20 @@ document.getElementById("display").innerHTML = "<br>";
 			colourise();
 			}
 		}
+	} else if (cclicked == "UNDUMPED"){
+		for (i = firmz; i < lines.length; i++){
+			if (lines[i].match("UNDUMPED")){
+				} else {
+				if (lines[i].match("UNRELEASED")){
+					} else {
+					cnt++;
+					colourise();
+				}
+			}
+		}
 	}
+	
+	
 	if (fclicked.includes('-')) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
@@ -1214,6 +1228,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7-2 (BETΔ)</div>
+<div id="end">Version: 0.8.7-3 (BETΔ)</div>
 </body>
 </html>
