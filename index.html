@@ -29,10 +29,11 @@
 	<div id="i0"><span id="minReq"></span></div><br>
 	<div id="i1"><span id="gameDump"></span></div><br>
 	<div id="i2"><span id="gameBackport"></span></div>
-	<div id="i3"><button title="Look up Reviews" id="gameReview" class="interact">&#10148;</button><span id="r1"></span></div>
-	<div id="i4"><button title="Find PKG Info" id="gamePKG" class="interact" onclick="">&#10148;</button><span id="p1"></span></div>
-	<div id="i5"><button title="Find PSN Info" id="gamePSN" class="interact" onclick="">&#10148;</button><span id="p2"></span></div>
-	<div id="i6"><button title="Find Patches" id="gamePatch" class="interact" onclick="">&#10148;</button><span id="p3"></span></div><br>
+	<div id="i3"><button title="Find Reviews" id="gameReview" class="interact">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="r1"></span></button></div>
+	<div id="i4"><button title="Find PKG Info" id="gamePKG" class="interact" onclick="">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p1"></span></button></div>
+	<div id="i5"><button title="Find PSN Info" id="gamePSN" class="interact" onclick="">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p2"></span></button></div>
+	<div id="i6"><button title="Find Patches" id="gamePatch" class="interact" onclick="">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p3"></span></button></div>
+	<div id="i7" style="margin-left:210px;"><button title="Find Trophies" id="gameTrophy" class="interact" onclick="">&#x1F3C6;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p4"></span></button></div><br>
 	</div>
   </div>
 </div>
@@ -193,7 +194,7 @@
 	<option id="LTDRUN" value="LTDRUN">LIMITED RUN GAMES</option>
 	<option id="PL" value="PLAYLINK">PLAY LINK</option>
 	<option id="PSN" value="Requires PSN">PSN REQUIRED</option>
-	<option id="TBA" value="UNRELEASED">UNRELEASED</option>
+	<option id="TBC" value="UNRELEASED">UNRELEASED</option>
 	<option id="DEMO" value="Demo/Trial">DEMO/TRIAL</option>
 	<optgroup label="PLAYSTATION 5">
 	<option id="FULLPS5" value="FULLPS5">WORKING ON PS5</option>
@@ -236,7 +237,7 @@ for (j = 65; j <= 90; j++){
 }
 var qluid = "";
 </script>
-<abbr class="interact" title="Tip: Search for genres, title, or years"><input type="search" id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="clearsearch" title="Clear keywords" onclick="clearSearch()">X</button><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookupDelay()">SEARCH</button><abbr  id="credz" class="sbut2" onclick="showGreetz();" title="Credits">&#9400;&nbsp </abbr><abbr  id="base64" class="sbut2" onclick="base64();" title="Base64 Decryption">&#9873;</abbr><abbr class="sbut2" onclick="document.getElementById('file').click();" title="MD5 files">&#8917;</abbr>
+<abbr class="interact" title="Tip: Search for genres, title, or years"><input type="search" id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="clearsearch" title="Clear keywords" onclick="clearSearch()">X</button><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookupDelay()">SEARCH</button><abbr  id="credz" class="sbut2" onclick="showGreetz();" title="Credits">&#9400;&nbsp </abbr><abbr  id="base64" class="sbut2" onclick="base64();" title="Base64 Decryption">&#9873;</abbr><abbr class="sbut2" onclick="document.getElementById('file').click();" title="MD5 files">&#8917;</abbr><abbr id="Contact" class="sbut2" onclick="window.open('https://forms.gle/px1igSvefUchD6zq5');" title="Contact">&#9993;&#xFE0E;</abbr>
 <abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr>
 </div>
 <div class="progress-container"><div class="progress-bar" id="scrollBar"></div></div>  
@@ -927,9 +928,11 @@ function cusaResolve() {
 	};
 	document.getElementById("r1").innerHTML = " SEARCH FOR REVIEWS (Metacritic)";
 	document.getElementById("p1").innerHTML = " FIND PKG INFO (Serialstation)";
-	document.getElementById("p2").innerHTML = " OFFICIAL PLAYSTATION PAGE";
+	document.getElementById("p2").innerHTML = " OFFICIAL PLAYSTATION PAGE (PSN)";
 	document.getElementById("p3").innerHTML = " FIND LEGIT UPDATES (Orbispatches)";
-	document.getElementById("gameReview").addEventListener("click", function(){ window.open("https://www.metacritic.com/search/game/"+document.getElementById(cName).getAttribute("data")+"/results?plats[72496]=1&search_type=advanced"); }); 
+	document.getElementById("p4").innerHTML = " LOOKUP TROPHIES (Exophase)";
+	document.getElementById("gameReview").addEventListener("click", function(){window.open("https://www.metacritic.com/search/game/"+document.getElementById(cName).getAttribute("data")+"/results?plats[72496]=1&search_type=advanced"); }); 
+	document.getElementById("gameTrophy").addEventListener("click", function(){var tName = document.getElementById(cName).getAttribute("data").replace(/ /g,"+");window.open("https://www.exophase.com/platform/psn/?q="+tName+"&sort=added&platforms=8");});
 	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
 	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
 	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
@@ -965,12 +968,11 @@ function cusaResolve() {
 	document.getElementById("gameBackport").innerHTML = "*NO RELEASE DATE SCHEDULED*";
 	}else{
 	document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/"+region+"/"+language+"/999/"+cName+"_00/image?w=500&amp;h=500"
-
 	};
 	//WORKING EXAMPLES:
-	// https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/hk/en/999/CUSA18099_00/image?w=250&amp;h=250
 	document.getElementById("gamePKG").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://serialstation.com/titles/CUSA/'+cName.slice(4,cName.length));}else{window.open('https://serialstation.com/search/?search='+cName);}});
-	document.getElementById("gamePSN").addEventListener("click", function(){window.open("https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com");});
+	document.getElementById("gamePSN").addEventListener("click", function(){window.open("https://duckduckgo.com/?q=!ducky+"+document.getElementById(cName).getAttribute("data")+"+store.playstation.com");});
+	//document.getElementById("gamePSN").addEventListener("click", function(){window.open("https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com");});
 	//document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://store.playstation.com/en-gb/search/'+document.getElementById("cardtitle").innerHTML);});
 	document.getElementById("gamePatch").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://orbispatches.com/'+cName);}else{window.open('https://orbispatches.com/');}}); 
 };
@@ -1228,6 +1230,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7-3 (BETΔ)</div>
+<div id="end">Version: 0.8.7-4 (BETΔ)</div>
 </body>
 </html>
