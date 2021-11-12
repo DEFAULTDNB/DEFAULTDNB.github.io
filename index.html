@@ -26,8 +26,8 @@
   <div class="card-container" id="infocontainer">
 	<img id="CUSART" src="icons/generic.png" onclick="snagImage();" onerror="this.src='icons/generic.png';" alt=" " style="width:200px" title="Left click to download icon">
 	<div id="gameinfo">
-	<div id="i0"><span id="minReq"></span></div><br>
-	<div id="i1"><span id="gameDump"></span></div><br>
+	<div id="i0"><span id="minReq"></span></div>
+	<div id="i1"><span id="gameDump"></span></div>
 	<div id="i2"><span id="gameBackport"></span></div>
 	<div id="i3"><button title="Find Reviews" id="gameReview" class="interact">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="r1"></span></button></div>
 	<div id="i4"><button title="Find PKG Info" id="gamePKG" class="interact" onclick="">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p1"></span></button></div>
@@ -846,9 +846,9 @@ function genericAttribs(){
 	if (lines[i].match("BP ISSUE")){
 	document.getElementById('cID').setAttribute("bpIssue", lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1));
 	}else if (lines[i].match("505BP")){
-	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON <span style="color:#17cdc4">5.05</span>');
+	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON <span style="color:lime">5.05</span>');
 	}else if (lines[i].match("672BP")){
-	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON <span style="color:#17cdc4">6.72</span> (ISSUES ON 5.05)');
+	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON <span style="color:#lime">6.72</span> (ISSUES ON 5.05)');
 	}else{
 	document.getElementById('cID').setAttribute("bpIssue", 'NO INFORMATION');
 	};
@@ -936,9 +936,9 @@ function cusaResolve() {
 	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
 	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
 	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
-	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#10060;";
+	document.getElementById("minReq").innerHTML = "FIRMWARE REQ: <span style='color:red'>"+eMin+oMin+"</span> &#10060;";
 	} else {
-	document.getElementById("minReq").innerHTML = "FIRMWARE NEEDED: "+eMin+oMin+" &#9989;";
+	document.getElementById("minReq").innerHTML = "FIRMWARE REQ: <span style='color:lime'>"+eMin+oMin+"</span> &#9989;";
 	};
 	if (sName.match("/")){
 	document.getElementById("gameDump").innerHTML = "<span style='color:orange'>*LOOKUP INDIVIDUAL TITLES*</span>";
@@ -950,10 +950,10 @@ function cusaResolve() {
 			if (dMax.includes("]")){
 			dMax = dMax.slice(0, -1); 
 			} 
-			document.getElementById("gameDump").innerHTML = "VERSION DUMPED: <span style='color:lime'>" + dMax + "</span>";
+			document.getElementById("gameDump").innerHTML = "DUMP CONFIRMED: <span style='color:lime'>" + dMax + "</span>";
 		}
 	}
-	document.getElementById("gameBackport").innerHTML = "BACKPORT INFO: " + backPort;	
+	document.getElementById("gameBackport").innerHTML = "BACKPORT: " + backPort;	
 	if (vrSet == 'icons/DLC.png'){
 	document.getElementById("CUSART").src = 'icons/ADDON.png';
 	document.getElementById("gameBackport").innerHTML = "*USE DLC WITH HIGHEST UPDATE DUMPED*";
