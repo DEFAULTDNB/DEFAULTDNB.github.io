@@ -47,7 +47,7 @@
 5.00 (Firmware) [Oct 3, 2017] [r87095/release_branches/release_05.000 Sep 26 2017 05:25:25] [SYS 9af5cac72ecfb821cb89d68f53c55340] [REC c52f53df27ba53adabd3e992ec4ed84d] [OFW500] [PSVR UPDATE 3.10] [KEX]
 5.01 (Firmware) [Oct 24, 2017] [r87479/release_branches/release_05.010 Oct 18 2017 05:25:14] [SYS 8606691c0201e4db2a4100f80fbaddb3] [REC 8d6b9274217351daf0b3811622ed68e4] [OFW501] [KEX]
 5.02 (Firmware) [Nov 11, 2017] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW502]
-5.03 (Firmware) [Dec 14 2017] [SYS e637fa2ef8cfde3132ab961db1f0b3bd] [REC 6b606df17c7386de4505fef433c1ec35] [OFW503] [KEX]
+5.03 (Firmware) [Dec 14, 2017] [SYS e637fa2ef8cfde3132ab961db1f0b3bd] [REC 6b606df17c7386de4505fef433c1ec35] [OFW503] [KEX]
 5.05 (Firmware) [Jan 18, 2018] [r89649/release_branches/release_05.050 Jan 15 2018 05:28:50] [SYS f86d4f9d2c049547bd61f942151ffb55] [REC c2a602174f6b1d8ef599640cd276924a] [OFW505] [KEX]
 5.07 (Firmware) [Feb 5, 2018] [r90177/release_branches/release_05.070 Jan 30 2018 12:20:10] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] <Preinstalled on DOP consoles 8-18th Jun3 2018> [OFW507] [KEX]
 5.50 (Firmware) [Mar 8, 2018] [r90807/release_branches/release_05.500 Mar 2 2018 05:40:21] [SYS 8abac7c4f978907e8a73f844936ad420] [REC 58e6f0ae956c1bb1798ea86da051554d] [OFW550] [KEX]
@@ -4894,7 +4894,7 @@ Guilty Gear Xrd Revelator Character Kum Haehyun (DLC) [Jun 7, 2016] [FULLPS5] [E
 Guilty Gear Xrd Revelator Character Raven (DLC) [Jun 7, 2018] [FULLPS5] [EST555] &#9989;
 Guilty Gear Xrd Sign (Fighting) [Feb 20, 2014] [DUMPED V1.00] [CUSA00834, CUSA00848, CUSA01354, CUSA01689] [FULLPS5] [EST161] &#9989;
 Guilty Gear Xrd Sign Demo (Demo/Trial) [Nov 25, 2014] [CUSA01393, CUSA01597] [FULLPS5] [EST202] &#9989;
-Guilty Gear Xrd Sign Kiosk Demo (Demo/Trial) [Nov 25, 2014] [CUSA01595] [FULLPS5] [EST202] &#9989;
+Guilty Gear Xrd Sign Stage Demo (Demo/Trial) [Nov 25, 2014] [CUSA01595] [FULLPS5] [EST202] &#9989;
 Guilty Gear Xrd Sign Character Elphelt Valentine (DLC) [Dec 16, 2014] [FULLPS5] [EST203] &#9989;
 Guilty Gear Xrd Sign Character Leo Whitefang (DLC) [Dec 23, 2014] [FULLPS5] [EST203] &#9989;
 Guilty Gear Xrd Sign Character Sin Kiske (DLC) [Dec 16, 2014] [FULLPS5] [EST203] &#9989;
@@ -8880,6 +8880,25 @@ Prototype 2 (Action, Adventure) [Aug 11, 2015] [DUMPED V1.00] [CUSA01765, CUSA02
 Prototype Biohazard Bundle (Action, Adventure) [Jul 22, 2015] [DUMPED V1.00] [CUSA06545] [FULLPS5] [EST257] &#9989;
 Proze Episode I Enlightenment (Puzzle) [UNRELEASED] [VR] [3DRUD] <Proze Episode 1 Enlightenment> [EST999] &#10060;
 PS@E3 (Entertainment) [Jun 9, 2014] [CUSA00752] [NOTPS5] [EST171] &#9989;
+PS4 IDU 2014 Summer Refresh Gamestop V1.71 OMSK V2.04 (KIOSK) [May 28, 2014] [DUMPED V1.00] <Requires OMSK> [OFW171] [NOTPS5] &#9989;
+PS4 IDU 2014 Spring Refresh Gamestop V2.03 OMSK V2.04 (KIOSK) [Dec 3, 2014] [DUMPED V1.00] <Requires OMSK, Estimated> [OFW203] [NOTPS5] &#9989;
+PS4 IDU 2015 Summer Refresh Standard V2.55 OMSK V2.31 (KIOSK) [Jun 25, 2015] [DUMPED V1.00] <Requires OMSK> [OFW255] [NOTPS5] &#9989;
+PS4 IDU 2015 Summer Refresh Gamestop V2.57 OMSK V2.33 (KIOSK) [Jul 15, 2015] [DUMPED V1.00] <Requires OMSK> [OFW257] [NOTPS5] &#9989;
+PS4 IDU 2016 Winter Refresh Gamestop V3.11 OMSK V3.00 (KIOSK) [Oct 27, 2015] [DUMPED V1.00] <Requires OMSK> [OFW311] [NOTPS5] &#9989;
+PS4 IDU 2016 Spring Refresh Gamestop V3.15 OMSK V3.00 (KIOSK) [Dec 18, 2015] [DUMPED V1.00] <Requires OMSK> [OFW315] [NOTPS5] &#9989;
+PS4 IDU 2016 Summer Refresh Gamestop V3.55 OMSK V3.00 (KIOSK) [Jun 21, 2016] [DUMPED V1.00] <Requires OMSK> [OFW355] [NOTPS5] &#9989;
+PS4 IDU 2017 Winter Refresh Gamestop V4.07 OMSK V4.00 (KIOSK) [Dec 8, 2016] [DUMPED V1.00] <Requires OMSK> [OFW407] [NOTPS5] &#9989;
+PS4 IDU 2017 Spring Refresh Gamestop V4.50 OMSK V4.10 (KIOSK) [Mar 9, 2017] [DUMPED V1.00] <Requires OMSK> [OFW450] [NOTPS5] &#9989;
+PS4 IDU 2017 Summer Refresh Gamestop V4.72 OMSK V4.20 (KIOSK) [Jul 11, 2017] [DUMPED V1.00] <Requires OMSK> [OFW472] [NOTPS5] &#9989;
+PS4 IDU 2017 Summer Refresh Walmart V4.72 OMSK V4.20 (KIOSK) [Jul 11, 2017] [DUMPED V1.00] <Requires OMSK> [OFW472] [NOTPS5] &#9989;
+PS4 IDU 2018 Winter Refresh Gamestop V5.03 OMSK V4.30 (KIOSK) [Dec 14, 2017] [DUMPED V1.00] <Requires OMSK> [OFW503] [NOTPS5] &#9989;
+PS4 IDU 2018 Spring Refresh Gamestop V5.50 OMSK V4.40 (KIOSK) [Mar 8, 2018] [DUMPED V1.00] <Requires OMSK> [OFW550] [NOTPS5] &#9989;
+PS4 IDU 2018 Summer Refresh Gamestop V5.55 OMSK V4.40 (KIOSK) [May 17, 2018] [DUMPED V1.00] <Requires OMSK> [OFW555] [NOTPS5] &#9989;
+PS4 IDU 2018 Holiday Refresh Gamestop V6.02 OMSK V5.00 (KIOSK) [Oct 17, 2018] [DUMPED V1.00] <Requires OMSK> [OFW602] [NOTPS5] &#9989;
+PS4 IDU 2019 Winter Refresh Gamestop V6.20 OMSK V5.00 (KIOSK) [Dec 12, 2018] [DUMPED V1.00] <Requires OMSK> [OFW620] [NOTPS5] &#9989;
+PS4 IDU 2019 Winter Refresh Walmart V6.20 OMSK V5.00 (KIOSK) [Dec 12, 2018] [DUMPED V1.00] <Requires OMSK> [OFW620] [NOTPS5] &#9989;
+PS4 IDU 2019 Summer Refresh Gamestop V6.72 OMSK V5.10 (KIOSK) [Jul 16, 2019] [DUMPED V1.00] <Requires OMSK> [OFW672] [NOTPS5] &#9989;
+PS4 IDU 2019 Holiday Refresh Gamestop V6.72 OMSK V5.10 (KIOSK) [Jul 16, 2019] [DUMPED V1.00] <Requires OMSK> [OFW672] [NOTPS5] &#9989;
 Psycho-Pass Mandatory Happiness (Visual Novel) [Mar 24, 2016] [DUMPED V1.00] [FULLPS5] [EST315] &#9989;
 Psychonauts (Adventure) [Jul 20, 2016] [CUSA04150] [LTDRUN] [PS2] [FULLPS5] [EST355] &#9989;
 Psychonauts 2 (Platform) [Aug 25, 2021] [CUSA27145] [FULLPS5] [EST852] &#10060;

@@ -47,7 +47,7 @@
 5.00 (Firmware) [Oct 3, 2017] [r87095/release_branches/release_05.000 Sep 26 2017 05:25:25] [SYS 9af5cac72ecfb821cb89d68f53c55340] [REC c52f53df27ba53adabd3e992ec4ed84d] [OFW500] [PSVR UPDATE 3.10] [KEX]
 5.01 (Firmware) [Oct 24, 2017] [r87479/release_branches/release_05.010 Oct 18 2017 05:25:14] [SYS 8606691c0201e4db2a4100f80fbaddb3] [REC 8d6b9274217351daf0b3811622ed68e4] [OFW501] [KEX]
 5.02 (Firmware) [Nov 11, 2017] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW502]
-5.03 (Firmware) [Dec 14 2017] [SYS e637fa2ef8cfde3132ab961db1f0b3bd] [REC 6b606df17c7386de4505fef433c1ec35] [OFW503] [KEX]
+5.03 (Firmware) [Dec 14, 2017] [SYS e637fa2ef8cfde3132ab961db1f0b3bd] [REC 6b606df17c7386de4505fef433c1ec35] [OFW503] [KEX]
 5.05 (Firmware) [Jan 18, 2018] [r89649/release_branches/release_05.050 Jan 15 2018 05:28:50] [SYS f86d4f9d2c049547bd61f942151ffb55] [REC c2a602174f6b1d8ef599640cd276924a] [OFW505] [KEX]
 5.07 (Firmware) [Feb 5, 2018] [r90177/release_branches/release_05.070 Jan 30 2018 12:20:10] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] <Preinstalled on DOP consoles 8-18th Jun3 2018> [OFW507] [KEX]
 5.50 (Firmware) [Mar 8, 2018] [r90807/release_branches/release_05.500 Mar 2 2018 05:40:21] [SYS 8abac7c4f978907e8a73f844936ad420] [REC 58e6f0ae956c1bb1798ea86da051554d] [OFW550] [KEX]
@@ -244,6 +244,7 @@ Cladun Returns This is Sengoku! (Role-Playing) [May 27, 2014] [DUMPED V1.00] [CU
 Watch Dogs (Action, Adventure) [May 27, 2014] [DUMPED V1.00] [CUSA00016] [PSHITS] [FULLPS5] [EST170] &#9989;
 Watch Dogs Conspiracy (DLC) [May 27, 2014] [CUSA00016] [NOTPS5] [EST170] &#9989;
 Watch Dogs Gold Edition (Action, Adventure) [May 27, 2014] [DUMPED V1.17] [CUSA04459] [FULLPS5] [EST170] &#9989;
+PS4 IDU 2014 Summer Refresh Gamestop V1.71 OMSK V2.04 (KIOSK) [May 28, 2014] [DUMPED V1.00] <Requires OMSK> [OFW171] [NOTPS5] &#9989;
 1001 Spikes (Platform) [Jun 3, 2014] [CUSA01370, CUSA03538, CUSA00199] [FULLPS5] [EST171] &#9989;
 Murdered Soul Suspect (Action, Adventure) [Jun 3, 2014] [DUMPED V1.00] [CUSA00342] [FULLPS5] [EST171] &#9989;
 PixelJunk Shooter (Shooter) [Jun 3, 2014] [DUMPED V1.01] [CUSA00510] [BOOTPS5] [EST171] &#9989;
@@ -492,7 +493,7 @@ Rugby 15 (Sports) [Nov 21, 2014] [DUMPED V1.00] [CUSA00934] [FULLPS5] [EST202] &
 Aqua Kitty Milk Mine Defender DX (Action) [Nov 25, 2014] [CUSA01096] [LTDRUN] [FULLPS5] [EST202] &#9989;
 Assassin's Creed Unity Revolutionary Armaments Pack (DLC) [Nov 25, 2014] [DUMPED V1.00] <AC, ACU, Assassins Creed Unity> [FULLPS5] [EST202] &#9989;
 Guilty Gear Xrd Sign Demo (Demo/Trial) [Nov 25, 2014] [CUSA01393, CUSA01597] [FULLPS5] [EST202] &#9989;
-Guilty Gear Xrd Sign Kiosk Demo (Demo/Trial) [Nov 25, 2014] [CUSA01595] [FULLPS5] [EST202] &#9989;
+Guilty Gear Xrd Sign Stage Demo (Demo/Trial) [Nov 25, 2014] [CUSA01595] [FULLPS5] [EST202] &#9989;
 Speakeasy (Action) [Nov 25, 2014] [DELISTED] [FULLPS5] [EST202] &#9989;
 Tales From The Borderlands Episode 1 Zer0 Sum (DLC) [Nov 25, 2014] [FULLPS5] [EST202] &#9989;
 Thomas Was Alone (Platform, Puzzle) [Nov 25, 2014] [DUMPED V1.00] [CUSA00909] [LTDRUN] [FULLPS5] [EST202] &#9989;
@@ -514,6 +515,7 @@ Game of Thrones (Adventure) [Dec 3, 2014] [DUMPED V1.00] [CUSA01427] [BOOTPS5] [
 Middle-Earth Shadow of Mordor Berserks Warband (DLC) [Dec 3, 2014] [FULLPS5] [EST203] &#9989;
 Minecraft Skyrim Mash-up (DLC) [Dec 3, 2014] [FULLPS5] [EST203] &#9989;
 Monopoly Plus Rabbids (DLC) [Dec 3, 2014] [FULLPS5] [EST203] &#9989;
+PS4 IDU 2014 Spring Refresh Gamestop V2.03 OMSK V2.04 (KIOSK) [Dec 3, 2014] [DUMPED V1.00] <Requires OMSK, Estimated> [OFW203] [NOTPS5] &#9989;
 Teslagrad (Platform, Puzzle) [Dec 3, 2014] [DUMPED V1.00] [CUSA01434] [FULLPS5] [EST203] &#9989;
 Crew (Racing) [Dec 4, 2014] [DUMPED V1.00] [CUSA00161] [Requires PSN] <The Crew> [FULLPS5] [EST203] &#9989;
 Final Horizon (Tower Defence) [Dec 4, 2014] [FULLPS5] [EST203] &#9989;
@@ -897,6 +899,7 @@ MotoGP 15 Season Pass (DLC) [Jun 24, 2015] [FULLPS5] [EST252] &#9989;
 Astebreed (Action) [Jun 25, 2015] [DUMPED V1.00] [CUSA02165] [LTDRUN] [FULLPS5] [EST255] &#9989;
 Chaos;Child (Visual Novel) [Jun 25, 2015] [DUMPED V1.00] [CUSA07107] [FULLPS5] [EST255] &#9989;
 Hotline Miami Collected Edition (Shooter, Compilation) [Jun 25, 2015] [FULLPS5] [EST255] &#9989;
+PS4 IDU 2015 Summer Refresh Standard V2.55 OMSK V2.31 (KIOSK) [Jun 25, 2015] [DUMPED V1.00] <Requires OMSK> [OFW255] [NOTPS5] &#9989;
 Arcade Archives Scramble (Shooter) [Jun 30, 2015] [CUSA02485] [FULLPS5] [EST255] &#9989;
 Battlefield Hardline Criminal Activity (DLC) [Jun 30, 2015] [FULLPS5] [EST255] &#9989;
 Cinepolis Klic (Entertainment) [Jun 30, 2015] [CUSA01553] <Cinépolis Klic> [NOTPS5] [EST255] &#9989;
@@ -924,6 +927,7 @@ God of War III Remastered (Action, Adventure) [Jul 14, 2015] [DUMPED V1.00] [CUS
 Godzilla (Action, Adventure) [Jul 14, 2015] [DUMPED V1.00] [CUSA02058] [DELISTED] [FULLPS5] [EST255] &#9989;
 Mortal Kombat X Predator Bundle (DLC) [Jul 14, 2015] <MKX> [FULLPS5] [EST255] &#9989;
 Trials Fusion Awesome Level Max (DLC) [Jul 14, 2015] [FULLPS5] [EST255] &#9989;
+PS4 IDU 2015 Summer Refresh Gamestop V2.57 OMSK V2.33 (KIOSK) [Jul 15, 2015] [DUMPED V1.00] <Requires OMSK> [OFW257] [NOTPS5] &#9989;
 Trials Fusion The Awesome MAX Edition (Racing) [Jul 15, 2015] [FULLPS5] [EST256] &#9989;
 Vanishing of Ethan Carter (Puzzle) [Jul 15, 2015] [DUMPED V1.00] [CUSA03048] <The Vanishing of Ethan Carter> [FULLPS5] [EST256] &#9989;
 Zen Pinball 2 Ant-Man Pinball (DLC) [Jul 15, 2015] [FULLPS5] [EST256] &#9989;
@@ -1239,6 +1243,7 @@ Helldivers Terrain Specialist Pack (DLC) [Oct 27, 2015] [FULLPS5] [EST311] &#998
 MX vs ATV Supercross Encore (Racing) [Oct 27, 2015] [DUMPED V1.00] [CUSA01704] [FULLPS5] [EST311] &#9989;
 Mega Coin Squad (Platform) [Oct 27, 2015] [FULLPS5] [EST311] &#9989;
 Minecraft Story Mode Episode 2 Assembly Required (DLC) [Oct 27, 2015] [FULLPS5] [EST311] &#9989;
+PS4 IDU 2016 Winter Refresh Gamestop V3.11 OMSK V3.00 (KIOSK) [Oct 27, 2015] [DUMPED V1.00] <Requires OMSK> [OFW311] [NOTPS5] &#9989;
 WWE 2K16 (Sports) [Oct 27, 2015] [DUMPED V1.00] [CUSA02693] [DELISTED] <WW2K16, WW2K16> [FULLPS5] [EST311] &#9989;
 Batman Arkham Knight 1970s Batman Themed Batmobile Skin (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
 Batman Arkham Knight Classic TV Series Batmobile Pack (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
@@ -1399,6 +1404,7 @@ Exist Archive The Other Side of the Sky (Role-Playing) [Dec 17, 2015] [DUMPED V1
 JoJo's Bizarre Adventure Eyes of Heaven (Fighting) [Dec 17, 2015] [DUMPED V1.00] <JoJos Bizarre Adventure Eyes of Heaven> [FULLPS5] [EST311] &#9989;
 Renai Revenge (Adventure) [Dec 17, 2015] [FULLPS5] [EST311] &#9989;
 Nikoli no Puzzle 4 Number Link (Puzzle) [Dec 18, 2015] [FULLPS5] [EST315] &#9989;
+PS4 IDU 2016 Spring Refresh Gamestop V3.15 OMSK V3.00 (KIOSK) [Dec 18, 2015] [DUMPED V1.00] <Requires OMSK> [OFW315] [NOTPS5] &#9989;
 Atrapa La Bandera (Action) [Dec 20, 2015] [CUSA03990] <Capture the Flag> [BOOTPS5] [EST315] &#9989;
 Batman Arkham Knight 2008 Movie Batman Skin (DLC) [Dec 22, 2015] [FULLPS5] [EST315] &#9989;
 Batman Arkham Knight Batman Noel Skin (DLC) [dec 22, 2015] [FULLPS5] [EST315] &#9989;
@@ -1885,6 +1891,7 @@ Electronic Super Joy Hot Sticky Mess (DLC) [Jun 21, 2016] [FULLPS5] [EST355] &#9
 Fallout 4 Contraptions Workshop (DLC) [Jun 21, 2016] [DUMPED V1.22] [FULLPS5] [EST355] &#9989;
 Funk of Titans (Action, Platform) [Jun 21, 2016] [FULLPS5] [EST355] &#9989;
 Mighty No. 9 (Action, Platform) [Jun 21, 2016] [DUMPED V1.00] [CUSA02243] [DELISTED] [FULLPS5] [EST355] &#9989;
+PS4 IDU 2016 Summer Refresh Gamestop V3.55 OMSK V3.00 (KIOSK) [Jun 21, 2016] [DUMPED V1.00] <Requires OMSK> [OFW355] [NOTPS5] &#9989;
 Pac-Man 256 (Action) [Jun 21, 2016] [CUSA05026] [FULLPS5] [EST355] &#9989;
 Pirates Treasure Hunters (Action, Strategy) [Jun 21, 2016] [CUSA05118] [DELISTED] [FULLPS5] [EST355] &#9989;
 Resident Evil Umbrella Corps (Shooter) [Jun 21, 2016] [DUMPED V1.06] [CUSA03498] [FULLPS5] [EST355] &#9989;
@@ -2496,6 +2503,7 @@ Werewolves Within (Party) [Dec 6, 2016] [DUMPED V1.00] [CUSA05287] [CROSSPLAY] [
 World of Nubla (Adventure) [Dec 6, 2016] [DUMPED V1.00] [CUSA07111] <The World of Nubla> [FULLPS5] [EST406] &#9989;
 Zen Pinball 2 Bethesda Pinball (DLC) [Dec 6, 2016] [FULLPS5] [EST406] &#9989;
 Ride 2 Ducati Bikes Pack (DLC) [Dec 7, 2016] [FULLPS5] [EST406] &#9989;
+PS4 IDU 2017 Winter Refresh Gamestop V4.07 OMSK V4.00 (KIOSK) [Dec 8, 2016] [DUMPED V1.00] <Requires OMSK> [OFW407] [NOTPS5] &#9989;
 Rock Band 4 Twenty One Pilots Pack 01 (DLC) [Dec 8, 2016] [FULLPS5] [EST407] &#9989;
 Touhou Shinhiroku Urban Legend in Limbo (2D, Action, Fighting) [Dec 8, 2016] [DUMPED V1.00] [CUSA06012] [FULLPS5] [EST407] &#9989;
 Urban Legend in Limbo (Fighting) [Dec 8, 2016] [FULLPS5] [EST407] &#9989;
@@ -2818,6 +2826,7 @@ Unearthing Mars (Action, Adventure) [Mar 7, 2017] [DUMPED V1.02] [CUSA07655] [VR
 Homefront The Revolution Beyond the Walls (DLC) [Mar 8, 2017] [DUMPED V1.12] [FULLPS5] [EST407] &#9989;
 Figureheads (Action, Shooter) [Mar 9, 2017] [DELISTED] [FULLPS5] [EST450] &#9989;
 Kingdom Hearts HD 1.5 + 2.5 Remix (Action, Role-Playing) [Mar 9, 2017] [DUMPED V1.04] [CUSA05786] {PRO} 4K, 60FPS [FULLPS5] [EST450] &#9989;
+PS4 IDU 2017 Spring Refresh Gamestop V4.50 OMSK V4.10 (KIOSK) [Mar 9, 2017] [DUMPED V1.00] <Requires OMSK> [OFW450] [NOTPS5] &#9989;
 Rock Band 4 Macklemore & Ryan Lewis ft. Ray Dalton Can't Hold Us (DLC) [Mar 9, 2017] [FULLPS5] [EST450] &#9989;
 2Dark (Horror, Stealth) [Mar 10, 2017] [DUMPED V1.00] [CUSA04802] [FULLPS5] [EST450] &#9989;
 2Dark Soundtrack (DLC) [Mar 10, 2017] [CUSA07932, CUSA07935] [NOTPS5] [EST450] &#9989;
@@ -3303,6 +3312,8 @@ Minecraft Story Mode Season 2 (Adventure) [Jul 11, 2017] [DUMPED V1.00] [CUSA106
 Minecraft Story Mode Season 2 Episode 1 Hero in Residence (DLC) [Jul 11, 2017] [FULLPS5] [EST472] &#9989;
 Mr. Pumpkin's Adventure (Platform) [Jul 11, 2017] <Mr Pumpkin's Adventure, Mr Pumpkins Adventure> [FULLPS5] [EST472] &#9989;
 Mr. Shifty (Action, Adventure) [Jul 11, 2017] <Mr Shifty> [FULLPS5] [EST472] &#9989;
+PS4 IDU 2017 Summer Refresh Gamestop V4.72 OMSK V4.20 (KIOSK) [Jul 11, 2017] [DUMPED V1.00] <Requires OMSK> [OFW472] [NOTPS5] &#9989;
+PS4 IDU 2017 Summer Refresh Walmart V4.72 OMSK V4.20 (KIOSK) [Jul 11, 2017] [DUMPED V1.00] <Requires OMSK> [OFW472] [NOTPS5] &#9989;
 Serial Cleaner (Action, Stealth) [Jul 11, 2017] [DUMPED V1.02] [CUSA08171] [LTDRUN] [FULLPS5] [EST472] &#9989;
 Transport Giant (Simulation) [Jul 11, 2017] [DUMPED V1.00] [CUSA08029] [FULLPS5] [EST472] &#9989;
 YamaYama (Party) [Jul 11, 2017] [FULLPS5] [EST472] &#9989;
@@ -4131,6 +4142,7 @@ Super Hydorah (Shooter) [Dec 13, 2017] [DUMPED V1.00] [CUSA09297] [LTDRUN] [FULL
 ACA NeoGeo Real Bout Fatal Fury Special (Fighting) [Dec 14, 2017] [CUSA10382] [FULLPS5] [EST503] &#9989;
 Digimon Story Cyber Sleuth Hacker's Memory TV Anime Sound Edition (Role-Playing) [Dec 14, 2017] [DUMPED V1.00] [CUSA09555] [FULLPS5] [EST503] &#9989;
 Hatsune Miku Project Diva Future Tone Extra Encore Pack (DLC) [Dec 14, 2017] [DUMPED V1.08] [FULLPS5] [EST503] &#9989;
+PS4 IDU 2018 Winter Refresh Gamestop V5.03 OMSK V4.30 (KIOSK) [Dec 14, 2017] [DUMPED V1.00] <Requires OMSK> [OFW503] [NOTPS5] &#9989;
 Rock Band 4 Dei Lovato Sorry Not Sorry (DLC) [Dec 14, 2017] [FULLPS5] [EST503] &#9989;
 Rock Band 4 Imagine Dragons Thunder (DLC) [Dec 14, 2017] [FULLPS5] [EST503] &#9989;
 ChainMan (Survival, Horror) [Dec 15, 2017] [VR] [FULLPS5] [EST503] &#9989;
@@ -4467,6 +4479,7 @@ Anata no Shikihime Kyoudoutan (Role-Playing) [Mar 8, 2018] [DUMPED V1.00] [CUSA1
 Atelier Lydie & Suelle Lucia Voltaire (DLC) [Mar 8, 2018] [OFW505] [FULLPS5] &#9989;
 Fist of the North Star Lost Paradise (Action, Adventure) [Mar 8, 2018] [DUMPED V1.08] [CUSA12781, CUSA10053] [OFW505] <Hokuto ga Gotoku> [PSHITS] [FULLPS5] &#9989;
 Legend of Heroes Trails of Cold Steel (Role-Playing) [Mar 8, 2018] [CUSA12365] [DUMPED V1.00] [OFW550] [FULLPS5] &#9989;
+PS4 IDU 2018 Spring Refresh Gamestop V5.50 OMSK V4.40 (KIOSK) [Mar 8, 2018] [DUMPED V1.00] <Requires OMSK> [OFW550] [NOTPS5] &#9989;
 Rock Band 4 Michelle Branch All You Wanted (DLC) [Mar 8, 2018] [FULLPS5] [EST550] &#9989;
 Rock Band 4 Natasha Bedingfield Unwritten (DLC) [Mar 8, 2018] [FULLPS5] [EST550] &#9989;
 Digital Domain's Monkey King (Action, Adventure) [Mar 9, 2018] [VR] <Digital Domains Monkey King> [FULLPS5] [EST550] &#9989;
@@ -4828,6 +4841,7 @@ Rock Band 4 Lights Resolve Dreaming of Love (DLC) [May 16, 2018] [FULLPS5] [EST5
 Rock Band 4 Morningwood Best Of Me (DLC) [May 16, 2018] [FULLPS5] [EST550] &#9989;
 Caligula Effect Overdose (Role-Playing) [May 17, 2018] [DUMPED V1.00] [CUSA13387] [FULLPS5] [EST555] &#9989;
 Fox n Forests (Action, Platform) [May 17, 2018] [FULLPS5] [EST555] &#9989;
+PS4 IDU 2018 Summer Refresh Gamestop V5.55 OMSK V4.40 (KIOSK) [May 17, 2018] [DUMPED V1.00] <Requires OMSK> [OFW555] [NOTPS5] &#9989;
 Plague Road (Strategy) [May 17, 2018] [DUMPED V1.01] [CUSA09091, CUSA10457, CUSA08008] [OFW672] [LTDRUN] [FULLPS5] &#9989;
 World of Tanks Freedom Edition (Action, Shooter) [May 17, 2018] [FULLPS5] [EST555] &#9989;
 World of Tanks Independence (DLC) [May 17, 2018] [FULLPS5] [EST555] &#9989;
@@ -5529,6 +5543,7 @@ Starlink Battle for Atlas Razor Pilot Pack (DLC) [Oct 16, 2018] [DUMPED V1.05] [
 Starlink Battle for Atlas Shockwave & Gauss Gun Mk.2 Weapon Pack (DLC) [Oct 16, 2018] [DUMPED V1.05] [FULLPS5] [EST600] &#9989;
 Fishing Planet Gars & Glory Pack (DLC) [Oct 17, 2018] [FULLPS5] [EST602] &#9989;
 Fishing Planet Spooky Fishing Pack (DLC) [Oct 17, 2018] [FULLPS5] [EST602] &#9989;
+PS4 IDU 2018 Holiday Refresh Gamestop V6.02 OMSK V5.00 (KIOSK) [Oct 17, 2018] [DUMPED V1.00] <Requires OMSK> [OFW602] [NOTPS5] &#9989;
 Battlestar Galactica Deadlock Anabasis (DLC) [Oct 18, 2018] [FULLPS5] [EST602] &#9989;
 Crystar (Action, Role-Playing) [Oct 18, 2018] [DUMPED V1.00] [CUSA15175, CUSA15257] [FULLPS5] [EST602] &#9989;
 Dissidia Final Fantasy NT Kam'lanaut Starter Pack (DLC) [Oct 18, 2018] [EST602] &#9989;
@@ -5855,6 +5870,8 @@ VideoKid (Action) [Dec 11, 2018] [FULLPS5] [EST602] &#9989;
 Warbot (Fighting) [Dec 11, 2018] [VR] [FULLPS5] [EST602] &#9989;
 Warhammer 40,000 Inquisitor Martyr Poisoned Souls (DLC) [Dec 11, 2018] [CUSA10564] [NOTPS5] [EST602] &#9989;
 Knights of Pen & Paper 2 Deluxiest Edition (Role-Playing) [Dec 12, 2018] [FULLPS5] [EST620] &#9989;
+PS4 IDU 2019 Winter Refresh Gamestop V6.20 OMSK V5.00 (KIOSK) [Dec 12, 2018] [DUMPED V1.00] <Requires OMSK> [OFW620] [NOTPS5] &#9989;
+PS4 IDU 2019 Winter Refresh Walmart V6.20 OMSK V5.00 (KIOSK) [Dec 12, 2018] [DUMPED V1.00] <Requires OMSK> [OFW620] [NOTPS5] &#9989;
 Richie's Plank Experience (First-Person, Adventure) [Dec 12, 2018] [DUMPED V1.05] [CUSA13902] [505BP] [VR] <Richies Plank Experience> [FULLPS5]  [EST620] &#x1F536;
 Asonde Igo ga Tsuyokunaru! Ginsei Igo DX (Board Game) [Dec 13, 2018] [FULLPS5] [EST620] &#9989;
 BioHazard Value Pack (Survival, Horror, Compilation) [Dec 13, 2018] [FULLPS5] [EST620] &#9989;
@@ -6869,6 +6886,8 @@ Dirt Rally 2.0 Season 2 Track 5 Wales Rally (DLC) [Jul 16, 2019] [DUMPED V1.26] 
 Flutter Bombs (Action, Shooter) [Jul 16, 2019] [CUSA16121] [OFW671] [FULLPS5] &#9989;
 Focus on You (Simulation) [Jul 16, 2019] [CUSA16807, CUSA14457, CUSA15838] [OFW651] [VR] [FULLPS5] &#9989;
 Mochi Mochi Boy (Puzzle) [Jul 16, 2019] [CUSA16405] [OFW671] [FULLPS5] &#9989;
+PS4 IDU 2019 Holiday Refresh Gamestop V6.72 OMSK V5.10 (KIOSK) [Jul 16, 2019] [DUMPED V1.00] <Requires OMSK> [OFW672] [NOTPS5] &#9989;
+PS4 IDU 2019 Summer Refresh Gamestop V6.72 OMSK V5.10 (KIOSK) [Jul 16, 2019] [DUMPED V1.00] <Requires OMSK> [OFW672] [NOTPS5] &#9989;
 Super Dragonfly Chronicles (2D, Action, Platform) [Jul 16, 2019] [CUSA15589] [OFW671] [FULLPS5] &#9989;
 Submersed (Action, Survival) [Jul 17, 2019] [FULLPS5] [EST672] &#9989;
 Arcade Archives Alpha Mission (Shooter) [Jul 18, 2019] [CUSA12492] [FULLPS5] [EST672] &#9989;
