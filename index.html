@@ -196,6 +196,7 @@
 	<option id="PSN" value="Requires PSN">PSN REQUIRED</option>
 	<option id="TBC" value="UNRELEASED">UNRELEASED</option>
 	<option id="DEMO" value="Demo/Trial">DEMO/TRIAL</option>
+	<option id="KIOSK" value="KIOSK">IDU/OMSK DISC</option>
 	<optgroup label="PLAYSTATION 5">
 	<option id="FULLPS5" value="FULLPS5">WORKING ON PS5</option>
 	<option id="BOOTPS5" value="BOOTPS5">ISSUES ON PS5</option>
@@ -800,6 +801,9 @@ function colourise(){
 		} else if (localStorage.DLC=='false'){
 			cnt--;
 		}
+	} else if (lines[i].match("KIOSK")){
+	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();">' + dateInfo.fontcolor("mediumvioletred").bold() + '</button>' + '<hr>');	
+	genericAttribs();
 	} else if (lines[i].match("Demo/Trial")){
 	document.getElementById('display').insertAdjacentHTML('beforeend', '<button title="Click to show info" id="cID" class="interactstore" onclick="cName = this.id;cusaResolve();">' + dateInfo.fontcolor("purple").bold() + '</button>' + '<hr>');	
 	genericAttribs();
@@ -827,6 +831,8 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("vrConf", "icons/UNREL.png");
 	} else if (lines[i].match("DLC")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/DLC.png");
+	} else if (lines[i].match("KIOSK")){
+	document.getElementById('cID').setAttribute("vrConf", "icons/OMSK.png");
 	} else if (lines[i].match("PS2")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/PS2.png");
 	} else if (lines[i].match("VR AIM")){
@@ -984,8 +990,9 @@ function cusaResolve() {
 	document.getElementById("CUSART").src = 'icons/UNREL.png';
 	document.getElementById("gamecusa").innerHTML = "UNRELEASED ITEM";
 	document.getElementById("gameBackport").innerHTML = "*NO RELEASE DATE SCHEDULED*";
+	} else if (vrSet == 'icons/OMSK.png'){
+	document.getElementById("CUSART").src = 'icons/OMSK.png';
 	}else{
-	
 		if (cName.match("JCUSA")){
 		cName = cName.substring(1);
 		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/jp/ja/999/"+cName+"_00/image?w=500&amp;h=500"
@@ -1264,6 +1271,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7-5 (BETΔ)</div>
+<div id="end">Version: 0.8.7-6 (BETΔ)</div>
 </body>
 </html>
