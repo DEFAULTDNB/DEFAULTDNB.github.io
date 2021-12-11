@@ -23,7 +23,7 @@
   <div class="card-header" id="cardtitle">GAME TITLE</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
   <center><div class="card-header2" id="gamecusa">GAME ID/NAME</div><img id="additionalImage" src="icons/PAD.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px"></center>
-  <div class="card-container" id="infocontainer">
+  <img id="ratingImage" src="icons/RATING.png" onerror="this.src='icons/RATING.png';" alt=" " style="width:50px"><div class="card-container" id="infocontainer">
 	<img id="CUSART" src="icons/generic.png" onclick="snagImage();" onerror="this.src='icons/generic.png';" alt=" " style="width:200px" title="Left click to download icon">
 	<div id="gameinfo">
 	<div id="i0"><span id="minReq"></span></div>
@@ -129,6 +129,7 @@
 	<option value="OFW 8.50" >OFW 8.50</option>
 	<option value="OFW 8.52" >OFW 8.52</option>
 	<option value="OFW 9.00" >OFW 9.00</option>
+	<option value="OFW 9.03" >OFW 9.03</option>
 	<optgroup label="RANGE:">
 	<option value="1.00-5.05">1.00 - 5.05</option>
 	<option value="1.00-6.72">1.00 - 6.72</option>
@@ -140,7 +141,8 @@
 	<option value="7.00-7.02">7.00 - 7.02</option>
 	<option value="7.00-7.55">7.00 - 7.55</option>
 	<option value="7.50-7.55">7.50 - 7.55</option>
-	<option value="8.00-8.53">8.00 - 8.52</option>
+	<option value="8.00-8.52">8.00 - 8.52</option>
+	<option value="9.00-9.03">9.00 - 9.03</option>
 	<option value="8.00-LATEST"></option>
 	<option value="1.00-LATEST"></option>
 </select>
@@ -212,7 +214,11 @@
 	<option id="UNPLAYABLE" value="UNPLAYABLE">UNPLAYABLE</option>
 	<option id="JCUSA" value="JCUSA">JP/JA REGION</option>
 </select>
-&nbsp
+<select id="regionSelect" onchange="regionChange();" title="Select data location">
+	<option id="EU" value="EU">EU</option>
+	<option id="US" value="US">US</option>
+	<option id="JP" value="JP">JP</option>
+</select>&nbspRegion
 <label class="switch" title="" id="iLen"><input id="togLen" type="checkbox" checked onclick="infoType();"><span class="slider round"></span></label>&nbspInfo
 <label class="switch" title="" id="dbSort"><input id="togSort" type="checkbox" checked onclick="alphaDate();"><span class="slider round"></span></label>&nbspSort
 <label class="switch" title="" id="dlc"><input id="togDLC" type="checkbox" checked onclick="dlcHide();"><span class="slider round"></span></label>&nbspDLC
@@ -268,6 +274,16 @@ for (k = 0; k <= userButtons2.length-1; k++){
 	UG.oncontextmenu = function(){qluid = this.id; remove(); return false;};
 	document.getElementById("userbuttons").appendChild(UG);
 }};
+if (localStorage.region==null){
+localStorage.setItem("region","https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/")
+document.getElementById("regionSelect").value = "EU";
+} else if (localStorage.region=="https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/"){
+document.getElementById("regionSelect").value = "EU";
+} else if (localStorage.region=="https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"){
+document.getElementById("regionSelect").value = "US";
+} else if (localStorage.region=="https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/JP/ja/999/"){
+document.getElementById("regionSelect").value = "JP";
+}
 if (localStorage.infoLen==null){localStorage.infoLen='short';}
 if (localStorage.infoLen=='short'){ 
 document.getElementById("infoLength").innerHTML = "INFO: NAME/GENRE ONLY";
@@ -307,8 +323,6 @@ xmlFile.open('get', fileName, false);
 xmlFile.send();
 var xmlDoc = xmlFile.responseText;
 var lines = xmlDoc.split("\r\n");
-//fetch(fileName).then((resp) => resp.text()).then(data => {const lines2 = data.split(/\r\n/);
-//})
 document.getElementById("display").innerHTML = "<br>";
 document.getElementById("count").innerHTML = "Database entries: <span id='linelength'>" + lines.length + "</span>";
 cnt = 0;firmcnt = 0;
@@ -328,6 +342,23 @@ var Difference_In_Time = todayFW - lastFW;
 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br><span style='color:dimgrey'>(Released: "+parseInt(Difference_In_Days)+" Days Ago)</span><br><br>Highest Jailbreak: <span style='color:white'>"+kexFW+"</span><br>Stable Jailbreak: <span style='color:#17cdc4'>5.05</span></span></center>";
 document.getElementById("rangeMax").innerHTML = latestOFW;
+//------------- Card Buttons -------------\\
+document.getElementById("gameReview").addEventListener("click", function(){
+window.open("https://www.metacritic.com/search/game/"+document.getElementById("cardtitle").innerHTML+"/results?plats[72496]=1&search_type=advanced");
+});
+document.getElementById("gamePKG").addEventListener("click", function(){
+	if (cName.includes("CUSA")) {
+	window.open('https://serialstation.com/titles/CUSA/'+cName.slice(4,cName.length));
+	}else{
+	window.open('https://serialstation.com/search/?search='+cName);
+	}
+});
+document.getElementById("gamePSN").addEventListener("click", function(){window.open("https://duckduckgo.com/?q=!ducky+"+document.getElementById(cName).getAttribute("data")+"+store.playstation.com");});
+document.getElementById("gamePatch").addEventListener("click", function(){if (cName.includes("CUSA")){window.open('https://orbispatches.com/'+cName);}else{window.open('https://orbispatches.com/');}}); 
+document.getElementById("gameTrophy").addEventListener("click", function(){
+var tName = document.getElementById("cardtitle").innerHTML.replace(/ /g,"+");
+window.open("https://www.exophase.com/platform/psn/?q="+tName+"&sort=added&platforms=8");
+});
 //--------- A-Z button function ----------\\
 function azDelay(){
 document.getElementById("overlaytext").innerHTML = "Searching DB";
@@ -356,7 +387,6 @@ function reply_click(bclicked) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) {
-					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0) == bclicked){
@@ -426,7 +456,6 @@ function numReply(){
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){	
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
-					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].charAt(0).match(/^[.#0-9'/]+$/)){
@@ -489,9 +518,6 @@ document.getElementById("display").innerHTML = "<br>";
 	cclicked = document.getElementById("type").value;
 	}
 	if (bclicked != "None"){
-		/*if (bclicked = "#"){
-			//alert(bclicked);
-		} else {*/
 		reply_click(bclicked);
 		return;
 		//}
@@ -557,7 +583,6 @@ document.getElementById("display").innerHTML = "<br>";
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = firmz; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++){
-					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){// ||  || ){
 					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(cclicked, "gi"))){
@@ -645,7 +670,6 @@ document.getElementById("display").innerHTML = "<br>";
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
 			for (i = 0; i < lines.length; i++){
 				for (f = rclicked.slice(0,2); f <= rclicked.slice(3,5); f++) { //fwMin to fwMax
-					//if (lines[i].match(f+"5BP") || lines[i].match(f+"2BP") || lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 					if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 						if (document.getElementById("type").value != "ALL"){
 							if (lines[i].match(RegExp(aWord, "gi"))){
@@ -696,6 +720,18 @@ function series(){
 	firmcnt = 0;
 	document.getElementById("searchbox").value = qluid;
 	lookupDelay();
+};
+function regionChange(){
+	if (document.getElementById("regionSelect").value == "EU"){
+	localStorage.setItem("region", "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/");
+	document.getElementById("regionSelect").value = "EU";
+	} else if (document.getElementById("regionSelect").value == "US"){
+	localStorage.setItem("region", "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/");
+	document.getElementById("regionSelect").value = "US";
+	} else if (document.getElementById("regionSelect").value == "JP"){
+	localStorage.setItem("region", "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/JP/ja/999/");
+	document.getElementById("regionSelect").value = "JP";
+	}
 };
 function fillout(){
 	var usergame = prompt("✏️ 𝗘𝗻𝘁𝗲𝗿 𝗴𝗮𝗺𝗲 𝗻𝗮𝗺𝗲:", "");
@@ -853,11 +889,11 @@ function genericAttribs(){
 	if (lines[i].match("BP ISSUE")){
 	document.getElementById('cID').setAttribute("bpIssue", lines[i].slice(lines[i].indexOf("BP ISSUE")+9, lines[i].lastIndexOf("!]")+1));
 	}else if (lines[i].match("505BP")){
-	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON <span style="color:lime">5.05</span>');
+	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING: <span style="color:lime">5.05</span>');
 	}else if (lines[i].match("672BP")){
-	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING ON <span style="color:#lime">6.72</span> (ISSUES ON 5.05)');
+	document.getElementById('cID').setAttribute("bpIssue", '100% WORKING: <span style="color:#lime">6.72</span> (ISSUES ON 5.05)');
 	}else{
-	document.getElementById('cID').setAttribute("bpIssue", '<span style="color:red">NO INFORMATION</span>');
+	document.getElementById('cID').setAttribute("bpIssue", '<span style="color:red">NO INFO</span>');
 	};
 	if (lines[i].match("FULLPS5")){
 	document.getElementById('cID').setAttribute("ps5bc", 'works');
@@ -912,7 +948,7 @@ var copyText = document.getElementById("myInput");
 	document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span style='color:#17cdc4'>"+copyText.value+"<br></span><span style='color:white'>COPIED TO CLIPBOARD!</span></center>";
 	document.getElementById('callout').style.display='initial';
 	closeTimer(); 
-};
+};	
 function cusaResolve() {
 	document.getElementById("card").style.display='inline';
 	let sName = document.getElementById(cName).getAttribute("data");
@@ -924,23 +960,21 @@ function cusaResolve() {
 	let backCompat = document.getElementById(cName).getAttribute("ps5bc");
 	let psnDelist = document.getElementById(cName).getAttribute("removed");
 	let showDate = document.getElementById(cName).getAttribute("releaseDate");
-	let region = "US";
-	let language = "en";
 	document.getElementById("cardtitle").innerHTML = sName;
 	if (psnDelist == 'true'){
 	document.getElementById("cardtitle").innerHTML += " (DELISTED PSN)";
 	}
 	
 	if (cName.match("JCUSA")){
-	document.getElementById("gamecusa").innerHTML = cName.substring(1) + "  <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
+	document.getElementById("gamecusa").innerHTML = cName.substring(1) + " <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
 	} else if (cName.match("CUSA")){
-	document.getElementById("gamecusa").innerHTML = cName + "  <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
-	} else if (cName.match("NPE")){
-	document.getElementById("gamecusa").innerHTML = cName + "  <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
-	} else if (cName.match("NPUB")){
-	document.getElementById("gamecusa").innerHTML = cName + "  <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
+	document.getElementById("gamecusa").innerHTML = cName + " <span style='color:#17cdc4; font-size:10px'> (Released: "+showDate+")</span>";
+	} else if (cName.match("NPE")||cName.match("NPUB")){
+	document.getElementById("gamecusa").innerHTML = cName + "  <span style='color:#17cdc4; font-size:10px'> (1st release: "+showDate+")</span>";
 	}else{
 	document.getElementById("gamecusa").innerHTML = "TITLE ID N/A" + "  <span style='color:#17cdc4; font-size:10px'> (First release: "+showDate+")</span>";
+	document.getElementById("ratingImage").src = "icons/RATING.png";
+	document.getElementById("ratingImage").style.opacity="0.7";
 	};
 	if (backCompat == 'works') {
 	document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Works fine on PS5">&nbsp;PS5: &#9989;</span>';
@@ -952,34 +986,30 @@ function cusaResolve() {
 	document.getElementById("p2").innerHTML = " OFFICIAL PLAYSTATION PAGE (PSN)";
 	document.getElementById("p3").innerHTML = " FIND LEGIT UPDATES (Orbispatches)";
 	document.getElementById("p4").innerHTML = " LOOKUP TROPHIES (Exophase)";
-	document.getElementById("gameReview").addEventListener("click", function(){window.open("https://www.metacritic.com/search/game/"+document.getElementById("cardtitle").innerHTML+"/results?plats[72496]=1&search_type=advanced"); }); 
-	document.getElementById("gameTrophy").addEventListener("click", function(){
-	var tName = document.getElementById("cardtitle").innerHTML.replace(/ /g,"+");
-	window.open("https://www.exophase.com/platform/psn/?q="+tName+"&sort=added&platforms=8");
-	});
 	document.getElementById('additionalImage').style.display = 'inline';document.getElementById("additionalImage").src = vrSet;
 	document.getElementById('CUSART').style.display = 'inline';document.getElementById("CUSART").src = "icons/generic.png";
 	if (eMin.match("EST8") || eMin.match("EST9") || oMin.match("OFW8") || oMin.match("OFW9")){
-	document.getElementById("minReq").innerHTML = "FIRMWARE REQ: <span style='color:red'>"+eMin+oMin+"</span> &#10060;";
+	document.getElementById("minReq").innerHTML = "OFW REQ: <span style='color:red'>"+eMin+oMin+"</span> &#10060;";
 	} else {
-	document.getElementById("minReq").innerHTML = "FIRMWARE REQ: <span style='color:lime'>"+eMin+oMin+"</span> &#9989;";
+	document.getElementById("minReq").innerHTML = "OFW REQ: <span style='color:lime'>"+eMin+oMin+"</span> &#9989;";
 	};
 	if (sName.match("/")){
 	document.getElementById("gameDump").innerHTML = "<span style='color:orange'>*LOOKUP INDIVIDUAL TITLES*</span>";
 	document.getElementById("gamecusa").innerHTML = "MULTI CUSA PACK";
 	} else {
 		if (dMax == null){
-		document.getElementById("gameDump").innerHTML = "DUMP: <span style='color:red'>NONE KNOWN</span>";
+		document.getElementById("gameDump").innerHTML = "DUMPED: <span style='color:red'>NONE KNOWN</span>";
 		} else {
 			if (dMax.includes("]")){
 			dMax = dMax.slice(0, -1); 
 			} 
-			document.getElementById("gameDump").innerHTML = "DUMP CONFIRMED: <span style='color:lime'>VER: " + dMax + "</span>";
+			document.getElementById("gameDump").innerHTML = "DUMPED: <span style='color:lime'>VER: " + dMax + "</span>";
 		}
 	}
 	document.getElementById("gameBackport").innerHTML = "BACKPORT: " + backPort;	
 	if (vrSet == 'icons/DLC.png'){
 	document.getElementById("CUSART").src = 'icons/ADDON.png';
+	document.getElementById("ratingImage").style.opacity="0";
 	document.getElementById("gameBackport").innerHTML = "*USE DLC WITH HIGHEST UPDATE DUMPED*";
 		if (cName.includes("CUSA")){
 		document.getElementById("gamecusa").innerHTML = "DLC ITEM: " + cName;
@@ -992,31 +1022,39 @@ function cusaResolve() {
 	document.getElementById("gameBackport").innerHTML = "*NO RELEASE DATE SCHEDULED*";
 	} else if (vrSet == 'icons/OMSK.png'){
 	document.getElementById("CUSART").src = 'icons/OMSK.png';
+	document.getElementById("ratingImage").style.opacity="0";
 	}else{
-		if (cName.match("JCUSA")){
-		cName = cName.substring(1);
-		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/jp/ja/999/"+cName+"_00/image?w=500&amp;h=500"
-		} else if (cName.match("CUSA")){
-		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"+cName+"_00/image?w=500&amp;h=500"
-		} else if (cName.match("NPE")){
-		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/"+cName+"_00/image?w=500&amp;h=500"
-		} else if (cName.match("NPUB")){
-		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"+cName+"_00/image?w=500&amp;h=500"
-		} 
 	};
-	document.getElementById("gamePKG").addEventListener("click", function(){
-	if (cName.includes("CUSA")) {
-	window.open('https://serialstation.com/titles/CUSA/'+cName.slice(4,cName.length));
-	}else{
-	window.open('https://serialstation.com/search/?search='+cName);
-	}
-	}
-	);
-	document.getElementById("gamePSN").addEventListener("click", function(){window.open("https://duckduckgo.com/?q=!ducky+"+document.getElementById(cName).getAttribute("data")+"+store.playstation.com");});
-	//document.getElementById("gamePSN").addEventListener("click", function(){window.open("https://duckduckgo.com/?q=!ducky+"+cName+"+store.playstation.com");});
-	//document.getElementById("gamePSN").addEventListener("click", function(){window.open('https://store.playstation.com/en-gb/search/'+document.getElementById("cardtitle").innerHTML);});
-	document.getElementById("gamePatch").addEventListener("click", function(){if (cName.includes("CUSA")) {window.open('https://orbispatches.com/'+cName);}else{window.open('https://orbispatches.com/');}}); 
+
+	var HttpClient = function() {
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+        anHttpRequest.open( "GET", aUrl, true );            
+        anHttpRequest.send( null );
+    }
+}
+	var myClient = new HttpClient();
+	myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
+	const Game = JSON.parse(response);
+	document.getElementById("ratingImage").src = Game.content_rating.url;
+	document.getElementById("ratingImage").style.opacity="0.7";
+		if (cName.match("JCUSA")){
+			cName = cName.substring(1);
+			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/JP/ja/999/"+cName+"_00/image?w=1024&amp;h=1024"
+			} else if (cName.match("CUSA")){
+			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/"+cName+"_00/image?w=1024&amp;h=1024"
+			} else if (cName.match("NPE")){
+			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/"+cName+"_00/image?w=1024&amp;h=1024"
+			} else if (cName.match("NPUB")){
+			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"+cName+"_00/image?w=1024&amp;h=1024"
+		}
+	});
 };
+	
 function firmResolve(){
 	document.getElementById("fcard").style.display='inline';
 	let fData = document.getElementById(fName).getAttribute("fdata");
@@ -1271,6 +1309,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7-6 (BETΔ)</div>
+<div id="end">Version: 0.8.7-6b (BETΔ)</div>
 </body>
 </html>
