@@ -198,7 +198,7 @@ body {
   top: 30%;
   left: 25%;
   margin-left: 20px;
-  width: 550px;
+  width: 560px;
   height: fit-content;
   background: black;
   border: 2px solid #17cdc4;
@@ -235,6 +235,14 @@ body {
   background: none;
   margin-right: 10px;
   border-radius: 5px;
+}
+#ratingImage {
+  position: absolute;
+  left: 160px;
+  top: 195px;
+  opacity: 0.8;
+  background: none;
+  margin-right: 10px;
 }
 #display {
 	border: none;
