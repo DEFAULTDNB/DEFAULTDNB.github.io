@@ -53,7 +53,7 @@
   </div>
 </div>
 <div id="count"></div>
-<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-7.55 (Playable)<br>&#10060;&#xFE0E;: 8.00-<span id="rangeMax"></span> (Unplayable)<br>&#x1F536;&#xFE0E;: 5.50-8.52 (Backports)</div>
+<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-9.00 (Playable)<br>&#10060;&#xFE0E;: <span id="rangeMax"></span> (Unplayable)<br>&#x1F536;&#xFE0E;: 5.50-9.00 (Backports)</div>
 <select id="FW" onchange="evalDelay();">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="ALL IN DB:">
@@ -135,13 +135,18 @@
 	<option value="1.00-6.72">1.00 - 6.72</option>
 	<option value="1.00-7.02">1.00 - 7.02</option>
 	<option value="1.00-7.55">1.00 - 7.55</option>
+	<option value="1.00-9.00">1.00 - 9.00</option>
 	<option value="5.50-6.72">5.50 - 6.72</option>
 	<option value="5.50-7.02">5.50 - 7.02</option>
 	<option value="5.50-7.55">5.50 - 7.55</option>
+	<option value="5.50-9.00">5.50 - 9.00</option>
 	<option value="7.00-7.02">7.00 - 7.02</option>
 	<option value="7.00-7.55">7.00 - 7.55</option>
+	<option value="7.00-9.00">7.00 - 9.00</option>
 	<option value="7.50-7.55">7.50 - 7.55</option>
+	<option value="7.50-9.00">7.50 - 9.00</option>
 	<option value="8.00-8.52">8.00 - 8.52</option>
+	<option value="8.00-9.00">8.00 - 9.00</option>
 	<option value="9.00-9.03">9.00 - 9.03</option>
 	<option value="8.00-LATEST"></option>
 	<option value="1.00-LATEST"></option>
@@ -210,7 +215,6 @@
 	<option id="FIRMWARE" value="FIRMWARE" >FIRMWARE</option>
 	<option id="DELISTED" value="DELISTED" >DELISTED FROM PSN</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
-	<option id="PLAYABLE" value="PLAYABLE">PLAYABLE</option>
 	<option id="UNPLAYABLE" value="UNPLAYABLE">UNPLAYABLE</option>
 	<option id="JCUSA" value="JCUSA">JP/JA REGION</option>
 </select>
@@ -536,9 +540,9 @@ document.getElementById("display").innerHTML = "<br>";
 			colourise();
 			}
 		}
-	} else if (cclicked == "PLAYABLE"){
+	/*} else if (cclicked == "PLAYABLE"){ //Takes way too long. Use 1.00-9.00 range.
 		for (i = firmz; i < lines.length; i++){
-			for (f=1; f<8; f++){
+			for (f=903; f<999; f++){
 				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f) || lines[i].match(f+"5BP") || lines[i].match(f+"2BP")){
 				cnt++;
 				colourise();
@@ -548,10 +552,10 @@ document.getElementById("display").innerHTML = "<br>";
 				closeTimer();
 				}
 			}
-		}
+		}*/
 	} else if (cclicked == "UNPLAYABLE"){
 		for (i = firmz; i < lines.length; i++){
-			for (f=80; f <=99; f++){
+			for (f=903; f <=1000; f++){
 				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
 				cnt++;
 				colourise();
@@ -577,7 +581,6 @@ document.getElementById("display").innerHTML = "<br>";
 			}
 		}
 	}
-	
 	
 	if (fclicked.includes('-')) {
 		rclicked = fclicked.replace(/[. ]/g, '').replace(/[- ]/g, '');
@@ -1309,6 +1312,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7-6b (BETΔ)</div>
+<div id="end">Version: 0.8.7-6c (BETΔ)</div>
 </body>
 </html>
