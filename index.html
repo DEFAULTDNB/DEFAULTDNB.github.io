@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="FRMCHK is a web-based all-in-one tool to confirm game firmware. I compile as much data as I possibly can every week so that you can access it all in one place!">
+<meta name="description" content="FRMCHK is a web-based all-in-one tool to deduce game firmware. I compile as much data as I possibly can each week so that you can access everything in one place!">
 <title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
 <link rel="stylesheet" type="text/css" href="config/frmchk.css">
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
@@ -130,7 +130,7 @@
 	<option value="OFW 8.52" >OFW 8.52</option>
 	<option value="OFW 9.00" >OFW 9.00</option>
 	<option value="OFW 9.03" >OFW 9.03</option>
-	<optgroup label="RANGE:">
+	<optgroup label="RANGES:">
 	<option value="1.00-5.05">1.00 - 5.05</option>
 	<option value="1.00-6.72">1.00 - 6.72</option>
 	<option value="1.00-7.02">1.00 - 7.02</option>
@@ -166,8 +166,7 @@
 	<option id="DUMPED" value="DUMPED">DUMPED GAMES</option>
 	<option id="UNDUMPED" value="UNDUMPED">UNDUMPED GAMES</option>
 	<optgroup label="BACK PORTED TITLES">
-	<option id="BACKPORT505" value="505BP">5.05 BACK PORTS</option>
-	<option id="BACKPORT672" value="672BP">6.72 BACK PORTS</option>
+	<option id="BACKPORT505" value="505BP">ALL BACK PORTS</option>
 	<option id="BPISSUE" value="BP ISSUE">BACK PORT ISSUES</option>
 	<optgroup label="GAME GENRES">	
 	<option id="2D" value="2D">2D</option>
@@ -182,7 +181,7 @@
 	<option id="METROIDVANIA" value="Metroidvania">METROIDVANIA</option>
 	<option id="MUSIC" value="Music">MUSIC</option>
 	<option id="PLATFORM" value="Platform">PLATFORM</option>
-	<option id="POINT" value=" Point-a">POINT & CLICK</option>
+	<option id="POINT" value=" Point-and-Click">POINT & CLICK</option>
 	<option id="PUZZLE" value="Puzzle">PUZZLE</option>
 	<option id="RACING" value="Racing">RACING</option>
 	<option id="RPG" value="Role-Playing">ROLE PLAYING</option>
@@ -1040,22 +1039,40 @@ function cusaResolve() {
         anHttpRequest.send( null );
     }
 }
-	var myClient = new HttpClient();
-	myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
-	const Game = JSON.parse(response);
-	document.getElementById("ratingImage").src = Game.content_rating.url;
-	document.getElementById("ratingImage").style.opacity="0.7";
-		if (cName.match("JCUSA")){
-			cName = cName.substring(1);
-			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/JP/ja/999/"+cName+"_00/image?w=1024&amp;h=1024"
-			} else if (cName.match("CUSA")){
-			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/"+cName+"_00/image?w=1024&amp;h=1024"
-			} else if (cName.match("NPE")){
-			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/"+cName+"_00/image?w=1024&amp;h=1024"
-			} else if (cName.match("NPUB")){
-			document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"+cName+"_00/image?w=1024&amp;h=1024"
-		}
-	});
+
+	if (cName.match("JCUSA")){
+		var myClient = new HttpClient();
+		myClient.get("https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/jp/ja/999/"+cName.substr(1)+"_00/", function(response) {
+		const Game = JSON.parse(response);
+		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/jp/ja/999/"+cName.substr(1)+"_00/image?w=1024&amp;h=1024";
+		document.getElementById("ratingImage").src = Game.content_rating.url;
+		document.getElementById("ratingImage").style.opacity="0.7";
+		});
+	} else if (cName.match("CUSA")){
+		var myClient = new HttpClient();
+		myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
+		const Game = JSON.parse(response);
+		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/gb/en/999/"+cName+"_00/image?w=1024&amp;h=1024";
+		document.getElementById("ratingImage").src = Game.content_rating.url;
+		document.getElementById("ratingImage").style.opacity="0.7";
+		});
+	} else if (cName.match("NPE")){
+		var myClient = new HttpClient();
+		myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
+		const Game = JSON.parse(response);
+		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/gb/en/999/"+cName+"_00/image?w=1024&amp;h=1024";
+		document.getElementById("ratingImage").src = Game.content_rating.url;
+		document.getElementById("ratingImage").style.opacity="0.7";
+		});
+	} else if (cName.match("NPUB")){
+		var myClient = new HttpClient();
+		myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
+		const Game = JSON.parse(response);
+		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/us/en/999/"+cName+"_00/image?w=1024&amp;h=1024";
+		document.getElementById("ratingImage").src = Game.content_rating.url;
+		document.getElementById("ratingImage").style.opacity="0.7";
+		});
+	}
 };
 	
 function firmResolve(){
@@ -1312,6 +1329,6 @@ alert("No icon to download");
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div id="end">Version: 0.8.7-6c (BETΔ)</div>
+<div id="end">Version: 0.8.7-7 (BETΔ)</div>
 </body>
 </html>
