@@ -7,7 +7,7 @@ button.sticky {
 }
 .qlu {
   background-color: rgb(0,0,0,0);
-  border: 1px solid #17cdc4;
+  border: 1px solid RebeccaPurple;
   border-radius: 1px;
   color: white;
   padding: 12px 12px;
@@ -18,7 +18,7 @@ button.sticky {
 }
 .qlu:hover {
   background-color: rgb(0,0,0,0);
-  border: 1px solid #17cdc4;
+  border: 1px solid RebeccaPurple;
   border-radius: 1px;
   color: white;
   padding: 12px 12px;
@@ -30,7 +30,7 @@ button.sticky {
 }
 .add {
   background-color: rgb(0,0,0,0);
-  border: 1px solid #17cdc4;
+  border: 1px solid RebeccaPurple;
   border-radius: 1px;
   color: white;
   padding: 12px 12px;
@@ -41,7 +41,7 @@ button.sticky {
 }
 .add:hover {
   background-color: white;
-  border: 1px solid #17cdc4;
+  border: 1px solid RebeccaPurple;
   border-radius: 1px;
   color: #17cdc4;
   padding: 12px 12px;
@@ -52,8 +52,8 @@ button.sticky {
   font-weight: bold;
 }
 button {
-  background-color: #17cdc4;
-  border: 1px solid #17cdc4;
+  background-color: RebeccaPurple;
+  border: 1px solid RebeccaPurple;
   border-radius: 1px;
   color: white;
   padding: 12px 12px;
@@ -65,12 +65,12 @@ button {
 }
 button:hover {
 	background-color: white;
-	color: #018a9a;
+	color: RebeccaPurple;
 }
 .interact {
 	background-color: rgba(0,0,0,0);
 	border: none;
-	color: #17cdc4;
+	color: RebeccaPurple;
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
@@ -84,7 +84,7 @@ button:hover {
 .interactstore {
 	background-color: rgba(0,0,0,0);
 	border: none;
-	color: #17cdc4;
+	color: RebeccaPurple;
 	position: relative;
 	text-align: left;
 	display: inline-block;
@@ -94,7 +94,7 @@ button:hover {
 }
 .sbut {
 	background-color: #efefef;
-	color: #17cdc4;
+	color: RebeccaPurple;
 	padding: 1px 4px;
 	text-align: center;
 	text-decoration: none;
@@ -116,12 +116,12 @@ button:hover {
 	float: right;
 	margin-top: 3px;
 	margin-right: 5px;
-	background-color: #17cdc4;
+	background-color: RebeccaPurple;
 	display: inline;
 }
 .sbut2:hover {
-	color: #414b5a;
-	background-color: #17cdc4;
+	color: Orange;
+	background-color: RebeccaPurple;
 }
 abbr {
 	text-decoration: none !important;
@@ -147,14 +147,19 @@ hr {
 #searchbox {
 	border: none;
 }
+#searchbox:focus {
+	outline: none !important;
+    border: 2px solid Orange;
+    background-color: white;
+  }
 #clickers {
-	background-color: #17cdc4;
+	background-color: RebeccaPurple;
 	display: inline-block;
 	width: 100%;
 }
 body {
-	background-color: #414b5a;
-	color: #efefef;
+	background-color: black;
+	color: white;
 	font-family: verdana;
 }
 .callout {
@@ -162,14 +167,14 @@ body {
   top: 10px;
   left: 65%;
   margin-left: 20px;
-  border: 2px solid #17cdc4;
+  border: 2px solid RebeccaPurple;
   z-index: 999;
   touch-action: none;
   user-select: none;
 }
 .callout-header {
   padding: 10px 10px;
-  background: #17cdc4;
+  background: RebeccaPurple;
   font-size: 22px;
   color: white;
   z-index: 999;
@@ -201,7 +206,7 @@ body {
   width: 560px;
   height: fit-content;
   background: black;
-  border: 2px solid #17cdc4;
+  border: 2px solid RebeccaPurple;
   box-shadow: -1px 1px 5px 7px rgba(0,0,0,0.5);
   z-index: 999;
   touch-action: none;
@@ -210,7 +215,7 @@ body {
 .card-header {
   cursor: move;
   padding: 10px 10px;
-  background: #17cdc4;
+  background: RebeccaPurple;
   font-size: 100%;
   color: white;
   z-index: 999;
@@ -246,7 +251,7 @@ body {
 }
 #display {
 	border: none;
-	background-color: #efefef;
+	background-color: silver;
 	padding-left: 25px;
 	font-size: 100%;
 }
@@ -258,15 +263,15 @@ h1 {
 	font-weight: bold;
 }
 #counted {
-	color: #17cdc4;
+	color: RebeccaPurple;
 	font-weight: bold;
 }
 #selected {
-	color: #17cdc4;
+	color: RebeccaPurple;
 	font-weight: bold;
 }
 #lastclicked {
-	color: #17cdc4;
+	color: RebeccaPurple;
 	font-weight: bold;
 }
 #myProgress {
@@ -276,12 +281,12 @@ h1 {
 #myBar {
   width: 0px;
   height: 10px;
-  background-color: #17cdc4;
+  background-color: #265475;
   font-size: 10px;
   font-weight: bold;
   text-align: center;
   line-height: 10px;
-  color: #efefef;
+  color: Orange;
 }
 .tooltip {
   position: relative;
@@ -300,10 +305,6 @@ h1 {
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
-}
-.menu {
-	background-color: #efefef;
-	color: #414b5a;
 }
 img.sticky {
   position: fixed;
@@ -328,7 +329,7 @@ img.sticky {
   height: 56px;
   width: 56px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid RebeccaPurple;
 }
 .rotate {
 	display:block;
@@ -338,8 +339,13 @@ img.sticky {
 .redtext {
 	color: red;
 }
+.reltext {
+	/*orange yellow*/
+	color: Orange;
+	font-size: 10px;
+}
 .textcolor {
-	color: #17cdc4;
+	color: Orange;
 }
 #KOFI {
 	position: fixed;
@@ -390,14 +396,13 @@ img.sticky {
   left: 0;
   right: 0;
   bottom: -2px;
-  background-color: #ccc;
+  background-color: #265475;
   -webkit-transition: .4s;
   transition: .4s;
 }
 .slider:before {
   position: absolute;
   content: "";
-  color: #17cdc4;
   font-size: 16px;
   height: 13px;
   width: 13px;
@@ -409,10 +414,7 @@ img.sticky {
   transition: .4s;
 }
 input:checked + .slider {
-  background-color: #17cdc4;
-}
-input:focus + .slider {
-  box-shadow: 0 0 1px #17cdc4;
+  background-color: ForestGreen;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(13px);
@@ -436,6 +438,6 @@ input:checked + .slider:before {
 .progress-bar {
   top:0px;
   height: 8px;
-  background: #17cdc4;
+  background: #265475;
   width: 0%;
 }
