@@ -1,34 +1,34 @@
 1.01 (Firmware) [Sep 1, 2013] [r27590/release_branches/release_01.010 Aug 7 2013 02:01:45] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW101]
 1.05 (Firmware) [Nov 1, 2013] [r29800/release_branches/release_01.050 Oct 1 2013 05:34:40] [SYS ca669e43ad9d7e7ee7a66c6c1ba721ac] [REC NO HASH INFORMATION IS AVAILABLE] [OFW105] <Estimated>
-1.06 (Firmware) [Nov 14, 2013] [SYS aa7864b42ad01e3a07c6192c8503aa34] [REC NO HASH INFORMATION IS AVAILABLE] [OFW106]
+1.06 (Firmware) [Nov 14, 2013] [r29873/release_branches/release_01.060 Oct 3 2013 05:34:49] [SYS aa7864b42ad01e3a07c6192c8503aa34] [REC NO HASH INFORMATION IS AVAILABLE] [OFW106]
 1.07 (Firmware) [Nov 15, 2013] [SYS aec39ae8c3a28cf46209ddb9ec5effda] [REC NO HASH INFORMATION IS AVAILABLE] [OFW107] <Estimated>
 1.50 (Firmware) [Nov 15, 2013] [r31298/release_branches/release_01.500 Nov 12 2013 05:34:36] [SYS df008b5601f4a214a3cc65030a02ac4a] [REC cedada625478db608d5878c019454380] [OFW150]
 1.501 (Firmware) [Oct 28, 2013] [SYS c64d11f839ac8628176941b99fd3670e] [REC 6f4d6afe98dd7297c70aa4d6e7e5482b] [OFW150]
-1.51 (Firmware) [Nov 17, 2013] [SYS ed49d42a08a0927f0692a2372d9e9e6e] [REC 818a99ff70ce3193aeab3e95160379d6] [OFW151]
+1.51 (Firmware) [Nov 17, 2013] [r31536/release_branches/release_01.510 Nov 17 2014 05:34:03] [SYS ed49d42a08a0927f0692a2372d9e9e6e] [REC 818a99ff70ce3193aeab3e95160379d6] [OFW151]
 1.52 (Firmware) [Dec 5, 2013] [r31906/release_branches/release_01.520 Dec 5 2013 05:33:35] [SYS 28062731a1648df64e79ab62ee133057] [REC 7c567c6639760132c5a532a184e612fe] [OFW152]
 1.60 (Firmware) [Feb 4, 2014] [r34204/release_branches/release_01.600 Jan 29 2014 05:36:34] [SYS 3e3378b01dd01485e71d0561386a7821] [REC 619d51cbdd976f031a667c452e8af681] [OFW160]
-1.61 (Firmware) [Feb 12, 2014] [SYS 4e4f7b5cef168ead0519cb0dfd2ebda6] [REC 361f9bba6207f434e6cd75bf00162936] [OFW161]
+1.61 (Firmware) [Feb 12, 2014] [r35076/release_branches/release_01.610 Feb 12 2014 05:33:55] [SYS 4e4f7b5cef168ead0519cb0dfd2ebda6] [REC 361f9bba6207f434e6cd75bf00162936] [OFW161]
 1.62 (Firmware) [Mar 10, 2014] [r36286/release_branches/release_01.620 Mar 10 2014 05:37:07] [SYS 9b69bfb59b577a94dd3dd84e0bb27549] [REC 0b186cc4831eb885d0772717e38dd633] [OFW162]
-1.70 (Firmware) [Apr 30, 2014] [SYS 8f40b2adcb15136e660499ca33092745] [REC f8c8a257981740d7331f68f420caf71c] [OFW170]
-1.71 (Firmware) [May 28, 2014] [SYS ce90f2e9274e4614ffde6934e08e4b6e] [REC 7f84e2f63d1f6a5b4348bb528b35f2d7] [OFW171]
-1.72 (Firmware) [Jun 18, 2014] [SYS 6f1e19fce6c9b6bdde0fe3e55ddefd7d] [REC d9cd90d9f78275fdf1c9162ca3ee6f80] [OFW172]
-1.74 (Firmware) [Jul 18, 2014] [SYS 82bc202f64b32d4107a4fa5d136a93ce] [REC 61d36467aa9081b93514d7e199ad1a50] [OFW174]
+1.70 (Firmware) [Apr 30, 2014] [r37621/release_branches/release_01.700 Apr 24 2014 05:33:26] [SYS 8f40b2adcb15136e660499ca33092745] [REC f8c8a257981740d7331f68f420caf71c] [OFW170]
+1.71 (Firmware) [May 28, 2014] [r38675/release_branches/release_01.710 May 28 2014 05:34:26] [SYS ce90f2e9274e4614ffde6934e08e4b6e] [REC 7f84e2f63d1f6a5b4348bb528b35f2d7] [OFW171]
+1.72 (Firmware) [Jun 18, 2014] [r40084/release_branches/release_01.720 Jun 18 2014 05:33:34] [SYS 6f1e19fce6c9b6bdde0fe3e55ddefd7d] [REC d9cd90d9f78275fdf1c9162ca3ee6f80] [OFW172]
+1.74 (Firmware) [Jul 18, 2014] [r41832/release_branches/release_01.740 Jul 18 2014 15:25:02] [SYS 82bc202f64b32d4107a4fa5d136a93ce] [REC 61d36467aa9081b93514d7e199ad1a50] [OFW174]
 1.75 (Firmware) [Jul 29, 2014] [r41581/release_branches/release_01.750 Jul 27 2014 20:36:05] [SYS 401f1307e43d7fbb60c20dc8ad3497e4] [REC 89afb44a204eacebf220f27a30f6c7af] [OFW175]
 1.76 (Firmware) [Sep 2, 2014] [r43234/release_branches/release_01.760 Aug 20 2014 07:45:21] [SYS a5234c6e8d37a57b374e24171173fbdd] [REC c9ef52548cf8d397b0da7395f8826564] [OFW176] [KEX]
-2.00 (Firmware) [Oct 28, 2014] [SYS 765695ae57b467be031b1310703bf19d] [REC 7b03609b5a027e6bd0ba29cd7a5d8d6d] [OFW200]
-2.01 (Firmware) [Nov 1, 2014] [SYS ac34b68627648d4000e4f7f31f5f9797] [REC 78b219d4c8260e6973815ae347b10db0] [OFW201]
-2.02 (Firmware) [Nov 7, 2014] [SYS bc9092058dfb67376c56f1b768ee9493] [REC 51780ffc8e0ca49377065b2faa56c224] [OFW202]
+2.00 (Firmware) [Oct 28, 2014] [r45985/release_branches/release_02.000 Oct 24 2014 16:54:02] [SYS 765695ae57b467be031b1310703bf19d] [REC 7b03609b5a027e6bd0ba29cd7a5d8d6d] [OFW200]
+2.01 (Firmware) [Nov 1, 2014] [r46373/release_branches/release_02.010 Oct 31 2014 22:39:16] [SYS ac34b68627648d4000e4f7f31f5f9797] [REC 78b219d4c8260e6973815ae347b10db0] [OFW201]
+2.02 (Firmware) [Nov 7, 2014] [r46549/release_branches/release_02.020 Nov 7 2014 17:58:22] [SYS bc9092058dfb67376c56f1b768ee9493] [REC 51780ffc8e0ca49377065b2faa56c224] [OFW202]
 2.03 (Firmware) [Dec 3, 2014] [r47215/release_branches/release_02.030 Nov 25 2014 05:39:10] [SYS eac5e76be085221159ecbbe21e5022c5] [REC 2eca5eb6e4b5fdc00b49885e31591f1e] [OFW203]
-2.04 (Firmware) [Feb 6, 2015] [SYS 402013820a65029ea44d97655e550ffb] [REC c50ad2fe0438e4fabd7ada2cbbc97e56] [OFW204]
+2.04 (Firmware) [Feb 6, 2015] [r49166/release_branches/release_02.040 Feb 6 2015 05:36:00] [SYS 402013820a65029ea44d97655e550ffb] [REC c50ad2fe0438e4fabd7ada2cbbc97e56] [OFW204]
 2.50 (Firmware) [Mar 20, 2015] [r51885/release_branches/release_02.500 Mar 20 2015 16:34:28] [SYS 5c6e09a82250e1dde602521ab1faf715] [REC 4353941dacb69a6c22a82d704e3fd03a] [OFW250]
-2.51 (Firmware) [Apr 17, 2015] [SYS e63273cb3762eec5ae50b2bd877024aa] [REC 8473ca583fb6d6d39c357e0e5131d026] [OFW251]
+2.51 (Firmware) [Apr 17, 2015] [r53246/release_branches/release_02.510 Apr 17 2015 05:30:13] [SYS e63273cb3762eec5ae50b2bd877024aa] [REC 8473ca583fb6d6d39c357e0e5131d026] [OFW251]
 2.52 (Firmware) [Apr 23, 2015] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW252] <Pre-installed on consoles released November 2015> <Estimated>
-2.55 (Firmware) [Jun 25, 2015] [SYS 4f1c6d8597242ff346612773ffbc10ad] [REC bd7b99c592a392a2dd6e36645ebcde8a] [OFW255]
+2.55 (Firmware) [Jun 25, 2015] [r56181/release_branches/release_02.550 Jun 25 2015 05:30:47] [SYS 4f1c6d8597242ff346612773ffbc10ad] [REC bd7b99c592a392a2dd6e36645ebcde8a] [OFW255]
 2.56 (Firmware) [Jul 15, 2015] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW256] <Pre-installed on consoles released December 2015> <Estimated>
-2.57 (Firmware) [Jul 16, 2015] [SYS 67c94f173d3cff0668430669b1ef4ddf] [REC fa5b8f0c6dc396dd97132cf22d1e6303] [OFW257]
-3.00 (Firmware) [Sep 30, 2015] [SYS d60d15db9a489ff73736ecc2e803c0d3] [REC a89af9ab64f75f6ca85b262e50f5b564] [OFW300]
-3.10 (Firmware) [Oct 14, 2015] [SYS 66001b712670e9d804a642a46cf4225a] [REC 78000236133136a0c192b914fcff930c] [OFW310]
-3.11 (Firmware) [Oct 27, 2015] [SYS eb94028b3df04862c95f0c525c91ed73] [REC 824f2032030d89d5763db45d07b1e45f] [OFW311]
+2.57 (Firmware) [Jul 16, 2015] [r57763/release_branches/release_02.570 Jul 16 2015 05:31:04] [SYS 67c94f173d3cff0668430669b1ef4ddf] [REC fa5b8f0c6dc396dd97132cf22d1e6303] [OFW257]
+3.00 (Firmware) [Sep 30, 2015] [r60535/release_branches/release_03.000 Sep 26 2015 21:13:57] [SYS d60d15db9a489ff73736ecc2e803c0d3] [REC a89af9ab64f75f6ca85b262e50f5b564] [OFW300]
+3.10 (Firmware) [Oct 14, 2015] [r61314/release_branches/release_03.100 Oct 14 2015 05:33:31] [SYS 66001b712670e9d804a642a46cf4225a] [REC 78000236133136a0c192b914fcff930c] [OFW310]
+3.11 (Firmware) [Oct 27, 2015] [r61917/release_branches/release_03.110 Oct 27 2015 05:32:37] [SYS eb94028b3df04862c95f0c525c91ed73] [REC 824f2032030d89d5763db45d07b1e45f] [OFW311]
 3.15 (Firmware) [Dec 18, 2015] [r64907/release_branches/release_03.150 Dec 18 2015 05:33:07] [SYS 516f3ad9b1505a369f9aa86b4825cf55] [REC 7211b93e6802ea737b4f829d5d4df32c] [OFW315]
 3.50 (Firmware) [Apr 6, 2016] [r69022/release_branches/release_03.500 Apr 5 2016 05:33:17] [SYS 0aa1a7e346aaba18483a106f1a887a6f] [REC 1c41826537584a850e0b1cdad1dede36] [OFW350] [KEX]
 3.55 (Firmware) [Jun 21, 2016] [r72333/release_branches/release_03.550 Jun 14 2016 05:33:20] [SYS 48e1adf0e9a598930a984babb1f9547c] [REC aa2fa6b948373c6b670613d1bf794806] [OFW355] [KEX]
@@ -37,43 +37,43 @@
 4.05 (Firmware) [Oct 26 2016] [r76632/release_branches/release_04.050 Oct 11 2016 05:35:55] [SYS 203c76c97f7be5b881dd0c77c8edf385] [REC 741cfe2f0dec1bb4663571de78ae31cf] [OFW405] [PSVR UPDATE 2.00] [KEX]
 4.06 (Firmware) [Nov 17, 2016] [r77771/release_branches/release_04.060 Nov 10 2016 05:42:26] [SYS 659190bc39c174350b6c322af0f0ded5] [REC 41b685a8a53fe2c358b7cb2437d6838c] [OFW406] [KEX]
 4.07 (Firmware) [Dec 8, 2016] [r78818/release_branches/release_04.070 Dec 1 2016 05:38:06] [SYS 908b5f52e82c36536707844df67961d8] [REC edffaf60c694b226f9123e634ed6aa00] [OFW407] [KEX]
-4.50 (Firmware) [Mar 9, 2017] [SYS 67aafbb4523d359dea2b4cd6f4cfd0d8] [REC 38471742964f3464e6bba474e657689b] [OFW450] [PSVR UPDATE 2.40] [KEX]
+4.50 (Firmware) [Mar 9, 2017] [r81439/release_branches/release_04.500 Mar 3 2017 05:25:52] [SYS 67aafbb4523d359dea2b4cd6f4cfd0d8] [REC 38471742964f3464e6bba474e657689b] [OFW450] [PSVR UPDATE 2.40] [KEX]
 4.55 (Firmware) [Apr 11, 2017] [r82197/release_branches/release_04.550 Mar 29 2017 05:25:42] [SYS 9c85ce3a255719d56f2aa07f4be22f02] [REC 6c28dbf66f63b7d3953491cc656f4e2d] [OFW455] [KEX]
-4.70 (Firmware) [May 30, 2017] [SYS f49b99a80ed9fa8d7366d123843c30be] [REC c00746107b3676cb83c1e20ef0f4fda0] [OFW470] [KEX]
-4.71 (Firmware) [Jun 22, 2017] [SYS bf3f4052063cfb9161f4ec5f180105d5] [REC 165813af62454332bcd092331d880315] [OFW471] [KEX]
-4.72 (Firmware) [Jul 11, 2017] [SYS fa4413cb0c383a38856fad643c6d26a5] [REC 8dbf0bba7ffbb0dfdd22a4d3d13f000c] [OFW472] [KEX]
-4.73 (Firmware) [Aug 2, 2017] [SYS 5b25ad39b7039ee2d88a825d2a04ab30] [REC 14eb6e5b1100e8edca028f6c4a90712a] [OFW473] [KEX]
+4.70 (Firmware) [May 30, 2017] [r83997/release_branches/release_04.700 May 25 2017 05:25:21] [SYS f49b99a80ed9fa8d7366d123843c30be] [REC c00746107b3676cb83c1e20ef0f4fda0] [OFW470] [KEX]
+4.71 (Firmware) [Jun 22, 2017] [r84809/release_branches/release_04.710 Jun 20 2017 05:25:22] [SYS bf3f4052063cfb9161f4ec5f180105d5] [REC 165813af62454332bcd092331d880315] [OFW471] [KEX]
+4.72 (Firmware) [Jul 11, 2017] [r85130/release_branches/release_04.720 Jun 30 2017 05:26:59] [SYS fa4413cb0c383a38856fad643c6d26a5] [REC 8dbf0bba7ffbb0dfdd22a4d3d13f000c] [OFW472] [KEX]
+4.73 (Firmware) [Aug 2, 2017] [r85578/release_branches/release_04.730 Jul 25 2017 05:25:28] [SYS 5b25ad39b7039ee2d88a825d2a04ab30] [REC 14eb6e5b1100e8edca028f6c4a90712a] [OFW473] [KEX]
 4.74 (Firmware) [Sep 14, 2017] [r86759/release_branches/release_04.740 Sep 12 2017 05:24:58] [SYS d47d2d03074bd2449d6f7a90d827d0e2] [REC 2a1ffed038065d87a075524c9b907a79] [OFW474] [PSVR UPDATE 2.90] [KEX]
 5.00 (Firmware) [Oct 3, 2017] [r87095/release_branches/release_05.000 Sep 26 2017 05:25:25] [SYS 9af5cac72ecfb821cb89d68f53c55340] [REC c52f53df27ba53adabd3e992ec4ed84d] [OFW500] [PSVR UPDATE 3.10] [KEX]
 5.01 (Firmware) [Oct 24, 2017] [r87479/release_branches/release_05.010 Oct 18 2017 05:25:14] [SYS 8606691c0201e4db2a4100f80fbaddb3] [REC 8d6b9274217351daf0b3811622ed68e4] [OFW501] [KEX]
 5.02 (Firmware) [Nov 11, 2017] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW502]
-5.03 (Firmware) [Dec 14, 2017] [SYS e637fa2ef8cfde3132ab961db1f0b3bd] [REC 6b606df17c7386de4505fef433c1ec35] [OFW503] [KEX]
+5.03 (Firmware) [Dec 14, 2017] [r88813/release_branches/release_05.030 Dec 5 2017 05:25:25] [SYS e637fa2ef8cfde3132ab961db1f0b3bd] [REC 6b606df17c7386de4505fef433c1ec35] [OFW503] [KEX]
 5.05 (Firmware) [Jan 18, 2018] [r89649/release_branches/release_05.050 Jan 15 2018 05:28:50] [SYS f86d4f9d2c049547bd61f942151ffb55] [REC c2a602174f6b1d8ef599640cd276924a] [OFW505] [KEX]
 5.07 (Firmware) [Feb 5, 2018] [r90177/release_branches/release_05.070 Jan 30 2018 12:20:10] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] <Preinstalled on DOP consoles 8-18th Jun3 2018> [OFW507] [KEX]
 5.50 (Firmware) [Mar 8, 2018] [r90807/release_branches/release_05.500 Mar 2 2018 05:40:21] [SYS 8abac7c4f978907e8a73f844936ad420] [REC 58e6f0ae956c1bb1798ea86da051554d] [OFW550] [KEX]
 5.53 (Firmware) [Apr 12, 2018] [r91210/release_branches/release_05.530 Mar 28 2018 05:41:01] [SYS 353dd0c9f62bdf16a9e843e6d3edfcfd] [REC 06aa639dea5aaa531c112e3d05a54989] [OFW553] [KEX]
 5.53-01 (Firmware) [Apr 24, 2018] [SYS e79552b7c98fd6709910e31d7f950fa2] [REC A08289BBE095C889B4257FF88F67F0C5] [PATCH c44d0ed5b2fe3e76c3131d33efc65144] [OFW553]
 5.55 (Firmware) [May 17, 2018] [r96810/release_branches/release_05.550 May 10 2018 11:36:21] [SYS ee98baebca4fec9f9d9e85fdeb2cd0d0] [REC 484773c0ee36ae22c9e4e4c051968861] [OFW555] [KEX]
-5.56 (Firmware) [Aug 31, 2018] [SYS 9b38dea86563802c01ff9bae366b6559] [REC 4a0b3c61f03f5f9fdbf94b91ec11e88d] [OFW556] [KEX]
+5.56 (Firmware) [Aug 31, 2018] [r103948/release_branches/release_05.560 Aug 29 2018 23:18:58] [SYS 9b38dea86563802c01ff9bae366b6559] [REC 4a0b3c61f03f5f9fdbf94b91ec11e88d] [OFW556] [KEX]
 6.00 (Firmware) [Sep 13, 2018] [r101022/release_branches/release_06.000 Jul 13 2018 05:39:58] [SYS 6295afecdf8d8fab58371b2d644d5692] [REC 27d68a196469972b7d2939d0279262e6] [OFW600] [PSVR UPDATE 4.10] [KEX]
-6.02 (Firmware) [Oct 17, 2018] [SYS 9ef581a6ef5a171862544628d0449701] [REC 47a71db4a531155e4d0ade34bb383f1f] [OFW602] [KEX]
+6.02 (Firmware) [Oct 17, 2018] [r108670/release_branches/release_06.020 Oct 15 2018 14:35:52] [SYS 9ef581a6ef5a171862544628d0449701] [REC 47a71db4a531155e4d0ade34bb383f1f] [OFW602] [KEX]
 6.20 (Firmware) [Dec 12, 2018] [r109816/release_branches/release_06.200 Nov 2 2018 05:41:33] [SYS 9e49c8202ca0195028b09adca2757800] [REC ae184dc5544ecd2ec9a2a00535c41896] [OFW620] [KEX]
 6.50 (Firmware) [Mar 7, 2019] [r118672/release_branches/release_06.500 Mar 1 2019 05:42:45] [SYS ad4ef44b1e8316317e686f165b3ff2d3] [REC 3cf358264e127d853bfe157a822bb45a] [OFW650] [KEX]
-6.51 (Firmware) [Mar 23, 2019] [SYS eadc97c414b5628306ade35600e8719d] [REC 7bd82d7957611fe9bca3fa63b78c82c5] [OFW651] [KEX]
+6.51 (Firmware) [Mar 23, 2019] [r120213/release_branches/release_06.510 Mar 19 2019 05:43:19] [SYS eadc97c414b5628306ade35600e8719d] [REC 7bd82d7957611fe9bca3fa63b78c82c5] [OFW651] [KEX]
 6.70 (Firmware) [May 30, 2019] [r124152/release_branches/release_06.700 May 22 2019 05:42:57] [SYS b9e115373a7d242275b5a73c9881f66d] [REC 0234e1b1bd3d9e3ec50df3ebdae7d2a0] [OFW670] [KEX]
 6.71 (Firmware) [Jun 4, 2019] [r125276/release_branches/release_06.710 May 31 2019 19:39:22] [SYS cde8539780345cd7efb01b600e3cc4e6] [REC 9058f36c1863ac90d4b1e344ebdb1d4f] [OFW671] [KEX]
 6.72 (Firmware) [Jul 16, 2019] [r128004/release_branches/release_06.720 Jul 9 2019 05:42:32] [SYS f3a31f64d894dc06040498cd7383bec2] [REC 8140fdd70c1061c379f08566be022ecb] [OFW672] [KEX]
 7.00 (Firmware) [Oct 8, 2019] [r135061/release_branches/release_07.000 Oct 2 2019 05:28:54] [SYS d5469c8ebaf8666ce95e154013e0aef9] [REC 60f1b903868ba7a8d35ab00f6782addc] [OFW700] [KEX]
-7.01 (Firmware) [Dec 11, 2019] [SYS 3ae887e2a8a9f5947ba1cedcfd6f28e9] [REC 59d03f8a43fa16ab95e52225508f3c59] [OFW701]
+7.01 (Firmware) [Dec 11, 2019] [r140110/release_branches/release_07.010 Dec 9 2019 05:28:37] [SYS 3ae887e2a8a9f5947ba1cedcfd6f28e9] [REC 59d03f8a43fa16ab95e52225508f3c59] [OFW701]
 7.02 (Firmware) [Dec 19, 2019] [r141010/release_branches/release_07.020 Dec 16 2019 15:07:40] [SYS 352103a9c78fef4dd4ffd2d317544cec] [REC c8f661484ee1a6ba82ff654f0aac7906] [OFW702] [KEX]
 7.50 (Firmware) [Apr 15, 2020] [r149962/release_branches/release_07.500 Apr 8 2020 05:26:31] [SYS 93b205eb161d0e1775f1b73a9b98152e] [REC b17db990e2f1b629dcc891151bd801aa] [OFW750] [KEX]
 7.51 (Firmware) [May 27, 2020] [r152494/release_branches/release_07.510 May 15 2020 05:26:13] [SYS 65811dd624bd837b5f294a44098d5a8f] [REC 3dd7507dfa230800c2034fb534c7d611] [OFW751] [KEX]
 7.55 (Firmware) [Aug 26, 2020] [r158328/release_branches/release_07.550 Aug 5 2020 05:27:21] [SYS f70be91d56123074e7be3ca0748d1300] [REC ae0c21163dd52bdd16789cd95e102654] [OFW755] [KEX]
 8.00 (Firmware) [Oct 14, 2020] [r161267/release_branches/release_08.000 Oct 2 2020 05:26:28] [SYS 5dfced9b4c82de6ce8c3d99e4f2e42e5] [REC f0c26fc5832788f589cafdda6f37630c] [OFW800] [PSVR UPDATE 5.00]
-8.01 (Firmware) [Nov 18, 2020] [SYS 2ce654f5cc5e5147b7cc756a6a4a93be] [REC 25a82d320bea36974b1e7fb189c4c0c5] [OFW801]
-8.03 (Firmware) [Dec 9, 2020] [SYS a261a9388c591adae9ac010c0b73483b] [REC 3e5241162736abd81a14e5922093c5c0] [OFW803]
-8.50 (Firmware) [Apr 14, 2021] [SYS 8bedf54bd89e848133d388b23b86a0eb] [REC 93c0e91b338030c4c154d771abae1a20] [OFW850]
-8.52 (Firmware) [Jun 22, 2021] [SYS 3b3fdf33f509311807792365dc0f13b5] [REC 264bbbf77f1e248ac804f039c83a9128] [OFW852]
+8.01 (Firmware) [Nov 18, 2020] [r163380/release_branches/release_08.010 Nov 13 2020 05:25:42] [SYS 2ce654f5cc5e5147b7cc756a6a4a93be] [REC 25a82d320bea36974b1e7fb189c4c0c5] [OFW801]
+8.03 (Firmware) [Dec 9, 2020] [r164351/release_branches/release_08.030 Nov 30 2020 05:26:06] [SYS a261a9388c591adae9ac010c0b73483b] [REC 3e5241162736abd81a14e5922093c5c0] [OFW803]
+8.50 (Firmware) [Apr 14, 2021] [r171254/release_branches/release_08.500 Apr 5 2021 05:26:43] [SYS 8bedf54bd89e848133d388b23b86a0eb] [REC 93c0e91b338030c4c154d771abae1a20] [OFW850]
+8.52 (Firmware) [Jun 22, 2021] [r174732/release_branches/release_08.520 Jun 8 2021 05:27:23] [SYS 3b3fdf33f509311807792365dc0f13b5] [REC 264bbbf77f1e248ac804f039c83a9128] [OFW852]
 9.00 (Firmware) [Sep 15, 2021] [SYS e923e6d210399f236177e332843e2754] [REC 674420f041cb5845aae85928751ccd0e] [OFW900] [KEX] [HEN]
 9.03 (Firmware) [Dec 1, 2021] [SYS a5d3b099d92f6f57671bb29a5d6e7a5c] [REC 2301db03e473b99ea195df0fe954c2f1] [OFW903]
 Escape Plan Collection (Puzzle) [Feb 6, 2013] [DUMPED V1.01] [CUSA00153] [FULLPS5] [EST100] &#9989;
@@ -1611,13 +1611,13 @@ Battlefield Hardline Betrayal (DLC) [Mar 15, 2016] [FULLPS5] [EST315] &#9989;
 Candlelight (Platform) [Mar 15, 2016] [FULLPS5] [EST315] &#9989;
 D/Generation HD (Puzzle) [Mar 15, 2016] [FULLPS5] [EST315] &#9989;
 EA Sports UFC 2 (Fighting, Sports) [Mar 15, 2016] [DUMPED V1.13] [CUSA01968] <UFC2> [PSHITS] [FULLPS5] [EST315] &#9989;
-EA Sports UFC 2 1050 UFC POINTS (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
-EA Sports UFC 2 12000 UFC POINTS (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
-EA Sports UFC 2 1600 UFC POINTS (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
-EA Sports UFC 2 2200 UFC POINTS (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
-EA Sports UFC 2 250 UFC POINTS (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
-EA Sports UFC 2 4600 UFC POINTS (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
-EA Sports UFC 2 500 UFC POINTS (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
+EA Sports UFC 2 1050 UFC Points (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
+EA Sports UFC 2 12000 UFC Points (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
+EA Sports UFC 2 1600 UFC Points (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
+EA Sports UFC 2 2200 UFC Points (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
+EA Sports UFC 2 250 UFC Points (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
+EA Sports UFC 2 4600 UFC Points (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
+EA Sports UFC 2 500 UFC Points (DLC) [Mar 15, 2016] <UFC2> [FULLPS5] [EST315] &#9989;
 EA Sports UFC 2 Bas Rutten Bundle (DLC) [Mar 15, 2016] [DUMPED V1.13] <UFC2> [FULLPS5] [EST315] &#9989;
 EA Sports UFC 2 Bas Rutten Heavyweight (DLC) [Mar 15, 2016] [DUMPED V1.13] <UFC2> [FULLPS5] [EST315] &#9989;
 EA Sports UFC 2 Bas Rutten Light Heavyweight (DLC) [Mar 15, 2016] [DUMPED V1.13] <UFC2> [FULLPS5] [EST315] &#9989;
