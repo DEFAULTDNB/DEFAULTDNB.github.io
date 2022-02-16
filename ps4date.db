@@ -1,9 +1,10 @@
-1.01 (Firmware) [Sep 1, 2013] [r27590/release_branches/release_01.010 Aug 7 2013 02:01:45] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW101]
-1.05 (Firmware) [Nov 1, 2013] [r29800/release_branches/release_01.050 Oct 1 2013 05:34:40] [SYS ca669e43ad9d7e7ee7a66c6c1ba721ac] [REC NO HASH INFORMATION IS AVAILABLE] [OFW105] <Estimated>
-1.06 (Firmware) [Nov 14, 2013] [r29873/release_branches/release_01.060 Oct 3 2013 05:34:49] [SYS aa7864b42ad01e3a07c6192c8503aa34] [REC NO HASH INFORMATION IS AVAILABLE] [OFW106]
-1.07 (Firmware) [Nov 15, 2013] [SYS aec39ae8c3a28cf46209ddb9ec5effda] [REC NO HASH INFORMATION IS AVAILABLE] [OFW107] <Estimated>
-1.50 (Firmware) [Nov 15, 2013] [r31298/release_branches/release_01.500 Nov 12 2013 05:34:36] [SYS df008b5601f4a214a3cc65030a02ac4a] [REC cedada625478db608d5878c019454380] [OFW150]
-1.501 (Firmware) [Oct 28, 2013] [SYS c64d11f839ac8628176941b99fd3670e] [REC 6f4d6afe98dd7297c70aa4d6e7e5482b] [OFW150]
+1.01 (Firmware) [Sep 1, 2013] [r27590/release_branches/release_01.010 Aug 7 2013 02:01:45] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW101]
+1.05 (Firmware) [Nov 1, 2013] [r29800/release_branches/release_01.050 Oct 1 2013 05:34:40] [SYS ca669e43ad9d7e7ee7a66c6c1ba721ac] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW105] <Estimated>
+1.06 (Firmware) [Nov 14, 2013] [r29873/release_branches/release_01.060 Oct 3 2013 05:34:49] [SYS aa7864b42ad01e3a07c6192c8503aa34] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW106]
+1.07 (Firmware) [Nov 15, 2013] [SYS aec39ae8c3a28cf46209ddb9ec5effda] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW107] <Estimated>
+1.501 (Firmware) [Nov 12, 2013] [r31298/release_branches/release_01.500 Nov 12 2013 05:34:36] [SYS df008b5601f4a214a3cc65030a02ac4a] [REC cedada625478db608d5878c019454380] [OFW150]
+1.50b1 (Firmware) [Oct 28, 2013] [SYS c64d11f839ac8628176941b99fd3670e] [REC 6f4d6afe98dd7297c70aa4d6e7e5482b] <leaked and deleted> [OFW150] [BETAOFW]
+1.50b2 (Firmware) [Nov 13, 2013] [SYS df008b5601f4a214a3cc65030a02ac4a] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW150] [BETAOFW]
 1.51 (Firmware) [Nov 17, 2013] [r31536/release_branches/release_01.510 Nov 17 2014 05:34:03] [SYS ed49d42a08a0927f0692a2372d9e9e6e] [REC 818a99ff70ce3193aeab3e95160379d6] [OFW151]
 1.52 (Firmware) [Dec 5, 2013] [r31906/release_branches/release_01.520 Dec 5 2013 05:33:35] [SYS 28062731a1648df64e79ab62ee133057] [REC 7c567c6639760132c5a532a184e612fe] [OFW152]
 1.60 (Firmware) [Feb 4, 2014] [r34204/release_branches/release_01.600 Jan 29 2014 05:36:34] [SYS 3e3378b01dd01485e71d0561386a7821] [REC 619d51cbdd976f031a667c452e8af681] [OFW160]
@@ -21,23 +22,30 @@
 2.03 (Firmware) [Dec 3, 2014] [r47215/release_branches/release_02.030 Nov 25 2014 05:39:10] [SYS eac5e76be085221159ecbbe21e5022c5] [REC 2eca5eb6e4b5fdc00b49885e31591f1e] [OFW203]
 2.04 (Firmware) [Feb 6, 2015] [r49166/release_branches/release_02.040 Feb 6 2015 05:36:00] [SYS 402013820a65029ea44d97655e550ffb] [REC c50ad2fe0438e4fabd7ada2cbbc97e56] [OFW204]
 2.50 (Firmware) [Mar 20, 2015] [r51885/release_branches/release_02.500 Mar 20 2015 16:34:28] [SYS 5c6e09a82250e1dde602521ab1faf715] [REC 4353941dacb69a6c22a82d704e3fd03a] [OFW250]
+2.50b (Firmware) [Mar 4, 2015] [SYS 3E9A16165A86A7DDE26EA352CAF88769] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW250] [BETAOFW]
 2.51 (Firmware) [Apr 17, 2015] [r53246/release_branches/release_02.510 Apr 17 2015 05:30:13] [SYS e63273cb3762eec5ae50b2bd877024aa] [REC 8473ca583fb6d6d39c357e0e5131d026] [OFW251]
-2.52 (Firmware) [Apr 23, 2015] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW252] <Pre-installed on consoles released November 2015> <Estimated>
+2.52 (Firmware) [Apr 23, 2015] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW252] <Pre-installed on consoles released November 2015> <Estimated>
 2.55 (Firmware) [Jun 25, 2015] [r56181/release_branches/release_02.550 Jun 25 2015 05:30:47] [SYS 4f1c6d8597242ff346612773ffbc10ad] [REC bd7b99c592a392a2dd6e36645ebcde8a] [OFW255]
-2.56 (Firmware) [Jul 15, 2015] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW256] <Pre-installed on consoles released December 2015> <Estimated>
+2.56 (Firmware) [Jul 15, 2015] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW256] <Pre-installed on consoles released December 2015> <Estimated>
 2.57 (Firmware) [Jul 16, 2015] [r57763/release_branches/release_02.570 Jul 16 2015 05:31:04] [SYS 67c94f173d3cff0668430669b1ef4ddf] [REC fa5b8f0c6dc396dd97132cf22d1e6303] [OFW257]
 3.00 (Firmware) [Sep 30, 2015] [r60535/release_branches/release_03.000 Sep 26 2015 21:13:57] [SYS d60d15db9a489ff73736ecc2e803c0d3] [REC a89af9ab64f75f6ca85b262e50f5b564] [OFW300]
+3.00b (Firmware) [Sep 1, 2015] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW300] <Kenshin> [BETAOFW]
 3.10 (Firmware) [Oct 14, 2015] [r61314/release_branches/release_03.100 Oct 14 2015 05:33:31] [SYS 66001b712670e9d804a642a46cf4225a] [REC 78000236133136a0c192b914fcff930c] [OFW310]
 3.11 (Firmware) [Oct 27, 2015] [r61917/release_branches/release_03.110 Oct 27 2015 05:32:37] [SYS eb94028b3df04862c95f0c525c91ed73] [REC 824f2032030d89d5763db45d07b1e45f] [OFW311]
 3.15 (Firmware) [Dec 18, 2015] [r64907/release_branches/release_03.150 Dec 18 2015 05:33:07] [SYS 516f3ad9b1505a369f9aa86b4825cf55] [REC 7211b93e6802ea737b4f829d5d4df32c] [OFW315]
 3.50 (Firmware) [Apr 6, 2016] [r69022/release_branches/release_03.500 Apr 5 2016 05:33:17] [SYS 0aa1a7e346aaba18483a106f1a887a6f] [REC 1c41826537584a850e0b1cdad1dede36] [OFW350] [KEX]
+3.50b (Firmware) [Feb 29, 2016] [SYS d1077767c6c7db56e707ef79c3f802d1] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW350] <Musashi> [BETAOFW]
 3.55 (Firmware) [Jun 21, 2016] [r72333/release_branches/release_03.550 Jun 14 2016 05:33:20] [SYS 48e1adf0e9a598930a984babb1f9547c] [REC aa2fa6b948373c6b670613d1bf794806] [OFW355] [KEX]
 4.00 (Firmware) [Sep 13, 2016] [r75742/release_branches/release_04.000 Sep 8 2016 14:29:38] [SYS b67e17446b0ce4a9773aaee3e8ee5573] [REC ec5c19ee4c25b93bb4b61b9b9bdae270] [OFW400] [KEX]
+4.00b3 (Firmware) [Aug 16, 2016] [SYS d7fde4e1f3261e60ef174b9dc2c9bb58] [OFW400] <Shingen> [BETAOFW]
 4.01 (Firmware) [Oct 3, 2016] [r76151/release_branches/release_04.010 Sep 26 2016 05:41:25] [SYS 8b4ef90dc5994ba89028558030e31180] [REC a9f42be840eea2afc1d349eef5e812f5] [OFW401] [KEX]
-4.05 (Firmware) [Oct 26 2016] [r76632/release_branches/release_04.050 Oct 11 2016 05:35:55] [SYS 203c76c97f7be5b881dd0c77c8edf385] [REC 741cfe2f0dec1bb4663571de78ae31cf] [OFW405] [PSVR UPDATE 2.00] [KEX]
+4.05 (Firmware) [Oct 26, 2016] [r76632/release_branches/release_04.050 Oct 11 2016 05:35:55] [SYS 203c76c97f7be5b881dd0c77c8edf385] [REC 741cfe2f0dec1bb4663571de78ae31cf] [OFW405] [PSVR UPDATE 2.00] [KEX]
 4.06 (Firmware) [Nov 17, 2016] [r77771/release_branches/release_04.060 Nov 10 2016 05:42:26] [SYS 659190bc39c174350b6c322af0f0ded5] [REC 41b685a8a53fe2c358b7cb2437d6838c] [OFW406] [KEX]
 4.07 (Firmware) [Dec 8, 2016] [r78818/release_branches/release_04.070 Dec 1 2016 05:38:06] [SYS 908b5f52e82c36536707844df67961d8] [REC edffaf60c694b226f9123e634ed6aa00] [OFW407] [KEX]
 4.50 (Firmware) [Mar 9, 2017] [r81439/release_branches/release_04.500 Mar 3 2017 05:25:52] [SYS 67aafbb4523d359dea2b4cd6f4cfd0d8] [REC 38471742964f3464e6bba474e657689b] [OFW450] [PSVR UPDATE 2.40] [KEX]
+4.50b2 (Firmware) [Feb 3, 2017] [SYS b480a51bfc4c3b24339ced26ddcfdfee] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW450] <Sasuke> [BETAOFW]
+4.50b3 (Firmware) [Feb 15, 2017] [SYS 498222e4f8a0174c341b713f5a0d1f30] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW450] <Sasuke> [BETAOFW]
+4.50b4 (Firmware) [Feb 21, 2017] [SYS f42c5b39a4691c066f3d51465857b4c9] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW450] <Sasuke> [BETAOFW]
 4.55 (Firmware) [Apr 11, 2017] [r82197/release_branches/release_04.550 Mar 29 2017 05:25:42] [SYS 9c85ce3a255719d56f2aa07f4be22f02] [REC 6c28dbf66f63b7d3953491cc656f4e2d] [OFW455] [KEX]
 4.70 (Firmware) [May 30, 2017] [r83997/release_branches/release_04.700 May 25 2017 05:25:21] [SYS f49b99a80ed9fa8d7366d123843c30be] [REC c00746107b3676cb83c1e20ef0f4fda0] [OFW470] [KEX]
 4.71 (Firmware) [Jun 22, 2017] [r84809/release_branches/release_04.710 Jun 20 2017 05:25:22] [SYS bf3f4052063cfb9161f4ec5f180105d5] [REC 165813af62454332bcd092331d880315] [OFW471] [KEX]
@@ -45,37 +53,65 @@
 4.73 (Firmware) [Aug 2, 2017] [r85578/release_branches/release_04.730 Jul 25 2017 05:25:28] [SYS 5b25ad39b7039ee2d88a825d2a04ab30] [REC 14eb6e5b1100e8edca028f6c4a90712a] [OFW473] [KEX]
 4.74 (Firmware) [Sep 14, 2017] [r86759/release_branches/release_04.740 Sep 12 2017 05:24:58] [SYS d47d2d03074bd2449d6f7a90d827d0e2] [REC 2a1ffed038065d87a075524c9b907a79] [OFW474] [PSVR UPDATE 2.90] [KEX]
 5.00 (Firmware) [Oct 3, 2017] [r87095/release_branches/release_05.000 Sep 26 2017 05:25:25] [SYS 9af5cac72ecfb821cb89d68f53c55340] [REC c52f53df27ba53adabd3e992ec4ed84d] [OFW500] [PSVR UPDATE 3.10] [KEX]
+5.00b3 (Firmware) [Aug 3, 2017] [SYS 707fd1fb0ff7fe9b6f5acf5f3e054d01] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW500] <Nobunaga> [BETAOFW]
+5.00b4 (Firmware) [Aug 31, 2017] [SYS 707fd1fb0ff7fe9b6f5acf5f3e054d01] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW500] <Nobunaga> [BETAOFW]
+5.00b5 (Firmware) [Sep 8, 2017] [SYS c819af15b04fd1943e207480cd10a2f4] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW500] <Nobunaga> [BETAOFW]
+5.00b6 (Firmware) [Sep 20, 2017] [SYS 1e479d4d79308022902e418d0fc5e48b] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW500] <Nobunaga> [BETAOFW]
 5.01 (Firmware) [Oct 24, 2017] [r87479/release_branches/release_05.010 Oct 18 2017 05:25:14] [SYS 8606691c0201e4db2a4100f80fbaddb3] [REC 8d6b9274217351daf0b3811622ed68e4] [OFW501] [KEX]
-5.02 (Firmware) [Nov 11, 2017] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] [OFW502]
+5.02 (Firmware) [Nov 11, 2017] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW502]
 5.03 (Firmware) [Dec 14, 2017] [r88813/release_branches/release_05.030 Dec 5 2017 05:25:25] [SYS e637fa2ef8cfde3132ab961db1f0b3bd] [REC 6b606df17c7386de4505fef433c1ec35] [OFW503] [KEX]
 5.05 (Firmware) [Jan 18, 2018] [r89649/release_branches/release_05.050 Jan 15 2018 05:28:50] [SYS f86d4f9d2c049547bd61f942151ffb55] [REC c2a602174f6b1d8ef599640cd276924a] [OFW505] [KEX]
-5.07 (Firmware) [Feb 5, 2018] [r90177/release_branches/release_05.070 Jan 30 2018 12:20:10] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO HASH INFORMATION IS AVAILABLE] <Preinstalled on DOP consoles 8-18th Jun3 2018> [OFW507] [KEX]
+5.07 (Firmware) [Feb 5, 2018] [r90177/release_branches/release_05.070 Jan 30 2018 12:20:10] [SYS NO HASH INFORMATION IS AVAILABLE] [REC NO REC EXSISTS FOR THIS FIRMWARE] <Preinstalled on DOP consoles 8-18th Jun3 2018> [OFW507] [KEX]
 5.50 (Firmware) [Mar 8, 2018] [r90807/release_branches/release_05.500 Mar 2 2018 05:40:21] [SYS 8abac7c4f978907e8a73f844936ad420] [REC 58e6f0ae956c1bb1798ea86da051554d] [OFW550] [KEX]
+5.50b2 (Firmware) [Feb 6, 2018] [SYS 8e4f7669a9d8d1a86e5c40b66eda0ec5] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW550] <Keiji> [BETAOFW]
+5.50b3 (Firmware) [Feb 10, 2018] [SYS ae18ef962574a0f23b8c4631f3b39a1d] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW550] <Keiji> [BETAOFW]
 5.53 (Firmware) [Apr 12, 2018] [r91210/release_branches/release_05.530 Mar 28 2018 05:41:01] [SYS 353dd0c9f62bdf16a9e843e6d3edfcfd] [REC 06aa639dea5aaa531c112e3d05a54989] [OFW553] [KEX]
 5.53-01 (Firmware) [Apr 24, 2018] [SYS e79552b7c98fd6709910e31d7f950fa2] [REC A08289BBE095C889B4257FF88F67F0C5] [PATCH c44d0ed5b2fe3e76c3131d33efc65144] [OFW553]
 5.55 (Firmware) [May 17, 2018] [r96810/release_branches/release_05.550 May 10 2018 11:36:21] [SYS ee98baebca4fec9f9d9e85fdeb2cd0d0] [REC 484773c0ee36ae22c9e4e4c051968861] [OFW555] [KEX]
 5.56 (Firmware) [Aug 31, 2018] [r103948/release_branches/release_05.560 Aug 29 2018 23:18:58] [SYS 9b38dea86563802c01ff9bae366b6559] [REC 4a0b3c61f03f5f9fdbf94b91ec11e88d] [OFW556] [KEX]
 6.00 (Firmware) [Sep 13, 2018] [r101022/release_branches/release_06.000 Jul 13 2018 05:39:58] [SYS 6295afecdf8d8fab58371b2d644d5692] [REC 27d68a196469972b7d2939d0279262e6] [OFW600] [PSVR UPDATE 4.10] [KEX]
+6.00b1 (Firmware) [Aug 1, 2018] [SYS 386b6f63d7e8731ce1032c7d3a2da004] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW600] [BETAOFW]
+6.00b2 (Firmware) [Aug 4, 2018] [SYS 573F5657B2B4060E807F13F4FC564394] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW600] [BETAOFW]
+6.00b3 (Firmware) [Aug 21, 2018] [SYS 73f1028598ff956aa7de6af1b8be9e11] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW600] [BETAOFW]
 6.02 (Firmware) [Oct 17, 2018] [r108670/release_branches/release_06.020 Oct 15 2018 14:35:52] [SYS 9ef581a6ef5a171862544628d0449701] [REC 47a71db4a531155e4d0ade34bb383f1f] [OFW602] [KEX]
+6.10b2 (Firmware) [Oct 16, 2018] [SYS a6a94b8feadd13121212c8aef5f5c7d8] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW610] [BETAOFW]
 6.20 (Firmware) [Dec 12, 2018] [r109816/release_branches/release_06.200 Nov 2 2018 05:41:33] [SYS 9e49c8202ca0195028b09adca2757800] [REC ae184dc5544ecd2ec9a2a00535c41896] [OFW620] [KEX]
 6.50 (Firmware) [Mar 7, 2019] [r118672/release_branches/release_06.500 Mar 1 2019 05:42:45] [SYS ad4ef44b1e8316317e686f165b3ff2d3] [REC 3cf358264e127d853bfe157a822bb45a] [OFW650] [KEX]
+6.50b2 (Firmware) [Jan 28, 2019] [SYS 65f11a45e5c6866c0ee51a008e5be5ad] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW650] [BETAOFW]
+6.50b3 (Firmware) [Feb 15, 2019] [SYS b57e19efe8692311504b1cee7a2663d1] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW650] [BETAOFW]
 6.51 (Firmware) [Mar 23, 2019] [r120213/release_branches/release_06.510 Mar 19 2019 05:43:19] [SYS eadc97c414b5628306ade35600e8719d] [REC 7bd82d7957611fe9bca3fa63b78c82c5] [OFW651] [KEX]
 6.70 (Firmware) [May 30, 2019] [r124152/release_branches/release_06.700 May 22 2019 05:42:57] [SYS b9e115373a7d242275b5a73c9881f66d] [REC 0234e1b1bd3d9e3ec50df3ebdae7d2a0] [OFW670] [KEX]
 6.71 (Firmware) [Jun 4, 2019] [r125276/release_branches/release_06.710 May 31 2019 19:39:22] [SYS cde8539780345cd7efb01b600e3cc4e6] [REC 9058f36c1863ac90d4b1e344ebdb1d4f] [OFW671] [KEX]
 6.72 (Firmware) [Jul 16, 2019] [r128004/release_branches/release_06.720 Jul 9 2019 05:42:32] [SYS f3a31f64d894dc06040498cd7383bec2] [REC 8140fdd70c1061c379f08566be022ecb] [OFW672] [KEX]
+6.80b1 (Firmware) [Jun 3, 2019] [SYS 87eed48f70131a26aa3c45b667e3dd27] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW680] [BETAOFW]
+6.80b2 (Firmware) [Jun 14, 2019] [SYS b48a2c4d8d1102b8bb9bc978424b03e3] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW680] [BETAOFW]
 7.00 (Firmware) [Oct 8, 2019] [r135061/release_branches/release_07.000 Oct 2 2019 05:28:54] [SYS d5469c8ebaf8666ce95e154013e0aef9] [REC 60f1b903868ba7a8d35ab00f6782addc] [OFW700] [KEX]
+7.00b2 (Firmware) [Jul 22, 2019] [SYS b6ca5f9796e2bb32a0078ab6e107b505] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW700] [BETAOFW]
+7.00b2.01 (Firmware) [Jul 26, 2019] [SYS 2759f64418923468f1eda1cd4e4dfd1f] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW700] [BETAOFW]
+7.00b3 (Firmware) [Aug 7, 2019] [SYS 7e8a8c34fb70f5af9065b40831d38867] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW700] [BETAOFW]
+7.00b4 (Firmware) [Aug 27, 2019] [SYS a2893571101f3b6f9105007f11552a63] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW700] [BETAOFW]
+7.00b5 (Firmware) [Sep 9, 2019] [SYS 6e4470029be1fb8620c30b02a3873dcc] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW700] [BETAOFW]
 7.01 (Firmware) [Dec 11, 2019] [r140110/release_branches/release_07.010 Dec 9 2019 05:28:37] [SYS 3ae887e2a8a9f5947ba1cedcfd6f28e9] [REC 59d03f8a43fa16ab95e52225508f3c59] [OFW701]
 7.02 (Firmware) [Dec 19, 2019] [r141010/release_branches/release_07.020 Dec 16 2019 15:07:40] [SYS 352103a9c78fef4dd4ffd2d317544cec] [REC c8f661484ee1a6ba82ff654f0aac7906] [OFW702] [KEX]
 7.50 (Firmware) [Apr 15, 2020] [r149962/release_branches/release_07.500 Apr 8 2020 05:26:31] [SYS 93b205eb161d0e1775f1b73a9b98152e] [REC b17db990e2f1b629dcc891151bd801aa] [OFW750] [KEX]
+7.50b2 (Firmware) [Feb 20, 2020] [SYS ca6e1f9b73cff188cbcda1cc9f8b3bb7] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW750] [BETAOFW]
+7.50b3 (Firmware) [Mar 9, 2020] [SYS 5868680e02a1cf3aa6c5d34c5dac00d7] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW750] [BETAOFW]
 7.51 (Firmware) [May 27, 2020] [r152494/release_branches/release_07.510 May 15 2020 05:26:13] [SYS 65811dd624bd837b5f294a44098d5a8f] [REC 3dd7507dfa230800c2034fb534c7d611] [OFW751] [KEX]
 7.55 (Firmware) [Aug 26, 2020] [r158328/release_branches/release_07.550 Aug 5 2020 05:27:21] [SYS f70be91d56123074e7be3ca0748d1300] [REC ae0c21163dd52bdd16789cd95e102654] [OFW755] [KEX]
 8.00 (Firmware) [Oct 14, 2020] [r161267/release_branches/release_08.000 Oct 2 2020 05:26:28] [SYS 5dfced9b4c82de6ce8c3d99e4f2e42e5] [REC f0c26fc5832788f589cafdda6f37630c] [OFW800] [PSVR UPDATE 5.00]
+8.00b2 (Firmware) [Jul 13, 2020] [SYS d6f281680124102f26b18dee07aff8f5] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW800] [BETAOFW]
 8.01 (Firmware) [Nov 18, 2020] [r163380/release_branches/release_08.010 Nov 13 2020 05:25:42] [SYS 2ce654f5cc5e5147b7cc756a6a4a93be] [REC 25a82d320bea36974b1e7fb189c4c0c5] [OFW801]
 8.03 (Firmware) [Dec 9, 2020] [r164351/release_branches/release_08.030 Nov 30 2020 05:26:06] [SYS a261a9388c591adae9ac010c0b73483b] [REC 3e5241162736abd81a14e5922093c5c0] [OFW803]
 8.50 (Firmware) [Apr 14, 2021] [r171254/release_branches/release_08.500 Apr 5 2021 05:26:43] [SYS 8bedf54bd89e848133d388b23b86a0eb] [REC 93c0e91b338030c4c154d771abae1a20] [OFW850]
+8.50b2 (Firmware) [Feb 25, 2021] [SYS 782a742d4709e266f6e7fa99988204aa] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW850] [BETAOFW]
+8.50b3 (Firmware) [Mar 15, 2021] [SYS cbf03059ac397cc3398183559e089d4b] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW850] [BETAOFW]
 8.52 (Firmware) [Jun 22, 2021] [r174732/release_branches/release_08.520 Jun 8 2021 05:27:23] [SYS 3b3fdf33f509311807792365dc0f13b5] [REC 264bbbf77f1e248ac804f039c83a9128] [OFW852]
 9.00 (Firmware) [Sep 15, 2021] [SYS e923e6d210399f236177e332843e2754] [REC 674420f041cb5845aae85928751ccd0e] [OFW900] [KEX] [HEN]
+9.00b2 (Firmware) [Jul 26, 2021 [SYS a376ac66e6678827064c37b3e87bcda4] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW900] [BETAOFW]
+9.00b3 (Firmware) [Aug 16, 2021] [SYS 8613970f4ad9e4db1499c41e9f69ee90] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW900] [BETAOFW]
 9.03 (Firmware) [Dec 1, 2021] [SYS a5d3b099d92f6f57671bb29a5d6e7a5c] [REC 2301db03e473b99ea195df0fe954c2f1] [OFW903]
+9.50b1 (Firmware) [Feb 4, 2022] [SYS 318a98777a5598aebbca159104a71b83] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW950] [BETAOFW]
+9.50b3 (Firmware) [Feb 4, 2022] [SYS a029e2af4c0b11826bb7f52ba5962c47] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW950] [BETAOFW]
 Escape Plan Collection (Puzzle) [Feb 6, 2013] [DUMPED V1.01] [CUSA00153] [FULLPS5] [EST100] &#9989;
 Animax (Entertainment) [Mar 25, 2013] [CUSA01115] [NOTPS5] [EST100] &#9989;
 Crackle Free Movies and TV (Entertainment) [Nov 12, 2013] [CUSA00059] <Sony Crackle Free Movies and TV> [NOTPS5] [EST105] &#9989;
@@ -115,6 +151,7 @@ Need for Speed Rivals Timesaver Pack (DLC) [Nov 22, 2013] <NFS RIVALS> [FULLPS5]
 Playroom Toy Maker for The Play Room (DLC) [Nov 22, 2013] [DUMPED V1.07] [NOTPS5] [EST151] &#9989;
 Epix (Entertainment) [Nov 26, 2013] [CUSA00098] [NOTPS5] [EST151] &#9989;
 IGN (Entertainment) [Nov 27, 2013] [CUSA00268] [NOTPS5] [EST151] &#9989;
+War Thunder (Action, Simulation) [Nov 27, 2013] [CUSA00224, CUSA00182] [CROSSPLAY] [FULLPS5] [EST151] &#9989;
 Amazon Prime Video (Entertainment) [Nov 29, 2013] [DUMPED V1.00] [CUSA00126, CUSA00130] [NOTPS5] [EST151] &#9989;
 BBC iPlayer (Entertainment) [Nov 29, 2013] [CUSA00122] [NOTPS5] [EST151] &#9989;
 Escape Plan (Puzzle) [Nov 29, 2013] [DUMPED V1.01] [CUSA00153] [FULLPS5] [EST151] &#9989;
@@ -126,8 +163,19 @@ Putty Squad (Platform) [Nov 29, 2013] [DUMPED V1.00] [CUSA00271, CUSA00451, CUSA
 Quickflix (Entertainment) [Nov 29, 2013] [CUSA00247] [NOTPS5] [EST151] &#9989;
 RTBF (Entertainment) [Nov 29, 2013] [CUSA00121] [NOTPS5] [EST151] &#9989;
 Rakuten TV (Entertainment) [Nov 29, 2013] [CUSA00123] [NOTPS5] [EST151] &#9989;
+Sound Shapes Car Mini-Album & Entity Pack (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+Sound Shapes City Art Pack (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+Sound Shapes Curved Terrain Pack (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+Sound Shapes Drum Kit Sound Pack (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+Sound Shapes Dubstep Sound Pack (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
 Tiny Brains (Puzzle) [Nov 29, 2013] [DUMPED V1.00] [CUSA00165] [FULLPS5] [EST151] &#9989;
 Viaplay (Entertainment) [Nov 29, 2013] [CUSA00124] [NOTPS5] [EST151] &#9989;
+War Thunder 1000 Golden Eagles (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+War Thunder 10000 Golden Eagles (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+War Thunder 150 Golden Eagles (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+War Thunder 20000 Golden Eagles (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+War Thunder 2500 Golden Eagles (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
+War Thunder 5000 Golden Eagles (DLC) [Nov 29, 2013] [FULLPS5] [EST151] &#9989;
 Warframe (Action, Shooter) [Nov 29, 2013] [CUSA00106] [F2P] [Requires PSN] {PRO} IMPROVED FRAMERATE & PERFORMANCE [FULLPS5] [EST151] &#9989;
 Watchever (Entertainment) [Nov 29, 2013] [CUSA00075] [NOTPS5] [EST151] &#9989;
 Battlefield 4 China Rising (DLC) [Dec 3, 2013] <BF4, BF 4> [FULLPS5] [EST151] &#9989;
@@ -226,6 +274,13 @@ Child of Light (Role-Playing) [Apr 29, 2014] [DUMPED V1.02] [CUSA00074] [XLINKKA
 Daylight (Survival, Horror) [Apr 30, 2014] [DUMPED V1.00] [CUSA00282, CUSA00287] [DELISTED] [BOOTPS5] [EST170] &#9989;
 Foxtel Now (Entertainment) [Apr 30, 2014] [CUSA00518] [NOTPS5] [EST170] &#9989;
 SHAREfactory (Entertainment) [Apr 30, 2014] [DUMPED V1.00] [CUSA00572] [NOTPS5] [EST170] &#9989;
+Sound Shapes 8-Bit Sound Pack (DLC) [Apr 30, 2014] [FULLPS5] [EST170] &#9989;
+Sound Shapes 80s Sound Pack (DLC) [Apr 30, 2014] [FULLPS5] [EST170] &#9989;
+Sound Shapes Acoustic Sound Pack (DLC) [Apr 30, 2014] [FULLPS5] [EST170] &#9989;
+Sound Shapes Brass Sound Pack (DLC) [Apr 30, 2014] [FULLPS5] [EST170] &#9989;
+Sound Shapes Nature Art Pack (DLC) [Apr 30, 2014] [FULLPS5] [EST170] &#9989;
+Sound Shapes Old School Sound Pack (DLC) [Apr 30, 2014] [FULLPS5] [EST170] &#9989;
+Sound Shapes Vocoder Sound Pack (DLC) [Apr 30, 2014] [FULLPS5] [EST170] &#9989;
 Stick It to the Man! (Platform) [Apr 30, 2014] [DUMPED V1.00] [CUSA01750] [FULLPS5] [EST170] &#9989;
 Worms Battlegrounds (Turn-Based, Strategy) [May 3, 2014] [DUMPED V1.01] [CUSA00824, CUSA00192] [FULLPS5] [EST170] &#9989;
 Bound by Flame (Action, Role-Playing) [May 6, 2014] [DUMPED V1.00] [CUSA00303, CUSA00459, CUSA01590] [FULLPS5] [EST170] &#9989;
@@ -274,6 +329,7 @@ Sniper Elite 3 (Third-Person, Shooter, Stealth) [Jul 1, 2014] [DUMPED V1.00] [CU
 Guacamelee! Super Turbo Championship Edition (Action, Platform) [Jul 2, 2014] [DUMPED V1.00] [CUSA00319, CUSA00151] [FULLPS5] [EST172] &#9989;
 MotoGP 14 Moto2 and Moto3 (DLC) [Jul 2, 2014] [FULLPS5] [EST172] &#9989;
 MotoGP 14 Season Pass (DLC) [Jul 2, 2014] [FULLPS5] [EST172] &#9989;
+War Thunder Plus Free Starter Pack (DLC) [Jul 2, 2014] [FULLPS5] [EST172] &#9989;
 Akiba's Trip Undead & Undressed (Action, Role-Playing) [Jul 3, 2014] [DUMPED V1.00] [CUSA01539] [OFW176] <Akibas Trip> [FULLPS5] &#9989;
 Call of Duty Ghosts Invasion (DLC) [Jul 3, 2014] [DUMPED V1.20] <COD GHOSTS> [FULLPS5] [EST172] &#9989;
 Mousecraft (Puzzle) [Jul 8, 2014] [DUMPED V1.00] [CUSA00654, CUSA00656] [FULLPS5] [EST172] &#9989;
@@ -314,6 +370,7 @@ Surgeon Simulator Anniversary Edition (Simulation) [Aug 12, 2014] [DUMPED V1.00]
 Last of Us Remastered Professional Sports Bundle (DLC) [Aug 13, 2014] [FULLPS5] [EST175] &#9989;
 Playroom AR Studio for The Play Room (DLC) [Aug 13, 2014] [DUMPED V1.07] [NOTPS5] [EST175] &#9989;
 Rocket League Supersonic Fury (DLC) [Aug 13, 2014] [DUMPED V2.09] [FULLPS5] [EST175] &#9989;
+Sound Shapes Hohokum Sound and Art Pack (DLC) [Aug 13, 2014] [FULLPS5] [EST175] &#9989;
 LittleBigPlanet 3 Beta (Demo/Trial) [Aug 18, 2014] [CUSA01077] [NOTPS5] [EST175] &#9989;
 Arcade Archives Rygar (Action, Platform) [Aug 19, 2014] [CUSA00993] [FULLPS5] [EST175] &#9989;
 CounterSpy (Stealth) [Aug 19, 2014] [DUMPED V1.01] [CUSA00458] [FULLPS5] [EST175] &#9989;
@@ -416,6 +473,10 @@ Legend of Korra (Action, Adventure) [Oct 22, 2014] [DELISTED] [FULLPS5] [EST176]
 Middle-Earth Shadow of Mordor The Power of Shadow (DLC) [Oct 22, 2014] [FULLPS5] [EST176] &#9989;
 MotoGP 14 Donington Park British Grand Prix (DLC) [Oct 22, 2014] [FULLPS5] [EST176] &#9989;
 Need for Speed Rivals Complete DLC Pack (DLC) [Oct 22, 2014] <NFS RIVALS> [FULLPS5] [EST176] &#9989;
+Sound Shapes Add-On Bundle (DLC) [Oct 22, 2014] [FULLPS5] [EST176] &#9989;
+Sound Shapes Future Funk 3000 Sound Pack (DLC) [Oct 22, 2014] [FULLPS5] [EST176] &#9989;
+Sound Shapes Lizzywanders Art Pack (DLC) [Oct 22, 2014] [FULLPS5] [EST176] &#9989;
+Sound Shapes Ultimate Bundle (DLC) [Oct 22, 2014] [FULLPS5] [EST176] &#9989;
 Unfinished Swan (Puzzle) [Oct 23, 2014] [DUMPED V1.00] [CUSA00796] <The Unfinished Swan> [FULLPS5] [EST176] &#9989;
 SingStar Ultimate Party (Music, Rhythm, Party) [Oct 24, 2014] [DUMPED V1.00] [CUSA00501, CUSA0666] [FULLPS5] [EST176] &#9989;
 #killallzombies (Shooter) [Oct 28, 2014] [CUSA00849, CUSA00856] [OFW176] [FULLPS5] &#9989;
@@ -701,7 +762,7 @@ Borderlands The Handsome Collection (Action, Role-Playing, First-Person, Shooter
 Dish (Entertainment) [Mar 24, 2015] [CUSA00959] [NOTPS5] [EST250] &#9989;
 Game of Thrones Episode Three The Sword in the Darkness (DLC) [Mar 24, 2015] [DUMPED V1.00] [FULLPS5] [EST250] &#9989;
 Life is Strange Episode 2 Out of Time (DLC) [Mar 24, 2015] [DUMPED V1.00] [FULLPS5] [EST250] &#9989;
-Metal Slug 3 (Run and Gun) [Mar 24, 2015] [DUMPED V1.00] [CUSA02241] [LTDRUN] [FULLPS5] [EST250] &#9989;
+Metal Slug 3 (Action, Shooter) [Mar 24, 2015] [DUMPED V1.00] [CUSA02241] [LTDRUN] [FULLPS5] [EST250] &#9989;
 Slender The Arrival (Adventure, First-Person) [Mar 24, 2015] [FULLPS5] [EST250] &#9989;
 Yorbie Episode One Payback's a Bolt (Action) [Mar 24, 2015] [FULLPS5] [EST250] &#9989;
 Deception IV The Nightmare Princess (Action, Strategy) [Mar 26, 2015] [DUMPED V1.00] [CUSA02859] <Deception 4 The Nightmare Princess> [FULLPS5] [EST250] &#9989;
@@ -828,7 +889,7 @@ Mortal Kombat X Kold War Pack (DLC) [May 19, 2015] <MKX> [FULLPS5] [EST252] &#99
 Witcher 3 Wild Hunt (Action, Role-Playing) [May 19, 2015] [DUMPED V1.50] [CUSA05571] {PRO} 4K <The Witcher 3 Wild Hunt> [FULLPS5] [EST252] &#9989;
 Dead or Alive 5 Last Round Fighter Force Tina (DLC) [May 20, 2015] <DOA5, DOA 5> [FULLPS5] [EST252] &#9989;
 Evil Within The Executioner (DLC) [May 25, 2015] [DUMPED V1.06] <The Evil Within The Executioner> [FULLPS5] [EST252] &#9989;
-Arcade Archives Crazy Climber (Action) [May 26 2015] [CUSA02489] [FULLPS5] [EST252] &#9989;
+Arcade Archives Crazy Climber (Action) [May 26, 2015] [CUSA02489] [FULLPS5] [EST252] &#9989;
 Arcade Archives Ninja-Kid (Action, Platform) [May 26, 2015] [CUSA02490] <Arcade Archives Ninja Kid> [FULLPS5] [EST252] &#9989;
 Badland Game of the Year Edition (Platform) [May 26, 2015] [DUMPED V1.00] [CUSA01294] [FULLPS5] [EST252] &#9989;
 Dragon Age Inquisition Jaws Of Hakkon (DLC) [May 26, 2015] [DUMPED V1.00] [FULLPS5] [EST252] &#9989;
@@ -1259,6 +1320,7 @@ WWE 2K16 (Sports) [Oct 27, 2015] [DUMPED V1.00] [CUSA02693] [DELISTED] <WW2K16, 
 Batman Arkham Knight 1970s Batman Themed Batmobile Skin (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
 Batman Arkham Knight Classic TV Series Batmobile Pack (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
 Batman Arkham Knight Crime Fighter Challenge Pack 3 (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
+Farming Simulator 15 Official Expansion Gold (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
 Star Ocean Second Evolution (Action, Role-Playing) [Oct 28, 2015] [DUMPED V1.00] [CUSA03402] [CUSA03402] [BOOTPS5] [EST311] &#9989;
 Ultra Street Fighter IV 2014 Challengers Horror Pack (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
 Ultra Street Fighter IV Arcade Challengers Horror Pack (DLC) [Oct 28, 2015] [FULLPS5] [EST311] &#9989;
@@ -1328,7 +1390,7 @@ Elder Scrolls Online Tamriel Unlimited Orsinium (Action, Role-Playing) [Nov 18, 
 Airship Q (Action, Role-Playing) [Nov 19, 2015] [FULLPS5] [EST311] &#9989;
 Atelier Sophie The Alchemist of the Mysterious Book (Role-Playing) [Nov 19, 2015] [DUMPED V1.00] [CUSA05034] [DELISTED] <Atelier Sophie Fushigi na Hon no Renkinjutsushi> [FULLPS5] [EST311] &#9989;
 Game of Thrones A Telltale Game Series Season Pass Disc (Compilation, Point-and-Click, Adventure) [Nov 19, 2015] [DUMPED V1.00] [CUSA03499] [FULLPS5] [EST311] &#9989;
-Grand Kingdom (Tactical Role-Playing) [Nov 19, 2015] [DUMPED V1.00] [CUSA04630, CUSA04646] [FULLPS5] [EST311] &#9989;
+Grand Kingdom (Tactical Role-Playing) [Nov 19, 2015] [DUMPED V1.00] [CUSA04630, CUSA04646] [DELISTED] [FULLPS5] [EST311] &#9989;
 Sword Art Online Game Director's Edition (Role-Playing) [Nov 19, 2015] [DUMPED V1.00] [CUSA03021] <SAO> [FULLPS5] [EST311] &#9989;
 Rock Band 4 Linkin Park Lying From You (DLC) [Nov 20, 2015] [FULLPS5] [EST311] &#9989;
 Arcade Archives Shanghai III (Board Game) [Nov 24, 2015] [CUSA03381] [FULLPS5] [EST311] &#9989;
@@ -1506,7 +1568,7 @@ Rock Band 4 Temple of the Dog Hunger Strike (DLC) [Feb 4, 2016] [FULLPS5] [EST31
 System App (Application) [Feb 8, 2016] [CUSA04521] <The System App> [NOTPS5] [EST315] &#9989;
 Assassin's Creed Chronicles Russia (Action, Adventure, Stealth) [Feb 9, 2016] [DUMPED V1.00] [CUSA01356, CUSA01408] <AC, Assassins Creed> [BOOTPS5] [EST315] &#9989;
 Assassin's Creed Chronicles Trilogy Pack (Action, Adventure, Stealth, Compilation) [Feb 9, 2016] [CUSA03440, CUSA03482, CUSA03565] [BOOTPS5] [EST315] &#9989;
-Dying Light The Following (DLC) [Feb 9 2016] [FULLPS5] [EST315] &#9989;
+Dying Light The Following (DLC) [Feb 9, 2016] [FULLPS5] [EST315] &#9989;
 Dying Light The Following Enhanced Edition (Survival, Horror) [Feb 9, 2016] [DUMPED V1.19] [CUSA03991, CUSA03946] [FULLPS5] [EST315] &#9989;
 Firewatch (Adventure) [Feb 9, 2016] [DUMPED V1.00] [CUSA04107] [LTDRUN] {PRO} 2560X1440 RESOLUTION, ADVANCED LEVEL OF DETAIL [FULLPS5] [EST315] &#9989;
 Lovers in a Dangerous Spacetime (2D, Platform, Action) [Feb 9, 2016] [DUMPED V1.00] [CUSA04384, CUSA04075] [FULLPS5] [EST315] &#9989;
@@ -1594,7 +1656,7 @@ Assault Android Cactus (Shooter) [Mar 8, 2016] [FULLPS5] [EST315] &#9989;
 Blast 'em Bunnies (Shooter) [Mar 8, 2016] [FULLPS5] [EST315] &#9989;
 Don't Die, Mr. Robot! (Action) [Mar 8, 2016] [DUMPED V1.00] [CUSA02782, CUSA03000] <Dont Die Mr Robot!> [FULLPS5] [EST315] &#9989;
 Megadimension Neptunia VII Party Character Umio (DLC) [Mar 8, 2016] [FULLPS5] [EST315] &#9989;
-Rise of the Kasai (Action) [Mar 8, 2016] [PS2] [FULLPS5] [EST315] &#9989;
+Rise of the Kasai (Action) [Mar 8, 2016] [CUSA01948] [PS2] [FULLPS5] [EST315] &#9989;
 Rock Band 4 One Direction Pack 01 (DLC) [Mar 8, 2016] [FULLPS5] [EST315] &#9989;
 Tetraminos (Puzzle) [Mar 8, 2016] [DUMPED V1.00] [CUSA04123] [FULLPS5] [EST315] &#9989;
 Tom Clancy's The Division (Action, Role-Playing) [Mar 8, 2016] [DUMPED V1.00] [CUSA01262] [Requires PSN] {PRO} 4K, IMPROVED TEMPORAL ANTIALIASING SUPERSAMPLING [FULLPS5] [EST315] &#9989;
@@ -1756,7 +1818,7 @@ Arcade Game Series 3-in-1 (Compilation) [Apr 20, 2016] <Namco Arcade Game Series
 Arcade Game Series Dig-Dug (Action) [Apr 20, 2016] [DUMPED V1.00] [CUSA03958] <Namco Arcade Game Series Dig-Dug> [FULLPS5] [EST350] &#9989;
 Arcade Game Series Galaga (Shooter) [Apr 20, 2016] [DUMPED V1.00] [CUSA03956] <Namco Arcade Game Series Galaga> [FULLPS5] [EST350] &#9989;
 Arcade Game Series Ms Pac-Man (Action) [Apr 20, 2016] <Namco Arcade Game Series Ms Pac-Man> [FULLPS5] [EST350] &#9989;
-Arcade Game Series Pac-Man (Action) [Apr 20 2016] [DUMPED V1.00] [CUSA03955] <Namco Arcade Game Series Pac-Man> [FULLPS5] [EST350] &#9989;
+Arcade Game Series Pac-Man (Action) [Apr 20, 2016] [DUMPED V1.00] [CUSA03955] <Namco Arcade Game Series Pac-Man> [FULLPS5] [EST350] &#9989;
 Battle Ages (Strategy) [Apr 20, 2016] [FULLPS5] [EST350] &#9989;
 Blues and Bullets (Action, Adventure) [Apr 20, 2016] [FULLPS5] [EST350] &#9989;
 Ratchet & Clank The Bouncer Weapon (DLC) [Apr 20, 2016] [DUMPED V1.00] <Ratchet and Clank> [FULLPS5] [EST350] &#9989;
@@ -1911,7 +1973,7 @@ Doom (Demo/Trial) [Jun 13, 2016] [CUSA05655] [NOTPS5] [EST350] &#9989;
 Guilty Gear Xrd Revelator Additional Character Colors Pack (DLC) [Jun 13, 2016] [FULLPS5] [EST350] &#9989;
 Guilty Gear Xrd Revelator System Voice Dizzy (DLC) [Jun 13, 2016] [FULLPS5] [EST350] &#9989;
 Guilty Gear Xrd Revelator System Voice Pack (DLC) [Jun 13, 2016] [FULLPS5] [EST350] &#9989;
-Arcade Land (Action, Compilation) [Jun 14 2016] [CUSA05053] [BOOTPS5] [EST350] &#9989;
+Arcade Land (Action, Compilation) [Jun 14, 2016] [CUSA05053] [BOOTPS5] [EST350] &#9989;
 Elder Scrolls Online Dark Brotherhood (Action, Role-Playing) [Jun 14, 2016] [CUSA00086] [Requires PSN] <ESO, The Elder Scrolls Online> [FULLPS5] [EST350] &#9989;
 Forbidden Siren (Horror) [Jun 14, 2016] [DUMPED V1.00] [CUSA02274] [PS2] [FULLPS5] [EST350] &#9989;
 Rock Band 4 Magic! Rude (DLC) [Jun 14, 2016] [FULLPS5] [EST350] &#9989;
@@ -1978,9 +2040,10 @@ Banner Saga 2 (Tactical, Role-Playing) [Jul 5, 2016] [DUMPED V1.00] [CUSA04452] 
 Brookhaven Experiment (First-Person, Shooter) [Jul 5, 2016] [DUMPED V1.00] [CUSA06490] [VR AIM] <The Brookhaven Experiment> {PRO} ENHANCED [FULLPS5] [EST355] &#9989;
 EA Sports UFC 2 Deluxe Edition (Fighing, Sports) [Jul 5, 2016] <UFC2> [FULLPS5] [EST355] &#9989;
 Energy Hook (Action, Adventure) [Jul 5, 2016] [CUSA04832] [FULLPS5] [EST355] &#9989;
+Farming Simulator 15 Farming Classics (DLC) [Jul 5, 2016] [FULLPS5] [EST355] &#9989;
 Furi (Action, Shooter) [Jul 5, 2016] [CUSA04129] [FULLPS5] [EST355] &#9989;
 Furi Definitive Edition (Action, Shooter) [Jul 5, 2016] [DUMPED V1.00] [CUSA04129, CUSA049917] [LTDRUN] [FULLPS5] [EST355] &#9989;
-Metal Slug Anthology (Run and Gun) [Jul 5, 2016] [DUMPED V1.00] [CUSA04156] [PS2] [BOOTPS5] [EST355] &#9989;
+Metal Slug Anthology (Action, Shooter) [Jul 5, 2016] [DUMPED V1.00] [CUSA04156] [PS2] [BOOTPS5] [EST355] &#9989;
 Warriors (Action, Adventure) [Jul 5, 2016] [CUSA03515, CUSA03548] [PS2] [BOOTPS5] <The Warriors> [EST355] &#9989;
 Shin Hayarigami 2 (Visual Novel) [Jul 7, 2016] [FULLPS5] [EST355] &#9989;
 Carmageddon Max Damage (Racing, Action) [Jul 8, 2016] [DUMPED V1.00] [CUSA03318] [FULLPS5] [EST355] &#9989;
@@ -2625,6 +2688,7 @@ Dragon Ball Xenoverse 2 Masters Pack (DLC) [Dec 20, 2016] [DUMPED V1.25] [FULLPS
 Fruit Ninja VR (Action) [Dec 20, 2016] [DUMPED V1.02] [CUSA06882] [VR] [FULLPS5] [EST407] &#9989;
 Industry Giant II (Simulation) [Dec 20, 2016] [DUMPED V1.00] [CUSA06505, CUSA06522] [FULLPS5] [EST407] &#9989;
 King's Quest Epilogue (Adventure) [Dec 20, 2016] <Kings Quest> [FULLPS5] [EST407] &#9989;
+Lethal VR (Shooter) [Dec 20, 2016] [DUMPED V1.01] [CUSA07106, CUSA07127] [OFW350] [VR] [FULLPS5] &#9989;
 Mahjong Deluxe 3 (Board Game) [Dec 20, 2016] [FULLPS5] [EST407] &#9989;
 Momonga Pinball Adventures (Pinball) [Dec 20, 2016] [DUMPED V1.00] [CUSA06193] [FULLPS5] [EST407] &#9989;
 Rollercoaster Dreams (Strategy) [Dec 20, 2016] [VR] [CUSA05238] [FULLPS5] [EST407] &#9989;
@@ -3070,6 +3134,7 @@ Kero Blaster (Platform) [Apr 11, 2017] [DUMPED V1.00] [CUSA06015] [LTDRUN] [FULL
 Skyforge (Action, Role-Playing) [Apr 11, 2017] [LTDRUN] [FULLPS5] [EST455] &#9989;
 Snow Moto Racing Freedom (Racing) [Apr 11, 2017] [FULLPS5] [EST455] &#9989;
 Starblood Arena (Action) [Apr 11, 2017] [DUMPED V1.00] [CUSA07705] [DELISTED] [VR] [Requires PSN] {PRO} GFX ENHANCEMENTS [FULLPS5] [EST455] &#9989;
+Yooka-Laylee (Platform) [Apr 11, 2017] [DUMPED V1.05] [CUSA05721] [OFW350] <YookaLaylee, Yooka Laylee> [FULLPS5] &#9989;
 360 Channel VR (Entertainment) [Apr 12, 2017] [CUSA07366] [OFW450] [VR] [NOTPS5] &#9989;
 Rock Band 4 Twenty Free Export Pack (DLC) [Apr 12, 2017] [FULLPS5] [EST455] &#9989;
 Sexy Brutale Full House Edition (Adventure, Puzzle) [Apr 12, 2017] [DUMPED V1.00] [CUSA06819, CUSA7134] <The Sexy Brutale> [FULLPS5] [EST455] &#9989;
@@ -3102,10 +3167,10 @@ Stern Pinball Arcade Star Trek Vengeance Premium (DLC) [Apr 18, 2017] [FULLPS5] 
 Stern Pinball Arcade Starship Troopers (DLC) [Apr 18, 2017] [FULLPS5] [EST455] &#9989;
 Tom Clancy's Ghost Recon Wildlands Narco Road (DLC) [Apr 18, 2017] [DUMPED V1.18] [FULLPS5] [EST455] &#9989;
 Toukiden 2 Mission Collection Set 4 (DLC) [Apr 18, 2017] [FULLPS5] [EST455] &#9989;
-Turma da Monica o Resgate (Action) [Apr 18 2017] [DUMPED V1.00] [CUSA09999] [FULLPS5] [EST455] &#9989;
+Turma da Monica o Resgate (Action) [Apr 18, 2017] [DUMPED V1.00] [CUSA09999] [FULLPS5] [EST455] &#9989;
 VR Invaders Complete Edition (Action, Shooter) [Apr 18, 2017] [VR] [FULLPS5] [EST455] &#9989;
 Wonder Boy The Dragon's Trap (Platform) [Apr 18, 2017] [DUMPED V1.00] [CUSA07029] [LTDRUN] <Wonder Boy The Dragons Trap> [FULLPS5] [EST455] &#9989;
-Bandit Six Combined Arms (Action) [Apr 19 2017] [VR] [DUMPED V1.00] [CUSA07978] [FULLPS5] [EST455] &#9989;
+Bandit Six Combined Arms (Action) [Apr 19, 2017] [VR] [DUMPED V1.00] [CUSA07978] [FULLPS5] [EST455] &#9989;
 Ride 2 Free Bikes Pack 6 (DLC) [Apr 19, 2017] [FULLPS5] [EST455] &#9989;
 ACA NeoGeo Art of Fighting (Fighting) [Apr 20, 2017] [CUSA06725, CUSA06620, CUSA06685] [FULLPS5] [EST455] &#9989;
 Pure Hold'em World Poker Championship 100% Hemp Card Deck (DLC) [Apr 20, 2017] [FULLPS5] [EST455] &#9989;
@@ -3125,7 +3190,7 @@ Dragon Ball Xenoverse 2 Dragon Ball Super Pack 3 (DLC) [Apr 25, 2017] [DUMPED V1
 Dragon Quest Heroes II (Role-Playing) [Apr 25, 2017] [DUMPED V1.00] [CUSA06740, CUSA06769] <Dragon Quest Heroes 2> [FULLPS5] [EST455] &#9989;
 Dragon Quest Heroes II Trial (Demo/Trial) [Apr 25, 2017] [CUSA07116] [OFW450] &#9989;
 Eventide Slavic Fable (Puzzle) [Apr 25, 2017] [FULLPS5] [EST455] &#9989;
-Farming Simulator 15 Complete Edition (Simulation) [Apr 25, 2017] [CUSA16197] [FULLPS5] [EST455] &#9989;
+Farming Simulator 15 Complete Edition (Compilation, Simulation) [Apr 25, 2017] [CUSA16197] [FULLPS5] [EST455] &#9989;
 Games of Glory (Real-Time, Strategy) [Apr 25, 2017] [DELISTED] [CROSSPLAY] [FULLPS5] [EST455] &#9989;
 Minecraft Glide Beasts Track Pack (DLC) [Apr 25, 2017] [FULLPS5] [EST455] &#9989;
 Outlast 2 (Survival, Horror) [Apr 25, 2017] [DUMPED V1.00] [CUSA06633, CUSA06623] {PRO} 2560X1440 RESOLUTION, IMPROVED SHADOW/DETAIL & TEXTURES, 60FPS [FULLPS5] [EST455] &#9989;
@@ -4583,6 +4648,7 @@ Rad Rodgers (Action, Platform) [Feb 21, 2018] [DUMPED V1.06] [CUSA08954] [OFW505
 Azayaka na Irodori no Naka de Kimi Rashiku (Visual Novel) [Feb 22, 2018] [DUMPED V1.00] [CUSA10679] [FULLPS5] [EST505] &#9989;
 Girls und Panzer Dream Tank Match (Action) [Feb 22, 2018] [DUMPED V1.00] [CUSA07468, CUSA07469] [FULLPS5] [EST505] &#9989;
 Kimi no Hitomi ni Hit Me (Adventure) [Feb 22, 2018] [DUMPED V1.00] [CUSA08971] [FULLPS5] [EST505] &#9989;
+Lightningmodz Controller Test Homebrew (Homebrew) [Feb 22, 2018] [OFW505] [NOTPS5] &#9989;
 Little Adventure on the Prairie (2D, Action, Platform) [Feb 22, 2018] [FULLPS5] [EST505] &#9989;
 Metal Gear Survive 100 SV Coins (DLC) [Feb 22, 2018] [FULLPS5] [EST505] &#9989;
 Metal Gear Survive 1150 SV Coins (DLC) [Feb 22, 2018] [FULLPS5] [EST505] &#9989;
@@ -4611,7 +4677,7 @@ Heroine Anthem Zero Episode 1 (Role-Playing) [Feb 27, 2018] [FULLPS5] [EST505] &
 Hex Tunnel (Unique) [Feb 27, 2018] [VR] [FULLPS5] [EST505] &#9989;
 Immortal Redneck (Shooter) [Feb 27, 2018] [FULLPS5] [EST505] &#9989;
 Jettomero Hero of the Universe (Action) [Feb 27, 2018] [FULLPS5] [EST505] &#9989;
-Moss (Action, Adventure, Puzzle) [Feb 27 2018] [VR] [DUMPED V1.09] [CUSA09760] [OFW505] [FULLPS5] &#9989;
+Moss (Action, Adventure, Puzzle) [Feb 27, 2018] [VR] [DUMPED V1.09] [CUSA09760] [OFW505] [FULLPS5] &#9989;
 Moss Book II (Action, Adventure, Puzzle) [Feb 27, 2018] [VR] <Moss 2, Moss Book 2> [FULLPS5] [EST505] &#9989;
 Mulaka (Action, Adventure) [Feb 27, 2018] [FULLPS5] [EST505] &#9989;
 RiftStar Raiders (Shooter) [Feb 27, 2018] [FULLPS5] [EST505] &#9989;
@@ -4641,6 +4707,7 @@ Final Fantasy XV Royal Edition (Action, Role-Playing) [Mar 6, 2018] [DUMPED V1.2
 Frantics (Party) [Mar 6, 2018] [DUMPED V1.00] [CUSA09491, CUSA10467] [PLAYLINK] [FULLPS5] [EST505] &#9989;
 Hunter Call of the Wild Medved-Taiga (DLC) [Mar 6, 2018] <TheHunter Call of the Wild> [FULLPS5] [EST505] &#9989;
 Illusionist Andres Iniesta (Unique) [Mar 6, 2018] [DUMPED V1.01] [CUSA11091, CUSA09214] [OFW471] [VR] <The Illusionist Andres Iniesta> [FULLPS5] &#9989;
+Lightningmodz Rollaball (Homebrew) [Mar 6, 2018] [OFW505] [NOTPS5] &#9989;
 Midnight Deluxe (Puzzle) [Mar 6, 2018] [FULLPS5] [EST505] &#9989;
 North (First-Person, Adventure) [Mar 6, 2018] [FULLPS5] [EST505] &#9989;
 Rangi (Action, Shooter) [Mar 6, 2018] [VR] [FULLPS5] [EST505] &#9989;
@@ -4668,6 +4735,7 @@ Cruz Brothers (Action, Fighting) [Mar 13, 2018] [FULLPS5] [EST550] &#9989;
 Devil May Cry HD Collection & 4SE Bundle (Action, Adventure, Compilation) [Mar 13, 2018] [CUSA09263] [FULLPS5] [EST550] &#9989;
 Devil May Cry HD Collection (Action, Adventure) [Mar 13, 2018] [DUMPED V1.00] [CUSA09263] [FULLPS5] [EST550] &#9989;
 Euro Fishing The Moat (DLC) [Mar 13, 2018] [FULLPS5] [EST550] &#9989;
+Farming Simulator 17 ROPA PACK (DLC) [Mar 13, 2018] [FULLPS5] [EST550] &#9989;
 Long Reach (Action, Adventure, Survival) [Mar 13, 2018] [FULLPS5] [EST550] &#9989;
 MilitAnt Elf Costume (DLC) [Mar 13, 2018] [CUSA04279] [FULLPS5] [EST550] &#9989;
 MilitAnt Scorpion Costume (DLC) [Mar 13, 2018] [CUSA04279] [FULLPS5] [EST550] &#9989;
@@ -5077,7 +5145,7 @@ Injustice 2 Infinite Transforms (DLC) [May 29, 2018] [FULLPS5] [EST555] &#9989;
 Journey Down Chapter One (Adventure) [May 29, 2018] [FULLPS5] [EST555] &#9989;
 Kabounce (Pinball) [May 29, 2018] [CROSSPLAY] [FULLPS5] [EST555] &#9989;
 Knights of Pen and Paper +1 Deluxier Edition (Role-Playing) [May 29, 2018] [FULLPS5] [EST555] &#9989;
-Metal Slug XX (Run and Gun) [May 29, 2018] [DUMPED V1.00] [CUSA11740] [LTDRUN] [FULLPS5] [EST555] &#9989;
+Metal Slug XX (Action, Shooter) [May 29, 2018] [DUMPED V1.00] [CUSA11740] [LTDRUN] [FULLPS5] [EST555] &#9989;
 Moonlighter (Action, Role-Playing) [May 29, 2018] [DUMPED V1.16] [CUSA10164, CUSA12501] [505BP] [OFW700] [FULLPS5] &#x1F536;
 Oh...Sir! The Hollywood Roast (Simulation) [May 29, 2018] <Oh Sir> [FULLPS5] [EST555] &#9989;
 Old Man's Journey (Adventure) [May 29, 2018] <Old Mans Journey> [FULLPS5] [EST555] &#9989;
@@ -5232,8 +5300,21 @@ Fishing Planet Happy 4th of July Pack (Sports, Compilation) [Jun 27, 2018] [VR] 
 King of Fighters Collection The Orochi Saga (Fighting) [Jun 27, 2018] [DUMPED V1.00] [CUSA04164] <KOF, The King of Fighters Collection The Orochi Saga> [FULLPS5] [EST555] &#9989;
 Rock Band 4 T Rex Bang a Gong (DLC) [Jun 27, 2018] [FULLPS5] [EST555] &#9989;
 ARK Park Pterosaur Hill (DLC) [Jun 28, 2018] [VR] [FULLPS5] [EST555] &#9989;
-Dynasty Warriors 9 Additional Scenarios Pack (DLC) [Jun 28 2018] [FULLPS5] [EST555] &#9989;
-Fighting EX Layer (Fighting) [Jun 28, 2018] [DUMPED V1.00] [CUSA09398] [FULLPS5] [EST555] &#9989;
+Dynasty Warriors 9 Additional Scenarios Pack (DLC) [Jun 28, 2018] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer (Fighting) [Jun 28, 2018] [DUMPED V1.19] [CUSA09398] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Character 01 Hokuto (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Character 01 Terry Bogard (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi 01 Pack (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 006 Stealth Raptor (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 007 Berserker (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 008 Double Face (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 009 Sky Dancer (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 010 Nightmare (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 011 Babel (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 012 Thunder Bolt (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 013 Fantasista (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 014 Super Nova (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
+Fighting EX Layer Gougi Deck 015 Grab Master (DLC) [Jun 28, 2018] [DUMPED V1.19] [FULLPS5] [EST555] &#9989;
 HomestarVR Special Edition (First-Person, Adventure) [Jun 28, 2018] [VR] [CUSA18475, CUSA18458, CUSA17567] [OFW672] [FULLPS5] &#9989;
 Island (Visual Novel) [Jun 28, 2018] [FULLPS5] [EST555] &#9989;
 Le Tour De France 2018 (Racing) [Jun 28, 2018] [DUMPED V1.00] [CUSA10905] [FULLPS5] [EST555] &#9989;
@@ -5253,6 +5334,7 @@ Red Faction Guerilla Re-Marst-tered (Action, Adventure) [Jul 3, 2018] [DUMPED V1
 Rock Band 4 Little River Band Reminiscing (DLC) [Jul 3, 2018] [FULLPS5] [EST555] &#9989;
 Runbow (Platform) [Jul 3, 2018] [DUMPED V1.02] [CUSA09976] [FULLPS5] [EST555] &#9989;
 Runbow Professionals Pack (DLC) [Jul 3, 2018] [FULLPS5] [EST555] &#9989;
+TER152 Flay Bird PS4 (Homebrew) [Jul 3, 2018] [OFW505] [NOTPS5] &#9989;
 Unknown City Horror Begins Now Episode 1 (Action, Shooter) [Jul 3, 2018] [FULLPS5] [EST555] &#9989;
 Walker (Action, Shooter) [Jul 3, 2018] [VR] <The Walker> [FULLPS5] [EST555] &#9989;
 Lego Marvel Super Heroes 2 Marvel's Ant-Man and the Wasp (DLC) [Jul 5, 2018] [DUMPED V1.05] <Lego Marvel Super Heroes 2 Marvels Ant-Man and the Wasp, Lego Marvel Super Heroes 2 Marvels Ant Man and the Wasp, Lego Marvel Super Heroes 2 Marvels Antman and the Wasp> [FULLPS5] [EST555] &#9989;
@@ -5275,8 +5357,9 @@ Journey Down Chapter Three (Adventure) [Jul 10, 2018] [FULLPS5] [EST555] &#9989;
 Race Arcade (Racing) [Jul 10, 2018] [FULLPS5] [EST555] &#9989;
 Runestone Keeper (Role-Playing) [Jul 10, 2018] [FULLPS5] [EST555] &#9989;
 Spectrum Retreat (First-Person, Adventure) [Jul 10, 2018] [DUMPED V1.01] [CUSA12242] [505BP] <The Spectrum Retreat> [FULLPS5]  [EST555] &#x1F536;
+TER152 Pokemon PS4 (Homebrew) [Jul 10, 2018] [OFW505] [NOTPS5] &#9989;
 Blacksea Spiral (Shooter) [Jul 11, 2018] [FULLPS5] [EST555] &#9989;
-Pinball Arcade Alvin G. and Co Table Pack (DLC) [Jul 11, 2018] [DUMPED V1.00] <The Pinball Arcade> [FULLPS5] [EST555] &#9989;
+Pinball Arcade Alvin G and Co Table Pack (DLC) [Jul 11, 2018] [DUMPED V1.00] <The Pinball Arcade> [FULLPS5] [EST555] &#9989;
 Pinball Arcade Gottlieb EM Table Pack (DLC) [Jul 11, 2018] [DUMPED V1.00] <The Pinball Arcade> [FULLPS5] [EST555] &#9989;
 Pinball Arcade Gottlieb Table Pack 1 (DLC) [Jul 11, 2018] [DUMPED V1.00] <The Pinball Arcade> [FULLPS5] [EST555] &#9989;
 Pinball Arcade Gottlieb Table Pack 2 (DLC) [Jul 11, 2018] [DUMPED V1.00] <The Pinball Arcade> [FULLPS5] [EST555] &#9989;
@@ -5394,11 +5477,11 @@ Defenders of Ekron Definitive Edition (Shooter) [Aug 7, 2018] [FULLPS5] [EST555]
 Dreamlands Aisling's Quest (Action, Adventure) [Aug 7, 2018] [FULLPS5] [EST555] &#9989;
 Electronauts (Unique) [Aug 7, 2018] [VR] [FULLPS5] [EST555] &#9989;
 Flipping Death (Adventure) [Aug 7, 2018] [DUMPED V1.01] [CUSA13025] [FULLPS5] [EST555] &#9989;
-H1Z1 Battle Royale (Action, Shooter) [Aug 7, 2018] [CUSA15790] [Requires PSN] [OFW651] [FULLPS5] &#9989;
+H1Z1 Battle Royale (Action, Shooter) [Aug 7, 2018] [CUSA11745] [Requires PSN] [OFW651] [FULLPS5] &#9989;
 Overcooked 2 (Party, Puzzle) [Aug 7, 2018] [DUMPED V1.10] [CUSA10870, CUSA10940] [FULLPS5] [EST555] &#9989;
 Overcooked 2 Too Many Cooks (DLC) [Aug 7, 2018] [FULLPS5] [EST555] &#9989;
 Pinball Arcade Mustang Premium Boss (DLC) [Aug 7, 2018] [DUMPED V1.00] <The Pinball Arcade> [FULLPS5] [EST555] &#9989;
-Poop Slinger (Action) [Aug 7 2018] [CUSA13960] [FULLPS5] [EST555] &#9989;
+Poop Slinger (Action) [Aug 7, 2018] [CUSA13960] [FULLPS5] [EST555] &#9989;
 Slam Land (Action) [Aug 7, 2018] [FULLPS5] [EST555] &#9989;
 Tetra's Escape (Puzzle) [Aug 7, 2018] <Tetras Escape> [FULLPS5] [EST555] &#9989;
 Word Search by POWGI (Puzzle) [Aug 7, 2018] [CUSA12909] [FULLPS5] [EST555] &#9989;
@@ -5437,7 +5520,7 @@ State of Mind (Adventure) [Aug 15, 2018] [DUMPED V1.00] [CUSA07791] [FULLPS5] [E
 Dissidia Final Fantasy NT Rinoa Heartilly Starter Pack (DLC) [Aug 16, 2018] [EST555] &#9989;
 Gamepoch 6-in-1 (Compilation) [Aug 16, 2018] [PCCS75022] [FULLPS5] [EST555] &#9989;
 Goki's Room (Adventure) [Aug 16, 2018] [VR] <Gokis Room> [FULLPS5] [EST555] &#9989;
-Hero Defense (Tower Defence) [Aug 16, 2018] [FULLPS5] [EST555] &#9989;
+Hero Defense (Strategy) [Aug 16, 2018] [DUMPED V1.00] [CUSA09036] [FULLPS5] [EST555] &#9989;
 Keep Talking and Nobody Explodes (Puzzle) [Aug 16, 2018] [OFW505] [VR] [FULLPS5] &#9989;
 Petoons Party (Party) [Aug 16, 2018] [CUSA17238, CUSA12140, CUSA13918] [FULLPS5] [EST555] &#9989;
 Dissidia Final Fantasy NT Cardinal Rinoa Heartilly's 4th Weapon (DLC) [Aug 17, 2018] [EST555] &#9989;
@@ -5524,7 +5607,7 @@ NBA 2K19 The Prelude (Demo/Trial) [Aug 31, 2018] [CUSA13061] [DELISTED] [NOTPS5]
 Naruto to Boruto Shinobi Striker (Fighting) [Aug 31, 2018] [DUMPED V1.00] [CUSA08767] [FULLPS5] [EST556] &#9989;
 PDP Cloud Remote App (Application) [Aug 31, 2018] [CUSA10894] [FULLPS5] [EST556] &#9989;
 Shadows Awakening (Action) [Aug 31, 2018] [DUMPED V1.00] [CUSA10346] [FULLPS5] [EST556] &#9989;
-428 Shibuya Scramble (Visual Novel) [Sep 4, 2018] [CUSA07962, CUSA11946] [OFW555] [FULLPS5] &#9989;
+428 Shibuya Scramble (Visual Novel) [Sep 4, 2018] [DUMPED V1.01] [CUSA07962, CUSA11946] [OFW555] [FULLPS5] &#9989;
 Anubis Zone of the Enders Mars Orange Case (Simulator) [Sep 4, 2018] [DUMPED V1.00] [CUSA09904] [VR] [FULLPS5] [EST556] &#9989;
 Apocalypse Rider (Action) [Sep 4, 2018] [VR] [CUSA16509] [FULLPS5] [EST556] &#9989;
 Arcade Islands Volume One (Party) [Sep 4, 2018] [FULLPS5] [EST556] &#9989;
@@ -5832,7 +5915,7 @@ Legends of Catalonia The Land of Barcelona (First-Person, Adventure) [Nov 2, 201
 Naruto to Boruto Shinobi Striker Master Character Training Pack Orochimaru (DLC) [Nov 2, 2018] [FULLPS5] [EST602] &#9989;
 Shadow of Loot Box (First-Person, Shooter) [Nov 2, 2018] [FULLPS5] [EST602] &#9989;
 Sims 4 Cats & Dogs (DLC) [Nov 2, 2018] [DUMPED V1.24] <The Sims 4> [FULLPS5] [EST602] &#9989;
-World of Tanks Top Secret Key Card (DLC) [Nov 2 2018] [FULLPS5] [EST602] &#9989;
+World of Tanks Top Secret Key Card (DLC) [Nov 2, 2018] [FULLPS5] [EST602] &#9989;
 Valkyria Chronicles 4 Expert Level Skirmishes (DLC) [Nov 4, 2018] [FULLPS5] [EST602] &#9989;
 SkyTime (2D, Action, Platform) [Nov 5, 2018] [FULLPS5] [EST602] &#9989;
 ADN (Entertainment) [Nov 6, 2018] [CUSA08223] [OFW702] [NOTPS5] &#9989;
@@ -5911,7 +5994,7 @@ Surviving Mars Marsvision Song Contest (DLC) [Nov 15, 2018] [FULLPS5] [EST602] &
 Surviving Mars Space Race (DLC) [Nov 15, 2018] [FULLPS5] [EST602] &#9989;
 Surviving Mars Space Race Plus (DLC) [Nov 15, 2018] [FULLPS5] [EST602] &#9989;
 Warhammer Vermintide 2 Closed Beta (Demo/Trial) [Nov 15, 2018] [CUSA13710] [FULLPS5] [EST602] &#9989;
-Will A Wonderful World (Visual Novel) [Nov 15, 2018] [CUSA17579] [FULLPS5] [EST602] &#9989;
+Will A Wonderful World (Visual Novel) [Nov 15, 2018] [DUMPED V1.02] [JCUSA17579] [FULLPS5] [EST602] &#9989;
 Wordhunters (Trivia) [Nov 15, 2018] [PLAYLINK] [FULLPS5] [EST602] &#9989;
 Yuuna and the Haunted Hot Springs Steam Dungeon (Role-Playing) [Nov 15, 2018] [DUMPED V1.02] [CUSA10897] <Yuragiso no Yuna-san Yukemuri Dungeon> [FULLPS5] [EST602] &#9989;
 Distrust (Action, Adventure) [Nov 16, 2018] [FULLPS5] [EST602] &#9989;
@@ -5929,6 +6012,8 @@ Bendy and the Ink Machine (Survival, Horror) [Nov 20, 2018] [DUMPED V1.03] [CUSA
 Boxing Apocalypse (Sports) [Nov 20, 2018] [VR] [FULLPS5] [EST602] &#9989;
 Crow The Legend (Action) [Nov 20, 2018] [DUMPED V1.02] [CUSA13880] [VR] [FULLPS5] [EST602] &#9989;
 Farming Simulator 19 (Simulation) [Nov 20, 2018] [DUMPED V1.16] [CUSA11593] [505BP] [FULLPS5]  [EST602] &#x1F536;
+Farming Simulator 19 Mahindra Retriever DLC (DLC) [Nov 20, 2018] [FULLPS5] [EST602] &#9989;
+Farming Simulator 19 New Holland T6 Blue Power DLC (DLC) [Nov 20, 2018] [FULLPS5] [EST602] &#9989;
 Fishing Sim World Pro Tour Lake Williams (DLC) [Nov 20, 2018] [FULLPS5] [EST602] &#9989;
 Fishing Sim World Pro Tour Quad Lake Pass (DLC) [Nov 20, 2018] [FULLPS5] [EST602] &#9989;
 Flashback (Action, Adventure) [Nov 20, 2018] [DUMPED V1.01] [CUSA13600, CUSA13390] [FULLPS5] [EST602] &#9989;
@@ -6176,7 +6261,7 @@ Walking Dead The Final Season Episode 3 (DLC) [Jan 15, 2019] <The Walking Dead T
 Warhammer 40,000 Inquisitor Martyr Faith Undone (DLC) [Jan 15, 2019] [CUSA10564] [NOTPS5] [EST620] &#9989;
 Ace Combat 7 Skies Unknown (Action, Simulation) [Jan 16, 2019] [DUMPED V1.30] [505BP] [CUSA07202] [VR] [OFW602] <AC7> [FULLPS5] &#x1F536;
 Ace Combat 7 Skies Unknown VR Mode (Demo/Trial) [Jan 16, 2019] [CUSA14839, CUSA14678] [OFW620] [NOTPS5] &#9989;
-Ace Combat Squadron Leader (Action, Simulation) [Jan 16, 2019] [CUSA13351] [PS2] [OFW602] [FULLPS5] &#9989;
+Ace Combat Squadron Leader (Action, Simulation) [Jan 16, 2019] [JCUSA13351] [PS2] [OFW602] [FULLPS5] &#9989;
 Drowning (Demo/Trial) [Jan 16, 2019] [CUSA14920] [NOTPS5] [EST620] &#9989;
 Playstation VR Demo Collection 3 (Demo/Trial) [Jan 16, 2019] [DUMPED V1.00] [CUSA13490] [OFW672] [VR] <Playstation VR Demo Disc 3> [FULLPS5] &#9989;
 ACA NeoGeo Ninja Masters (Fighting) [Jan 17, 2019] [CUSA13631] [FULLPS5] [EST620] &#9989;
@@ -6233,13 +6318,17 @@ Resident Evil 2 Leon Costume Arklay Sheriff (DLC) [Jan 25, 2019] [DUMPED V1.05] 
 Resident Evil 2 Leon Costume Noir (DLC) [Jan 25, 2019] [DUMPED V1.05] [FULLPS5] [EST620] &#9989;
 Resident Evil 2 Original Ver Soundtrack Swap (DLC) [Jan 25, 2019] [DUMPED V1.05] [FULLPS5] [EST620] &#9989;
 ACA NeoGeo Aero Fighters 3 (Action, Shooter) [Jan 28, 2019] [CUSA11382, CUSA10988, CUSA11389] [FULLPS5] [EST620] &#9989;
+GameMakerPS4 Hello World For Proofs (Homebrew) [Jan 28, 2019] [OFW505] <SilicaDevs, SilicaAndPina> [NOTPS5] &#9989;
+Hello World (Homebrew) [Jan 28, 2019] [OFW505] <SilicaDevs, SilicaAndPina> [NOTPS5] &#9989;
 Genesis Alpha One (Action, Shooter) [Jan 29, 2019] [DUMPED V1.00] [505BP] [CUSA10869] [OFW672] [FULLPS5] &#x1F536;
 Kingdom Hearts All-in-One Package (Action, Role-Playing, Compilation) [Jan 29, 2019] [FULLPS5] [EST620] &#9989;
 TrainerVR (Simulation) [Jan 29, 2019] [DUMPED V1.02] [CUSA12429] [505BP] [VR] [3DRUD] <Trainer VR> [FULLPS5]  [EST620] &#x1F536;
 Warhammer 40,000 Inquisitor Martyr Monotask Servo-skull (DLC) [Jan 29, 2019] [CUSA10564] [NOTPS5] [EST620] &#9989;
 ACA NeoGeo Real Bout Fatal Fury 2 (Fighting) [Jan 30, 2019] [CUSA11270] [FULLPS5] [EST620] &#9989;
+An Untitled Story (Homebrew) [Jan 30, 2019] [OFW505] <SilicaDevs, SilicaAndPina> [NOTPS5] &#9989;
 Drowning (Adventure) [Jan 30, 2019] [CUSA14535] [FULLPS5] [EST620] &#9989;
 Goodbye Deponia (Adventure) [Jan 30, 2019] [DELISTED] [FULLPS5] [EST620] &#9989;
+Pool of Doom (Homebrew) [Jan 30, 2019] [OFW505] <SilicaDevs, SilicaAndPina> [NOTPS5] &#9989;
 Anyone's Diary (Adventure, Third-Person) [Jan 31, 2019] [CUSA14221] [VR] [FULLPS5] [EST620] &#9989;
 BOMBFEST (Party) [Jan 31, 2019] [FULLPS5] [EST620] &#9989;
 Conception Plus Maidens of the Twelve Stars (Role-Playing) [Jan 31, 2019] [DUMPED V1.02] [CUSA13760, CUSA15055] [505BP] [OFW672] [FULLPS5] &#x1F536;
@@ -6261,6 +6350,8 @@ Royal Assault (Real-Time, Strategy) [Feb 1, 2019] [FULLPS5] [EST620] &#9989;
 Song of Memories (Visual Novel) [Feb 1, 2019] [DUMPED V1.00] [CUSA11047] [505BP] [FULLPS5]  [EST620] &#x1F536;
 ACA NeoGeo World Heroes Perfect (Fighting) [Feb 4, 2019] [CUSA13432] [FULLPS5] [EST620] &#9989;
 Apex Legends (First-Person, Shooter) [Feb 4, 2019] [CUSA12552] [F2P] [Requires PSN] [FULLPS5] [EST620] &#9989;
+FlappyBurd PSXHAX Arcade Edition (Homebrew) [Feb 4, 2019] [OFW505] <BonusB4ll> [NOTPS5] &#9989;
+PSXHAXMEREO Mario PS4 (Homebrew) [Feb 4, 2019] [OFW505] <BonusB4ll> [NOTPS5] &#9989;
 Rage Room (Action) [Feb 4, 2019] [VR] [FULLPS5] [EST620] &#9989;
 ACA NeoGeo Riding Hero (Racing) [Feb 5, 2019] [CUSA11861] [FULLPS5] [EST620] &#9989;
 Access Denied (Puzzle) [Feb 5, 2019] [CUSA14437, CUSA14217, CUSA14333] [OFW602] [FULLPS5] &#9989;
@@ -6270,6 +6361,7 @@ Cities Skylines European Suburbia (DLC) [Feb 5, 2019] [FULLPS5] [EST620] &#9989;
 Cities Skylines Green Cities (DLC) [Feb 5, 2019] [FULLPS5] [EST620] &#9989;
 Crisis VRigade (Shooter) [Feb 5, 2019] [CUSA14721] [VR AIM] [FULLPS5] [EST620] &#9989;
 Dai Magic Jidai Saigo no Guardian (Role-Playing) [Feb 5, 2019] [FULLPS5] [EST620] &#9989;
+El Pollo De Lapy (Homebrew) [Feb 5, 2019] [OFW505] <Lapy> [NOTPS5] &#9989;
 Evoland Legendary Edition (Action, Role-Playing, Compilation) [Feb 5, 2019] [FULLPS5] [EST620] &#9989;
 Fishing Planet Feeder Dream Pack (DLC) [Feb 5, 2019] [FULLPS5] [EST620] &#9989;
 Fishing Sim World Pro Tour Gigantica Road Lake (DLC) [Feb 5, 2019] [FULLPS5] [EST620] &#9989;
@@ -6403,7 +6495,7 @@ Wizards Symphony (Role-Playing) [Feb 28, 2019] [DUMPED V1.02] [CUSA12840] [OFW67
 Awesome Pea (Action, Platform) [Mar 1, 2019] [FULLPS5] [EST620] &#9989;
 Creepy Road (Action, Platform) [Mar 1, 2019] [FULLPS5] [EST620] &#9989;
 Dead or Alive 6 Character Nyotengu (DLC) [Mar 1, 2019] [DUMPED V1.18] [FULLPS5] [EST620] &#9989;
-Dead or Alive 6 Collectors Edition (Fighting) [Mar 1, 2019] [DUMPED V1.18] [CUSA12116] [BP ISSUE BLACK SCREEN BOOT!] [505BP] [FULLPS5]  [EST620] &#x1F536;
+Dead or Alive 6 Collectors Edition (Fighting) [Mar 1, 2019] [DUMPED V1.18] [CUSA12116] [BP ISSUE BLACK SCREEN!] [505BP] [FULLPS5]  [EST620] &#x1F536;
 Far Cry New Dawn Hurk Legacy Pack (DLC) [Mar 1, 2019] [DUMPED V1.05] <FCND, FC:ND> [FULLPS5] [EST620] &#9989;
 Far Cry New Dawn Knight pack (DLC) [Mar 1, 2019] [DUMPED V1.05] <FCND, FC:ND> [FULLPS5] [EST620] &#9989;
 Far Cry New Dawn Retro Weapon Pack (DLC) [Mar 1, 2019] [DUMPED V1.05] <FCND, FC:ND> [FULLPS5] [EST620] &#9989;
@@ -6536,6 +6628,7 @@ Block-a-Pix Deluxe (Puzzle) [Mar 26, 2019] [FULLPS5] [EST651] &#9989;
 Call of Duty Black Ops 4 Ancient Evil (DLC) [Mar 26, 2019] <COD BO4, BLOPS4, Call of Duty Black Ops IIII Ancient Evil> [FULLPS5] [EST651] &#9989;
 Dirt Rally 2.0 Season 1 Stage 1 Liveries (DLC) [Mar 26, 2019] [DUMPED V1.26] [FULLPS5] [EST651] &#9989;
 Dirt Rally 2.0 Season 1 Track 1 Monte Carlo Rally (DLC) [Mar 26, 2019] [DUMPED V1.26] [FULLPS5] [EST651] &#9989;
+Farming Simulator 19 Anderson Group Equipment Pack (DLC) [Mar 26, 2019] [FULLPS5] [EST651] &#9989;
 Fate/Extella Link Beach Crisis (DLC) [Mar 26, 2019] [CUSA12090] [EST651] &#9989;
 Final Fantasy XV Episode Ardyn (DLC) [Mar 26, 2019] [DUMPED V1.23] <FFXV, FF15> [FULLPS5] [EST651] &#9989;
 Generation Zero (Action) [Mar 26, 2019] [DUMPED V1.25] [CUSA14212] [BP ISSUE SAVE ISSUE!] [FULLPS5]  [EST651] &#x1F536;
@@ -6543,6 +6636,7 @@ MLB The Show 19 (Sports) [Mar 26, 2019] [DUMPED V1.00] [CUSA13355] [FULLPS5] [ES
 Metagal (2D, Action, Platform) [Mar 26, 2019] [FULLPS5] [EST651] &#9989;
 Outward (Action, Open-World) [Mar 26, 2019] [DUMPED V1.07] [CUSA10865] [505BP] [FULLPS5]  [EST651] &#x1F536;
 Path of Exile (Role-Playing) [Mar 26, 2019] [CUSA11782, CUSA11924] [FULLPS5] [EST651] &#9989;
+Path of Exile PlayStation Plus Bundle (DLC) [Mar 26, 2019] [FULLPS5] [EST651] &#9989;
 Skyworld (Adventure) [Mar 26, 2019] [VR] [FULLPS5] [EST651] &#9989;
 SoulCalibur VI Amy (DLC) [Mar 26, 2019] [DUMPED V1.00] <Soulcalibur 4> [FULLPS5] [EST651] &#9989;
 Space Junkies (Action) [Mar 26, 2019] [DUMPED V1.09] [505BP] [CUSA14019] [VR] [3DRUD] [FULLPS5]  [EST651] &#x1F536;
@@ -6674,7 +6768,7 @@ Assassin's Creed Odyssey The Fate of Atlantis EP 01 Fields of Elysium (DLC) [Apr
 Chair in a Room Greenwater (Adventure, Horror) [Apr 23, 2019] [CUSA14439, CUSA15907] [VR] <A Chair in a Room Greenwater> [FULLPS5] [EST651] &#9989;
 Dirt Rally 2.0 Season 1 Track 2 Sweden Rally (DLC) [Apr 23, 2019] [DUMPED V1.26] [FULLPS5] [EST651] &#9989;
 Lego DC Super-Villains Shazam Movie Pack 2 (DLC) [Apr 23, 2019] <Lego DC Super Villains> [FULLPS5] [EST651] &#9989;
-Mortal Kombat 11 (Fighting) [Apr 23, 2019] [DUMPED V1.28] [CUSA11379, CUSA11395] [BP ISSUE 5.05 VIDEO SLOWDOWN!] [CROSSPLAY] [PSCOMP] <MK11> [FULLPS5]  [EST651] &#x1F536;
+Mortal Kombat 11 (Fighting) [Apr 23, 2019] [DUMPED V1.28] [CUSA11379, CUSA11395] [BP ISSUE 5.05 VIDEO LAG!] [CROSSPLAY] [PSCOMP] <MK11> [FULLPS5]  [EST651] &#x1F536;
 Mortal Kombat 11 1150 Time Krystals (DLC) [Apr 23, 2019] [EST651] &#9989;
 Mortal Kombat 11 2500 Time Krystals (DLC) [Apr 23, 2019] [EST651] &#9989;
 Mortal Kombat 11 500 Time Krystals (DLC) [Apr 23, 2019] [EST651] &#9989;
@@ -6769,7 +6863,7 @@ Dragon Ball FighterZ Commentator Voice Pack 2 (DLC) [May 9, 2019] [DUMPED V1.29]
 Dragon Ball FighterZ Commentator Voice Pack 3 (DLC) [May 9, 2019] [DUMPED V1.29] [FULLPS5] [EST651] &#9989;
 Dragon Ball FighterZ Commentator Voice Pack 4 (DLC) [May 9, 2019] [DUMPED V1.29] [FULLPS5] [EST651] &#9989;
 Dragon Ball FighterZ Dragon Ball GT Goku (DLC) [May 9, 2019] [DUMPED V1.29] [FULLPS5] [EST651] &#9989;
-Dragon Ball FighterZ Goku GT (DLC) [May, 9 2019] [DUMPED V1.29] [FULLPS5] [EST651] &#9989;
+Dragon Ball FighterZ Goku GT (DLC) [May 9, 2019] [DUMPED V1.29] [FULLPS5] [EST651] &#9989;
 Life is Strange 2 Episode 3 Wastelands (DLC) [May 9, 2019] [DUMPED V1.17] [FULLPS5] [EST651] &#9989;
 To Be a Dummy Head VR Ferris Wheel Story (Simulation) [May 9, 2019] [CUSA15955, CUSA15956] [VR] [OFW651] [FULLPS5] &#9989;
 Dissidia Final Fantasy NT 3rd Appearance Special Set for Zidane & Ramza (DLC) [May 10, 2019] [EST651] &#9989;
@@ -6779,6 +6873,7 @@ Just Shapes & Beats (Rhythm, Music) [May 10, 2019] [CUSA10349] [OFW651] [FULLPS5
 Lovecraft's Untold Stories (Action, Role-Playing) [May 10, 2019] <Lovecrafts Untold Stories> [FULLPS5] [EST651] &#9989;
 Darkwood (Survival, Horror) [May 14, 2019] [CUSA14536, CUSA14548] [OFW651] [LTDRUN] [FULLPS5] &#9989;
 Devious Dungeon 2 (Action, Platform) [May 14, 2019] [CUSA15318, CUSA15329, CUSA15791] [OFW651] [FULLPS5] &#9989;
+Farming Simulator 19 HOLMER Terra Variant DLC (DLC) [May 14, 2019] [FULLPS5] [EST651] &#9989;
 Feudal Alloy (Metroidvania) [May 14, 2019] [DUMPED V1.00] [CUSA14670, CUSA14936, CUSA15272] [505BP] [OFW651] [FULLPS5] &#x1F536;
 Lego DC Super-Villains Young Justice (DLC) [May 14, 2019] <Lego DC Super Villains> [FULLPS5] [EST651] &#9989;
 Plague Tale Innocence (Action, Adventure) [May 14, 2019] [DUMPED V1.00] [505BP] [CUSA10812, CUSA16145, CUSA11032] [OFW620] <A Plague Tale> {PRO} 4K HQ TEXTURES [FULLPS5] &#x1F536;
@@ -6869,6 +6964,8 @@ No Heroes Here (Tower Defence) [May 29, 2019] [FULLPS5] [EST651] &#9989;
 Arcade Archives Alpine Ski (Sports) [May 30, 2019] [CUSA15832, CUSA15874] [OFW651] [FULLPS5] &#9989;
 Code Vein Network Test Edition (Demo/Trial) [May 30, 2019] [CUSA15772, CUSA15776, CUSA15947] [OFW651] [NOTPS5] &#9989;
 Granblue Fantasy Versus Closed Beta (Demo/Trial) [May 30, 2019] [CUSA15761, CUSA15782] [OFW651] [NOTPS5] &#9989;
+Just Shapes & Beats Mega Bundle (Compilation, Rhythm, Music) [May 30, 2019] [FULLPS5] [EST670] &#9989;
+Just Shapes & Beats Mega Bundle (Compilation, Rhythm, Music) [May 30, 2019] [FULLPS5] [EST670] &#9989;
 Oshiete Onedari Shogi (Board Game, Card Game) [May 30, 2019] [CUSA15561] [OFW651] [FULLPS5] &#9989;
 Rock Band 4 Breaking Benjamin Tourniquet (DLC) [May 30, 2019] [FULLPS5] [EST670] &#9989;
 Rock Band 4 Sucide Silence You Only Live Once (DLC) [May 30, 2019] [FULLPS5] [EST670] &#9989;
@@ -6891,6 +6988,7 @@ Elder Scrolls Online Elsweyr (Action, Role-Playing) [Jun 4, 2019] [CUSA00086] [R
 Kotodama The 7 Mysteries of Fujisawa (Visual Novel) [Jun 4, 2019] [DUMPED V1.03] [CUSA15307] [505BP] [FULLPS5]  [EST671] &#x1F536;
 Legend of the Tetrarchs (Role-Playing) [Jun 4, 2019] [LTDRUN] [CUSA24482, CUSA15667, CUSA15951] [OFW651] [FULLPS5] &#9989;
 Neon Junctions (Puzzle) [Jun 4, 2019] [CUSA15804, CUSA15845, CUSA15891] [OFW651] [FULLPS5] &#9989;
+Path of Exile PlayStation Plus Bundle Two (DLC) [Jun 4, 2019] [FULLPS5] [EST671] &#9989;
 Savior's Gang (Real-Time, Strategy) [Jun 4, 2019] [FULLPS5] [EST671] &#9989;
 Summer Sports Games (Sports) [Jun 4, 2019] [DUMPED V1.00] [CUSA15357] [505BP] [FULLPS5]  [EST671] &#x1F536;
 Super Blood Hockey (Sports) [Jun 4, 2019] [CUSA15811, CUSA15852] [OFW651] [FULLPS5] &#9989;
@@ -6910,7 +7008,7 @@ Asdivine Dios Experience X3 (DLC) [Jun 5, 2019] [FULLPS5] [EST671] &#9989;
 Asdivine Dios Full Restore (DLC) [Jun 5, 2019] [FULLPS5] [EST671] &#9989;
 Asdivine Dios No Encounters (DLC) [Jun 5, 2019] [FULLPS5] [EST671] &#9989;
 Asdivine Dios SP X3 (DLC) [Jun 5, 2019] [FULLPS5] [EST671] &#9989;
-Earth Defense Force Iron Rain Golden Storm (DLC) [Jun 6 2019] [FULLPS5] [EST671] &#9989;
+Earth Defense Force Iron Rain Golden Storm (DLC) [Jun 6, 2019] [FULLPS5] [EST671] &#9989;
 Hellmut The Badass from Hell (Shooter, Roguelike) [Jun 6, 2019] [CUSA17642, CUSA14942] [OFW651] [FULLPS5] &#9989;
 MotoGP 19 (Racing) [Jun 6, 2019] [DUMPED V1.17] [CUSA14907, CUSA15265, CUSA14888] [505BP] [OFW651] [FULLPS5] &#x1F536;
 MotoGP 19 Historical Pack (DLC) [Jun 6, 2019] [FULLPS5] [EST671] &#9989;
@@ -7027,11 +7125,11 @@ NEKOPARA Vol 3 (Visual Novel) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
 Ride 3 Back to Basic Pack (DLC) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
 Rock Band 4 Amberian Dawn Shallow Waters (DLC) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
 Sinking City (Action, Adventure, Survival, Horror) [Jun 27, 2019] [DUMPED V1.04] [CUSA13152, CUSA13750, CUSA13337] [505BP] [OFW651] <The Sinking City> [FULLPS5] &#x1F536;
-Sinking City Chicago Organ Grinder (DLC) [Jun 27 2019] [FULLPS5] [EST671] &#9989;
-Sinking City Extra Skill Point (DLC) [Jun 27 2019] [FULLPS5] [EST671] &#9989;
-Sinking City Investigator Pack (DLC) [Jun 27 2019] [FULLPS5] [EST671] &#9989;
-Sinking City Necronomicon Edition (Compilation, Survival, Horror) [Jun 27 2019] [FULLPS5] [EST671] &#9989;
-Sinking City Worshippers of the Necronomicon (DLC) [Jun 27 2019] [FULLPS5] [EST671] &#9989;
+Sinking City Chicago Organ Grinder (DLC) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
+Sinking City Extra Skill Point (DLC) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
+Sinking City Investigator Pack (DLC) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
+Sinking City Necronomicon Edition (Compilation, Survival, Horror) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
+Sinking City Worshippers of the Necronomicon (DLC) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
 To All of Mankind (Adventure) [Jun 27, 2019] [FULLPS5] [EST671] &#9989;
 Your diary+ (Visual Novel) [Jun 27, 2019] [DUMPED V1.00] [CUSA15115, CUSA15103] [OFW651] [FULLPS5] &#9989;
 F1 2019 (Racing) [Jun 28, 2019] [DUMPED V1.12] [505BP] [CUSA14392, CUSA16740, CUSA14382] [OFW651] <Formula 1 2019> [FULLPS5] &#x1F536;
@@ -7101,7 +7199,7 @@ Aggelos (Platform) [Jul 12, 2019] [CUSA13654, CUSA13666] [OFW651] [FULLPS5] &#99
 Blazing Chrome (Platform, Shooter) [Jul 12, 2019] [DUMPED V1.01] [CUSA14656, CUSA14353, CUSA14656] [OFW651] [505BP] [LTDRUN] [FULLPS5] &#x1F536;
 Dragon Quest Builders 2 Season Pass (DLC) [Jul 12, 2019] [FULLPS5] [EST671] &#9989;
 FIFA 19 eSports (Sports) [Jul 12, 2019] [CUSA13606, CUSA13607, CUSA13655] [Requires PSN] [FULLPS5] [EST671] &#9989;
-Lethal League Blaze (Fighting) [Jul 12, 2019] [DUMPED V1.01] [CUSA16201, CUSA13502, CUSA13507] [OFW651] [FULLPS5] &#9989;
+Lethal League Blaze (Fighting) [Jul 12, 2019] [DUMPED V1.01] [CUSA13502, CUSA13507, CUSA16201] [OFW651] [FULLPS5] &#9989;
 One Piece World Seeker The Void Mirror Prototype (DLC) [Jul 12, 2019] [FULLPS5] [EST671] &#9989;
 Rise of Insanity (First-Person, Horror) [Jul 12, 2019] [CUSA15585, CUSA16030] [OFW671] [VR] [FULLPS5] &#9989;
 Stern Pinball Arcade Star Trek Enterprise Limited Edition Skin (DLC) [Jul 12, 2019] [FULLPS5] [EST671] &#9989;
@@ -7138,6 +7236,7 @@ Telefrag VR (Action, Shooter) [Jul 19, 2019] [CUSA15662, CUSA15739] [OFW671] [VR
 Plants vs Zombies Picnic (Demo/Trial) [Jul 22, 2019] [CUSA16290, CUSA16344] [OFW671] <Closed Alpha> [NOTPS5] &#9989;
 ACA NeoGeo Pleasure Goal 5 on 5 Mini Soccer (Sports) [Jul 23, 2019] [CUSA13165] [FULLPS5] [EST672] &#9989;
 Date-A-Live Rio Reincarnation (Action, Compilation) [Jul 23, 2019] [DUMPED V1.00] [CUSA15766, CUSA14504] [OFW651] <Data A Live Rio Reincarnation> [FULLPS5] &#9989;
+Farming Simulator 19 John Deere Cotton DLC (DLC) [Jul 23, 2019] [FULLPS5] [EST672] &#9989;
 Hoggy 2 (2D, Action, Platform) [Jul 23, 2019] [CUSA14218, CUSA15316, CUSA15328] [OFW671] [FULLPS5] &#9989;
 Oninaki (Demo/Trial) [Jul 23, 2019] [CUSA16021, CUSA16055, CUSA16089] [OFW671] [NOTPS5] &#9989;
 Robbie Swifthand and the Orb of Mysteries (Platform) [Jul 23, 2019] [FULLPS5] [EST672] &#9989;
@@ -7219,7 +7318,7 @@ Crash Team Racing Nitro-Fueled 5000 Wumpa Coins (DLC) [Aug 8, 2019] [FULLPS5] [E
 Dragon Ball FighterZ Janemba (DLC) [Aug 8, 2019] [DUMPED V1.29] [FULLPS5] [EST672] &#9989;
 FIA European Truck Racing Championship Indianapolis Motor Speedway Track (DLC) [Aug 8, 2019] [DUMPED V1.02] [FULLPS5] [EST672] &#9989;
 Fatal Twelve (Adventure) [Aug 8, 2019] [CUSA16247, CUSA16618] [OFW671] [FULLPS5] &#9989;
-Machi Knights Blood Bagos (Action) [Aug 8 2019] [CUSA16320, CUSA16337] [OFW671] <MachiKnights Blood Bagos> [FULLPS5] &#9989;
+Machi Knights Blood Bagos (Action) [Aug 8, 2019] [CUSA16320, CUSA16337] [OFW671] <MachiKnights Blood Bagos> [FULLPS5] &#9989;
 Party Arcade (Party) [Aug 8, 2019] [CUSA14381] [OFW651] [FULLPS5] &#9989;
 Rock Band 4 The Limousines Very Busy People (DLC) [Aug 8, 2019] [FULLPS5] [EST672] &#9989;
 Rock Band 4 The Lumineers Gloria (DLC) [Aug 8, 2019] [FULLPS5] [EST672] &#9989;
@@ -7269,7 +7368,7 @@ Call of Duty Modern Warfare 2V2 Alpha (Demo/Trial) [Aug 22, 2019] [CUSA17166, CU
 DiRT Rally 2.0 Year One Pass (DLC) [Aug 22, 2019] [FULLPS5] [EST672] &#9989;
 Doughlings Invasion (Action, Shooter) [Aug 22, 2019] [CUSA15631, CUSA15641] [OFW671] [FULLPS5] &#9989;
 Life is Strange 2 Episode 4 Faith (DLC) [Aug 22, 2019] [DUMPED V1.17] [FULLPS5] [EST672] &#9989;
-Minna no Dobutsu Shogi World Let's Catch the Lion! (Board Game) [Aug 22, 2019] [DUMPED V1.00] [CUSA15524, CUSA16272] [OFW651] [505BP] <Minna no Dobutsu Shogi Lets Catch the Lion!> [FULLPS5] &#x1F536;
+Minna No Dobutsu Shogi World Let's Catch the Lion! (Board Game) [Aug 22, 2019] [DUMPED V1.00] [CUSA15524, CUSA16272] [OFW651] [505BP] <Minna no Dobutsu Shogi Lets Catch the Lion!> [FULLPS5] &#x1F536;
 Oninaki (Action, Role-Playing) [Aug 22, 2019] [DUMPED V1.02] [CUSA15120, CUSA15230, CUSA15266] [505BP] [OFW671] [FULLPS5] &#x1F536;
 Rock Band 4 The Head and The Heart Missed Connection (DLC) [Aug 22, 2019] [FULLPS5] [EST672] &#9989;
 Assassin's Creed Odyssey + Origins Double Pack (Action, Adventure, Stealth) [Aug 23, 2019] <AC, ACO, Assassins Creed Odyssey, Assassins Creed Origins> [FULLPS5] [EST672] &#9989;
@@ -7309,7 +7408,7 @@ Dead or School (Action, Role-Playing) [Aug 29, 2019] [DUMPED V1.00] [CUSA17625, 
 Hookbots (Action) [Aug 29, 2019] [CUSA17278, CUSA16588] [OFW671] [FULLPS5] &#9989;
 Immortal Unchained (Action, Role-Playing) [Aug 29, 2019] [DUMPED V1.00] [CUSA09922, CUSA15622] [OFW651] [FULLPS5] &#9989;
 Just Cause 4 Danger Rising (DLC) [Aug 29, 2019] <JC4> [FULLPS5] [EST672] &#9989;
-Minna no Soukoban (Puzzle) [Aug 29, 2019] [CUSA15228] [OFW671] [FULLPS5] &#9989;
+Minna No Soukoban (Puzzle) [Aug 29, 2019] [CUSA15228] [OFW671] [FULLPS5] &#9989;
 Raspberry Cube (Visual Novel) [Aug 29, 2019] [DUMPED V1.00] [CUSA16074] [505BP] [OFW671] [FULLPS5] &#x1F536;
 Rock Band 4 Sleater-Kinney Entertain (DLC) [Aug 29, 2019] [FULLPS5] [EST672] &#9989;
 Tricolour Lovestory (Visual Novel) [Aug 29, 2019] [FULLPS5] [EST672] &#9989;
@@ -7326,7 +7425,7 @@ Crystar Sen’s Comic Outfit (DLC) [Aug 30, 2019] [DUMPED V1.00] [FULLPS5] [EST6
 Crystar Uniform (DLC) [Aug 30, 2019] [DUMPED V1.00] [FULLPS5] [EST672] &#9989;
 Dark Pictures Anthology Man of Medan (Horror, Adventure) [Aug 30, 2019] [DUMPED V1.14] [CUSA13933, CUSA15389, CUSA13933, CUSA14102, CUSA15043] [505BP] [OFW671] {PRO} 1440p, HDR <The Dark Pictures Man of Medan> [FULLPS5] &#x1F536;
 Newt One (2D, Action, Platform) [Aug 30, 2019] [CUSA16995] [OFW672] [FULLPS5] &#9989;
-Risk of Rain 2 (Third-Person, Shooter, Roguelike) [Aug 30, 2019] [CUSA16153, CUSA16169, CUSA16209] [OFW672] [FULLPS5] &#9989;
+Risk of Rain 2 (Third-Person, Shooter, Roguelike) [Aug 30, 2019] [DUMPED V1.08] [CUSA16153, CUSA16169, CUSA16209] [505BP] [OFW672] [FULLPS5] &#x1F536;
 Warhammer 40,000 Inquisitor Martyr Desperate Crusade (DLC) [Aug 30, 2019] [CUSA10564] [NOTPS5] [EST672] &#9989;
 Police Stories (Shooter) [Sep 1, 2019] [CUSA20398] [FULLPS5] [EST672] &#9989;
 Blindfold A Verite VR Experience (Adventure) [Sep 3, 2019] [VR] <Blindfold A Vérité VR Experience> [FULLPS5] [EST672] &#9989;
@@ -7342,7 +7441,7 @@ Torchlight II (Action, Role-Playing) [Sep 3, 2019] [CUSA18054, CUSA18064, CUSA15
 Fishing Planet Mighty Carp Tournament Pack (DLC) [Sep 4, 2019] [FULLPS5] [EST672] &#9989;
 Premium Musical Notes Final Fantasy VII A Symphonic Reunion (DLC) [Sep 4, 2019] [CUSA17319] [OFW672] <FF7, FFVII> [FULLPS5] &#9989;
 Arcade Archives Vigilante (Beat 'em up) [Sep 5, 2019] [CUSA16207, CUSA16528, CUSA16552] [OFW672] [FULLPS5] &#9989;
-Fishing Sim World Pro Tour Tournament Bass Pack (DLC) [Sep 5 2019] [FULLPS5] [EST672] &#9989;
+Fishing Sim World Pro Tour Tournament Bass Pack (DLC) [Sep 5, 2019] [FULLPS5] [EST672] &#9989;
 Flowers Are Dead (Adventure) [Sep 5, 2019] [CUSA16134, CUSA16660] [OFW672] [FULLPS5] &#9989;
 River City Girls (Beat 'em up) [Sep 5, 2019] [DUMPED V1.20] [CUSA15554, CUSA15883, CUSA15834, CUSA15878] [505BP] [OFW671] [LTDRUN] [FULLPS5] &#x1F536;
 Spice and Wolf VR (Visual Novel) [Sep 5, 2019] [CUSA16637, CUSA16667, CUSA16705] [OFW671] [VR] [FULLPS5] &#9989;
@@ -7370,6 +7469,7 @@ Shalnor Legends Sacred Lands (Action, Adventure, Open-World) [Sep 6, 2019] [CUSA
 Sudden Strike 4 Complete Collection (Real-Time, Strategy) [Sep 6, 2019] [DUMPED V1.00] [CUSA15423, CUSA15453] [505BP] [OFW651] [FULLPS5] &#x1F536;
 Throne Quest Deluxe (Role-Playing) [Sep 6, 2019] [CUSA16794, CUSA17507] [OFW672] [FULLPS5] &#9989;
 Hero Express (Adventure) [Sep 9, 2019] [CUSA16769] [OFW672] [FULLPS5] &#9989;
+Path of Exile PlayStation Plus Bundle Three (DLC) [Sep 9, 2019] [FULLPS5] [EST672] &#9989;
 Rugby 20 Beta (Demo/Trial) [Sep 9, 2019] [CUSA17262, CUSA17871] [OFW672] [NOTPS5] &#9989;
 Battlewake (Simulation) [Sep 10, 2019] [DUMPED V1.02] [CUSA13362, CUSA13374] [505BP] [OFW672] [VR] [FULLPS5] &#x1F536;
 Blasphemous (Platform) [Sep 10, 2019] [DUMPED V1.05] [CUSA16275, CUSA17502, CUSA16261] [505BP] [OFW672] [LTDRUN] [FULLPS5] &#x1F536;
@@ -7619,7 +7719,10 @@ Deep Space Adventure (Action, Adventure) [Oct 22, 2019] [FULLPS5] [EST700] &#998
 Deep Space Rush (Action) [Oct 22, 2019] [CUSA15809, CUSA15846, CUSA15889] [OFW672] [FULLPS5] &#9989;
 Dirt Rally 2.0 Season 3 Vehicle 17 Peugeot 206 Rally (DLC) [Oct 22, 2019] [DUMPED V1.26] [FULLPS5] [EST700] &#9989;
 Dirt Rally 2.0 Season 3 Vehicle 18 Volkswagen Golf Kit Car (DLC) [Oct 22, 2019] [DUMPED V1.26] [FULLPS5] [EST700] &#9989;
+Farming Simulator 19 CLAAS DOMINATOR 108 SL MAXI DLC (DLC) [Oct 22, 2019] [FULLPS5] [EST700] &#9989;
+Farming Simulator 19 CLAAS TORION 1914 Dev Mule DLC (DLC) [Oct 22, 2019] [FULLPS5] [EST700] &#9989;
 Farming Simulator 19 Platinum Edition (Simulation) [Oct 22, 2019] [FULLPS5] [EST700] &#9989;
+Farming Simulator 19 Platinum Expansion (DLC) [Oct 22, 2019] [FULLPS5] [EST700] &#9989;
 Firewall Zero Hour Operation Heartland (DLC) [Oct 22, 2019] [VR AIM] [FULLPS5] [EST700] &#9989;
 Fishing Planet Tricky Treats Pack (DLC) [Oct 22, 2019] [FULLPS5] [EST700] &#9989;
 Hitman 2 Whittleton Creek Pack (DLC) [Oct 22, 2019] [FULLPS5] [EST700] &#9989;
@@ -7870,7 +7973,7 @@ Golem (Action) [Nov 15, 2019] [DUMPED V1.02] [CUSA04617, CUSA12088] [505BP] [OFW
 Jumanji The Video Game (Adventure) [Nov 15, 2019] [DUMPED V1.00] [CUSA14807, CUSA14658] [505BP] [OFW672] [FULLPS5] &#x1F536;
 Jump Force Character Pack 6 Toshiro Hitsugaya (DLC) [Nov 15, 2019] [DUMPED V1.15] [FULLPS5] [EST700] &#9989;
 Jump Force Character Pack 7 Madara Uchiha (DLC) [Nov 15, 2019] [DUMPED V1.15] [FULLPS5] [EST700] &#9989;
-Minna de Kuuki Yomi (Party) [Nov 15, 2019] [FULLPS5] [EST700] &#9989;
+Minna De Kuuki Yomi (Party) [Nov 15, 2019] [FULLPS5] [EST700] &#9989;
 Read the Air Together (Simulation) [Nov 15, 2019] [CUSA17926] [OFW700] [FULLPS5] &#9989;
 Star Wars Jedi Fallen Order (Action, Adventure) [Nov 15, 2019] [DUMPED V1.12] [CUSA12529, CUSA12539] [505BP] [OFW672] [FULLPS5] &#x1F536;
 Star Wars Jedi Fallen Order BD-1 Cosmetic Skin (DLC) [Nov 15, 2019] [DUMPED V1.11] [OFW672] [FULLPS5] &#9989;
@@ -8023,7 +8126,7 @@ Hatsune Miku VR 5 Songs Pack 1 (DLC) [Dec 5, 2019] [VR] [FULLPS5] [EST700] &#998
 Hatsune Miku VR 5 Songs Pack 2 (DLC) [Dec 5, 2019] [VR] [FULLPS5] [EST700] &#9989;
 Hot Springs Story (Simulation) [Dec 5, 2019] [FULLPS5] [EST700] &#9989;
 Kerbal Space Program Breaking Ground Expansion (DLC) [Dec 5, 2019] [FULLPS5] [EST700] &#9989;
-Minna no Othello (Board Game) [Dec 5, 2019] [CUSA15720] [OFW700] <Everyone's Othello, Everyones Othello> [FULLPS5] &#9989;
+Minna No Othello (Board Game) [Dec 5, 2019] [CUSA15720] [OFW700] <Everyone's Othello, Everyones Othello> [FULLPS5] &#9989;
 Monster Hunter World Iceborne Decor Beotodus Figure (DLC) [Dec 5, 2019] [DUMPED V15.02] [FULLPS5] [EST700] &#9989;
 Monster Hunter World Iceborne Decor Glavenus Figure (DLC) [Dec 5, 2019] [DUMPED V15.02] [FULLPS5] [EST700] &#9989;
 Monster Hunter World Iceborne Decor Grimalkyne Figures (DLC) [Dec 5, 2019] [DUMPED V15.02] [FULLPS5] [EST700] &#9989;
@@ -8074,7 +8177,7 @@ Ski Jumping Pro VR (Sports) [Dec 6, 2019] [VR] [CUSA14461, CUSA14474] [OFW700] [
 Tropico 6 The Llama of Wall Street (DLC) [Dec 6, 2019] [FULLPS5] [EST700] &#9989;
 Ashen (Action, Role-Playing) [Dec 9, 2019] [CUSA14332, CUSA14345] [OFW700] [FULLPS5] &#9989;
 eFootball Winning Eleven 2020 Lite (Sports) [Dec 9, 2019] [CUSA17913, CUSA17914, CUSA17965, CUSA18006] [OFW700] <PES 20 Lite, PES20 Lite, PES 2020 Lite, PES2020 Lite> [FULLPS5] &#9989;
-AVICII Invector (Rhythm, Music) [Dec 10 2019] [DUMPED V1.05] [CUSA18271, CUSA18263] [505BP] [OFW702] [FULLPS5] &#x1F536;
+AVICII Invector (Rhythm, Music) [Dec 10, 2019] [DUMPED V1.05] [CUSA18271, CUSA18263] [505BP] [OFW702] [FULLPS5] &#x1F536;
 Dead by Daylight Nightmare Edition (Action, Survival, Horror) [Dec 10, 2019] [FULLPS5] [EST700] &#9989;
 Doom Slayers Collection (First-Person, Shooter) [Dec 10, 2019] [FULLPS5] [EST700] &#9989;
 Dreamwalker Never Fall Asleep (Puzzle) [Dec 10, 2019] [CUSA18091, CUSA18096] [OFW700] [FULLPS5] &#9989;
@@ -8204,6 +8307,7 @@ Monster Hunter World Iceborne Room Decor Intimate Decor Set (DLC) [Dec 20, 2019]
 Monster Hunter World Iceborne Sticker Set Lynian Set (DLC) [Dec 20, 2019] [DUMPED V15.02] [FULLPS5] [EST702] &#9989;
 Monster Hunter World Iceborne The Handler's Graceful Short Dress (DLC) [Dec 20, 2019] [DUMPED V15.02] [FULLPS5] [EST702] &#9989;
 One Piece World Seeker The Unfinished Map (DLC) [Dec 20, 2019] [FULLPS5] [EST702] &#9989;
+Path of Exile PlayStation Plus Bundle Four (DLC) [Dec 20, 2019] [FULLPS5] [EST702] &#9989;
 Soccer Pinball (Pinball) [Dec 20, 2019] [CUSA18243, CUSA18289] [OFW700] [FULLPS5] &#9989;
 Telltale Batman Shadows Edition Batman The Telltale Series (Action, Adventure, Compliation) [Dec 20, 2019] [FULLPS5] [EST702] &#9989;
 Unit 4 (2D, Action, Platform) [Dec 20, 2019] [CUSA17946, CUSA17930] [OFW700] [FULLPS5] &#9989;
@@ -8323,7 +8427,7 @@ Puzzle Showdown 4K Exclusive Content Bundle (DLC) [Jan 29, 2020] [FULLPS5] [EST7
 Arcade Archives Tecmo Bowl (Sports) [Jan 30, 2020] [CUSA14132, CUSA14136, CUSA14139] [OFW700] [FULLPS5] &#9989;
 Boku to Joi no Shinsatsu Nisshi (Visual Novel) [Jan 30, 2020] [DUMPED V1.00] [JCUSA18107] < I and Her Female Doctor Consultation Diary, Medical Diary of Me and Her Female Doctor> [OFW700] [FULLPS5] &#9989;
 Bookbound Brigade (Adventure) [Jan 30, 2020] [CUSA17872, CUSA17818, CUSA17830, CUSA17834] [OFW700] [FULLPS5] &#9989;
-Code Shifter (Action, Platform) [Jan 30 2020] [DUMPED V1.00] [JCUSA14580] [OFW651] [FULLPS5] &#9989;
+Code Shifter (Action, Platform) [Jan 30, 2020] [DUMPED V1.00] [JCUSA14580] [OFW651] [FULLPS5] &#9989;
 Incredible Adventures of Van Helsing III (Action, Role-Playing) [Jan 30, 2020] [CUSA15211, CUSA15225] [OFW651] [FULLPS5] &#9989;
 It Came From Space And Ate Our Brains (Action, Shooter) [Jan 30, 2020] [CUSA18002, CUSA18139] [OFW700] [FULLPS5] &#9989;
 Kemco RPG Select Vol. 3 (Role-Playing, Compilation) [Jan 30, 2020] [PLJM16548] <Kemco RPG Select Vol 3, Kemco RPG Select Volume 3> [FULLPS5] [EST702] &#9989;
@@ -8619,6 +8723,7 @@ Asterix & Obelix XXL 3 The Crystal Menhir Viking Outfit (DLC) [Mar 20, 2020] [FU
 Doom 64 (First-Person, Shooter) [Mar 20, 2020] [DUMPED V1.00] [CUSA16296] [505BP] [FULLPS5]  [EST702] &#x1F536;
 Doom Eternal (First-Person, Shooter) [Mar 20, 2020] [DUMPED V1.23] [CUSA13275, CUSA13338] [505BP] [OFW702] {PRO} 4K, 60FPS [FULLPS5] &#x1F536;
 Rainbows, Toilets and Unicorns (Action, Shooter, Vertical) [Mar 20, 2020] [CUSA24112] <Rainbows Toilets and Unicorns> [FULLPS5] [EST702] &#9989;
+Lethal League Blaze Gigahertz Visualizer X Outfit for Doombox (DLC) [Mar 23, 2020] [FULLLPS5] [EST702] &#9989;
 Monster Hunter World Iceborne Decor Barroth Figure (DLC) [Mar 23, 2020] [DUMPED V15.02] [FULLPS5] [EST702] &#9989;
 Monster Hunter World Iceborne Decor Diablos Figure (DLC) [Mar 23, 2020] [DUMPED V15.02] [FULLPS5] [EST702] &#9989;
 Monster Hunter World Iceborne Decor Girros & Great Girros Figure (DLC) [Mar 23, 2020] [DUMPED V15.02] [FULLPS5] [EST702] &#9989;
@@ -8673,6 +8778,7 @@ Oniken (Action, Platform) [Mar 24, 2020] [FULLPS5] [EST702] &#9989;
 Oniken + Odallus Collection (Compliation, Action) [Mar 24, 2020] [FULLPS5] [EST702] &#9989;
 Oniken Unstoppable Edition (2D, Action, Platform) [Mar 24, 2020] [FULLPS5] [EST702] &#9989;
 Paper Beast (Adventure) [Mar 24, 2020] [DUMPED V1.03] [CUSA15346, CUSA15356] [505BP] [OFW702] [VR] [FULLPS5] &#x1F536;
+Path of Exile PlayStation Plus Bundle Five (DLC) [Mar 24, 2020] [FULLPS5] [EST702] &#9989;
 Tekken 7 DLC14 Fahkumram (DLC) [Mar 24, 2020] [DUMPED V4.00] [FULLPS5] [EST702] &#9989;
 Tekken 7 DLC15 Cave of Enlightenment Stage (DLC) [Mar 24, 2020] [DUMPED V4.00] [FULLPS5] [EST702] &#9989;
 Titan Quest Ragnarok (DLC) [Mar 24, 2020] [FULLPS5] [EST702] &#9989;
@@ -8691,7 +8797,7 @@ Cities Skylines Sunset Harbor (DLC) [Mar 26, 2020] [FULLPS5] [EST702] &#9989;
 Control The Foundation (DLC) [Mar 26, 2020] [CUSA16652] [OFW700] [FULLPS5] &#9989;
 Kin'iro Loveriche (Visual Novel) [Mar 26, 2020] [FULLPS5] [EST702] &#9989;
 Mekorama (Puzzle) [Mar 26, 2020] [FULLPS5] [EST702] &#9989;
-One Piece Pirate Warriors 4 (Action) [Mar 26, 2020] [DUMPED V1.02] [CUSA17226, CUSA16646] [BP ISSUE SLOW CUTSCENES!] [FULLPS5]  [EST702] &#x1F536;
+One Piece Pirate Warriors 4 (Action) [Mar 26, 2020] [DUMPED V1.02] [CUSA17226, CUSA16646] [BP ISSUE VIDEO LAG!] [FULLPS5]  [EST702] &#x1F536;
 Revenge of Justice (Turn-Based, Strategy) [Mar 26, 2020] [FULLPS5] [EST702] &#9989;
 Rock Band 4 A Day to Remember Better Off This Way (DLC) [Mar 26, 2020] [FULLPS5] [EST702] &#9989;
 Room VR A Dark Matter (First-Person, Puzzle) [Mar 26, 2020] [CUSA17080] [OFW702] [VR] [FULLPS5] &#9989;
@@ -9017,6 +9123,30 @@ Mortal Kombat 11 Sheeva (DLC) [May 26, 2020] [EST750] &#9989;
 Mortal Kombat 11 Thanks A Million Johnny Cage (DLC) [May 26, 2020] [EST750] &#9989;
 Rune Lord (Puzzle) [May 26, 2020] [FULLPS5] [EST750] &#9989;
 Slime Rancher Deluxe Edition (Action, Adventure) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder AVRE (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Apache (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Black Shark (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder CV 90105 TML (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Dora (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder German Starter Pack (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder IS-6 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Invader (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder JASDF Sabre (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Japanese Pacific Campaign (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder King Tiger (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Leopard (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Magach 3 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder MiG-17AS (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Mustang (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder OF-40 Mk.2 MTCA (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Object 120 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Prinz Eugen (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Rooikat 105 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder SAV 20.12.48 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Sho’t Kal Dalet (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Super AMX-30 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder T29 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
+War Thunder Т-55АМ-1 (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
 Warface Breakout (First-Person, Shooter) [May 26, 2020] [CUSA17846, CUSA17810, CUSA19153, CUSA19241] [OFW702] [Requires PSN] [FULLPS5] &#9989;
 Warface Breakout 1000 Coins (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
 Warface Breakout 10000 Coins (DLC) [May 26, 2020] [FULLPS5] [EST750] &#9989;
@@ -9032,7 +9162,7 @@ Fight of Gods (Fighting) [May 28, 2020] [CUSA19348, CUSA18763, CUSA19285] [FULLP
 Fishing Planet Rainforest Journey Pack (DLC) [May 28, 2020] [FULLPS5] [EST751] &#9989;
 Hotel R'n'R (Simulation) [May 28, 2020] [CUSA18548] [VR] [3DRUD] <Hotel RnR, Hotel R&R> [FULLPS5] [EST751] &#9989;
 Legend of Heroes Ao no Kiseki (Role-Playing) [May 28, 2020] <Eiyuu Densetsu Ao no Kiseki> [FULLPS5] [EST751] &#9989;
-Minna no Hanafuda (Board Game, Card Game) [May 28, 2020] [FULLPS5] [EST751] &#9989;
+Minna No Hanafuda (Board Game, Card Game) [May 28, 2020] [FULLPS5] [EST751] &#9989;
 Rock Band 4 Texas In July Hook, Line and Sinner (DLC) [May 28, 2020] [FULLPS5] [EST751] &#9989;
 SD Gundam G Generation Cross Rays Expansion Pack (DLC) [May 28, 2020] [FULLPS5] [EST751] &#9989;
 Shantae and the Seven Sirens (Action, Platform) [May 28, 2020] [DUMPED V1.00] [CUSA18287] [LTDRUN] [FULLPS5] [EST751] &#9989;
@@ -9132,7 +9262,7 @@ Elder Scrolls Online Orb Of Magnus (DLC) [Jun 24, 2020] [Requires PSN] <ESO, The
 Elder Scrolls Online Skyrim Emote Pack (DLC) [Jun 24, 2020] [Requires PSN] <ESO, The Elder Scrolls Online> [FULLPS5] [EST751] &#9989;
 Elder Scrolls Online Sword Thane Outfit Style (DLC) [Jun 24, 2020] [Requires PSN] <ESO, The Elder Scrolls Online> [FULLPS5] [EST751] &#9989;
 Firefighters Airport Heroes (Simulation) [Jun 24, 2020] [FULLPS5] [EST751] &#9989;
-Hunting Simulator 2 Beretta Model 486 (DLC) [Jun 24, 2020] [FULLPS5] [EST751] &#9989;
+Hunting Simulator 2 Beretta Model 486 (DLC) [Jun 24, 2020] [DUMPED V1.06] [FULLPS5] [EST751] &#9989;
 Samurai Shodown DLC Character Warden (DLC) [Jun 24, 2020] [DUMPED V2.42] <Samurai Spirits Warden> [FULLPS5] [EST751] &#9989;
 Summer with the Shiba Inu (Visual Novel) [Jun 24, 2020] [CUSA19567, CUSA19603, CUSA19576] [FULLPS5] [EST751] &#9989;
 Arcade Archives Wiz (Platform) [Jun 25, 2020] [CUSA23235] [FULLPS5] [EST751] &#9989;
@@ -9141,7 +9271,7 @@ Death Match Love Comedy! (Adventure) [Jun 25, 2020] [FULLPS5] [EST751] &#9989;
 Fairy Tail (Role-Playing) [Jun 25, 2020] [DUMPED V1.05] [CUSA17573] [505BP] [FULLPS5]  [EST751] &#x1F536;
 Fairy Tail Digital Deluxe (Role-Playing) [Jun 25, 2020] [CUSA17573] [FULLPS5] [EST751] &#9989;
 Fishing Planet Boat Series Pack (DLC) [Jun 25, 2020] [FULLPS5] [EST751] &#9989;
-Hunting Simulator 2 Bear Hunter Pack (DLC) [Jun 25, 2020] [FULLPS5] [EST751] &#9989;
+Hunting Simulator 2 Bear Hunter Pack (DLC) [Jun 25, 2020] [DUMPED V1.06] [FULLPS5] [EST751] &#9989;
 Party Pumper (Music, Rhythm) [Jun 25, 2020] [VR] [CUSA19090] [FULLPS5] [EST751] &#9989;
 Pawarumi (Shooter) [Jun 25, 2020] [DUMPED V1.00] [CUSA15742, CUSA18138] [505BP] [OFW700] [FULLPS5] &#x1F536;
 Rock Band 4 Converge Dark Horse (DLC) [Jun 25, 2020] [FULLPS5] [EST751] &#9989;
@@ -9167,7 +9297,7 @@ Goosebumps Dead of Night (Adventure) [Jun 29, 2020] [DUMPED V1.02] [CUSA18430, C
 Call of Duty Warzone Starter Pack (DLC) [Jun 30, 2020] [FULLPS5] [EST751] &#9989;
 Catch Carp & Coarse (Sports) [Jun 30, 2020] <The Catch Carp & Coarse, The Catch Carp and Coarse, The Catch Carp and Course> [FULLPS5] [EST751] &#9989;
 Dungeon of Naheulbeuk The Amulet of Chaos (Role-Playing) [Jun 30, 2020] [CUSA20048] [FULLPS5] [EST751] &#9989;
-Hunting Simulator 2 (Sports) [Jun 30, 2020] [DUMPED V1.04] [CUSA18646] [505BP] [FULLPS5]  [EST751] &#x1F536;
+Hunting Simulator 2 (Sports) [Jun 30, 2020] [DUMPED V1.06] [CUSA18646] [505BP] [FULLPS5]  [EST751] &#x1F536;
 Pic-a-Pix Pieces 2 (Puzzle) [Jun 30, 2020] [FULLPS5] [EST751] &#9989;
 Predator Hunting Grounds Samurai Predator DLC Pack (DLC) [Jun 30, 2020] [FULLPS5] [EST751] &#9989;
 Minecraft Dungeons Jungle Awakens (DLC) [Jul 1, 2020] [FULLPS5] [EST751] &#9989;
@@ -9190,7 +9320,7 @@ Terra Lander (Action) [Jul 7, 2020] [FULLPS5] [EST751] &#9989;
 While True Learn (Puzzle) [Jul 7, 2020] <While True Learn> [FULLPS5] [EST751] &#9989;
 Let's Create! Pottery VR (Simulation) [Jul 8, 2020] [VR] [CUSA18234] <Lets Create Pottery VR> [FULLPS5] [EST751] &#9989;
 Pushy and Pully in Blockland (Puzzle) [Jul 8, 2020] [CUSA20031] [FULLPS5] [EST751] &#9989;
-CrossCode (Action, Role-Playing) [Jul 9, 2020] [DUMPED V1.04] [CUSA15461, CUSA15452] [505BP] [FULLPS5]  [EST751] &#x1F536;
+CrossCode (Action, Role-Playing) [Jul 9, 2020] [DUMPED V1.10] [CUSA15461, CUSA15452] [505BP] [FULLPS5]  [EST751] &#x1F536;
 Dance Collider (Music, Rhythm) [Jul 9, 2020] [VR] [CUSA23107] [FULLPS5] [EST751] &#9989;
 Ebaseball Powerful Pro Yakyuu 2020 (Sports) [Jul 9, 2020] [FULLPS5] [EST751] &#9989;
 Metal Max Xeno Reborn (Role-Playing) [Jul 9, 2020] [FULLPS5] [EST751] &#9989;
@@ -9278,9 +9408,9 @@ Super Toy Cars 2 (Racing) [Jul 23, 2020] [CUSA17634] [FULLPS5] [EST751] &#9989;
 Max and the Book of Chaos (Action) [Jul 24, 2020] [FULLPS5] [EST751] &#9989;
 Need a Packet? (Simulation) [Jul 24, 2020] [CUSA16244, CUSA16325] [FULLPS5] [EST751] &#9989;
 Olympic Games Tokyo 2020 The Official Video Game (Sports) [Jul 24, 2020] [DUMPED V1.07] [CUSA15393, CUSA11208] [505BP] [OFW651] [FULLPS5] &#x1F536;
-Tannenberg (First-Person, Shooter) [Jul 24, 2020] [FULLPS5] [EST751] &#9989;
+Tannenberg (First-Person, Shooter) [Jul 24, 2020] [DUMPED V1.07] [CUSA16516] [FULLPS5] [EST751] &#9989;
 Ty The Tasmanian Tiger HD (3D, Platform) [Jul 25, 2020] [DUMPED V1.00] [CUSA18068] [FULLPS5] [EST751] &#9989;
-Hunting Simulator 2 Beretta Weapon Pack (DLC) [Jul 27, 2020] [FULLPS5] [EST751] &#9989;
+Hunting Simulator 2 Beretta Weapon Pack (DLC) [Jul 27, 2020] [DUMPED V1.06] [FULLPS5] [EST751] &#9989;
 Space Channel 5 VR Kinda Funky News Flash Space 39 Miku Pack (DLC) [Jul 27, 2020] [DUMPED V1.02] [VR] [FULLPS5] [EST751] &#9989;
 World War Z Signature Weapons Pack (DLC) [Jul 27, 2020] [FULLPS5] [EST751] &#9989;
 112th Seed (Action, Puzzle) [Jul 28, 2020] [CUSA20485, CUSA20473, CUSA20474, CUSA20482] [FULLPS5] [EST751] &#9989;
@@ -9406,6 +9536,9 @@ Fast & Furious Crossroads (Action, Racing) [Aug 7, 2020] [DUMPED V1.00] [CUSA114
 Railway Empire Complete Collection (Simulation) [Aug 7, 2020] [FULLPS5] [EST751] &#9989;
 Tropico 6 Lobbyistico (DLC) [Aug 7, 2020] [FULLPS5] [EST751] &#9989;
 Water Balloon Mania (Puzzle) [Aug 7, 2020] [FULLPS5] [EST751] &#9989;
+War Thunder British Starter Pack (DLC) [Aug 10, 2020] [FULLPS5] [EST751] &#9989;
+War Thunder Italian Starter Pack (DLC) [Aug 10, 2020] [FULLPS5] [EST751] &#9989;
+War Thunder Japanese Starter Pack (DLC) [Aug 10, 2020] [FULLPS5] [EST751] &#9989;
 Brunch Club (Action) [Aug 11, 2020] [FULLPS5] [EST751] &#9989;
 Dice is cast (Adventure) [Aug 11, 2020] <The Dice is Cast> [FULLPS5] [EST751] &#9989;
 Hyper Scape (Battle Royal) [Aug 11, 2020] [CUSA16763, CUSA16755, CUSA16753] <Service ends April 28th> [FULLPS5] [EST751] &#9989;
@@ -9494,7 +9627,7 @@ Alphaset by POWGI (Puzzle) [Aug 25, 2020] [CUSA20351, CUSA20389, CUSA20364] [FUL
 Cinders (Visual Novel) [Aug 25, 2020] [FULLPS5] [EST751] &#9989;
 Descenders (Sports) [Aug 25, 2020] [DUMPED V1.10] [CUSA10465, CUSA10441] [505BP] [OFW750] [FULLPS5] &#x1F536;
 Giraffe and Annika (Adventure) [Aug 25, 2020] [DUMPED V1.02] [CUSA19309] [505BP] [FULLPS5]  [EST751] &#x1F536;
-Insurgency Sandstorm (First-Person, Shooter) [Aug 25, 2020] [DUMPED V1.07] [CUSA07668] [BP ISSUE SAVING DOESN'T WORK!] [XLINKKAI] [FULLPS5]  [EST751] &#x1F536;
+Insurgency Sandstorm (First-Person, Shooter) [Aug 25, 2020] [DUMPED V1.07] [CUSA07668] [BP ISSUE WONT SAVE!] [XLINKKAI] [FULLPS5]  [EST751] &#x1F536;
 Kandagawa Jet Girls Homura & Hikage Character Set (DLC) [Aug 25, 2020] [DUMPED V1.06] [FULLPS5] [EST751] &#9989;
 Kandagawa Jet Girls Ikaruga & Yomi Character Set (DLC) [Aug 25, 2020] [DUMPED V1.06] [FULLPS5] [EST751] &#9989;
 Kandagawa Jet Girls Murasaki & Mirai Character Set (DLC) [Aug 25, 2020] [DUMPED V1.06] [FULLPS5] [EST751] &#9989;
@@ -9633,6 +9766,7 @@ Train Sim World 2 Long Island Rail Road New york Hicksville (DLC) [Sep 10, 2020]
 Train Sim World 2 Ruhr-Sieg Nord Hagen Finnentrop (DLC) [Sep 10, 2020] [DUMPED V1.10] [OFW755] [FULLPS5] &#9989;
 Train Sim World 2 Tees Valley Line Darlington Saltburn-By-The-Sea (DLC) [Sep 10, 2020] [DUMPED V1.10] [OFW755] [FULLPS5] &#9989;
 Vampire The Masquerade Shadows of New York (Visual Novel) [Sep 10, 2020] [FULLPS5] [EST755] &#9989;
+War Thunder Somua SM (DLC) [Sep 10, 2020] [FULLPS5] [EST755] &#9989;
 Wintermoor Tactics Club (Turn-Based, Strategy) [Sep 10, 2020] [FULLPS5] [EST755] &#9989;
 Yoga Master Magic Atmosphere Pack 1 (DLC) [Sep 10, 2020] [FULLPS5] [EST755] &#9989;
 Inertial Drift (Racing) [Sep 11, 2020] [DUMPED V1.03] [CUSA17431] [505BP] [FULLPS5]  [EST755] &#x1F536;
@@ -9707,6 +9841,7 @@ Serious Sam 4 Planet Badass (First-Person, Shooter) [Sep 24, 2020] [FULLPS5] [ES
 Sid Meier's Civilization VI Byzantium & Gaul Pack (DLC) [Sep 24, 2020] <CIV 6, CIV6, Civilization 6> [FULLPS5] [EST755] &#9989;
 Unrailed (Strategy) [Sep 24, 2020] [FULLPS5] [EST755] &#9989;
 Do Not Feed The Monkeys Collectors Edition (Simulation) [Sep 25, 2020] <Do Not Feed The Monkeys Collector's Edition> [FULLPS5] [EST755] &#9989;
+Lethal League Blaze Late Stage Illmatic Outfit for Dice (DLC) [Sep 25, 2020] [FULLLPS5] [EST755] &#9989;
 Mafia Definitive Edition (Action, Adventure, Open-World) [Sep 25, 2020] [DUMPED V1.03] [CUSA18097, CUSA18100] [505BP] [OFW755] [FULLPS5] &#x1F536;
 Maximum Football 2020 (Sports) [Sep 25, 2020] [FULLPS5] [EST755] &#9989;
 Pixel Gladiator (Real-Time, Strategy) [Sep 25, 2020] [FULLPS5] [EST755] &#9989;
@@ -9728,8 +9863,10 @@ Sushi Break Nurse Avatar (DLC) [Sep 26, 2020] [FULLPS5] [EST755] &#9989;
 Genshin Impact (Action, Role-Playing) [Sep 28, 2020] [CUSA23335] [CROSSPLAY] [FULLPS5] [EST755] &#9989;
 Hunter Call of the Wild 2021 Edition (Simulation, Sports) [Sep 28, 2020] <TheHunter Call of the Wild 2021 Edition> [FULLPS5] [EST755] &#9989;
 Kuukiyomi Consider It! (Party) [Sep 28, 2020] [CUSA20629] [FULLPS5] [EST755] &#9989;
-Panzer Dragoon (Action, Shooter) [Sep 28, 2020] [DUMPED V1.01] [CUSA19484] [LTDRUN] [FULLPS5] [EST755] &#9989;
+Panzer Dragoon (Action, Shooter) [Sep 28, 2020] [DUMPED V1.01] [CUSA19484] [505BP] [LTDRUN] [FULLPS5]  [EST755] &#x1F536;
+Path of Exile PlayStation Plus Bundle Six (DLC) [Sep 28, 2020] [FULLPS5] [EST755] &#9989;
 Undead Darlings No Cure for Love (Role-Playing) [Sep 28, 2020] [FULLPS5] [EST755] &#9989;
+War Thunder French Starter Pack (DLC) [Sep 28, 2020] [FULLPS5] [EST755] &#9989;
 Birthday of Midnight (2D, Action, Platform) [Sep 29, 2020] [FULLPS5] [EST755] &#9989;
 Fishing Planet Tropic Hunter Pack (DLC) [Sep 29, 2020] [FULLPS5] [EST755] &#9989;
 Mad Rat Dead Trial (Demo/Trial) [Sep 29, 2020] [CUSA20426] [FULLPS5] [EST755] &#9989;
@@ -9844,7 +9981,7 @@ NHL 21 (Sports) [Oct 13, 2020] [DUMPED V1.10] [CUSA18182] [505BP] [FULLPS5]  [ES
 NHL 21 Great Eight Edition (Compliation, Sports) [Oct 13, 2020] [CUSA18182] [FULLPS5] [EST755] &#9989;
 Red Wings Aces of the Sky (Simulation) [Oct 13, 2020] [CUSA20079] [FULLPS5] [EST755] &#9989;
 Robotics;Notes Double Pack (Visual Novel, Compilation) [Oct 13, 2020] <Robotics Notes Double Pack > [FULLPS5] [EST755] &#9989;
-Torchlight III (Action, Role-Playing) [Oct 13, 2020] <Torchlight 3> [FULLPS5] [EST755] &#9989;
+Torchlight III (Action, Role-Playing) [Oct 13, 2020] [DUMPED V1.15] [CUSA10227] [505BP] <Torchlight 3> [FULLPS5]  [EST755] &#x1F536;
 Brotherhood United (2D, Action, Platform) [Oct 14, 2020] [CUSA20042] [FULLPS5] [EST800] &#9989;
 Cook, Serve, Delicious! 3 (Simulation) [Oct 14, 2020] [FULLPS5] [EST800] &#9989;
 Monster Prom (Role-Playing) [Oct 14, 2020] [CUSA17097] [FULLPS5] [EST800] &#9989;
@@ -9865,7 +10002,7 @@ Raji An Ancient Epic (Adventure) [Oct 15, 2020] [DUMPED V1.02] [CUSA20344] [505B
 Rock Band 4 Wheatus Teenage Dirtbag 2020 (DLC) [Oct 15, 2020] [FULLPS5] [EST800] &#9989;
 This is the Zodiac Speaking (First-Person, Adventure) [Oct 15, 2020] [FULLPS5] [EST800] &#9989;
 Train Sim World 2 Isle Of Wight Ryde Shanklin (DLC) [Oct 15, 2020] [DUMPED V1.10] [OFW755] [FULLPS5] &#9989;
-Undernauts Labyrinth of Yomi (Role-Playing) [Oct 15, 2020] [CUSA28130, CUSA23355] <Yomi wo Saku Hana> [FULLPS5] [EST800] &#9989;
+Undernauts Labyrinth of Yomi (Role-Playing) [Oct 15, 2020] [DUMPED V1.00] [CUSA28130, CUSA23355] <Yomi wo Saku Hana> [FULLPS5] [EST800] &#9989;
 9 Monkeys of Shaolin (Beat 'em up) [Oct 16, 2020] [DUMPED V1.01] [CUSA16644, CUSA16803] [505BP] [OFW751] [FULLPS5] &#x1F536;
 9 Monkeys of Shaolin Demo (Demo/Trial) [Oct 16, 2020] [CUSA24466, CUSA24467][FULLPS5] [EST800] &#9989;
 Aquanox Deep Descent (Simulation) [Oct 16, 2020] [FULLPS5] [EST800] &#9989;
@@ -10018,6 +10155,7 @@ DIRT 5 (Racing) [Nov 3, 2020] [DUPED V6.02] [CUSA16195, CUSA16194] [505BP] [OFW7
 Faeria (Board Game, Card Game) [Nov 3, 2020] [FULLPS5] [EST800] &#9989;
 Fishing Sim World Bass Pro Shops Edition (Simulation) [Nov 3, 2020] [DUMPED V1.01] [CUSA23960] [505BP] [OFW755] [FULLPS5] &#x1F536;
 Fishing Sim World Pro Tour Bass Pro Shops Equipment Pack (DLC) [Nov 3, 2020] [FULLPS5] [EST800] &#9989;
+Lethal League Blaze Nuclear Nourishment Outfit for Toxic (DLC) [Nov 3, 2020] [FULLLPS5] [EST800] &#9989;
 Lunch A Palooza (Party) [Nov 3, 2020] [FULLPS5] [EST800] &#9989;
 Ord. (Adventure) [Nov 3, 2020] [FULLPS5] [EST800] &#9989;
 Project CARS 3 Legends Pack (DLC) [Nov 3, 2020] [FULLPS5] [EST800] &#9989;
@@ -10106,7 +10244,7 @@ Devil May Cry 5 Special Edition (Action, Adventure) [Nov 12, 2020] [FULLPS5] [ES
 Epic Astro Story (Simulation) [Nov 12, 2020] [FULLPS5] [EST800] &#9989;
 Esports Life Tycoon (Simulation) [Nov 12, 2020] [FULLPS5] [EST800] &#9989;
 Family Feud (Quiz, Party) [Nov 12, 2020] [DUMPED V1.00] [CUSA17876] [505BP] [OFW755] [FULLPS5] &#x1F536;
-Farming Simulator 19 Alpine Farming Expansion (DLC) [Nov 12, 2020] [FULLPS5] [EST800] &#9989;
+Farming Simulator 19 Alpine Expansion (DLC) [Nov 12, 2020] [FULLPS5] [EST800] &#9989;
 Farming Simulator 19 Premium Edition (Simulation) [Nov 12, 2020] [DUMPED V1.16] [CUSA11598] [FULLPS5] [EST800] &#9989;
 Handball 21 (Sports) [Nov 12, 2020] [DUMPED V1.04] [CUSA15460] [FULLPS5] [EST800] &#9989;
 Just Dance 2021 (Demo/Trial) [Nov 12, 2020] [FULLPS5] [EST800] &#9989;
@@ -10191,7 +10329,6 @@ My Name is Mayo 2 (Action) [Nov 17, 2020] [DUMPED V1.00] [CUSA25283] [FULLPS5] [
 Perplexing Orb 2 (Action, Platform) [Nov 17, 2020] <The Perplexing Orb 2> [FULLPS5] [EST800] &#9989;
 Professor Rubik's Brain Fitness (Puzzle, Quiz) [Nov 17, 2020] <Professor Rubiks Brain Fitness> [FULLPS5] [EST800] &#9989;
 Serious Sam Collection (First-Person, Shooter, Compilation) [Nov 17, 2020] [FULLPS5] [EST800] &#9989;
-War Thunder (Action, Simulation) [Nov 17, 2020] [CUSA00224, CUSA00182] [CROSSPLAY] [FULLPS5] [EST800] &#9989;
 Warhammer Chaosbane Complete DLC Collection (DLC) [Nov 17, 2020] [NOTPS5] [EST800] &#9989;
 Warhammer Chaosbane Skulls Slayer Pack (DLC) [Nov 17, 2020] [NOTPS5] [EST800] &#9989;
 Warhammer Chaosbane Slayer Edition (Action, Role-Playing) [Nov 17, 2020] [CUSA12718, CUSA16503, CUSA13072] [FULLPS5] [EST800] &#9989;
@@ -10252,6 +10389,8 @@ Christmas Break Head to Head (Puzzle) [Nov 27, 2020] [CUSA25906] [FULLPS5] [EST8
 Donut Break Head to Head (Puzzle) [Nov 27, 2020] [CUSA25571] [FULLPS5] [EST8001] &#9989;
 Landflix Odyssey (2D, Action, Platform) [Nov 27, 2020] [FULLPS5] [EST8001] &#9989;
 Rusty Spout Rescue Adventure (Action) [Nov 27, 2020] [FULLPS5] [EST8001] &#9989;
+War Thunder AV-8A Harrier (DLC) [Nov 27, 2020] [FULLPS5] [EST8001] &#9989;
+War Thunder T-72AV TURMS-T (DLC) [Nov 28, 2020] [FULLPS5] [EST8001] &#9989;
 Donut Break Head to Head 50K Avatar (DLC) [Nov 30, 2020] [FULLPS5] [EST8001] &#9989;
 Donut Break Head to Head Avatar Full Game Bundle (Compilation, Puzzle) [Nov 30, 2020] [CUSA25571] [FULLPS5] [EST8001] &#9989;
 Donut Break Head to Head Bear Avatar (DLC) [Nov 30, 2020] [FULLPS5] [EST8001] &#9989;
@@ -10346,7 +10485,7 @@ Dying Light Anniversary Edition (Compilation, Survival, Horror) [Dec 8, 2020] [F
 Farming Simulator 19 Precision Farming (Simulation) [Dec 8, 2020] [FULLPS5] [EST8001] &#9989;
 Kuukiyomi Consider It More! New Era (Party) [Dec 8, 2020] [CUSA25704] [FULLPS5] [EST8001] &#9989;
 Monster Sanctury (Action, Adventure) [Dec 8, 2020] [FULLPS5] [EST8001] &#9989;
-Predator Hunting Grounds Dante “Beast Mode” Jefferson Pack (DLC) [Dec 8, 2020] [FULLPS5] [EST8001] &#9989;
+Predator Hunting Grounds Dante Beast Mode Jefferson Pack (DLC) [Dec 8, 2020] [FULLPS5] [EST8001] &#9989;
 Puyo Puyo Tetris 2 (Puzzle) [Dec 8, 2020] [DUMPED V1.00] [CUSA18902, CUSA24365, CUSA24366]  [FULLPS5] [EST8001] &#9989;
 Swords of Gargantua (Action) [Dec 8, 2020] [VR] [FULLPS5] [EST8001] &#9989;
 Zombie Army 4 Berserker Boris Outfit (DLC) [Dec 8, 2020] <ZA 4, ZA4, ZA:4> [FULLPS5] [EST8001] &#9989;
@@ -10365,6 +10504,7 @@ Unto The End (Action) [Dec 9, 2020] [CUSA26209] [FULLPS5] [EST803] &#9989;
 Brigandine The Legend of Runersia (Demo/Trial) [Dec 10, 2020] [CUSA25773] [NOTPS5] [EST803] &#9989;
 Brigandine The Legend of Runersia (Turn-Based, Strategy) [Dec 10, 2020] [DUMPED V1.15] [CUSA25024] [FULLPS5] [EST803] &#9989;
 Cyberpunk 2077 (Action, Role-Playing) [Dec 10, 2020] [DUMPED V1.31] [CUSA16579, CUSA18278, CUSA16596] [505BP] [OFW751] [FULLPS5] &#x1F536;
+Cyberpunk 2077 Mercenary of the Dark Future Theme (DLC) [Dec 10, 2020] [FULLPS5] [EST803] &#9989;
 Darts (Sports) [Dec 10, 2020] [FULLPS5] [EST803] &#9989;
 Planet Coaster Adventure Pack (Simulation) [Dec 10, 2020] [FULLPS5] [EST803] &#9989;
 Planet Coaster Spooky & Adventure Bundle (DLC) [Dec 10, 2020] [FULLPS5] [EST803] &#9989;
@@ -10430,6 +10570,7 @@ Arcade Archives Gradius III (Shooter) [Dec 23, 2020] [CUSA24860] <Arcade Archive
 Colt Canyon (Action, Shooter) [Dec 23, 2020] [FULLPS5] [EST803] &#9989;
 Dogfight 2020 (Action) [Dec 23, 2020] [FULLPS5] [EST803] &#9989;
 Drunken Fist (Action, Beat 'em up) [Dec 23, 2020] [FULLPS5] [EST803] &#9989;
+Minna No Tsume Shogi Beginner Edition (Board Game) [Dec 23, 2020] [JCUSA24499] <Everyone's Tsume Shogi Beginner Edition> [NOTPS5] [EST803] &#9989;
 Rigid Force Redux (Action, Shooter) [Dec 23, 2020] [FULLPS5] [EST803] &#9989;
 Act it Out XL! (Party) [Dec 24, 2020] [CUSA13685] [FULLPS5] [EST803] &#9989;
 Christmas Break Avatar Full Game Bundle (Compilation, Puzzle) [Dec 24, 2020] [CUSA26173] [FULLPS5] [EST803] &#9989;
@@ -10498,6 +10639,7 @@ Waves Out! (Action) [Jan 20, 2021] [FULLPS5] [EST803] &#9989;
 Arcade Archives Block Hole (Puzzle, Action) [Jan 21, 2021] [CUSA26267] [FULLPS5] [EST803] &#9989;
 Bullet Roulette (Action) [Jan 21, 2021] [CUSA25457] [VR] [FULLPS5] [EST803] &#9989;
 Fuser Demo (Demo/Trial) [Jan 21, 2021] [CUSA26510] [FULLPS5] [EST803] &#9989;
+JOYN (Entertainment) [Jan 21, 2021] [CUSA20658] [FULLPS5] [EST803] &#9989;
 Rock Band 4 New Found Glory Pack 01 (DLC) [Jan 21, 2021] [FULLPS5] [EST803] &#9989;
 Space Break (Puzzle) [Jan 21, 2021] [CUSA26449] [FULLPS5] [EST803] &#9989;
 Memoranda (Point-and-Click) [Jan 22, 2021] [CUSA25730] [FULLPS5] [EST803] &#9989;
@@ -10529,6 +10671,7 @@ Elemental Knights R 5480EKOpt 600Bonus (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &
 Elemental Knights R 790EKOpt 60Bonus (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Elemental Knights R 8600EKOpt 1100Bonus (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Elemental Knights R DarkArthur PremiumPack (Role-Playing) [Jan 26, 2021] [CUSA25640, CUSA25641] [FULLPS5] [EST803] &#9989;
+Farming Simulator 19 Grimme Equipment Pack (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Granblue Fantasy Versus Additional Character Set 9 Anre (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Pistol Whip 2089 (DLC) [Jan 26, 2021] [VR] [FULLPS5] [EST803] &#9989;
 Sims 4 Paranormal Stuff Pack (DLC) [Jan 26, 2021] [DUMPED V1.24] [FULLPS5] <The Sims> [EST803] &#9989;
@@ -10540,7 +10683,6 @@ Space Break Laser Lord Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Space Break Master Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Space Break Planet Igolla Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Space Break Planet Phovoth Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
-Space Break Planet Vanerth Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Space Break Planet Vanerth Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Space Break Saucer T2 Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
 Space Break Saucer T2 Meteor Avatar (DLC) [Jan 26, 2021] [FULLPS5] [EST803] &#9989;
@@ -10585,7 +10727,7 @@ Balan Wonderworld Demo (Demo/Trial) [Feb 2, 2021] [CUSA25863] [NOTPS5] [EST803] 
 Fall Guys Ultimate Knockout Sugar Plum Pack (DLC) [Feb 2, 2021] [FULLPS5] [EST803] &#9989;
 My Universe My Baby (Simulation) [Feb 2, 2021] [CUSA19324] [FULLPS5] [EST803] &#9989;
 Predator Hunting Grounds Valkyrie Predator DLC Pack (DLC) [Feb 2, 2021] [FULLPS5] [EST803] &#9989;
-Habroxia 2 (Action, Shooter) [Feb 3, 2021] [FULLPS5] [EST803] &#9989;
+Habroxia 2 (Action, Shooter) [Feb 3, 2021] [CUSA25059] [FULLPS5] [EST803] &#9989;
 Lizard Lady Vs the Cats (Action) [Feb 3, 2021] [FULLPS5] [EST803] &#9989;
 Shatterline (Demo/Trial) [Feb 3, 2021] [CUSA25246] [OFW803] [FULLPS5] &#9989;
 Spice and Wolf VR 2 (Visual Novel) [Feb 3, 2021] [VR] [FULLPS5] [EST803] &#9989;
@@ -10605,6 +10747,9 @@ Nioh Collection (Compilation, Action, Role-Playing) [Feb 5, 2021] [FULLPS5] [EST
 Nioh Remastered The Complete Edition (Compilation, Action, Role-Playing) [Feb 5, 2021] [FULLPS5] [EST803] &#9989;
 Roombo First Blood (Third-Person, Adventure) [Feb 5, 2021] [FULLPS5] [EST803] &#9989;
 Valentine Candy Break (Puzzle) [Feb 5, 2021] [CUSA26981] [FULLPS5] [EST803] &#9989;
+Lethal League Blaze Doombox & Sonata Visualizer Bundle (DLC) [Feb 6, 2021] [FULLLPS5] [EST803] &#9989;
+Lethal League Blaze Heavyduty R Evolution Outfit for Raptor (DLC) [Feb 6, 2021] [FULLLPS5] [EST803] &#9989;
+Lethal League Blaze Stereo Overdrive Arachnida Outfit for Sonata (DLC) [Feb 6, 2021] [FULLLPS5] [EST803] &#9989;
 King of Fighters 2002 Unlimited Match (Fighting) [Feb 8, 2021] [DUMPED V1.03] [CUSA04155] <KOF 2002, KOF2K2, The King of Fighters 2002> [FULLPS5] [EST803] &#9989;
 My Universe Pet Clinic Cats and Dogs (Simulation) [Feb 9, 2021] [CUSA23838] [FULLPS5] [EST803] &#9989;
 Ride 4 Bonus Pack 04 (DLC) [Feb 9, 2021] [DUMPED V1.33] <Ride 4 bonus pack 4> [FULLPS5] [EST803] &#9989;
@@ -10613,6 +10758,7 @@ UltraGoodness 2 (Action, Shooter) [Feb 9, 2021] [FULLPS5] [EST803] &#9989;
 We Were Here (First-Person, Adventure) [Feb 9, 2021] [CUSA24932] [FULLPS5] [EST803] &#9989;
 Wilmot's Warehouse (Puzzle) [Feb 9, 2021] [FULLPS5] [EST803] &#9989;
 #SinucaAttack (Puzzle) [Feb 10, 2021] [CUSA25068] [FULLPS5] [EST803] &#9989;
+Arcade Archives Thunder Dragon 2 (Shooter) [Feb 10, 2021] [CUSA31252] [FULLPS5] [EST803] &#9989;
 Aground (Action, Adventure) [Feb 11, 2021] [CUSA25790, CUSA25789] [FULLPS5] [EST803] &#9989;
 Another Dawn (First-Person, Shooter) [Feb 11, 2021] [CUSA26202] [FULLPS5] [EST803] &#9989;
 Dungeon Village (Role-Playing) [Feb 11, 2021] [FULLPS5] [EST803] &#9989;
@@ -10699,6 +10845,7 @@ We Were Here Too (First-Person, Adventure) [Feb 23, 2021] [CUSA24937] [FULLPS5] 
 Active Neurons 3 Wonders of the World (Puzzle) [Feb 24, 2021] [FULLPS5] [EST803] &#9989;
 Bite the Bullet (2D, Platform) [Feb 24, 2021] [FULLPS5] [EST803] &#9989;
 Martha is Dead (Horror) [Feb 24, 2021] [FULLPS5] [EST803] &#9989;
+Minna No Tsume Shogi Intermediate Edition 1 (Board Game) [Feb 24, 2021] [JCUSA24500] <Everyone's Tsume Shogi Intermediate Edition 1> [NOTPS5] [EST803] &#9989;
 Retrace Memories of Death (Visual Novel) [Feb 24, 2021] [FULLPS5] [EST803] &#9989;
 Werewolf the Apocalypse Heart of the Forrest (DLC) [Feb 24, 2021] [FULLPS5] [EST803] &#9989;
 Aery A Journey Beyond Time (Third-Person, Adventure) [Feb 25, 2021] [CUSA26717] [FULLPS5] [EST803] &#9989;
@@ -10716,6 +10863,7 @@ Jinki Resurrection Original Soundtrack (DLC) [Feb 25, 2021] [JCUSA25179] [FULLPS
 Kemco RPG Select Vol. 6 (Role-Playing, Compilation) [Feb 25, 2021] [PLJM16790] <Kemco RPG Select Vol 6, Kemco RPG Select Volume 6> [FULLPS5] [EST803] &#9989;
 Kin'iro Loveriche Golden Time (Visual Novel) [Feb 25, 2021] [JCUSA25158] [FULLPS5] [EST803] &#9989;
 Kin'iro Loveriche Golden Time Limited Edition (Visual Novel) [Feb 25, 2021] [JCUSA25158] [FULLPS5] [EST803] &#9989;
+Lethal League Blaze Insectoid Loneriding Mechranger Outfit For Switch (DLC) [Feb 25, 2021] [FULLLPS5] [EST803] &#9989;
 Lost Cube (2D, Platform) [Feb 25, 2021] <The Lost Cube> [FULLPS5] [EST803] &#9989;
 Mighty Fight Federation (Action) [Feb 25, 2021] [FULLPS5] [EST803] &#9989;
 Moving Out Movers in Paradise (DLC) [Feb 25, 2021] [FULLPS5] [EST803] &#9989;
@@ -10741,7 +10889,7 @@ Linn Path Of Orchards (Adventure) [Feb 26, 2021] [FULLPS5] [EST803] &#9989;
 Retromania Wrestling (2D, Sports) [Feb 26, 2021] [LTDRUN] [FULLPS5] [EST803] &#9989;
 Shatterline (Shooter) [Feb 26, 2021] [CUSA25248] [OFW803] <Caliber> [FULLPS5] &#9989;
 Transformers Battlegrounds Shattered Spacebridge (DLC) [Feb 26, 2021] [DUMPED V1.01] [FULLPS5] [EST803] &#9989;
-Habroxia 2 Limited Edition (Action, Shooter) [Feb 28, 2021] [FULLPS5] [EST803] &#9989;
+Habroxia 2 Limited Edition (Action, Shooter) [Feb 28, 2021] [CUSA25059] [FULLPS5] [EST803] &#9989;
 Habroxia 2 Original Soundtrack (DLC) [Feb 28, 2021] [FULLPS5] [EST803] &#9989;
 Dark Pictures Anthology Little Hope Curators Cut (DLC) [Mar 1, 2021] [DUMPED V1.01] [OFW755] <The Dark Pictures Little Hope> [FULLPS5] &#9989;
 Tom Clancy's Rainbow Six Parasite Closed Beta (Demo/Trial) [Mar 1, 2021] <RAINBOW 6 QUARANTINE> [EST803] &#9989;
@@ -10774,7 +10922,7 @@ Mail Mole (Action, Platform) [Mar 4, 2021] [FULLPS5] [EST803] &#9989;
 March to a Million (Simulation) [Mar 4, 2021] [FULLPS5] [EST803] &#9989;
 Mortal Shell Enhanced Edition (Role-Playing) [Mar 4, 2021] [CUSA20133] [FULLPS5] [EST803] &#9989;
 Pocket Harvest (Simulation) [Mar 4, 2021] [FULLPS5] [EST803] &#9989;
-Pro Deer Hunting 2 (Sports) [Mar 4, 2021] [FULLPS5] [EST803] &#9989;
+Pro Deer Hunting 2 (Sports) [Mar 4, 2021] [CUSA20164] [FULLPS5] [EST803] &#9989;
 Surge Concerto DX Agent Pack Code Gold Limited Edition (Role-Playing) [Mar 4, 2021] <Ciel nosurge DX, Ar nosurge DX> [FULLPS5] [EST803] &#9989;
 Surge Concerto DX Agent Pack Code Gold with 7DGate Connection Bundle Limited Edition (Role-Playing) [Mar 4, 2021] <Ciel nosurge DX, Ar nosurge DX> [FULLPS5] [EST803] &#9989;
 Surge Concerto DX Agent Pack Code Silver Limited Edition (Role-Playing) [Mar 4, 2021] <Ciel nosurge DX, Ar nosurge DX> [FULLPS5] [EST803] &#9989;
@@ -10801,6 +10949,7 @@ Captain Tsubasa Rise of New Champions Ryoma Hino (DLC) [Mar 11, 2021] [FULLPS5] 
 Captain Tsubasa Rise of New Champions Shingo Aoi (DLC) [Mar 11, 2021] [FULLPS5] [EST803] &#9989;
 Chess Knights Viking Lands (Board Game) [Mar 11, 2021] [CUSA25875] [FULLPS5] [EST803] &#9989;
 Doodle Devil 3volution (Puzzle) [Mar 11, 2021] [FULLPS5] [EST803] &#9989;
+Lethal League Blaze Ivory Puppet Killer Outfit for Latch (DLC) [Mar 11, 2021] [FULLLPS5] [EST803] &#9989;
 Monster Energy Supercross The Official Videogame 4 (Racing) [Mar 11, 2021] [FULLPS5] [EST803] &#9989;
 Monster Energy Supercross The Official Videogame 4 Credits Multiplier (DLC) [Mar 11, 2021] [FULLPS5] [EST803] &#9989;
 Monster Energy Supercross The Official Videogame 4 Customization Pack Neon (DLC) [Mar 11, 2021] [FULLPS5] [EST803] &#9989;
@@ -10832,6 +10981,7 @@ Samurai Shodown DLC Character Cham Cham (DLC) [Mar 15, 2021] [DUMPED V2.42] <Sam
 Samurai Shodown Season Pass 3 (DLC) [Mar 15, 2021] [FULLPS5] [EST803] &#9989;
 Beach Buggy Racing 2 Island Adventure (Racing) [Mar 16, 2021] [FULLPS5] [EST803] &#9989;
 Elder Scrolls Online Flames of Ambition (DLC) [Mar 16, 2021] [CUSA00086] [Requires PSN] <ESO, The Elder Scrolls Online> [FULLPS5] [EST803] &#9989;
+Farming Simulator 19 Rottne DLC (DLC) [Mar 16, 2021] [FULLPS5] [EST803] &#9989;
 Mundaun (First-Person, Adventure) [Mar 16, 2021] [FULLPS5] [EST803] &#9989;
 Neverwinter Sharandar Episode 1 (DLC) [Mar 16, 2021] [FULLPS5] [EST803] &#9989;
 R.B.I. Baseball 21 (Sports) [Mar 16, 2021] [CUSA26971] <RBI Baseball 21> [FULLPS5] [EST803] &#9989;
@@ -10879,7 +11029,7 @@ Shotgun Farmers (First-Person, Shooter) [Mar 19, 2021] [CUSA26768] [FULLPS5] [ES
 Sumatra Fate of Yandi (Adventure) [Mar 19, 2021] [FULLPS5] [EST803] &#9989;
 Yet Another Zombie Defense HD (Real-Time, Strategy) [Mar 19, 2021] [DUMPED V1.00] [CUSA18368] [FULLPS5] [EST803] &#9989;
 World Puzzle Mojipittan Encore Demo (Demo/Trial) [Mar 21, 2021] <Kotoba no Puzzle Mojipittan Encore> [FULLPS5] [EST803] &#9989;
-Fall Guys Ultimate Knockout Future Fashion Pack (DLC) [Mar 22 2021] [FULLPS5] [EST803] &#9989;
+Fall Guys Ultimate Knockout Future Fashion Pack (DLC) [Mar 22, 2021] [FULLPS5] [EST803] &#9989;
 Fall Guys Ultimate Knockout Popstar Pack (DLC) [Mar 22, 2021] [FULLPS5] [EST803] &#9989;
 Hunt Showdown Deluxe Edition (Compilation, First-Person, Shooter) [Mar 22, 2021] [FULLPS5] [EST803] &#9989;
 Hunt Showdown Gold Edition (Compilation, First-Person, Shooter) [Mar 22, 2021] [FULLPS5] [EST803] &#9989;
@@ -10894,6 +11044,7 @@ Tekken 7 Rematch Edition (Compilation, Fighting) [Mar 23, 2021] [CUSA06014] [FUL
 Bless Unleashed Forged Warlord Pack (DLC) [Mar 24, 2021] [FULLPS5] [EST803] &#9989;
 Hellbreachers (2D, Adventure, Platform) [Mar 24, 2021] [FULLPS5] [EST803] &#9989;
 Love Live! School Idol Festival After School Activity Wai Wai! Home Meeting!! (Action, Rhythm) [Mar 24, 2021] [DUMPED V1.02] [JCUSA24620] <Love Live! School Idol Festival ~after school activity Wai-Wai!~Home Meeting!!> [FULLPS5] [EST803] &#9989;
+Minna No Tsume Shogi Intermediate Edition 2 (Board Game) [Mar 24, 2021] [JCUSA24501] <Everyone's Tsume Shogi Intermediate Edition 2> [NOTPS5] [EST803] &#9989;
 Paradise Lost (First-Person, Adventure) [Mar 24, 2021] [CUSA24438, CUSA26163] [FULLPS5] [EST803] &#9989;
 Ai Kiss 2 (Visual Novel) [Mar 25, 2021] [JCUSA25535] [FULLPS5] [EST803] &#9989;
 Ai Kiss 2 Limited Edition (Visual Novel) [Mar 25, 2021] [FULLPS5] [EST803] &#9989;
@@ -10905,9 +11056,10 @@ Battle Axe Badge Edition (Action, Adventure) [Mar 25, 2021] [FULLPS5] [EST803] &
 Black Legend (Role-Playing) [Mar 25, 2021] [CUSA18678, CUSA18553] [FULLPS5] [EST803] &#9989;
 El Hijo A Wild West Tale (Action, Adventure) [Mar 25, 2021] [EST803] &#9989;
 Evil Inside (First-Person, Adventure) [Mar 25, 2021] [FULLPS5] [EST803] &#9989;
-Hunting Simulator 2 A Rangers Life (DLC) [Mar 25, 2021] [FULLPS5] [EST803] &#9989;
+Hunting Simulator 2 A Rangers Life (DLC) [Mar 25, 2021] [DUMPED V1.06] [FULLPS5] [EST803] &#9989;
 Hunting Simulator 2 Elite Edition (Compilation, Sports) [Mar 25, 2021] [FULLPS5] [EST803] &#9989;
 Immortals Fenyx Rising Myths of the Eastern Realm (DLC) [Mar 25, 2021] [FULLPS5] [EST803] &#9989;
+Lethal League Blaze Neopolis Devastator Outfit for Grid (DLC) [Mar 25, 2021] [FULLLPS5] [EST803] &#9989;
 Mahluk Dark Demon (Action) [Mar 25, 2021] [FULLPS5] [EST803] &#9989;
 Memories Off Historia Limited Edition (Visual Novel) [Mar 25, 2021] [FULLPS5] [EST803] &#9989;
 Memories Off Historia Vol 1 (Visual Novel) [Mar 25, 2021] [JCUSA25076, JCUSA18322] [FULLPS5] [EST803] &#9989;
@@ -10963,7 +11115,6 @@ Eve Ghost Enemies (Visual Novel) [Apr 1, 2021] [FULLPS5] [EST803] &#9989;
 Marvel's Avengers PlayStation Plus Reward Hawkeye (DLC) [Apr 1, 2021] [FULLPS5] [EST803] &#9989;
 Monster Energy Supercross The Official Videogame 4 2 Stroke Bikes Pack 250 (DLC) [Apr 1, 2021] [FULLPS5] [EST803] &#9989;
 Outriders (Shooter) [Apr 1, 2021] [FULLPS5] [EST803] &#9989;
-Outriders (Shooter) [Apr 1, 2021] [FULLPS5] [EST803] &#9989;
 Outriders Day One Edition (Shooter) [Apr 1, 2021] [FULLPS5] [EST803] &#9989;
 R-Type Final 2 Demo (Demo/Trial) [Apr 1, 2021] [CUSA26339] [FULLPS5] [EST803] &#9989;
 Road Fury (2D, Action, Shooter) [Apr 1, 2021] [FULLPS5] [EST803] &#9989;
@@ -10985,6 +11136,7 @@ Easter Candy Break Golden Bunny Avatar (DLC) [Apr 4, 2021] [FULLPS5] [EST803] &#
 Easter Candy Break Master Avatar (DLC) [Apr 4, 2021] [FULLPS5] [EST803] &#9989;
 Easter Candy Break Panda Avatar (DLC) [Apr 4, 2021] [FULLPS5] [EST803] &#9989;
 Football Breakthrough Gaming Arcade (Sports) [Apr 4, 2021] [CUSA28651] [FULLPS5] [EST803] &#9989;
+War Thunder Swedish Starter Pack (DLC) [Apr 4, 2021] [FULLPS5] [EST803] &#9989;
 Breathedge (Action) [Apr 6, 2021] [FULLPS5] [EST803] &#9989;
 Lost Words Beyond the Page (Adventure) [Apr 6, 2021] [FULLPS5] [EST803] &#9989;
 Luckslinger (3D, Action, Platform) [Apr 6, 2021] [FULLPS5] [EST803] &#9989;
@@ -10997,6 +11149,7 @@ Warface Breakout Riot Cosmetic Pack (DLC) [Apr 7, 2021] [FULLPS5] [EST803] &#998
 Cozy Grove (Adventure) [Apr 8, 2021] [FULLPS5] [EST803] &#9989;
 Darkside Detective (Adventure) [Apr 8, 2021] <The Darkside Detective> [CUSA26042] [FULLPS5] [EST803] &#9989;
 Delicious! Pretty Girls Mahjong Solitare (Board Game) [Apr 8, 2021] [CUSA26525] [FULLPS5] [EST803] &#9989;
+Lethal League Blaze Firefighter Max Pressure Outfit for Jet (DLC) [Apr 8, 2021] [FULLLPS5] [EST803] &#9989;
 Train Sim World 2 Clinchfield Railroad (DLC) [Apr 8, 2021] [DUMPED V1.10] [OFW755] [FULLPS5] &#9989;
 Truck Driver German Paint Jobs (DLC) [Apr 8, 2021] [FULLPS5] [EST803] &#9989;
 What the Dub?! (Party) [Apr 8, 2021] [FULLPS5] [EST803] &#9989;
@@ -11062,6 +11215,7 @@ Atelier Mysterious Trilogy Deluxe Pack (Compilation, Role-Playing) [Apr 22, 2021
 Atelier Mysterious Trilogy Deluxe Pack Special Collection Box Limited Edition (Compilation, Role-Playing) [Apr 22, 2021] [FULLPS5] [EST850] &#9989;
 Atelier Sophie The Alchemist of the Mysterious Book DX (Role-Playing) [Apr 22, 2021] <Atelier Sophie Fushigi na Hon no Renkinjutsushi> [FULLPS5] [EST850] &#9989;
 Immortals Fenyx Rising The Lost Gods (DLC) [Apr 22, 2021] [FULLPS5] [EST850] &#9989;
+Lethal League Blaze Galileo the Funky Saxman Outfit for Candyman (DLC) [Apr 22, 2021] [FULLLPS5] [EST850] &#9989;
 MotoGP 21 (Racing) [Apr 22, 2021] [CUSA25613] [FULLPS5] [EST850] &#9989;
 MotoGP 21 VIP Multiplier Pack (DLC) [Apr 22, 2021] [FULLPS5] [EST850] &#9989;
 NieR Replicant ver.1.22474487139... (Role-Playing, Action) [Apr 22, 2021] [DUMPED V1.03] [CUSA18742] [505BP] [FULLPS5]  [EST850] &#x1F536;
@@ -11076,6 +11230,7 @@ World Splitter (2D, Action, Platform) [Apr 22, 2021] [FULLPS5] [EST850] &#9989;
 Dead Dust (Action, Shooter) [Apr 23, 2021] [FULLPS5] [EST850] &#9989;
 Dungeon and Gravestone (Role-Playing) [Apr 23, 2021] [FULLPS5] [EST850] &#9989;
 Moon Raider (2D, Action, Platform) [Apr 23, 2021] [FULLPS5] [EST850] &#9989;
+Path of Exile PlayStation Plus Bundle Seven (DLC) [Apr 23, 2021] [FULLPS5] [EST850] &#9989;
 Pocoyo Party (Action) [Apr 23, 2021] [FULLPS5] [EST850] &#9989;
 Skylia Prophecy (Open-World, Adventure) [Apr 23, 2021] <The Skylia Prophecy> [FULLPS5] [EST850] &#9989;
 Trails and Traces The Tomb of Thomas Tew (Point-and-Click, Adventure) [Apr 23, 2021] [FULLPS5] [EST850] &#9989;
@@ -11130,6 +11285,7 @@ Shred! 2 ft Sam Pilgrim (Sports) [May 4, 2021] [FULLPS5] [EST850] &#9989;
 Dull Grey (Visual Novel) [May 5, 2021] [FULLPS5] [EST850] &#9989;
 Nongunz Doppelganger Edition (2D, Action, Platform) [May 5, 2021] [FULLPS5] [EST850] &#9989;
 Arcade Archives The Astyanax (2D, Action, Platform) [May 6, 2021] [CUSA27186] [FULLPS5] [EST850] &#9989;
+Lethal League Blaze Shining-Gold Super Winner Outfit for Nitro (DLC) [May 6, 2021] [FULLLPS5] [EST850] &#9989;
 Mega Zombie Beta (Action, Shooter) [May 6, 2021] [CUSA29455, CUSA27478] [FULLPS5] [EST850] &#9989;
 Monster Energy Supercross The Official Videogame 4 Allegiance Pack (DLC) [May 6, 2021] [FULLPS5] [EST850] &#9989;
 Monster Energy Supercross The Official Videogame 4 Customization Pack Neon Light (DLC) [May 6, 2021] [FULLPS5] [EST850] &#9989;
@@ -11195,10 +11351,10 @@ Tank Mechanic Simulator (Simulation) [May 19, 2021] [CUSA27693] [FULLPS5] [EST85
 Jay and Silent Bob Mall Brawl (2D, Action) [May 20, 2021] [DUMPED V1.01] [CUSA27205] [FULLPS5] [EST850] &#9989;
 Just Die Already (Action, Sandbox) [May 20, 2021] [CUSA25705] [FULLPS5] [EST850] &#9989;
 Rise of the Slime (Roguelike) [May 20, 2021] [CUSA28304] [FULLPS5] [EST850] &#9989;
-Rise of the Slime (Turn-Based, Adventure) [May 20, 2021] [FULLPS5] [EST850] &#9989;
+Rise of the Slime (Turn-Based, Adventure) [May 20, 2021] [CUSA27523] [FULLPS5] [EST850] &#9989;
 Sakura Succubus 2 (Visual Novel) [May 20, 2021] [FULLPS5] [EST850] &#9989;
 Sparkle 2 EVO (Puzzle) [May 20, 2021] [CUSA25280, CUSA25279] [FULLPS5] [EST850] &#9989;
-TakeOver (Beat 'em up) [May 20, 2021] [DUMPED V1.00] [CUSA17193, CUSA17160] <The TakeOver> [LTDRUN] [FULLPS5] [EST850] &#9989;
+TakeOver (Beat 'em up) [May 20, 2021] [DUMPED V1.00] [CUSA17193, CUSA17160] [505BP] <The TakeOver> [LTDRUN] [FULLPS5]  [EST850] &#x1F536;
 Violett (Adventure) [May 20, 2021] [CUSA27461] [FULLPS5] [EST850] &#9989;
 Cosmic Top Secret (Adventure) [May 21, 2021] [FULLPS5] [EST850] &#9989;
 Elemental War (Real-Time, Strategy) [May 21, 2021] [FULLPS5] [EST850] &#9989;
@@ -11355,6 +11511,8 @@ Wind Wind (Adventure) [Jun 14, 2021] [CUSA25721] [VR] [FULLPS5] [EST850] &#9989;
 Dead by Daylight Resident Evil (DLC) [Jun 15, 2021] [FULLPS5] [EST850] &#9989;
 Maze Pedestal of Trials (First-Person, Adventure) [Jun 15, 2021] [CUSA26263] [FULLPS5] [EST850] &#9989;
 Shadows of Adam (2D, Role-Playing) [Jun 15, 2021] [FULLPS5] [EST850] &#9989;
+War Thunder F-5C Bundle (DLC) [Jun 15, 2021] [FULLPS5] [EST850] &#9989;
+War Thunder Su-7BMK Pack (DLC) [Jun 15, 2021] [FULLPS5] [EST850] &#9989;
 Anna's Quest (Adventure) [Jun 17, 2021] [CUSA07826] <Annas Quest> [FULLPS5]  [EST850] &#9989;
 Arcade Archives Seicross (Shooter) [Jun 17, 2021] [CUSA28078] [FULLPS5] [EST850] &#9989;
 Bassmaster Fishing 2022 Closed Alpha (Demo/Trial) [Jun 17, 2021] [CUSA28753] [FULLPS5] [EST850] &#9989;
@@ -11419,7 +11577,7 @@ Doki Doki Literature Club Plus! (Visual Novel) [Jun 30, 2021] [FULLPS5] [EST852]
 Fishing North Atlantic (Sports) [Jun 30, 2021] [FULLPS5] [EST852] &#9989;
 GreedFall Gold Edition (Compilation, Action, Role-Playing) [Jun 30, 2021] [FULLPS5] [EST852] &#9989;
 GreedFall The De Vespe Conspiracy (DLC) [Jun 30, 2021] [FULLPS5] [EST852] &#9989;
-Merrily Perrily (Adventure) [Jun 30 2021] [FULLPS5] [EST852] &#9989;
+Merrily Perrily (Adventure) [Jun 30, 2021] [FULLPS5] [EST852] &#9989;
 Superhero-X Demo (Demo/Trial) [Jun 30, 2021] [CUSA28521] [FULLPS5] [EST852] &#9989;
 Ty The Tasmanian Tiger 2 Bush Rescue HD (3D, Platform) [Jun 30, 2021] [CUSA26866] [FULLPS5] [EST852] &#9989;
 Arcade Archives Raiden (Shooter) [Jul 1, 2021] [CUSA27519] [FULLPS5] [EST852] &#9989;
@@ -11436,14 +11594,14 @@ Super BurgerTime (Action) [Jul 5, 2021] [CUSA29085] [FULLPS5] [EST852] &#9989;
 Indigo 7 Quest for Love (Puzzle) [Jul 6, 2021] [CUSA28209] [FULLPS5] [EST852] &#9989;
 Memory Lane 2 (Puzzle) [Jul 6, 2021] [CUSA27865] [FULLPS5] [EST852] &#9989;
 Silver Case 2425 (Visual Novel) [Jul 6, 2021] <The Silver Case 2425> [FULLPS5] [EST852] &#9989;
-Sisters Party of the Year (Adventure) [Jul 6, 2021] [DUMPED V1.15] [CUSA26800] <The Sisters Party of the Year> [FULLPS5] [EST852] &#9989;
+Sisters Party of the Year (Adventure) [Jul 6, 2021] [DUMPED V1.15] [CUSA26800, CUSA26801] [505BP] <The Sisters Party of the Year> [FULLPS5]  [EST852] &#x1F536;
 Watch Dogs Legion Bloodline (DLC) [Jul 6, 2021] [FULLPS5] [EST852] &#9989;
 Procession to Calvary (Point-and-Click, Adventure) [Jul 7, 2021] [CUSA24409] <The Procession to Calvary> [FULLPS5] [EST852] &#9989;
 Arcade Archives Sea Fighter Poseidon (Action) [Jul 8, 2021] [CUSA28233] [FULLPS5] [EST852] &#9989;
 Crash Drive 3 (Racing) [Jul 8, 2021] [CROSSPLAY] [CUSA18694] [FULLPS5] [EST852] &#9989;
-Farmers Vs Zombies (Strategy) [Jul 8 2021] [FULLPS5] [EST852] &#9989;
+Farmers Vs Zombies (Strategy) [Jul 8, 2021] [FULLPS5] [EST852] &#9989;
 Fuurraiki 4 (Adventure) [Jul 8, 2021] [PLJM16809] [FULLPS5] [EST852] &#9989;
-Heart of the Woods (Visual Novel) [Jul 8 2021] [FULLPS5] [EST852] &#9989;
+Heart of the Woods (Visual Novel) [Jul 8, 2021] [FULLPS5] [EST852] &#9989;
 Manga Works (Strategy) [Jul 8, 2021] [CUSA23676] <The Manga Works> [FULLPS5] [EST852] &#9989;
 Mega Mall Story (Strategy) [Jul 8, 2021] [CUSA23776] [FULLPS5] [EST852] &#9989;
 Metro Simulator (Simulation) [Jul 8, 2021] [DUMPED V1.00] [CUSA27909] [FULLPS5] [EST852] &#9989;
@@ -11477,7 +11635,7 @@ Traditional Tactics Ne+ (Turn-Based, Strategy) [Jul 15, 2021] [CUSA28312] [FULLP
 Utawarerumono Zan 2 Demo (Demo/Trial) [Jul 15, 2021] [FULLPS5] [EST852] &#9989;
 We Were Here Together Demo (Demo/Trial) [Jul 15, 2021] [CUSA28545] [FULLPS5] [EST852] &#9989;
 Akinofa (Action) [Jul 16, 2021] [CUSA28926] [FULLPS5] [EST852] &#9989;
-F1 2021 (Racing) [Jul 16, 2021] [DUMPED V1.14] [CUSA26238] [505BP] [BP ISSUE VIDEO/MENU LAG] [FULLPS5]  [EST852] &#x1F536;
+F1 2021 (Racing) [Jul 16, 2021] [DUMPED V1.14] [CUSA26238] [505BP] [BP ISSUE VIDEO/MENU LAG!] [FULLPS5]  [EST852] &#x1F536;
 F1 2021 18000 PitCoin Currency (DLC) [Jul 16, 2021] [FULLPS5] [EST852] &#9989;
 F1 2021 5000 PitCoin Currency (DLC) [Jul 16, 2021] [FULLPS5] [EST852] &#9989;
 F1 2021 Breaking Point Content Pack (DLC) [Jul 16, 2021] [FULLPS5] [EST852] &#9989;
@@ -11538,7 +11696,7 @@ Sims 4 Cottage Living (DLC) [Jul 22, 2021] <The Sims 4> [FULLPS5] [EST852] &#998
 Urban Trial Tricky Deluxe Edition (Sports) [Jul 22, 2021] [CUSA23269] [FULLPS5] [EST852] &#9989;
 Utawarerumono Zan 2 (Turn-Based, Strategy) [Jul 22, 2021] [FULLPS5] [EST852] &#9989;
 Windjammers 2 Open Beta (Demo/Trial) [Jul 22, 2021] [CUSA26596] [FULLPS5] [EST852] &#9989;
-Blue Fire (Platform) [Jul 23, 2021] [CUSA19549] [FULLPS5] [EST852] &#9989;
+Blue Fire (Platform) [Jul 23, 2021] [DUMPED V1.05] [CUSA19549] [FULLPS5] [EST852] &#9989;
 Pizza Break Avatar Full Game Bundle (Compilation, Puzzle) [Jul 23, 2021] [FULLPS5] [EST852] &#9989;
 Pizza Break Gang Avatar (DLC) [Jul 23, 2021] [FULLPS5] [EST852] &#9989;
 Pizza Break Garlic Bomb Avatar (DLC) [Jul 23, 2021] [FULLPS5] [EST852] &#9989;
@@ -11595,7 +11753,7 @@ Sushi Break Mega Game Bundle (Compilation, Puzzle) [Jul 30, 2021] [FULLPS5] [EST
 Hogwarts Legacy (Role-Playing) [Jul 31, 2021] [FULLPS5] [EST852] &#9989;
 Unicorn Break (Puzzle) [Jul 31, 2021] [CUSA29464, CUSA29465] [FULLPS5] [EST852] &#9989;
 Bowling Story Three Jane Version Project Summer Ice (Sports) [Aug 1, 2021] [CUSA29302] [FULLPS5] [EST852] &#9989;
-Fall Guys Ultimate Knockout Fruit Pirate Costume Pack (DLC) [Aug 2 2021] [FULLPS5] [EST852] &#9989;
+Fall Guys Ultimate Knockout Fruit Pirate Costume Pack (DLC) [Aug 2, 2021] [FULLPS5] [EST852] &#9989;
 Hunter's Arena Legends (Action, Survival) [Aug 3, 2021] [CUSA28153] [Requires PSN] <Hunters Arena Legends> [FULLPS5] [EST852] &#9989;
 Zombie Army 4 Return to Hell (DLC) [Aug 3, 2021] <ZA 4, ZA4, ZA:4> [FULLPS5] [EST852] &#9989;
 Castle of Pixel Skulls (Platform) [Aug 4, 2021] [CUSA27474] [FULLPS5] [EST852] &#9989;
@@ -11606,7 +11764,7 @@ Orbals (Adventure, Puzzle) [Aug 4, 2021] [CUSA26952] [FULLPS5] [EST852] &#9989;
 Tokyo Run (Action) [Aug 4, 2021] [CUSA29649] [FULLPS5] [EST852] &#9989;
 Arcade Archives Bio-Ship Paladin (Shooter) [Aug 5, 2021] [CUSA28063] [FULLPS5] [EST852] &#9989;
 Back 4 Blood Open Beta (Demo/Trial) [Aug 5, 2021] [CUSA27541, CUSA27543] [FULLPS5] [EST852] &#9989;
-CrossCode A New Home (DLC) [Aug 5, 2021] [FULLPS5] [EST852] &#9989;
+CrossCode A New Home (DLC) [Aug 5, 2021] [DUMPED V1.10] [FULLPS5] [EST852] &#9989;
 Dodgeball Academia (Role-Playing) [Aug 5, 2021] [CUSA27737] [FULLPS5] [EST852] &#9989;
 Falconeer Warrior Edition (Simulation) [Aug 5, 2021] [DUMPED V1.00] [CUSA26401] [VR AIM] <The Falconeer Warrior Edition> [FULLPS5] [EST852] &#9989;
 Idolmaster Starlit Season Practice Session Demo (Demo/Trial) [Aug 5, 2021] <Idolm@ster Starlit Season> [FULLPS5] [EST852] &#9989;
@@ -11657,6 +11815,7 @@ Axiom Verge 2 (Metroidvania) [Aug 11, 2021] [CUSA29347] [LTDRUN] [FULLPS5] [EST8
 Dwarrows (Adventure, Puzzle) [Aug 11, 2021] [CUSA26804] [FULLPS5] [EST852] &#9989;
 FIFA 22 Open Beta (Demo/Trial) [Aug 11, 2021] [FULLPS5] [EST852] &#9989;
 Space Intervention (Shooter) [Aug 11, 2021] [CUSA29708] [FULLPS5] [EST852] &#9989;
+War Thunder A-4E IAF Pack (DLC) [Aug 11, 2021] [FULLPS5] [EST852] &#9989;
 Assassin's Creed Valhalla The Seige of Paris (DLC) [Aug 12, 2021] [DUMPED V5.10] <AC, ACV, Assassins Creed Valhalla> [FULLPS5] [EST852] &#9989;
 Faraday Protocal (First-Person, Adventure) [Aug 12, 2021] [CUSA28588] [FULLPS5] [EST852] &#9989;
 Foreclosed (Adventure) [Aug 12, 2021] [FULLPS5] [EST852] &#9989;
@@ -11665,7 +11824,7 @@ SkateBird (Sports) [Aug 12, 2021] [FULLPS5] [EST852] &#9989;
 Tetragon (Puzzle, Adventure) [Aug 12, 2021] [CUSA26699] [FULLPS5] [EST852] &#9989;
 Barry The Bunny (2D, Platform) [Aug 13, 2021] [FULLPS5] [EST852] &#9989;
 Diablo II Resurrected Early Access Beta (Demo/Trial) [Aug 13, 2021] <Cow Game> [FULLPS5] [EST852] &#9989;
-Hades (Roguelike) [Aug 13, 2021] [DUMPED V1.03] [CUSA27973, CUSA27387] [505BP] [BP ISSUE AT MENU, CLOSE GAME, RE-OPEN TO SAVE!] [FULLPS5]  [EST852] &#x1F536;
+Hades (Roguelike) [Aug 13, 2021] [DUMPED V1.03] [CUSA27973, CUSA27387] [505BP] [BP ISSUE EXIT GAME & REOPEN TO SAVE!] [FULLPS5]  [EST852] &#x1F536;
 Pizza Break Head to Head 3 Piece Avatar (DLC) [Aug 13, 2021] [FULLPS5] [EST852] &#9989;
 Pizza Break Head to Head Buffet Avatar (DLC) [Aug 13, 2021] [FULLPS5] [EST852] &#9989;
 Pizza Break Head to Head Combo Avatar (DLC) [Aug 13, 2021] [FULLPS5] [EST852] &#9989;
@@ -11695,9 +11854,13 @@ World Soccer Strikers '91 (Sports) [Aug 18, 2021] [CUSA27337] [FULLPS5] [EST852]
 Arcade Archives Vandyke (Beat 'em up) [Aug 19, 2021] [CUSA29185] [FULLPS5] [EST852] &#9989;
 Home Run High (Strategy) [Aug 19, 2021] [CUSA24052] [FULLPS5] [EST852] &#9989;
 Order of Battle World War II (Turn-Based, Strategy) [Aug 19, 2021] <Order of Battle World War 2> [CUSA14736] [FULLPS5] [EST852] &#9989;
-Quake (First-Person, Shooter) [Aug 19, 2021] [DUMPED V1.05] [CUSA24594] <Quake Remastered> [FULLPS5] [EST852] &#9989;
+Quake (First-Person, Shooter) [Aug 19, 2021] [DUMPED V1.05] [CUSA24594] <Quake Remastered, Project Silver> [FULLPS5] [EST852] &#9989;
 Quake Addons Pack 1 (DLC) [Aug 19, 2021] [DUMPED V1.05] <Quake Remastered> [FULLPS5] [EST852] &#9989;
-RiMS Racing (Racing) [Aug 19, 2021] [DUMPED V1.05] [CUSA23641] [FULLPS5] [EST852] &#9989;
+Quake Dimension of the Machine (DLC) [Aug 19, 2021] [DUMPED V1.05] <Quake Remastered> [FULLPS5] [EST852] &#9989;
+Quake Dimension of the Past (DLC) [Aug 19, 2021] [DUMPED V1.05] <Quake Remastered> [FULLPS5] [EST852] &#9989;
+Quake Dissolution of Eternity (DLC) [Aug 19, 2021] [DUMPED V1.05] <Quake Remastered> [FULLPS5] [EST852] &#9989;
+Quake The Scourge of Armagon (DLC) [Aug 19, 2021] [DUMPED V1.05] <Quake Remastered> [FULLPS5] [EST852] &#9989;
+RiMS Racing (Racing) [Aug 19, 2021] [DUMPED V1.05] [CUSA23641] [505BP] [FULLPS5]  [EST852] &#x1F536;
 RiMS Racing European Manufacturers Deluxe (Racing) [Aug 19, 2021] [CUSA23641] [FULLPS5] [EST852] &#9989;
 RiMS Racing Japanese Manufacturers Deluxe (Racing) [Aug 19, 2021] [CUSA23640] [FULLPS5] [EST852] &#9989;
 RiMS Racing Ultimate Edition (Racing) [Aug 19, 2021] [CUSA23641] [FULLPS5] [EST852] &#9989;
@@ -11772,6 +11935,7 @@ Traffic Jams (Party, Simulation) [Aug 26, 2021] [CUSA23376] [FULLPS5] [EST852] &
 Tropico 6 Festival (DLC) [Aug 26, 2021] [FULLPS5] [EST852] &#9989;
 Tsukihime A Piece of Blue Glass Moon (Visual Novel) [Aug 26, 2021] [FULLPS5] [EST852] &#9989;
 Witch Hunter (2D, Action, Platform) [Aug 26, 2021] [CUSA28318] [FULLPS5] [EST852] &#9989;
+Apsulov End of Gods (Horror) [Aug 27, 2021] [DUMPED V1.00] [CUSA18472] [FULLPS5] [EST852] &#9989;
 Baldo The Guardian Owls (Action) [Aug 27, 2021] [DUMPED V1.12] [CUSA27312] [505BP] [FULLPS5]  [EST852] &#x1F536;
 Call of Duty Vanguard Alpha Test (Demo/Trial) [Aug 27, 2021] <COD V, CODV, Champion Hill> [FULLPS5] [EST852] &#9989;
 Guilty Gear Strive Additional DLC Character 2 Jack-O (DLC) [Aug 27, 2021] [FULLPS5] [EST852] &#9989;
@@ -11791,7 +11955,7 @@ In Nightmare (Action, Adventure) [Aug 31, 2021] [FULLPS5] [EST852] &#9989;
 Lamentum (Horror) [Aug 31, 2021] [CUSA29182] [FULLPS5] [EST852] &#9989;
 Maneater Truth Quest (DLC) [Aug 31, 2021] [FULLPS5]  [EST852] &#9989;
 Monster Harvest (Strategy) [Aug 31, 2021] [CUSA23739] [FULLPS5] [EST852] &#9989;
-Neko Atsume VR (Simulation) [Aug 31, 2021] [CUSA29057] [VR] [FULLPS5] [EST852] &#9989;
+Neko Atsume VR (Simulation) [Aug 31, 2021] [JCUSA11033, CUSA29057] [VR] [FULLPS5] [EST852] &#9989;
 Niche a Genetics Survival Game (Survival) [Aug 31, 2021] [CUSA26912] [FULLPS5] [EST852] &#9989;
 Onirike (Third-Person, Adventure) [Aug 31, 2021] [FULLPS5] [EST852] &#9989;
 Poly Party (Party) [Aug 31, 2021] [CUSA28351] [FULLPS5] [EST852] &#9989;
@@ -11817,7 +11981,7 @@ Armed Emeth (Action) [Sep 2, 2021] [CUSA28898] [FULLPS5] [EST852] &#9989;
 Armed Emeth Experience X3 (DLC) [Sep 2, 2021] [FULLPS5] [EST852] &#9989;
 Armed Emeth No Encounters (DLC) [Sep 2, 2021] [FULLPS5] [EST852] &#9989;
 Demon Gaze Extra Undernauts Labyrinth of Yomi Collaboration Characters #1 (DLC) [Sep 2, 2021] [FULLPS5] [EST852] &#9989;
-Kitaria Fables (Action, Role-Playing) [Sep 2, 2021] [CUSA28100] [FULLPS5] [EST852] &#9989;
+Kitaria Fables (Action, Role-Playing) [Sep 2, 2021] [DUMPED V1.05] [CUSA28100] [FULLPS5] [EST852] &#9989;
 Kitaria Fables Beach Hat (DLC) [Sep 2, 2021] [FULLPS5] [EST852] &#9989;
 Kitaria Fables Bengal Skin (DLC) [Sep 2, 2021] [FULLPS5] [EST852] &#9989;
 Kitaria Fables Black Cat Skin (DLC) [Sep 2, 2021] [FULLPS5] [EST852] &#9989;
@@ -11908,7 +12072,7 @@ Horror Break Head to Head Teddy Bear Avatar (DLC) [Sep 10, 2021] [FULLPS5] [EST8
 Life is Strange True Colors (Platform, Puzzle) [Sep 10, 2021] [DUMPED V1.05] [CUSA17935] [505BP] [FULLPS5]  [EST852] &#x1F536;
 Life is Strange True Colors Alex Outfit Pack (DLC) [Sep 10, 2021] [DUMPED V1.05] [FULLPS5] [EST852] &#9989;
 Lost in Random (Action, Adventure) [Sep 10, 2021] [CUSA19609] [FULLPS5] [EST852] &#9989;
-NBA 2K22 (Sports) [Sep 10, 2021] [DUMPED V1.08] [CUSA28235] [OFW850] [505BP] [BP ISSUE CAREER DOESN'T WORK!] [FULLPS5] &#x1F536;
+NBA 2K22 (Sports) [Sep 10, 2021] [DUMPED V1.08] [CUSA28235] [OFW850] [505BP] [BP ISSUE CAREER BROKEN!] [FULLPS5] &#x1F536;
 NBA 2K22 15,000 VC (DLC) [Sep 10, 2021] [FULLPS5] [EST852] &#9989;
 NBA 2K22 200,000 VC (DLC) [Sep 10, 2021] [FULLPS5] [EST852] &#9989;
 NBA 2K22 35,000 VC (DLC) [Sep 10, 2021] [FULLPS5] [EST852] &#9989;
@@ -11975,7 +12139,7 @@ Baseball Bout Otteriffic Arcade (Action) [Sep 11, 2021] [CUSA29906] [FULLPS5] [E
 Alwa's Legacy (Platform) [Sep 12, 2021] [DUMPED V1.01] [CUSA27022] [505BP] <Alwas Legacy> [FULLPS5]  [EST852] &#x1F536;
 ZJ the Ball Level 5 (2D, Action, Platform) [Sep 12, 2021] [CUSA30164] [FULLPS5] [EST852] &#9989;
 Catlateral Damage Remeowstered (Action, Platform) [Sep 15, 2021] [CUSA28306] [FULLPS5] [EST900] &#9989;
-Dustwind The Last Resort (Strategy) [Sep 15, 2021] [CUSA28023] [FULLPS5] [EST900] &#9989;
+Dustwind The Last Resort (Strategy) [Sep 15, 2021] [DUMPED V1.03] [CUSA28023] [FULLPS5] [EST900] &#9989;
 Explorer of the Night (2D, Action, Platform) [Sep 15, 2021] [CUSA25284] <The Explorer of the Night> [FULLPS5] [EST900] &#9989;
 Flynn Son of Crimson (2D, Action, Platform) [Sep 15, 2021] [CUSA27766] [FULLPS5] [EST900] &#9989;
 Mereks Market (Strategy) [Sep 15, 2021] [CUSA29769] [FULLPS5] [EST900] &#9989;
@@ -11992,11 +12156,13 @@ Virtual Surfing (Simulation, Sports) [Sep 16, 2021] [CUSA26916] [FULLPS5] [EST90
 Aragami 2 (Action, Stealth) [Sep 17, 2021] [DUMPED V1.03] [CUSA23443, CUSA23444, CUSA25932, CUSA28118] [FULLPS5] [EST900] &#9989;
 Kitaria Fables Pirate Hat (DLC) [Sep 17, 2021] [FULLPS5] [EST900] &#9989;
 Murder Diaries (Action, Adventure) [Sep 17, 2021] [CUSA29205, CUSA29206] [FULLPS5] [EST900] &#9989;
-Nexomon (Role-Playing) [Sep 17, 2021] [CUSA28903] [FULLPS5] [EST900] &#9989;
+Nexomon (Role-Playing) [Sep 17, 2021] [DUMPED V1.00] [CUSA28903] [FULLPS5] [EST900] &#9989;
 Oktoberfest Break Head to Head (Puzzle) [Sep 17, 2021] [CUSA30214] [FULLPS5] [EST900] &#9989;
 Severed Steel (First-Person, Shooter) [Sep 17, 2021] [FULLPS5] [EST900] &#9989;
 Tails of Iron (Role-Playing) [Sep 17, 2021] [CUSA26396] [FULLPS5] [EST900] &#9989;
 Tales of Iron (Role-Playing) [Sep 17, 2021] [FULLPS5] [EST900] &#9989;
+War Thunder A-5C Bundle (DLC) [Sep 17, 2021] [FULLPS5] [EST900] &#9989;
+War Thunder Draken Bundle (DLC) [Sep 17, 2021] [FULLPS5] [EST900] &#9989;
 Song in the Smoke (Action, Survival) [Sep 18, 2021] [VR] [FULLPS5] [EST900] &#9989;
 Tales of Arise Vacation Hootle Doll (DLC) [Sep 18, 2021] [DUMPED V1.04] [FULLPS5] [EST900] &#9989;
 World War Z Aftermath (Third-Person, Shooter) [Sep 19, 2021] [DUMPED V1.31] [CUSA13930, CUSA14046] [FULLPS5] [EST900] &#9989;
@@ -12004,13 +12170,16 @@ Kena Bridge of Spirits (Adventure) [Sep 21, 2021] [DUMPED V1.13] [CUSA25000, CUS
 Kena Bridge of Spirits Digital Deluxe Kena Staff (DLC) [Sep 21, 2021] [DUMPED V1.13] [FULLPS5] [EST900] &#9989;
 Kena Bridge of Spirits Digital Deluxe Upgrade (DLC) [Sep 21, 2021] [DUMPED V1.13] [FULLPS5] [EST900] &#9989;
 Kena Bridge of Spirits Digital Soundtrack (DLC) [Sep 21, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All (Racing) [Sep 21, 2021] [CUSA25395] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Digital Deluxe Edition (Racing) [Sep 21, 2021] [CUSA25395] [FULLPS5] [EST900] &#9989;
 World War Z Aftermath Explorer Weapons Pack (DLC) [Sep 21, 2021] [FULLPS5] [EST900] &#9989;
 World War Z Aftermath Zeke Hunter Weapons Pack (DLC) [Sep 21, 2021] [FULLPS5] [EST900] &#9989;
 Demon Gaze Extra NG Collaboration Characters (DLC) [Sep 23, 2021] [FULLPS5] [EST900] &#9989;
 Diablo II Resurrected (Action, Role-Playing) [Sep 23, 2021] [DUMPED V1.11] [CUSA18937, CUSA28305] [FULLPS5] [EST900] &#9989;
+Embr (Action) [Sep 23, 2021] [DUMPED V1.06] [CUSA25171] [FULLPS5] [EST900] &#9989;
 MechWarrior 5 Mercenaries (Action) [Sep 23, 2021] [DUMPED V1.00] [CUSA28239] [FULLPS5] [EST900] &#9989;
 Sakura Swim Club (Visual Novel) [Sep 23, 2021] [FULLPS5] [EST900] &#9989;
-Addams Family Mansion Mayhem (Action, Platform) [Sep 24, 2021] [DUMPED V1.00] [CUSA25061] <The Addams Family Mansion Mayhem> [FULLPS5] [EST900] &#9989;
+Addams Family Mansion Mayhem (Action, Platform) [Sep 24, 2021] [DUMPED V1.00] [CUSA25061] [505BP] <The Addams Family Mansion Mayhem> [FULLPS5]  [EST900] &#x1F536;
 Death Park (Action, Horror) [Sep 24, 2021] [CUSA29026] [FULLPS5] [EST900] &#9989;
 Deltarune Chapter 2 Demo (DLC) [Sep 24, 2021] [DUMPED V1.03] [FULLPS5] [EST900] &#9989;
 Donut Break 2 (Puzzle) [Sep 24, 2021] [CUSA30170] [FULLPS5] [EST900] &#9989;
@@ -12021,7 +12190,7 @@ Zippy The Circle Level 1 and Level 2 (Adventure) [Sep 26, 2021] [CUSA30546] [FUL
 AWAY The Survival Series (Action, Adventure, Survival) [Sep 28, 2021] [DUMPED V1.07] [CUSA29572] [505BP] [FULLPS5]  [EST900] &#x1F536;
 Agatha Christie Hercule Poirot The First Cases (Adventure, Puzzle) [Sep 28, 2021] [DUMPED V1.02] [CUSA23753] [FULLPS5] [EST900] &#9989;
 ConnectTank (Action, Puzzle) [Sep 28, 2021] [FULLPS5] [EST900] &#9989;
-G Darius HD (Shooter) [Sep 28, 2021] [DUMPED V1.02] [CUSA20683] [FULLPS5] [EST900] &#9989;
+G Darius HD (Shooter) [Sep 28, 2021] [DUMPED V1.02] [CUSA20683] [505BP] [FULLPS5]  [EST900] &#x1F536;
 KeyWe (Puzzle) [Sep 28, 2021] [DUMPED V1.00] [CUSA25258] [FULLPS5] [EST900] &#9989;
 KeyWe Early Bird Pack (DLC) [Sep 28, 2021] [FULLPS5] [EST900] &#9989;
 Lemnis Gate (First-Person, Shooter) [Sep 28, 2021] [FULLPS5] [EST900] &#9989;
@@ -12038,6 +12207,8 @@ Asdivine Saga Experience & SP X2 (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
 Asdivine Saga Experience X3 (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
 Asdivine Saga Full Restore (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
 Asdivine Saga SP X3 (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
+Astria Ascending (Role-Playing) [Sep 30, 2021] [DUMPED V1.06] [CUSA27170] [505BP] [FULLPS5]  [EST900] &#x1F536;
+Astria Ascending Cosmetic Weapon Set (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
 Brawlhalla Autumn Championship 2021 Pack (DLC) [Sep 30, 2021] [DUMPED V10.50] [FULLPS5] [EST900] &#9989;
 Cotton Guardian Force Saturn Tribute (Shooter) [Sep 30, 2021] [DUMPED V1.02] [JCUSA27848] <Cotton 2, Cotton Boomerang, Guardian Force> [FULLPS5] [EST900] &#9989;
 Demon Gaze Extra Demon Gaze Dengeki Comic Version Collaboration Characters (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
@@ -12078,7 +12249,7 @@ Pecaminosa A Pixel Noir Game (Visual Novel) [Sep 30, 2021] [FULLPS5] [EST900] &#
 eFootball 2022 (Sports) [Sep 30, 2021] [DUMPED V1.01] [CUSA26996] [505BP] <PES 22, PES22, PES 2022, PES2022, Pro Evolution Soccer 2022> [FULLPS5]  [EST900] &#x1F536;
 eFootball 2022 PlayStation Plus Member Bonus (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
 eFootball 2022 Premium Player Pack (DLC) [Sep 30, 2021] [FULLPS5] [EST900] &#9989;
-Blaze and the Monster Machines Axle City Racers (Racing) [Oct 1, 2021] [CUSA25491] [FULLPS5] [EST900] &#9989;
+Blaze and the Monster Machines Axle City Racers (Racing) [Oct 1, 2021] [DUMPED V1.01] [CUSA25491] [FULLPS5] [EST900] &#9989;
 FIFA 22 (Sports) [Oct 1, 2021] [DUMPED V1.15] [CUSA27106] [505BP] [OFW852] [FULLPS5] &#x1F536;
 Halloween Candy Break 2 (Puzzle) [Oct 1, 2021] [CUSA30600] [FULLPS5] [EST900] &#9989;
 Phoenix Point (Strategy, Turn-Based, Tactics) [Oct 1, 2021] [DUMPED V1.05] [CUSA20526] [FULLPS5] [EST900] &#9989;
@@ -12262,7 +12433,7 @@ Marvel's Guardians of the Galaxy Sun-Lord Outfit for Star-Lord (DLC) [Oct 26, 20
 Marvel's Guardians of the Galaxy The Art of the Game Mini Artbook (DLC) [Oct 26, 2021] [FULLPS5] [EST900] &#9989;
 Marvel's Guardians of the Galaxy The Hits Original Video Game Soundtrack (DLC) [Oct 26, 2021] [FULLPS5] [EST900] &#9989;
 Marvel's Guardians of the Galaxy The Stinger Outfit for Rocket (DLC) [Oct 26, 2021] [FULLPS5] [EST900] &#9989;
-NASCAR 21 Ignition (Racing) [Oct 26, 2021] [DUMPED V1.30] [CUSA27898] [FULLPS5] [EST900] &#9989;
+NASCAR 21 Ignition (Racing) [Oct 26, 2021] [DUMPED V1.30] [CUSA27898] [505BP] [BP ISSUE MENU LAG!] [FULLPS5]  [EST900] &#x1F536;
 NASCAR 21 Ignition Billie Elliot (DLC) [Oct 26, 2021] [FULLPS5] [EST900] &#9989;
 NASCAR 21 Ignition Career Booster (DLC) [Oct 26, 2021] [FULLPS5] [EST900] &#9989;
 NASCAR 21 Ignition Champions Edition (Compilation, Racing) [Oct 26, 2021] [CUSA27898] [FULLPS5] [EST900] &#9989;
@@ -12296,8 +12467,10 @@ Keiken Zero na Classmate (Visual Novel) [Oct 28, 2021] [FULLPS5] [EST900] &#9989
 Legend of Heroes Kuro no Kiseki Demo (Demo/Trial) [Oct 28, 2021] <The Legend of Heroes Kuro no Kiseki> [FULLPS5] [EST900] &#9989;
 Milli & Greg (Adventure) [OCt 28, 2021] [CUSA29973] [FULLPS5] [EST900] &#9989;
 Necromunda Hired Gun Hellhound Pack (DLC) [Oct 28, 2021] [DUMPED V1.08] [FULLPS5] [EST900] &#9989;
+Path of Exile Dread Supporter Pack (DLC) [Oct 28, 2021] [FULLPS5] [EST900] &#9989;
+Path of Exile Liege Supporter Pack (DLC) [Oct 28, 2021] [FULLPS5] [EST900] &#9989;
 QUByte Classics The Immortal (Adventure) [Oct 28, 2021] [CUSA30477] [FULLPS5] [EST900] &#9989;
-Riders Republic (Sports) [Oct 28, 2021] [Requires PSN] [DUMPED V1.05] [CUSA19394, CUSA24360] [BP ISSUE OFFLINE MODES ONLY!] [FULLPS5]  [EST900] &#x1F536;
+Riders Republic (Sports) [Oct 28, 2021] [Requires PSN] [DUMPED V1.05] [CUSA19394, CUSA24360] [BP ISSUE ZEN MODE ONLY!] [505BP] [FULLPS5]  [EST900] &#x1F536;
 Riders Republic Coins Bronze Pack 1050 (DLC) [Oct 28, 2021] [FULLPS5] [EST900] &#9989;
 Riders Republic Coins Diamond Pack 6600 (DLC) [Oct 28, 2021] [FULLPS5] [EST900] &#9989;
 Riders Republic Coins Gold Pack 4200 (DLC) [Oct 28, 2021] [FULLPS5] [EST900] &#9989;
@@ -12339,7 +12512,7 @@ Neptunia X Senran Kagura Ninja Wars Miyabi's Pre-Transformation Outfit (DLC) [Oc
 Neptunia X Senran Kagura Ninja Wars Purple Heart's Ninja Garb White (DLC) [Oct 29, 2021] [FULLPS5] [EST900] &#9989;
 Neptunia X Senran Kagura Ninja Wars White Heart's Ninja Garb White (DLC) [Oct 29, 2021] [FULLPS5] [EST900] &#9989;
 Neptunia X Senran Kagura Ninja Wars Yumi's Pre-Transformation Outfit (DLC) [Oct 29, 2021] [FULLPS5] [EST900] &#9989;
-PJ Masks Heroes of the Night (Action, Platform) [Oct 29, 2021] [CUSA26629] [FULLPS5] [EST900] &#9989;
+PJ Masks Heroes of the Night (Action, Platform) [Oct 29, 2021] [DUMPED V1.01] [CUSA26629] [505BP] [FULLPS5]  [EST900] &#x1F536;
 Panorama Cotton (Shooter) [Oct 29, 2021] [CUSA30875] [FULLPS5] [EST900] &#9989;
 Just Dance Unlimited 1 Month Pass (DLC) [Oct 31, 2021] [CUSA02315] [FULLPS5] [EST900] &#9989;
 Just Dance Unlimited 24 Hours Pass (DLC) [Oct 31, 2021] [CUSA02315] [FULLPS5] [EST900] &#9989;
@@ -12367,7 +12540,7 @@ Mr Driller DrillLand (Action) [Nov 4, 2021] <Mr. Driller DrillLand> [FULLPS5] [E
 Star Melody Yumemi Dreamer Episode 1 (Visual Novel) [Nov 4, 2021] [FULLPS5] [EST900] &#9989;
 Star Melody Yumemi Dreamer Episode 2 (Visual Novel) [Nov 4, 2021] [FULLPS5] [EST900] &#9989;
 Binarystar Infinity (Shooter) [Nov 5, 2021] [CUSA26998] [FULLPS5] [EST900] &#9989;
-Call of Duty Vanguard (First-Person, Shooter) [Nov 5, 2021] [DUMPED V1.08] [CUSA29092] [505BP] [BP ISSUE 5.05 LICENCES ISSUES!] <COD V, CODV> [FULLPS5]  [EST900] &#x1F536;
+Call of Duty Vanguard (First-Person, Shooter) [Nov 5, 2021] [DUMPED V1.08] [CUSA29092] [505BP] [BP ISSUE 5.05 LICENCE ISSUE!] <COD V, CODV> [FULLPS5]  [EST900] &#x1F536;
 Call of Duty Vanguard 1100 Points (DLC) [Nov 5, 2021] [FULLPS5] [EST900] &#9989;
 Call of Duty Vanguard 13000 Points (DLC) [Nov 5, 2021] [FULLPS5] [EST900] &#9989;
 Call of Duty Vanguard 200 Points (DLC) [Nov 5, 2021] [FULLPS5] [EST900] &#9989;
@@ -12385,8 +12558,10 @@ Mobile Suit Gundam Battle Operation Code Fairy Volume 1 (Third-Person, Action) [
 One Last Memory (Adventure) [Nov 5, 2021] [CUSA30758] [FULLPS5] [EST900] &#9989;
 Pukan Bye-Bye! (2D, Action, Platform) [Nov 5, 2021] [CUSA30543] [FULLPS5] [EST900] &#9989;
 Smurfs Mission Vileaf (3D, Platform) [Nov 5, 2021] [DUMPED V1.03] [CUSA26670] [505BP] <The Smurfs Mission Vileaf> [FULLPS5]  [EST900] &#x1F536;
-Stilstand (Visual Novel) [Nov 5, 2021] [CUSA30500] [FULLPS5] [EST900] &#9989;
+Stilstand (Visual Novel) [Nov 5, 2021] [DUMPED V1.00] [CUSA30500] [FULLPS5] [EST900] &#9989;
 Bowling Breakthrough Gaming Arcade (Sports) [Nov 7, 2021] [FULLPS5] [EST900] &#9989;
+War Thunder Ezer Weizman’s Black Spitfire Pack (DLC) [Nov 8, 2021] [FULLPS5] [EST900] &#9989;
+War Thunder MiG 21-SPS-K Pack (DLC) [Nov 8, 2021] [FULLPS5] [EST900] &#9989;
 Airborne Kingdom (Strategy) [Nov 9, 2021] [FULLPS5] [EST900] &#9989;
 Assassin's Creed Valhalla Tombs of the Fallen (DLC) [Nov 9, 2021] [DUMPED V5.10] <AC, ACV, Assassins Creed Valhalla> [FULLPS5] [EST900] &#9989;
 Blue Reflection Second Light Season Pass (DLC) [Nov 9, 2021] [FULLPS5] [EST900] &#9989;
@@ -12416,7 +12591,7 @@ Megaton Musashi (Role-Playing, Mech-Combat) [Nov 11, 2021] [JCUSA26058] [FULLPS5
 My Universe Interior Designer (Simulation) [Nov 11, 2021] [CUSA29382] [FULLPS5] [EST900] &#9989;
 Orcs Must Die! 3 Cold As Eyes (DLC) [Nov 11, 2021] [FULLPS5] [EST900] &#9989;
 Star Melody Yumemi Dreamer Episode 3 (Visual Novel) [Nov 11, 2021] [FULLPS5] [EST900] &#9989;
-Tiny Tina's Assault on Dragon Keep A Wonderlands One-Shot Adventure (Shooter) [Nov 11, 2021] [CUSA30036] [FULLPS5] [EST900] &#9989;
+Tiny Tina's Assault on Dragon Keep A Wonderlands One-Shot Adventure (Shooter) [Nov 11, 2021] [DUMPED V1.00] [CUSA30036] [FULLPS5] [EST900] &#9989;
 Treasures of the Aegean (Action, Adventure) [Nov 11, 2021] [DUMPED V1.04] [CUSA28711] [505BP] [FULLPS5]  [EST900] &#x1F536;
 Elden Ring Closed Network Test (Demo/Trial) [Nov 12, 2021] [DUMPED V1.00] [CUSA18880] [Requires PSN] [505BP] [VR AIM] [FULLPS5]  [EST900] &#x1F536;
 Gynoug (Action, Shooter) [Nov 12, 2021] [CUSA30531] [FULLPS5] [EST900] &#9989;
@@ -12451,7 +12626,7 @@ Scarlet Nexus Bond Enhancement Pack 1 (DLC) [Nov 17, 2021] [FULLPS5] [EST900] &#
 Airport Simulator Night & Day (Simulation) [Nov 18, 2021] [DUMPED V1.01] [CUSA29671] [505BP] <Airport Simulator Night and Day> [FULLPS5]  [EST900] &#x1F536;
 Arcade Archives Raimais (Action) [Nov 18, 2021] [CUSA29766] [FULLPS5] [EST900] &#9989;
 BloodRayne 2 Revamped (2D, Action, Platform) [Nov 18, 2021] [CUSA27838] [LTDRUN] [FULLPS5] [EST900] &#9989;
-BloodRayne Revamped (2D, Action, Platform) [Nov 18, 2021] [CUSA27834] [LTDRUN] [FULLPS5] [EST900] &#9989;
+BloodRayne Revamped (2D, Action, Platform) [Nov 18, 2021] [DUMPED V1.00] [CUSA27834] [LTDRUN] [FULLPS5] [EST900] &#9989;
 Empire of Sin Make it Count (DLC) [Nov 18, 2021] [FULLPS5] [EST900] &#9989;
 Hot Wheels Unleashed AcceleRacers Deora II (DLC) [Nov 18, 2021] [DUMPED V1.07] [FULLPS5] [EST900] &#9989;
 Hot Wheels Unleashed Pink Fashion Customization Pack (DLC) [Nov 18, 2021] [DUMPED V1.07] [FULLPS5] [EST900] &#9989;
@@ -12473,11 +12648,21 @@ Sushi Break 2 (Puzzle) [Nov 19, 2021] [CUSA31308] [FULLPS5] [EST900] &#9989;
 Brawlhalla BCX 2021 Pack (DLC) [Nov 20, 2021] [DUMPED V10.50] [FULLPS5] [EST900] &#9989;
 Quick Mafs (Action) [Nov 20, 2021] [CUSA30566] [FULLPS5] [EST900] &#9989;
 Bowling Story Two Mark Version Project Summer Ice (Sports) [Nov 21, 2021] [CUSA30168] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 CLAAS XERION 4200 SADDLE TRAC (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 CLAAS XERION SADDLE TRAC Pack (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 Fendt 900 Vario Black Beauty (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 KAWECO Front-Unit (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 KAWECO OPTI-JECT 800 (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 KAWECO XERION SADDLE TRAC Semi-Trailed Tanker (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 KAWECO XERION SADDLE TRAC Tanker (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 Mack Trucks Black Anthem (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 YEAR 1 Season Pass (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
+Farming Simulator 22 Zetor 25 K (DLC) [Nov 22, 2021] [FULLPS5] [EST900] &#9989;
 Alpine the Simulation Game (Sports) [Nov 23, 2021] [DUMPED V1.04] [CUSA30253] [FULLPS5] [EST900] &#9989;
 Cold Silence (2D, Action, Platform) [Nov 23, 2021] [FULLPS5] [EST900] &#9989;
 Death's Door (Action, Adventure) [Nov 23, 2021] <Deaths Door> [FULLPS5] [EST900] &#9989;
 Demon Slayer Kimetsu no Yaiba Hinokami Chronicles Free Update #2 Yahaba and Susamaru (DLC) [Nov 23, 2021] [FULLPS5] [EST900] &#9989;
-My Universe Puppies and Kittens (Simulation) [Nov 23, 2021] [DUMPED V1.03] [CUSA29357] [FULLPS5] [EST900] &#9989;
+My Universe Puppies and Kittens (Simulation) [Nov 23, 2021] [DUMPED V1.03] [CUSA29357] [505BP] [FULLPS5]  [EST900] &#x1F536;
 Necromunda Hired Gun Gang Wars Cosmetics Bundle (DLC) [Nov 23, 2021] [DUMPED V1.08] [FULLPS5] [EST900] &#9989;
 Tekken 7 Ultimate Edition (Compilation, Fighting) [Nov 23, 2021] [CUSA06014] [FULLPS5] [EST900] &#9989;
 Tilting Tiles (Action) [Nov 23, 2021] [FULLPS5] [EST900] &#9989;
@@ -12502,14 +12687,20 @@ Star Melody Yumemi Dreamer Episode 5 (Visual Novel) [Nov 25, 2021] [FULLPS5] [ES
 Story of Seasons Friends of Mineral Town (Simulation, Role-Playing) [Nov 25, 2021] [CUSA26026] [FULLPS5] [EST900] &#9989;
 Xposed Reloaded (Action) [Nov 25, 2021] [FULLPS5] [EST900] &#9989;
 Farming Simulator 22 (Simulation) [Nov 26, 2021] [DUMPED V1.02] [CUSA25359] [uls BLACK SCREEN!] [FULLPS5] [EST900] &#9989;
-Farming Simulator 22 CLAAS XERION 4200 SADDLE TRAC (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
-Farming Simulator 22 CLAAS XERION SADDLE TRAC Pack (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
-Farming Simulator 22 KAWECO Front-Unit (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
-Farming Simulator 22 KAWECO OPTI-JECT 800 (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
-Farming Simulator 22 KAWECO XERION SADDLE TRAC Semi-Trailed Tanker (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
-Farming Simulator 22 KAWECO XERION SADDLE TRAC Tanker (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
 Gardenia Prologue (Adventure) [Nov 26, 2021] [CUSA31565] [FULLPS5] [EST900] &#9989;
 Preventive Strike (Action, Shooter) [Nov 26,, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Blazing Freedom Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Exclusive Tire Smoke Colors (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Lizzy Musi Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Ryan Martin Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Skull Noir Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Stargazer Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All Steel Thunder Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All The 70s Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All The 80s Bundle (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All The Black Skull Parachute (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All The Custom Rims Pack (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
+Street Outlaws 2 Winner Takes All The OG Crow Car (DLC) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
 Sushi Break 2 Head to Head (Puzzle) [Nov 26, 2021] [FULLPS5] [EST900] &#9989;
 Windlands 2 (First-Person, Action) [Nov 26, 2021] [VR] [FULLPS5] [EST900] &#9989;
 Metaverse Keeper (Dungeon Crawler) [Nov 29, 2021] [FULLPS5] [EST900] &#9989;
@@ -12582,7 +12773,7 @@ Idolmaster Starlit Season New costume DLC Dance on the Galaxy (DLC) [Dec 9, 2021
 Idolmaster Starlit Season New song DLC ​​Dance Dance Dance (DLC) [Dec 9, 2021] [FULLPS5] [EST903] &#10060;
 Jurassic World Evolution 2 Early Cretaceous Pack (DLC) [Dec 9, 2021] [FULLPS5] [EST903] &#10060;
 Megaton Musashi Free Update Vol 1 Counterattack Boost Patch (DLC) [Dec 9, 2021] [FULLPS5] [EST903] &#10060;
-Monopoly Madness (Board Game, Party) [Dec 9, 2021] [FULLPS5] [EST903] &#10060;
+Monopoly Madness (Board Game, Party) [Dec 9, 2021] [DUMPED V1.01] [CUSA26330] [FULLPS5] [EST903] &#10060;
 Nickelodeon All-Star Brawl Garfield (DLC) [Dec 9, 2021] [FULLPS5] [EST903] &#10060;
 Silver Screen Story (Strategy) [Dec 9, 2021] [FULLPS5] [EST903] &#10060;
 Star Melody Yumemi Dreamer Episode 7 (Visual Novel) [Dec 9, 2021] [FULLPS5] [EST903] &#10060;
@@ -12629,6 +12820,8 @@ Retro Classix Too Crude (2D, Action, Beat 'em up) [Dec 14, 2021] [FULLPS5] [EST9
 Aeterna Noctis (2D, Action, Platform) [Dec 15, 2021] [FULLPS5] [EST903] &#10060;
 Castle on the Coast (Action, Platform) [Dec 15, 2021] [FULLPS5] [EST903] &#10060;
 Scarlet Nexus Bond Enhancement Pack 2 (DLC) [Dec 15, 2021] [FULLPS5] [EST903] &#10060;
+War Thunder M-51 Bundle (DLC) [Dec 15, 2021] [FULLPS5] [EST903] &#10060;
+War Thunder Merkava Mk.2D Bundle (DLC) [Dec 15, 2021] [FULLPS5] [EST903] &#10060;
 Arcade Archives Mirai Ninja (Action) [Dec 16, 2021] [CUSA30807] [FULLPS5] [EST903] &#10060;
 Black Bird (Action) [Dec 16, 2021] [FULLPS5] [EST903] &#10060;
 Call of Duty Vanguard Multiplayer Free Access (Demo/Trial) [Dec 16, 2021] [FULLPS5] [EST903] &#10060;
@@ -12649,6 +12842,7 @@ Moon Remix RPG Adventure (Role-Playing) [Dec 16, 2021] [FULLPS5] [EST903] &#1006
 Record of Lodoss War Deedlit in Wonder Labyrinth (Turn-Based, Strategy) [Dec 16, 2021] [FULLPS5] [EST903] &#10060;
 Retro Classix Heavy Barrel (Shooter) [Dec 16, 2021] [FULLPS5] [EST903] &#10060;
 Star Melody Yumemi Dreamer Episode 8 (Visual Novel) [Dec 16, 2021] [FULLPS5] [EST903] &#10060;
+Bless Unleashed Stalwart Armor Pack (DLC) [Dec 17, 2021] [FULLPS5] [EST903] &#10060;
 Call of Duty Vanguard Call of Duty League Run It Back Pack (DLC) [Dec 17, 2021] [FULLPS5] [EST903] &#10060;
 Circus Pocus (Action, Adventure) [Dec 17, 2021] [FULLPS5] [EST903] &#10060;
 DNF Dual Open Beta (Demo/Trial) [Dec 17, 2021] [FULLPS5] [EST903] &#10060;
@@ -12666,7 +12860,7 @@ Gardener's Path (Puzzle) [Dec 22, 2021] [CUSA31253] <Gardeners Path> [FULLPS5] [
 Horatio Goes Snowboarding (Sports) [Dec 22, 2021] [CUSA30621] [FULLPS5] [EST903] &#10060;
 Arcade Archives Orius (Shooter) [Dec 23, 2021] [CUSA30636] [FULLPS5] [EST903] &#10060;
 Cotton Rock 'n' Roll (Shooter) [Dec 23, 2021] [FULLPS5] [EST903] &#10060;
-Dynasty Warriors 9 Empires (Action, Role-Playing) [Dec 23, 2021] <Shin Sangoku Musou 8 Empires> [FULLPS5] [EST903] &#10060;
+Dynasty Warriors 9 Empires (Action, Role-Playing) [Dec 23, 2021] [CUSA24463, CUSA24464] <Shin Sangoku Musou 8 Empires> [FULLPS5] [EST903] &#10060;
 Star Melody Yumemi Dreamer Episode 9 (Visual Novel) [Dec 23, 2021] [FULLPS5] [EST903] &#10060;
 ChristmasRun (Puzzle) [Dec 24, 2021] [CUSA31772] [FULLPS5] [EST903] &#10060;
 Football Cup 2022 (Sports) [Dec 24, 2021] [CUSA31540] [FULLPS5] [EST903] &#10060;
@@ -12714,6 +12908,9 @@ Far Cry 6 Pagan Control (DLC) [Jan 11, 2022] [DUMPED V1.06] <FC6> [FULLPS5] [EST
 Risk System (Action, Shooter) [Jan 11, 2022] [CUSA18259] [FULLPS5] [EST903] &#10060;
 Demonica Everlasting Night (Action, Role-Playing) [Jan 12, 2022] [FULLPS5] [EST903] &#10060;
 Infinite Tanks WWII (Action, Shooter) [Jan 12, 2022] [CUSA26664] [FULLPS5] [EST903] &#10060;
+Simpsons Hit and Run (PS2toPS4) [Jan 12, 2022] [SLUS20624] [OFW505] [NOTPS5] &#9989;
+Tekken Tag Tournament V1 (PS2toPS4) [Jan 12, 2022] [SLUS20001] [OFW505] <All characters unlocked> [NOTPS5] &#9989;
+Tekken Tag Tournament V2 (PS2toPS4) [Jan 12, 2022] [SLUS20001] [OFW505] <All characters not unlocked> [NOTPS5] &#9989;
 Arcade Archives Gunnail (Shooter) [Jan 13, 2022] [CUSA30962] [FULLPS5] [EST903] &#10060;
 Astroneer Xenobiology Update (DLC) [Jan 13, 2022] [FULLPS5] [EST903] &#10060;
 Battle Brothers (Role-Playing, Turn-Based) [Jan 13, 2022] [CUSA28064] [FULLPS5] [EST903] &#10060;
@@ -12772,9 +12969,12 @@ Top Gun Air Combat (Simulation, Shooter) [Jan 21, 2022] [CUSA31973] [FULLPS5] [E
 Zippy The Circle Challenge Level 3C and Level 4C (Adventure) [Jan 21, 2022] [CUSA31912] [FULLPS5] [EST903] &#10060;
 Sheep P (Simulation) [Jan 22, 2022] <The Sheep P> [CUSA32298] [FULLPS5] [EST903] &#10060;
 Baseball 2 Player Cooperation Edition Breakthrough Gaming Arcade (Sports) [Jan 23, 2022] [CUSA31932] [FULLPS5] [EST903] &#10060;
+Burnout (PS2toPS4) [Jan 24, 2022] [SLUS20307] [OFW505] [NOTPS5] &#9989;
+Markus00095 Beginning of the End Beta (Homebrew) [Jan 24, 2022] [DUMPED V0.09] [OFW505] [NOTPS5] &#9989;
 Artful Escape (Adventure, Platform) [Jan 25, 2022] [CUSA30113] <The Artful Escape> [FULLPS5] [EST903] &#10060;
 Cities Skylines Airports (DLC) [Jan 25, 2022] [FULLPS5] [EST903] &#10060;
 Dark Thrones / Witch Hunter Double Pack (Compilation, Action) [Jan 25, 2022] [FULLPS5] [EST903] &#10060;
+Medal of Honor Vanguard (PS2toPS4) [Jan 25, 2022] [OFW505] [SLUS21597] [NOTPS5] &#9989;
 Paper Dolls II (Adventure, Horror) [Jan 25, 2022] <Paper Dolls 2> [FULLPS5] [EST903] &#10060;
 Paper Dolls II (Adventure, Horror) [Jan 25, 2022] [CUSA28274] <Paper Dolls 2> [FULLPS5] [EST903] &#10060;
 Paper Dolls II Digital Artbook (DLC) [Jan 25, 2022] <Paper Dolls 2> [FULLPS5] [EST903] &#10060;
@@ -12782,20 +12982,25 @@ Paper Dolls II Digital Original Soundtrack (DLC) [Jan 25, 2022] <Paper Dolls 2> 
 Project Warlock Fully Loaded (Compilation, First-Person, Shooter) [Jan 25, 2022] [CUSA19374] [FULLPS5] [EST903] &#10060;
 Project Warlock Fully Loaded Official Soundtrack (DLC) [Jan 25, 2022] [FULLPS5] [EST903] &#10060;
 Reverie Knights Tactics (Turn-Based, Role-Playing) [Jan 25, 2022] [CUSA26542] [FULLPS5] [EST903] &#10060;
+Tekken 5 (PS2toPS4) [Jan 25, 2022] [SLUS21059] [OFW505] [NOTPS5] &#9989;
 Cake Invaders (Action, Shooter) [Jan 26, 2022] [CUSA30330] [FULLPS5] [EST903] &#10060;
 Elasto Mania Remastered (2D, Racing) [Jan 26, 2022] [CUSA31771] [FULLPS5] [EST903] &#10060;
 Epitasis (First-Person, Adventure) [Jan 26, 2022] [CUSA26547] [FULLPS5] [EST903] &#10060;
 Gav-Gav Odyssey (Puzzle) [Jan 26, 2022] [CUSA32259] [FULLPS5] [EST903] &#10060;
+Mafia Commendatori Edition (PS2toPS4) [Jan 26, 2022] [OFW505] [SLES52278] [NOTPS5] &#9989;
 Round Invaders (Action) [Jan 26, 2022] [CUSA32265] [FULLPS5] [EST903] &#10060;
+Starlight Shores (Adventure) [Jan 26, 2022] [CUSA28984] [FULLPS5] [EST903] &#10060;
 Summertime Madness (Adventure) [Jan 26, 2022] [CUSA27832] [FULLPS5] [EST903] &#10060;
 Arcade Archives Pistol Daimyo no Bouken (Action) [Jan 27, 2022] [CUSA31000] [FULLPS5] [EST903] &#10060;
-COGEN Sword of Rewind (Action) [Jan 27, 2022] [FULLPS5] [EST903] &#10060;
+COGEN Sword of Rewind (Action) [Jan 27, 2022] [CUSA20570] [FULLPS5] [EST903] &#10060;
 COGEN Sword of Rewind Akasha, Yuji Otori, and Copen (DLC) [Jan 27, 2022] [FULLPS5] [EST903] &#10060;
 Circuit Superstars (Racing) [Jan 27, 2022] [CUSA29510] [FULLPS5] [EST903] &#10060;
 Mech Mechanic Simulator (Simulator) [Jan 27, 2022] [CUSA29889] [FULLPS5] [EST903] &#10060;
+MotorStorm Arctic Edge (PS2toPS4) [Jan 27, 2022] [OFW505] [SCES55573] [NOTPS5] &#9989;
 Rugby 22 (Sports) [Jan 27, 2022] [CUSA28560] [NOTPS5] [EST903] &#10060;
-Shikabanegurai no Boukenmeshi (Role-Playing) [Jan 27, 2022] [FULLPS5] [EST903] &#10060;
+Shikabanegurai no Boukenmeshi (Role-Playing) [Jan 27, 2022] [JCUSA29066] [FULLPS5] [EST903] &#10060;
 Star Melody Yumemi Dreamer Complete Edition (Visual Novel) [Jan 27, 2022] [FULLPS5] [EST903] &#10060;
+Tekken Tag Tournament V3 (PS2toPS4) [Jan 27, 2022] [SLUS20015] [OFW505] <JPN version> [NOTPS5] &#9989;
 Vagante (Action) [Jan 27, 2022] [CUSA28410] [FULLPS5] [EST903] &#10060;
 Zenith The Last City (Action, Role-Playing) [Jan 27, 2022] [CUSA29075] [VR] [FULLPS5] [EST903] &#10060;
 Calturin (Action, Role-Playing) [Jan 28, 2022] [CUSA31142] [FULLPS5] [EST903] &#10060;
@@ -12811,60 +13016,108 @@ DonutRun Lollipop Landscape Avatar (DLC) [Jan 28, 2022] [FULLPS5] [EST903] &#100
 DonutRun Master Avatar (DLC) [Jan 28, 2022] [FULLPS5] [EST903] &#10060;
 DonutRun No Damage Avatar (DLC) [Jan 28, 2022] [FULLPS5] [EST903] &#10060;
 DonutRun Rainbow Avatar (DLC) [Jan 28, 2022] [FULLPS5] [EST903] &#10060;
+Fallout Brotherhood of Steel (PS2toPS4) [Jan 28, 2022] [SLUS20539] [OFW505] [NOTPS5] &#9989;
 Guilty Gear Strive Additional DLC Battle Stage 1 Lap of the Kami (DLC) [Jan 28, 2022] [FULLPS5] [EST903] &#10060;
 Guilty Gear Strive Additional DLC Character 4 Baiken (DLC) [Jan 28, 2022] [FULLPS5] [EST903] &#10060;
 Guilty Gear Strive Additional DLC Combo Maker Update (DLC) [Jan 28, 2022] [FULLPS5] [EST903] &#10060;
 DragonRideVR (Action) [Jan 29, 2022] [CUSA18293] [VR] [FULLPS5] [EST903] &#10060;
 Spacetime Odissey (Action) [Jan 29, 2022] [CUSA31867] [FULLPS5] [EST903] &#10060;
+Thing (PS2toPS4) [Jan 29, 2022] [SLUS20371] [OFW505] <The Thing> [NOTPS5] &#9989;
+Tom & Jerry War of the Whiskers (PS2toPS4) [Jan 29, 2022] [SLUS20355] [OFW505] [NOTPS5] &#9989;
 Trivia For Dummies (Quiz) [Jan 29, 2022] [CUSA31694] [FULLPS5] [EST903] &#10060;
 Ayleouna (Action) [Jan 30, 2022] [CUSA32488] [FULLPS5] [EST903] &#10060;
 Ketchup Story (Simulation) [Jan 30, 2022] [CUSA31476] <The Ketchup Story> [FULLPS5] [EST903] &#10060;
 Zippy The Circle Challenge Level 5C, Level 6C, and Level 7C (Adventure) [Jan 30, 2022] [CUSA32513] [FULLPS5] [EST903] &#10060;
 Junkyard Fury (Action, Survival) [Jan 31, 2022] [CUSA31060] [FULLPS5] [EST903] &#10060;
-Life is Strange Remastered Collection (Compilation, Platform, Puzzle) [Feb 1, 2022] [CUSA23981] [FULLPS5] [EST903] &#10060;
+Life is Strange Before the Storm Remastered (Action, Adventure) [Feb 1, 2022] [CUSA23981] [FULLPS5] [EST903] &#10060;
+Life is Strange Remastered (Action, Adventure) [Feb 1, 2022] [CUSA23978] [FULLPS5] [EST903] &#10060;
+Life is Strange Remastered Collection (Compilation, Action, Adventure) [Feb 1, 2022] [CUSA23981] [FULLPS5] [EST903] &#10060;
 Webbed (Action) [Feb 1, 2022] [CUSA29054] [FULLPS5] [EST903] &#10060;
+Champions of Norrath (PS2toPS4) [Feb 2, 2022] [OFW505] [SLUS20565] [NOTPS5] &#9989;
 Dead Tree of Ranchiuna (First-Person, Adventure) [Feb 2, 2022] [CUSA29420] <The Dead Tree of Ranchiuna> [FULLPS5] [EST903] &#10060;
+Gungungun (Action) [Feb 2, 2022] [CUSA29615] [FULLPS5] [EST903] &#10060;
 Madness Beverage (First-Person, Shooter) [Feb 2, 2022] [CUSA31512] [FULLPS5] [EST903] &#10060;
-My Hero Acadamia Ultra Rumble Closed Beta Test (Demo/Trial) [Feb 2, 2022] [FULLPS5] [EST903] &#10060;
+My Hero Acadamia Ultra Rumble Closed Beta Test (Demo/Trial) [Feb 2, 2022] [CUSA28752] [FULLPS5] [EST903] &#10060;
+Quake Undernight Overbright Addon (DLC) [Feb 2, 2022] [DUMPED V1.05] <Quake Remastered> [FULLPS5] [EST903] &#10060;
 Sealed Ampoule (Strategy, Roguelike) [Feb 2, 2022] [CUSA29164] <The Sealed Ampoule> [FULLPS5] [EST903] &#10060;
+Tales of Arise & Tales of Series Gallery (DLC) [Feb 2, 2022] [JCUSA29618] [FULLPS5] [EST903] &#10060;
 Arcade Archives New Rally-X (Racing) [Feb 3, 2022] [CUSA31395] [FULLPS5] [EST903] &#10060;
+Champions Return to Arms (PS2toPS4) [Feb 3, 2022] [OFW505] [SLUS20973] [NOTPS5] &#9989;
+Death By Degrees (PS2toPS4) [Feb 3, 2022] [SLUS20934] [OFW505] [NOTPS5] &#9989;
+Downhill Domination (PS2toPS4) [Feb 3, 2022] [SCUS97177] [OFW505] [NOTPS5] &#9989;
 Magic Walk (2D, Action, Platform) [Feb 3, 2022] [CUSA30231] [FULLPS5] [EST903] &#10060;
 Nickelodeon All-Star Brawl Shredder (DLC) [Feb 3, 2022] [FULLPS5] [EST903] &#10060;
 QUByte Classics The Humans (Puzzle) [Feb 3, 2022] [CUSA30551] [FULLPS5] [EST903] &#10060;
+SNESticle SNES Emulator for PS2 on PS4 (Homebrew) [Feb 3, 2022] [OFW900] [TheheroGAC] [NOTPS5] &#9989;
+SNESticles ROM Pack (Homebrew) [Feb 3, 2022] [OFW900] [TheheroGAC] [NOTPS5] &#9989;
 Ziggurat 2 (Action, Role-Playing) [Feb 3, 2022] [CUSA31813] [FULLPS5] [EST903] &#10060;
 Ziggurat 2 Supporter Pack (DLC) [Feb 3, 2022] [FULLPS5] [EST903] &#10060;
-Dying Light 2 Stay Human (Action, Role-Playing, Survival, Horror) [Feb 4, 2022] [DUMPED V1.00] [CUSA12555] [505BP] [BP ISSUES LONG LOADING TIMES] [OFW850] [FULLPS5] &#x1F536;
+Dying Light 2 Stay Human (Action, Role-Playing, Survival, Horror) [Feb 4, 2022] [DUMPED V1.00] [CUSA12555] [505BP] [BP ISSUE LONG LOAD TIMES!] [OFW850] [FULLPS5] &#x1F536;
 My Maite (2D, Action, Platform) [Feb 4, 2022] [FULLPS5] [EST903] &#10060;
 Sims 4 Carnival Streetwear Kit (DLC) [Feb 4, 2022] <The Sims 4> [FULLPS5] [EST903] &#10060;
 Spirit Roots (2D, Action, Platform) [Feb 4, 2022] [FULLPS5] [EST903] &#10060;
 Valentine Candy Break 2 (Puzzle) [Feb 4, 2022] [CUSA32350] [FULLPS5] [EST903] &#10060;
+Pro Deer Hunting Out West (Sports) [Feb 5, 2022] [CUSA29712] [FULLPS5] [EST903] &#10060;
+Silk (Role-Playing) [Feb 5, 2022] [FULLPS5] [EST903] &#10060;
+Mortal Kombat Shaolin Monks (PS2toPS4) [Feb 6, 2022] [OFW505] [SLUS21087] [NOTPS5] &#9989;
+Pinball Breakthrough Gaming Arcade (Pinball) [Feb 6, 2022] [FULLPS5] [EST903] &#10060;
 Zippy The Circle Challenge Level 8C, Level 9C, and Level 10C (Adventure) [Feb 6, 2022] [CUSA32515] [FULLPS5] [EST903] &#10060;
+24 The Game (PS2toPS4) [Feb 7, 2022] [SCUS21268] [OFW505] [NOTPS5] &#9989;
+Burnout 2 Point of Impact (PS2toPS4) [Feb 7, 2022] [SLUS20497] [OFW505] [NOTPS5] &#9989;
+Clock Tower 3 (PS2toPS4) [Feb 7, 2022] [SLUS20633] [OFW505] [NOTPS5] &#9989;
+Get Away (PS2toPS4) [Feb 7, 2022] [SCUS97133] [OFW505] <The Get Away> [NOTPS5] &#9989;
+PFBNeo Portable FinalBurn Neo Emulator for PS4 (Homebrew) [Feb 7, 2022] [DUMPED V1.00] [OFW900] <Cpasjuste> [NOTPS5] &#9989;
+PPlay Video Player PS4 (Homebrew) [Feb 7, 2022] [DUMPED V3.80] [OFW900] <Cpasjuste> [NOTPS5] &#9989;
+Brutal Rage (Action) [Feb 8, 2022] [CUSA28918] [FULLPS5] [EST903] &#10060;
 Far Cry 6 Joseph Collapse (DLC) [Feb 8, 2022] <FC6 Vaas Insanity> [FULLPS5] [EST903] &#10060;
-OlliOlli World (Sports) [Feb 8, 2022] [FULLPS5] [EST903] &#10060;
-Sifu (Third-Person, Action) [Feb 8, 2022] [FULLPS5] [EST903] &#10060;
-Unbound Worlds Apart (2D, Puzzle, Platform) [Feb 9, 2022] [FULLPS5] [EST903] &#10060;
-Breakout Recharged (Action) [Feb 10, 2022] [FULLPS5] [EST903] &#10060;
-Edge of Eternity (Role-Playing) [Feb 10, 2022] [FULLPS5] [EST903] &#10060;
-PowerSlave (First-Person, Shooter) [Feb 10, 2022] [FULLPS5] [EST903] &#10060;
+OlliOlli World (Sports) [Feb 8, 2022] [DUMPED V1.00] [CUSA25466] [505BP] [FULLPS5]  [EST903] &#x1F536;
+Sifu (Third-Person, Action) [Feb 8, 2022] [CUSA25761] [FULLPS5] [EST903] &#10060;
+Sifu Digital Original Soundtrack (DLC) [Feb 8, 2022] [FULLPS5] [EST903] &#10060;
+Sifu Official Sifu Digital Artbook (DLC) [Feb 8, 2022] [FULLPS5] [EST903] &#10060;
+El Gancho (Action) [Feb 9, 2022] [FULLPS5] [EST903] &#10060;
+Path of Exile Emberkeep Supporter Pack (DLC) [Feb 9, 2022] [FULLPS5] [EST903] &#10060;
+Path of Exile Imperator Supporter Pack (DLC) [Feb 9, 2022] [FULLPS5] [EST903] &#10060;
+Path of Exile Siege of the Atlas (DLC) [Feb 9, 2022] [FULLPS5] [EST903] &#10060;
+Path of Exile Wyrm Supporter Pack (DLC) [Feb 9, 2022] [FULLPS5] [EST903] &#10060;
+Unbound Worlds Apart (2D, Puzzle, Platform) [Feb 9, 2022] [CUSA26943] [FULLPS5] [EST903] &#10060;
+Breakout Recharged (Action) [Feb 10, 2022] [CUSA31474] [FULLPS5] [EST903] &#10060;
+Edge of Eternity (Role-Playing) [Feb 10, 2022] [CUSA20495] [FULLPS5] [EST903] &#10060;
+Gunvolt Chronicles Luminous Avenger iX 2 Kohaku Otori (DLC) [Feb 10, 2022] [FULLPS5] [EST903] &#10060;
+Know by Heart (Adventure) [Feb 10, 2022] [CUSA29623] [FULLPS5] [EST903] &#10060;
+Life and Suffering of Sir Brante (Role-Playing) [Feb 10, 2022] [CUSA31131] [FULLPS5] [EST903] &#10060;
+Nape Retroverse Collection (Compilation) [Feb 10, 2022] [FULLPS5] [EST903] &#10060;
+PowerSlave Echumed (First-Person, Shooter) [Feb 10, 2022] [CUSA30927] [FULLPS5] [EST903] &#10060;
+Rise of the Third Power (Turn-Based, Adventure) [Feb 10, 2022] [CUSA28518] [FULLPS5] [EST903] &#10060;
+Ammo Pigs Cocked and Loaded (Action) [Feb 11, 2022] [CUSA31623] [FULLPS5] [EST903] &#10060;
+Grand Prix Racing (Racing) [Feb 11, 2022] [CUSA32120] [FULLPS5] [EST903] &#10060;
+In My Shadow (Puzzle) [Feb 11, 2022] [CUSA30272] [FULLPS5] [EST903] &#10060;
+Oddworld Strangers Wrath HD (Action, Adventure) [Feb 11, 2022] [CUSA26324] [FULLPS5] [EST903] &#10060;
+Skautfold (Survival, Horror) [Feb 11, 2022] [CUSA26839] [FULLPS5] [EST903] &#10060;
+Valentine Candy Break 2 Head to Head (Puzzle) [Feb 11, 2022] [CUSA32533] [FULLPS5] [EST903] &#10060;
+Vegas Tales (Simulation) [Feb 11, 2022] [FULLPS5] [EST903] &#10060;
 Beat Souls (Action, Rhythm) [Feb 14, 2022] [FULLPS5] [EST903] &#10060;
 Infernax (Action, Adventure) [Feb 14, 2022] [FULLPS5] [EST903] &#10060;
-King of Fighters XV (Fighting) [Feb 17, 2022] <KOF XV, KOFXV, The King of Fighters XV, The King of Fighters 15> [FULLPS5] [EST903] &#10060;
-Horizon Zero Dawn Forbidden West (Action, Role-Playing) [Feb 18, 2022] [FULLPS5] [EST903] &#10060;
+Cyberpunk 2077 Free Trial (Demo/Trial) [Feb 15, 2022] [FULLPS5] [EST903] &#10060;
+King of Fighters XV (Fighting) [Feb 17, 2022] [DUMPED V1.00] [CUSA25273] [505BP] [OFW900] <KOF XV, KOFXV, The King of Fighters XV, The King of Fighters 15> [FULLPS5] &#x1F536;
+Voice of Cards The Foresaken (Action, Role-Playing) [Feb 17, 2022] [FULLPS5] [EST903] &#10060;
+Horizon Forbidden West (Action, Role-Playing) [Feb 18, 2022] [CUSA24705] [OFW903] [FULLPS5] &#10060;
 Destiny 2 The Witch Queen (DLC) [Feb 22, 2022] [Requires PSN] [FULLPS5] [EST903] &#10060;
 Destiny 2 The Witch Queen Deluxe + Bungie 30th Anniversary Edition (Compilation, First-Person, Shooter) [Feb 22, 2022] [FULLPS5] [EST903] &#10060;
+Gunvolt Chronicles Luminous Avenger iX 2 Yang Yumo (DLC) [Feb 22, 2022] [FULLPS5] [EST903] &#10060;
 Sol Cresta (Shooter) [Feb 22, 2022] [FULLPS5] [EST903] &#10060;
 Atelier Sophie 2 The Alchemist of the Mysterious Dream (Role-Playing) [Feb 24, 2022] [FULLPS5] [EST903] &#10060;
 Dusk Diver 2 (Action, Role-Playing) [Feb 24, 2022] [FULLPS5] [EST903] &#10060;
 Raiden IV X MIKADO Remix (Compilation, Shooter) [Feb 24, 2022] [FULLPS5] [EST903] &#10060;
-Elden Ring (Action, Role-Playing) [Feb 25, 2022] [Requires PSN] [VR AIM] [OFW903] [FULLPS5] &#10060;
-GRID Legends (Racing) [Feb 25, 2022] [FULLPS5] [EST903] &#10060;
+Babylon's Fall Demo (Demo/Trial) [Feb 25, 2022] <Babylons Fall> [FULLPS5] [EST903] &#10060;
+Elden Ring (Action, Role-Playing) [Feb 25, 2022] [CUSA18723] [Requires PSN] [VR AIM] [OFW903] [FULLPS5] &#10060;
+GRID Legends (Racing) [Feb 25, 2022] [CUSA28260] [FULLPS5] [EST903] &#10060;
 GRID Legends Mechanic Pass (DLC) [Feb 25, 2022] [FULLPS5] [EST903] &#10060;
 GRID Legends Seneca & Ravenwest Double Pack (DLC) [Feb 25, 2022] [FULLPS5] [EST903] &#10060;
+Moto Roader MC (Racing) [Feb 25, 2022] [FULLPS5] [EST903] &#10060;
+Tormented Souls (Survival, Horror) [Feb 25, 2022] [CUSA29199] [FULLPS5] [EST903] &#10060;
 Dragon Quest X Rise of the Five Tribes Offline (Action, Role-Playing) [Feb 26, 2022] [FULLPS5] [EST903] &#10060;
-Cruel King and the Great Hero Scores of Bravery Digital Soundtrack (DLC) [Mar 1, 2022] [FULLPS5] [EST903] &#10060;
-Cruel King and the Great Hero Storybook Edition (Adventure) [Mar 1, 2022] [FULLPS5] [EST903] &#10060;
-Cruel King and the Great Hero Treasure Trove Bundle (Adventure) [Mar 1, 2022] [FULLPS5] [EST903] &#10060;
-ELEX II (Action, Role-Playing) [Mar 1, 2022] <ELEX 2> [FULLPS5] [EST903] &#10060;
+Conan Chop Chop (Role-Playing) [Mar 1, 2022] [FULLPS5] [EST903] &#10060;
+ELEX II (Action, Role-Playing) [Mar 1, 2022] [CUSA28133, CUSA28134] <ELEX 2> [FULLPS5] [EST903] &#10060;
 Little Orpheus (Adventure) [Mar 1, 2022] [FULLPS5] [EST903] &#10060;
 Pathfinder Wrath of the Righteous (Role-Playing) [Mar 1, 2022] [FULLPS5] [EST903] &#10060;
 Shadow Warrior 3 (First-Person, Shooter) [Mar 1, 2022] [FULLPS5] [EST903] &#10060;
@@ -12879,7 +13132,10 @@ WWE 2K22 Season Pass (DLC) [Mar 8, 2022] <WWE2K22, WW2K22> [FULLPS5] [EST903] &#
 WWE 2K22 Starrcade ’96 Rey Mysterio Pack (DLC) [Mar 8, 2022] <WWE2K22, WW2K22> [FULLPS5] [EST903] &#10060;
 WWE 2K22 SuperCharger Pack (DLC) [Mar 8, 2022] <WWE2K22, WW2K22> [FULLPS5] [EST903] &#10060;
 WWE 2K22 Undertaker Immortal Pack (DLC) [Mar 8, 2022] <WWE2K22, WW2K22> [FULLPS5] [EST903] &#10060;
-Aztech Forgotten Gods (Action, Adventure) [Mar 10, 2022] [FULLPS5] [EST903] &#10060;
+Aztech Forgotten Gods (Action, Adventure) [Mar 10, 2022] [CUSA26828] [FULLPS5] [EST903] &#10060;
+Cruel King and the Great Hero Scores of Bravery Digital Soundtrack (DLC) [Mar 11, 2022] [FULLPS5] [EST903] &#10060;
+Cruel King and the Great Hero Storybook Edition (Adventure) [Mar 11, 2022] [FULLPS5] [EST903] &#10060;
+Cruel King and the Great Hero Treasure Trove Bundle (Adventure) [Mar 11, 2022] [FULLPS5] [EST903] &#10060;
 WWE 2K22 (Sports) [Mar 11, 2022] <WWE2K22, WW2K22> [FULLPS5] [EST903] &#10060;
 Phantom Breaker Omnia (Beat 'em up) [Mar 15, 2022] [FULLPS5] [EST903] &#10060;
 Monster Energy Supercross The Official Videogame 5 (Racing) [Mar 17, 2022] [FULLPS5] [EST903] &#10060;
@@ -12904,7 +13160,10 @@ Lego Star Wars The Skywalker Saga (Action, Adventure) [Apr 5, 2022] [FULLPS5] [E
 Lego Star Wars The Skywalker Saga Character Collection DLC (DLC) [Apr 5, 2022] [FULLPS5] [EST903] &#10060;
 Lego Star Wars The Skywalker Saga Deluxe Edition (Action, Adventure) [Apr 5, 2022] [FULLPS5] [EST903] &#10060;
 MLB The Show 22 (Sports) [Apr 5, 2022] [CROSSPLAY] [FULLPS5] [EST903] &#10060;
+Chrono Cross The Radical Dreamers Edition (Role-Playing) [Apr 7, 2022] [FULLPS5] [EST903] &#10060;
+Hello Neighbor 2 Beta Test (Demo/Trial) [Apr 7, 2022] [FULLPS5] [EST903] &#10060;
 Metal Dogs (Action) [Apr 8, 2022] [FULLPS5] [EST903] &#10060;
+Road 96 (Adventure) [Apr 14, 2022] [FULLPS5] [EST903] &#10060;
 Winning Post 9 2022 (Sports) [Apr 14, 2022] [FULLPS5] [EST903] &#10060;
 Yurukill The Calumniation Games (Action, Shooter) [Apr 14, 2022] [FULLPS5] [EST903] &#10060;
 Hyperdimension Neptunia Sisters Vs Sisters (Role-Playing) [Apr 21, 2022] [FULLPS5] [EST903] &#10060;
@@ -12915,23 +13174,33 @@ Hishou Same! Same! Same! (Shooter) [Apr 28, 2022] [FULLPS5] [EST903] &#10060;
 Kiss Kara Hajimaru Gyaru no Koi Kurumi no Uwasa to Honto no Kimochi (Visual Novel) [Apr 28, 2022] [FULLPS5] [EST903] &#10060;
 Kiss Kara Hajimaru Gyaru no Koi Kurumi no Uwasa to Honto no Kimochi Nurse Enjoy Gyaru Bundle (DLC) [Apr 28, 2022] [FULLPS5] [EST903] &#10060;
 Tasomachi Behind the Twilight (Adventure) [Apr 28, 2022] [FULLPS5] [EST903] &#10060;
+Sifu Vengeance Edition (Compilation, Third-Person, Action) [May 3, 2022] [FULLPS5] [EST903] &#10060;
+Salt and Sacficice (Action, Role-Playing) [May 10, 2022] [FULLPS5] [EST903] &#10060;
+Centennial Case A Shijima Story (Adventure) [May 12, 2022] [FULLPS5] [EST903] &#10060;
 Evil Dead The Game (Survival, Horror) [May 13, 2022] [FULLPS5] [EST903] &#10060;
+Evil Dead The Game Gallant Knight Outfit (DLC) [May 13, 2022] [FULLPS5] [EST903] &#10060;
+Evil Dead The Game S-Mart Outfit (DLC) [May 13, 2022] [FULLPS5] [EST903] &#10060;
+Evil Dead The Game Season Pass (DLC) [May 13, 2022] [FULLPS5] [EST903] &#10060;
 Two Point Campus (Simulation) [May 17, 2022] [FULLPS5] [EST903] &#10060;
 Vampire The Masquerade Swansong (Visual Novel) [May 19, 2022] [FULLPS5] [EST903] &#10060;
+Quintessential Quintuplets The Movie Five Memories of My Time With You (Visual Novel) [Jun 2, 2022] [FULLPS5] [EST903] &#10060;
+Disgaea 6 Complete (Compilation, Role-Playing) [Jun 16, 2022] [FULLPS5] [EST903] &#10060;
 Elder Scrolls Online High Isle (Action, Role-Playing) [Jun 21, 2022] [Requires PSN] <ESO, The Elder Scrolls Online> [FULLPS5] [EST903] &#10060;
+9-Nine- (Visual Novel) [Jun 23, 2022] [FULLPS5] [EST903] &#10060;
 AI The Somnium Files NirvanA Initiative (Adventure) [Jun 23, 2022] [FULLPS5] [EST903] &#10060;
 Cuphead The Delicious Last Course (DLC) [Jun 30, 2022] [FULLPS5] [EST903] &#10060;
+Zorro The Chronicles (Action) [Jun 31, 2022] [FULLPS5] [EST903] &#10060;
 My Girlfriend is a Mermaid?! Refine (Visual Novel) [Jul 7, 2022] [FULLPS5] [EST903] &#10060;
 Saints Row Reboot (Action, Adventure, Open-World) [Aug 23, 2022] [FULLPS5] [EST903] &#10060;
 Fox Awaits Me (Visual Novel) [Sep 8, 2022] <The Fox Awaits Me> [FULLPS5] [EST903] &#10060;
 Shinigami Shibito Magire (Horror) [Sep 15, 2022] [FULLPS5] [EST903] &#10060;
 Test Drive Unlimited Solar Crown (Racing) [Sep 22, 2022] [FULLPS5] [EST903] &#10060;
+Lethal League Blaze The Master of the Mountain Outfit (DLC) [Jan 17, 2029] [FULLLPS5] [EST903] &#10060;
 '90s Super GP (Racing) [UNRELEASED] [EST999] &#10060;
 22Block Kush Avenger (Fighting) [UNRELEASED] [VR] [EST999] &#10060;
 3 Minutes to Midnight (Adventure) [UNRELEASED] [EST999] &#10060;
 30XX (Action, Platform) [UNRELEASED] [EST999] &#10060;
 3rd Eye (Action) [UNRELEASED] [EST999] &#10060;
-9-Nine- (Visual Novel) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 A.D. 2047 (Adventure) [UNRELEASED] [VR] <AD 2047> [EST999] &#10060;
 AI-Limit (Action, Role-Playing) [UNRELEASED] [EST999] &#10060;
 ARK 2 (Action, Adventure) [UNRELEASED] [FULLPS5] [EST999] &#10060;
@@ -12962,7 +13231,6 @@ Anonymous;Code (Visual Novel) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Apark (Action) [UNRELEASED] [EST999] &#10060;
 Ape Escape 3 (Action) [UNRELEASED] [EST999] &#10060;
 Apocalyse (Action, Role-Playing) [UNRELEASED] [EST999] &#10060;
-Apsulov End of Gods (Horror) [UNRELEASED] [EST999] &#10060;
 Aqua Moto Racing Utopia World Champion (Racing) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Aquarion Evol (Action) [UNRELEASED] [VR] [EST999] &#10060;
 Arafinn Return to Nangrim (First-Person, Adventure) [UNRELEASED] [VR] <Arafinn Return to Nangrim> [EST999] &#10060;
@@ -12975,9 +13243,9 @@ Armed and Gelatinous (Action) [UNRELEASED] [EST999] &#10060;
 Art Rally (Racing) [UNRELEASED] [EST999] &#10060;
 Asterigos (Role-Playing) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Astraea (Action, Adventure) [UNRELEASED] [EST999] &#10060;
-Astria Ascending (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Astrologia Odyssey IV Chronos Reflection (Role-Playing) [UNRELEASED] [EST999] &#10060;
-Atomic Heart (Action, Role-Playing, First-Person, Shooter) [UNRELEASED] [EST999] &#10060;
+Atomic Heart (Action, Role-Playing, First-Person, Shooter) [UNRELEASED] [FULLPS5] [EST999] &#10060;
+Auto World Tycoon (Simulation) [UNRELEASED] [CUSA27451] [FULLPS5] [EST999] &#10060;
 Avabel Online (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Avatar Frontiers of Pandora (First-Person, Adventure) [UNRELEASED] [EST999] &#10060;
 Awakened (Adventure) [UNRELEASED] <The Awakened> [EST999] &#10060;
@@ -13000,6 +13268,7 @@ Beyond Good and Evil 2 (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Bionic Mayhem (Action) [UNRELEASED] [VR] [EST999] &#10060;
 Black Clover Quartet Knights Mereoleona Vermillion (Action, Adventure) [UNRELEASED] [EST999] &#10060;
 Black Myth Wukong (Action, Role-Playing) [UNRELEASED] [EST999] &#10060;
+Blackberry Honey (Visual Novel) [UNRELEASED] [CUSA29126, CUSA29128] [FULLPS5] [EST999] &#10060;
 Blackguards Definitive Edition (Turn-Based, Tactics) [UNRELEASED] [EST999] &#10060;
 Blade & Sorcery (First-Person, Action) [UNRELEASED] [VR] [EST999] &#10060;
 Blade & Soul Table Arena (Strategy) [UNRELEASED] [VR] [EST999] &#10060;
@@ -13050,7 +13319,6 @@ Code Zero (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Coffee Talk Episode 2 Hibiscus & Butterfly (Visual Novel) [UNRELEASED] [EST999] &#10060;
 Collapsus (Puzzle) [UNRELEASED] [EST999] &#10060;
 Commander '85 (Adventure) [UNRELEASED] [EST999] &#10060;
-Conan Chop Chop (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Conan Exiles Seekers of the Dawn (DLC) [UNRELEASED] [EST999] &#10060;
 Convallaria (Action) [UNRELEASED] [EST999] &#10060;
 Cooking Game VR (Action) [UNRELEASED] [VR] <The Cooking Game VR> [EST999] &#10060;
@@ -13081,6 +13349,7 @@ Dark Pictures Anthology The Devil in Me (Horror, Adventure) [UNRELEASED] <The Da
 Dark Sorcerer (Action) [UNRELEASED] [EST999] &#10060;
 Dash Dash World (Racing) [UNRELEASED] [VR] [3DRUD] [EST999] &#10060;
 Date A Live Ren Dystopia (Action) [UNRELEASED] [EST999] &#10060;
+Dawn of Monsters (Beat 'em Up) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Daymare 1994 Sandcastle (Survival, Horror) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 De Mambo (Action, Platform) [UNRELEASED] [EST999] &#10060;
 DeMagnete (Adventure) [UNRELEASED] [EST999] &#10060;
@@ -13107,6 +13376,7 @@ Dimension Hunter (Arcade, Shooter) [UNRELEASED] [VR] [EST999] &#10060;
 Dimension Hunter 2 (Arcade, Shooter) [UNRELEASED] [VR] [EST999] &#10060;
 Disembodied (Action) [UNRELEASED] [EST999] &#10060;
 Disney Classic Games Collection (Compilation) [UNRELEASED] [EST999] &#10060;
+Disney Speedstorm (Racing) [UNRELEASED] [F2P] [FULLPS5] [EST999] &#10060;
 Distance (Racing) [UNRELEASED] [VR] [EST999] &#10060;
 Divine Grimoire (Strategy) [UNRELEASED] [EST999] &#10060;
 Do Not Open (Action, Adventure) [UNRELEASED] [EST999] &#10060;
@@ -13130,6 +13400,7 @@ Duel Hand Disaster Trackher (Action, Shooter) [UNRELEASED] [EST999] &#10060;
 Dungeon Chess (Board Game) [UNRELEASED] [EST999] &#10060;
 Dungeon Defenders Awakened (Role-Playing, Tower Defence) [UNRELEASED] [EST999] &#10060;
 Dungeon Stars (Action) [UNRELEASED] [EST999] &#10060;
+Dusk Diver 2 Lola (DLC) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Dynasty Warriors Coaster (Simulation) [UNRELEASED] [VR] [EST999] &#10060;
 Dynasty Warriors Sense (Simulation) [UNRELEASED] [VR] [EST999] &#10060;
 Earth Defense Force 6 (Third-Person, Shooter) [UNRELEASED] [FULLPS5] [EST999] &#10060;
@@ -13237,6 +13508,7 @@ Haunting Witching Hour (Action) [UNRELEASED] [VR] [EST999] &#10060;
 Hazel Sky (Adventure) [UNRELEASED] [EST999] &#10060;
 Heart Forth Alicia (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Hellgate VR (Action, Role-Playing) [UNRELEASED] [VR] [EST999] &#10060;
+Hello Neighbor 2 (Adventure) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Hellraid (Action) [UNRELEASED] [EST999] &#10060;
 Henka Twist Caper (Action) [UNRELEASED] [EST999] &#10060;
 Henry the Hamster Handler (Puzzle) [UNRELEASED] [VR] [EST999] &#10060;
@@ -13298,16 +13570,20 @@ Kingdom Under Fire II (Real-Time Strategy) [UNRELEASED] [EST999] &#10060;
 Kingpin Reloaded (First-Person, Shooter) [UNRELEASED] [EST999] &#10060;
 Kitsune Tails (2D, Platform) [UNRELEASED] [EST999] &#10060;
 Kittypocalypse (Strategy) [UNRELEASED] [VR] [EST999] &#10060;
+Klonoa Phantasy Reverie Series (Compilation, Platform) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Knifeboy (2D, Action, Platform) [UNRELEASED] [EST999] &#10060;
 Knight of Nephiart (Role-Playing) [UNRELEASED] [VR] <The Knight of Nephiart> [EST999] &#10060;
 Knives Out Extreme (Action, Third-Person, Shooter) [UNRELEASED] [FULLPS5] [EST999] &#10060;
+Koa and the Five Pirates of Mara (Adventure) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Kodoku (Action, Survival) [UNRELEASED] [EST999] &#10060;
+KungFu Kickball (Sports) [UNRELEASED] [CUSA27662] [FULLPS5] [EST999] &#10060;
 KungFu Kickball (Sports) [UNRELEASED] [EST999] &#10060;
 Kunio-Kun no Sangokushi dayo Zeiin Shuugou! (Action) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Kyn (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Labyrinth of Galleria Coven of Dusk (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Last Encounter (Action, Shooter) [UNRELEASED] [EST999] &#10060;
 Last Year The Nightmare (Action, Survival) [UNRELEASED] [EST999] &#10060;
+Layer Section & Galactic Attack S-Tribute (Shooter) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 League of Legends Wild Rift (Action, Role-Playing) [UNRELEASED] [EST999] &#10060;
 Legend of Heroes Hajimari no Kiseki (Role-Playing) [UNRELEASED] <Eiyuu Densetsu Hajimari no Kiseki> [EST999] &#10060;
 Legend of Heroes Kuro no Kiseki II -CRIMSON SiN- (Role-Playing) [UNRELEASED] <The Legend of Heroes Kuro no Kiseki 2 Crimson Sin> [FULLPS5] [EST999] &#10060;
@@ -13325,6 +13601,7 @@ Little Witch Nobeta (Action, Shooter) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 London Detective Mysteria (Visual Novel) [UNRELEASED] [EST999] &#10060;
 London Heist (Action, Adventure) [UNRELEASED] [EST999] &#10060;
 Long Live the Queen (Visual Novel) [UNRELEASED] [EST999] &#10060;
+Loop8 (Role-Playing) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Lord of the Rings (Action, Role-Playing) [UNRELEASED] [EST999] &#10060;
 Lord of the Rings Gollum (Action, Adventure) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Lords of the Fallen 2 (Action, Role-Playing) [UNRELEASED] [EST999] &#10060;
@@ -13367,14 +13644,19 @@ Metal Max Wild West (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Metal Max Xeno Reborn 2 (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Metal Revolution (2D, Action, Fighting) [UNRELEASED] [EST999] &#10060;
 Metal Revolution (Fighting) [UNRELEASED] [EST999] &#10060;
+Metal Slug Awakens (Action, Shooter) [UNRELEASED] <Metal Slug J> [] [EST999] &#10060;
 Metallic Child (Action) [UNRELEASED] [EST999] &#10060;
 Midnight Club 3 DUB Edition (Racing) [UNRELEASED] [PS2] [EST999] &#10060;
 Miegakure (Platform, Puzzle) [UNRELEASED] [EST999] &#10060;
 Mighty Goose Water Stage (DLC) [UNRELEASED] [FULLPS5] [EST999] &#10060;
+Mika and the Witch's Mountain (Adventure) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Milky Way Prince The Vampire Star (Visual Novel) [UNRELEASED] [EST999] &#10060;
+Mina the Hollower (2D, Adventure) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Mind Path to Thalamus (Adventure) [UNRELEASED] [VR] [EST999] &#10060;
 Mindtaker (Horror, Adventure) [UNRELEASED] [VR] [EST999] &#10060;
 Minimal Affect (Role-Playing) [UNRELEASED] [EST999] &#10060;
+Minna No Tsume Shogi 2 (Board Game) [UNRELEASED] [CUSA29251] [EST999] &#10060;
+Minna No Tsume Shogi 3 (Board Game) [UNRELEASED] [CUSA29252] [EST999] &#10060;
 Mixip (Action, Shooter) [UNRELEASED] [VR] [EST999] &#10060;
 Modern Zombie Taxi Co. (Racing) [UNRELEASED] [VR] [EST999] &#10060;
 Mofflys Invasion Mayhem (Puzzle, Shooter) [UNRELEASED] [VR] <The Mofflys Invasion Mayhem> [EST999] &#10060;
@@ -13446,6 +13728,7 @@ Outriders New Horizons (DLC) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Outriders Worldslayer (DLC) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Overwatch 2 (First-Person, Shooter) [UNRELEASED] [Requires PSN] [EST999] &#10060;
 Oxenfree II Lost Signals (Adventure) [UNRELEASED] <Oxenfree 2 Lost Signals> [EST999] &#10060;
+POST VOID (First-Person, Shooter) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Pac-Man Museum+ (Compilation) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Panzer Dragoon Voyage Record (Action, Shooter) [UNRELEASED] [VR][FULLPS5] [EST999] &#10060;
 Paranoia Happiness is Mandatory (Role-Playing) [UNRELEASED] [EST999] &#10060;
@@ -13492,11 +13775,13 @@ Resident Evil Village Maiden Demo (Demo/Trial) [UNRELEASED] <PS5 ONLY> [FULLPS5]
 Revolver360 Re:Actor (Action, Shooter, Vertical) [UNRELEASED] <Revolver 360 ReActor> [EST999] &#10060;
 Rez Plz (2D, Action, Platform) [UNRELEASED] [EST999] &#10060;
 Riftbreaker (Role-Playing) [UNRELEASED] [EST999] &#10060;
+Ripout (First-Person, Shooter) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Rise Race The Future (Racing) [UNRELEASED] [EST999] &#10060;
 River City Girls 2 (Beat 'em up) [UNRELEASED] [LTDRUN] [EST999] &#10060;
-River City Girls Zero (Action, Beat 'em up) [UNRELEASED] [LTDRUN] [EST999] &#10060;
+River City Girls Zero (Action, Beat 'em up) [UNRELEASED] [LTDRUN] [FULLPS5] [EST999] &#10060;
 River City Saga Three Kingdoms (2D, Action, Beat 'em up) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Rogue Lords (Role-Playing, Roguelike) [UNRELEASED] [EST999] &#10060;
+Roguebook (Roguelike) [UNRELEASED] [CUSA24281] [FULLPS5] [EST999] &#10060;
 Roguebook (Roguelike, Card Game) [UNRELEASED] [EST999] &#10060;
 Roguelike Hero (Action, Beat 'em up) [UNRELEASED] [EST999] &#10060;
 Roller Champions (Sports) [UNRELEASED] [EST999] &#10060;
@@ -13510,12 +13795,13 @@ Runemaster (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Runes The Forgotten Path (Role-Playing) [UNRELEASED] [VR] [EST999] &#10060;
 Russian Subway Dogs (Action) [UNRELEASED] [EST999] &#10060;
 Ryuo's Work is Never Done! (Adventure) [UNRELEASED] <Ryuos Work is Never Done!> [EST999] &#10060;
+SD Gundam Battle Alliance (Acxtion, Role-Playing) [UNRELEASED] [FULLPS5]  [EST999] &#10060;
 SHOWA American Story (Role-Playing) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 SacriFire (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Sail Forth (Simulation) [UNRELEASED] [EST999] &#10060;
 Saint Kotar (Point-and-Click, Horror) [UNRELEASED] [EST999] &#10060;
-Salt and Sacficice (Action, Role-Playing) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Samurai Bringer (Roguelike, Action) [UNRELEASED] [FULLPS5] [EST999] &#10060;
+Samurai Gunn 2 (Fighting) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Savant Ascent (2D, Action, Platform) [UNRELEASED] [EST999] &#10060;
 Scars Above (Third-Person, Shooter) [UNRELEASED] [EST999] &#10060;
 School Swan Song (Survival, Horror) [UNRELEASED] [VR] [EST999] &#10060;
@@ -13531,7 +13817,7 @@ Shantae (2D, Action, Platform) [UNRELEASED] [LTDRUN] [EST999] &#10060;
 Shaq Fu A Legend Reborn Barack Fu The Adventures of Dirty Barry (DLC) [UNRELEASED] [EST999] &#10060;
 Shattered Tale of the Forgotten King (Role-Playing) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Sherlock Holmes Chapter One (Adventure) [UNRELEASED] [EST999] &#10060;
-Shovel Knight Dig (Action, Platform) [UNRELEASED] [EST999] &#10060;
+Shovel Knight Dig (Action, Platform) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Simple Shooting Game (Demo/Trial) [UNRELEASED] [CUSA20240] <TestGame> [EST999] &#10060;
 Skara The Blade Remains (First-Person, Shooter) [UNRELEASED] [EST999] &#10060;
 Skeletal Avenger (Role-Playing, Roguelike) [UNRELEASED] [EST999] &#10060;
@@ -13621,7 +13907,6 @@ Tokyo Clanpool (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Tokyo Ogre Gate (Action) [UNRELEASED] [EST999] &#10060;
 Tom Clancy's Ghost Recon Frontline (Third-Person, Shooter) [UNRELEASED] [F2P] [FULLPS5] [EST999] &#10060;
 Tom Clancy's Ghost Recon Frontline Closed Test (Demo/Trial) [UNRELEASED] [F2P] [FULLPS5] [EST999] &#10060;
-Tormented Souls (Survival, Horror) [UNRELEASED] [EST999] &#10060;
 Tormented Souls Outfit (DLC) [UNRELEASED] [EST999] &#10060;
 Tormented Souls Weapon (DLC) [UNRELEASED] [EST999] &#10060;
 Touhou Genso Kikou Lost Alchemy (Role-Playing) [UNRELEASED] [EST999] &#10060;
@@ -13645,7 +13930,7 @@ Trials Rising Samurai Pack (DLC) [UNRELEASED] [EST999] &#10060;
 Trifox (Action, Shooter) [UNRELEASED] [EST999] &#10060;
 Trine Series 1-3 (Platform, Puzzle, Compliation) [UNRELEASED] [EST999] &#10060;
 Tropico 5 Espionage (DLC) [UNRELEASED] [EST999] &#10060;
-Tsukumo Hime (Role-Playing) [UNRELEASED] [EST999] &#10060;
+Tsukumo Hime (Role-Playing) [UNRELEASED]  [EST999] &#10060;
 Tunghe (2D, Action, Beat 'em up) [UNRELEASED] [EST999] &#10060;
 UFO Robot Grendizer (Action) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Ubusuna (Action, Shooter) [UNRELEASED] [EST999] &#10060;
@@ -13675,6 +13960,7 @@ Virtua Fighter eSports (Fighting) [UNRELEASED] [CUSA20138] [FULLPS5] [EST999] &#
 Virtual Engagement Confronting Fears (Simulation) [UNRELEASED] [EST999] &#10060;
 VizionEck Cube Royale (First-Person, Shooter) [UNRELEASED] [VR] [EST999] &#10060;
 Wacky Wings (Action) [UNRELEASED] [VR] [EST999] &#10060;
+Wanted Dead (Third-Person, Action) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 War Mongrels (Real-Time, Strategy) [UNRELEASED] [EST999] &#10060;
 Warhammer 40,000 Darktide (Turn-Based, Strategy) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Warhammer 40,000 Shottas, Blood & Teef (2D, Platform, Shooter) [UNRELEASED] [EST999] &#10060;
