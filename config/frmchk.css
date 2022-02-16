@@ -230,6 +230,11 @@ body {
   margin-right: 10px;
   border-radius: 10px;
 }
+#FCUSART {
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+}
 #additionalImage {
   float: right;
   background: none;
