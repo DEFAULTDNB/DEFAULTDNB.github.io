@@ -198,8 +198,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 570px;
-  height: fit-content;
+  /*width: 575px;*/
+  min-width: 500px;
+  /*height: fit-content;*/
+  min-height: 150px;
   background: black;
   border: 2px solid #17cdc4;
   box-shadow: -1px 1px 5px 7px rgba(0,0,0,0.5);
