@@ -9,6 +9,7 @@
 <link rel="apple-touch-icon" href="icons/favicon.png" />
 <script src="config/q.js"></script>
 <script src="config/spark-md5.min.js"></script>
+<script src="config/sha.js"></script>
 </head>
 <body onload="closeTimer();">
 <input type="text" value="" id="myInput" style="opacity:0%;">
@@ -19,14 +20,14 @@
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
   <div class="callout-container" id="shout"></div>
 </div>
-<div class="card" id="card" onmouseleave="this.style.display='none';">
-  <div class="card-header" id="cardtitle">GAME TITLE</div>
+<div class="card" id="card" src="icons/generic.png" onmouseleave="this.style.display='none';">
+  <div class="card-header" title="JSON info" id="cardtitle">GAME TITLE</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-  <center><div class="card-header2" id="gamecusa">GAME ID/NAME</div><img id="additionalImage" src="icons/PAD.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px"></center>
+  <div class="card-header2" id="gamecusa">GAME ID/NAME</div><img id="additionalImage" src="icons/PAD.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px">
   <img id="ratingImage" src="icons/RATING.png" onerror="this.src='icons/RATING.png';" alt=" " style="width:50px"><div class="card-container" id="infocontainer">
-	<img id="CUSART" src="icons/generic.png" onclick="snagImage();" onerror="this.src='icons/generic.png';" alt=" " style="width:200px" title="Left click to download icon">
+	<img id="CUSART" onclick="snagImage();" src="icons/generic.png" onerror="this.src='icons/generic.png';" alt=" " style="width:200px" title="Click to view game art">
 	<div id="gameinfo">
-	<div id="i0"><span id="gameDump"></span></div>
+	<div id="i0"><span id="gamesize"></span><span id="gameDump"></span></div>
 	<div id="i2"><span id="gameBackport"></span></div>
 	<div id="i3"><button title="Search Metacritic" id="gameReview" class="interact">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="r1"></span></button></div>
 	<div id="i4"><button title="Search Serialstation" id="gamePKG" class="interact" onclick="">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p1"></span></button></div>
@@ -129,6 +130,8 @@
 	<option value="OFW 8.52" >OFW 8.52</option>
 	<option value="OFW 9.00" >OFW 9.00</option>
 	<option value="OFW 9.03" >OFW 9.03</option>
+	<option value="OFW 9.04" >OFW 9.04</option>
+	<option value="OFW 9.50" >OFW 9.50</option>
 	<optgroup label="RANGES:">
 	<option value="1.00-5.05">1.00 - 5.05</option>
 	<option value="1.00-6.72">1.00 - 6.72</option>
@@ -146,7 +149,7 @@
 	<option value="7.50-9.00">7.50 - 9.00</option>
 	<option value="8.00-8.52">8.00 - 8.52</option>
 	<option value="8.00-9.00">8.00 - 9.00</option>
-	<option value="9.00-9.03">9.00 - 9.03</option>
+	<option value="9.00-9.50">9.00 - 9.50</option>
 	<option value="8.00-LATEST"></option>
 	<option value="1.00-LATEST"></option>
 </select>
@@ -160,7 +163,7 @@
 	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
 	<option id="REMASTERED" value="REMASTERED">REMASTERED</option>
 	<option id="PS2" value="PS2]">PS2 CLASSICS</option>
-	<option id="PS2PS4" value="PS2toPS4">PS2TOPS4 GAMES</option>
+	<option id="PS2TOPS4" value="PS2TOPS4">PS2TOPS4</option>
 	<option id="HOMEBREW" value="HOMEBREW">HOMEBREW</option>
 	<option id="VR" value="VR">PSVR COMPAT</option>
 	<option id="3DRUD" value="3DRUD">3DRUDDER COMPAT</option>
@@ -268,7 +271,7 @@ if (localStorage.theme=='dark'){
 document.getElementById('stylesheet').href='config/frmchkd.css';
 }
 if (localStorage.userButtons==null){
-var userButtons = new Array("Assassins", "Battlefield", "Call of Duty", "FIFA", "Final Fantasy", "Hitman", "Resident Evil", "Tomb Raider");
+var userButtons = new Array("Assassins", "Battlefield", "Call of Duty", "FIFA", "Hitman", "Resident Evil", "Tomb Raider");
 localStorage.setItem("userButtons", JSON.stringify(userButtons));
 userButtons2 = JSON.parse(localStorage.getItem("userButtons"));
 } else {
@@ -288,13 +291,13 @@ for (k = 0; k <= userButtons2.length-1; k++){
 	document.getElementById("userbuttons").appendChild(UG);
 }};
 if (localStorage.region==null){
-localStorage.setItem("region","https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/")
+localStorage.setItem("region","EU")
 document.getElementById("regionSelect").value = "EU";
-} else if (localStorage.region=="https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/"){
+} else if (localStorage.region=="EU"){
 document.getElementById("regionSelect").value = "EU";
-} else if (localStorage.region=="https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/"){
+} else if (localStorage.region=="US"){
 document.getElementById("regionSelect").value = "US";
-} else if (localStorage.region=="https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/JP/ja/999/"){
+} else if (localStorage.region=="JP"){
 document.getElementById("regionSelect").value = "JP";
 }
 if (localStorage.infoLen==null){localStorage.infoLen='short';}
@@ -331,8 +334,6 @@ document.getElementById("dlcstatus").innerHTML = "DLC: HIDDEN";
 document.getElementById("dlc").setAttribute('title', 'Show DLC items?');
 document.getElementById("togDLC").checked = false;
 }
-//fetch(fileName).then(response => response.text());
-//var lines = text.split("\r\n");
 var xmlFile = new XMLHttpRequest;
 xmlFile.open('get', fileName, false);
 xmlFile.send();
@@ -356,7 +357,8 @@ var todayFW = Date.parse(new Date());
 var Difference_In_Time = todayFW - lastFW;
 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br><span style='color:dimgrey'>(Released: "+parseInt(Difference_In_Days)+" Days Ago)</span><br><br><span id='jellybrek' title='https://sleirsgoevy.github.io/900-host/'> Highest Jailbreak: <span style='color:gold'>"+kexFW+"</span></span><br>Recommended FW: <span style='color:limegreen'>5.05</span></span></center>";
-document.getElementById("rangeMax").innerHTML = latestOFW;
+//document.getElementById("rangeMax").innerHTML = latestOFW;
+document.getElementById("rangeMax").innerHTML = "9.03-9.04";
 //------------- Card Buttons -------------\\
 document.getElementById("gameReview").addEventListener("click", function(){
 window.open("https://www.metacritic.com/search/game/"+document.getElementById("cardtitle").innerHTML+"/results?plats[72496]=1&search_type=advanced");
@@ -374,7 +376,6 @@ document.getElementById("gamePatch").addEventListener("click", function(){if (cN
 document.getElementById("gameTrophy").addEventListener("click", function(){
 var tName = document.getElementById("cardtitle").innerHTML.replace(/ /g,"+");
 window.open("https://www.exophase.com/platform/psn/?q="+tName+"&sort=added&platforms=8");
-//https://www.savewizard.net/games/
 });
 //--------- A-Z button function ----------\\
 function azDelay(){
@@ -561,7 +562,7 @@ document.getElementById("display").innerHTML = "<br>";
 			colourise();
 			}
 		}
-	} else if (cclicked == "UNPLAYABLE"){
+	/*} else if (cclicked == "UNPLAYABLE"){
 		for (i = firmz; i < lines.length; i++){
 			for (f=903; f <=1000; f++){
 				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
@@ -569,6 +570,18 @@ document.getElementById("display").innerHTML = "<br>";
 				colourise();
 				}
 			}
+		}*/
+	} else if (cclicked == "UNPLAYABLE"){
+		for (i = firmz; i < lines.length; i++){
+		if (lines[i].match("505BP")){ //skip
+		} else {
+			for (f=903; f <=1000; f++){
+				if (lines[i].match("EST"+f) || lines[i].match("OFW"+f)){
+				cnt++;
+				colourise();
+				}
+			}
+		}
 		}
 	} else if (cclicked == "UNRELEASED"){
 		for (i = firmz; i < lines.length; i++){
@@ -733,13 +746,13 @@ function series(){
 };
 function regionChange(){
 	if (document.getElementById("regionSelect").value == "EU"){
-	localStorage.setItem("region", "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/GB/en/999/");
+	localStorage.setItem("region", "EU");
 	document.getElementById("regionSelect").value = "EU";
 	} else if (document.getElementById("regionSelect").value == "US"){
-	localStorage.setItem("region", "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/US/en/999/");
+	localStorage.setItem("region", "US");
 	document.getElementById("regionSelect").value = "US";
 	} else if (document.getElementById("regionSelect").value == "JP"){
-	localStorage.setItem("region", "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/JP/ja/999/");
+	localStorage.setItem("region", "JP");
 	document.getElementById("regionSelect").value = "JP";
 	}
 };
@@ -893,8 +906,10 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/PSVR.png');
 	} else if (lines[i].match("Requires PSN") || lines[i].match("F2P")){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/PSN.png');
-	} else if (lines[i].match(" / ")){
+	} else if (lines[i].match(" / ")||lines[i].match(" + ")){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/MULTI.png');
+	} else if (lines[i].match("Homebrew")){
+	document.getElementById('cID').setAttribute("vrConf", 'icons/BREW.png');
 	};
 	if (lines[i].match("DELISTED")){
 	document.getElementById('cID').setAttribute("removed", "true");
@@ -912,7 +927,11 @@ function genericAttribs(){
 	}else if (lines[i].match("672BP")){
 	document.getElementById('cID').setAttribute("bpIssue", '<span style="color:#lime">BP WORKS 6.72</span> (ISSUES ON 5.05)');
 	}else{
-	document.getElementById('cID').setAttribute("bpIssue", '<span style="color:red">NO INFO</span>');
+		if (lines[i].match("IMP NOTE")){
+		document.getElementById('cID').setAttribute("bpIssue", '<span style="color:gold">'+lines[i].slice(lines[i].indexOf("IMP NOTE")+9, lines[i].lastIndexOf("!]"))+'</span>');
+		} else {
+		document.getElementById('cID').setAttribute("bpIssue", '<span style="color:red">NO INFO</span>');
+		}
 	};
 	if (lines[i].match("FULLPS5")){
 	document.getElementById('cID').setAttribute("ps5bc", 'works');
@@ -983,42 +1002,40 @@ function cusaResolve() {
 	let showDate = document.getElementById(cName).getAttribute("releaseDate");
 	document.getElementById("cardtitle").innerHTML = sName;
 	if (psnDelist == 'true'){
-	document.getElementById("cardtitle").innerHTML += " (DELISTED PSN)";
+	document.getElementById("cardtitle").innerHTML += " (DELISTED)";
 	}
-	if (cName.match("JCUSA")){
-	document.getElementById("gamecusa").innerHTML = cName.substring(1) + " <span class='reltext'> ("+showDate+") </span><span id='minReq'></span>";
-	} else if (cName.match("CUSA")){
-	document.getElementById("gamecusa").innerHTML = cName + " <span class='reltext'> ("+showDate+") </span><span id='minReq'></span>";
+	if (cName.match("CUSA")){
+	document.getElementById("gamecusa").innerHTML = "&nbsp;" + cName + " <span class='reltext'> ("+showDate+") </span><span id='minReq'></span>";
 	} else if (cName.match("NPE")||cName.match("NPUB")){
-	document.getElementById("gamecusa").innerHTML = cName + "  <span class='reltext'> ("+showDate+") </span><span id='minReq'></span>";
+	document.getElementById("gamecusa").innerHTML = "&nbsp;" + cName + "  <span class='reltext'> ("+showDate+") </span><span id='minReq'></span>";
 	}else{
-	document.getElementById("gamecusa").innerHTML = "CUSA N/A" + "  <span class='reltext'> ("+showDate+") </span><span id='minReq'></span>";
+	document.getElementById("gamecusa").innerHTML = "ID N/A" + "  <span class='reltext'> ("+showDate+") </span><span id='minReq'></span>";
 	document.getElementById("ratingImage").src = "icons/RATING.png";
 	document.getElementById("ratingImage").style.opacity="0.7";
 	};
 	if (backCompat == 'works') {
-	document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Works fine on PS5">&nbsp;PS5: &#9989;</span>';
+	document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Works fine on PS5">&nbsp;PS5:&#9989;</span>';
 	} else {
-	document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Not working on PS5">&nbsp;PS5: &#10060;</span>';
+	document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Not working on PS5">&nbsp;PS5:&#10060;</span>';
 	};
-	document.getElementById("r1").innerHTML = " SEARCH FOR REVIEWS (Metacritic)";
-	document.getElementById("p1").innerHTML = " FIND PKG INFO (Serialstation)";
-	document.getElementById("p2").innerHTML = " OFFICIAL PLAYSTATION PAGE (PSN)";
-	document.getElementById("p3").innerHTML = " FIND LEGIT UPDATES (Orbispatches)";
+	document.getElementById("r1").innerHTML = " FIND REVIEWS (Metacritic)";
+	document.getElementById("p1").innerHTML = " SEARCH PKG INFO (Serialstation)";
+	document.getElementById("p2").innerHTML = " CHECK PS PAGE (PSN)";
+	document.getElementById("p3").innerHTML = " GET LEGIT UPDATES (Orbispatches)";
 	document.getElementById("p4").innerHTML = " LOOKUP TROPHIES (Exophase)";	
 	document.getElementById('additionalImage').style.display = 'inline';
 	document.getElementById("additionalImage").src = vrSet;
 	document.getElementById('CUSART').style.display = 'inline';
 	document.getElementById("CUSART").src = "icons/generic.png";
 	if (eMin.match("EST903") || oMin.match("OFW903")){
-	document.getElementById("minReq").innerHTML = "FW: <span id='minfw' style='color:red'>"+eMin.slice(3)+oMin.slice(3)+" </span>";
+	document.getElementById("minReq").innerHTML = "FW: <span id='minfw' style='color:red'>"+eMin.slice(3)+oMin.slice(3)+"</span>";
 	} else {
-	document.getElementById("minReq").innerHTML = "FW: <span id='minfw' style='color:lime'>"+eMin.slice(3)+oMin.slice(3)+" </span>";
+	document.getElementById("minReq").innerHTML = "FW: <span id='minfw' style='color:lime'>"+eMin.slice(3)+oMin.slice(3)+"</span>";
 	};
 	if (eMin == ""){
-	document.getElementById("minfw").innerHTML = [document.getElementById("minfw").innerHTML.slice(0, 1),'.', document.getElementById("minfw").innerHTML.slice(1)].join('');
+	document.getElementById("minfw").innerHTML = ["<span title='Firmware Confirmed'>"+document.getElementById("minfw").innerHTML.slice(0, 1),'.', document.getElementById("minfw").innerHTML.slice(1)].join('') + "</span>";
 	} else {
-	document.getElementById("minfw").innerHTML = [document.getElementById("minfw").innerHTML.slice(0, 1),'.', document.getElementById("minfw").innerHTML.slice(1)].join('') + "(℮)";
+	document.getElementById("minfw").innerHTML = ["<span title='Firmware Estimated'>"+document.getElementById("minfw").innerHTML.slice(0, 1),'.', document.getElementById("minfw").innerHTML.slice(1)].join('') + "*</span>";
 	};
 	if (sName.match(" / ")){
 	document.getElementById("gameDump").innerHTML = "<span style='color:orange'>*LOOKUP INDIVIDUAL TITLES*</span>";
@@ -1034,6 +1051,7 @@ function cusaResolve() {
 		}
 	}
 	document.getElementById("gameBackport").innerHTML = "NOTES: " + backPort;
+	
 	if (vrSet == 'icons/DLC.png'){
 	document.getElementById("CUSART").src = 'icons/ADDON.png';
 	document.getElementById("ratingImage").style.opacity="0";
@@ -1055,66 +1073,73 @@ function cusaResolve() {
 	document.getElementById("ratingImage").style.opacity="0";
 	} else if (vrSet == 'icons/BROKEN.png'){
 	document.getElementById("CUSART").src = "icons/BROKEN.png";
-	document.getElementById("ratingImage").style.opacity="0";
+	document.getElementById("ratingImage").style.opacity="0.7";
 	} else if (vrSet == 'icons/PS2.png'){
 	document.getElementById("CUSART").src = "icons/PS2.png";
 	document.getElementById("ratingImage").style.opacity="0.7";
+	} else if (vrSet == 'icons/BREW.png'){
+	document.getElementById("CUSART").src = "icons/BREW.png";
+	document.getElementById("ratingImage").style.opacity="0";
 	}else{
 	};
-	var HttpClient = function() {
-		this.get = function(aUrl, aCallback) {
-			var anHttpRequest = new XMLHttpRequest();
-			anHttpRequest.onreadystatechange = function() {
-				if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200) {
-					aCallback(anHttpRequest.responseText);
-				} else if (anHttpRequest.status == 404) {
-				//alert("TITLE NOT FOUND ON SERVER");
-				//switch to another server..TO DO
-				}
+	function readJsonfile(file, callback){
+		var rawFile = new XMLHttpRequest();
+		rawFile.overrideMimeType("application/json");
+		rawFile.open("GET", file, true);
+		rawFile.onreadystatechange = function(){
+			if (rawFile.readyState === 4 && rawFile.status == "200"){
+			callback(rawFile.responseText);
 			}
-			anHttpRequest.open( "GET", aUrl, true );            
-			anHttpRequest.send( null );
 		}
+		rawFile.send(null);
 	}
-	if (cName.match("JCUSA")){
-		var myClient = new HttpClient();
-		//https://store.playstation.com/store/api/chihiro/00_09_000/container/jp/ja/999/"+cName.substr(1)+"_00/
-		//https://image.api.playstation.com/vulcan/ap/rnd/202102/2207/G82fljaEuiBYMGOLPpIV9FrR.png = AI KISS 2 Trial (アイキス2 体験版)
-		//https://image.api.playstation.com/vulcan/ap/rnd/202102/2207/jjwXt4ZGhRn09HJ7eY9egDvZ.png = AI KISS 2 (アイキス2)
-		myClient.get("https://pstools.co.za/GetTmpDB?titleId="+cName.substr(1)+"_00", function(response) {
-		//alert(response);
-		var newLink = response;
-			myClient.get(newLink, function(response2) {
-			const Game = JSON.parse(response2);
-			document.getElementById("CUSART").src = Game.icons[0].icon;
-			document.getElementById("ratingImage").style.opacity="0";
-			})
-		});
-
-	} else if (cName.match("CUSA")){	
-		var myClient = new HttpClient();
-		myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
-		const Game = JSON.parse(response);
-		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/gb/en/999/"+cName+"_00/image?w=1024&amp;h=1024";
-		document.getElementById("ratingImage").src = Game.content_rating.url;
-		document.getElementById("ratingImage").style.opacity="0.7";
-		});
+	if (cName.match("CUSA")){
+		titleid = cName+"_00";
+		function getJsonURL(CUSA){
+			tmdb_key = 'F5DE66D2680E255B2DF79E74F890EBF349262F618BCAE2A9ACCDEE5156CE8DF2CDF2D48C71173CDC2594465B87405D197CF1AED3B7E9671EEB56CA6753C2E6B0';
+			sha=new jsSHA("SHA-256","TEXT"),
+			sha1=new jsSHA("SHA-1","TEXT");
+			sha.update(tmdb_key);
+			sha1.setHMACKey(tmdb_key,"HEX");
+			sha1.update(CUSA);
+			hmac=sha1.getHMAC("HEX").toUpperCase();
+			myJsonURL="https://tmdb.np.dl.playstation.net/tmdb2/"+CUSA+"_"+hmac+"/"+CUSA+".json";
+			
+			readJsonfile(myJsonURL, function(text){
+			var data = JSON.parse(text);
+			document.getElementById("CUSART").setAttribute("BGI", data.backgroundImage);
+			document.getElementById("CUSART").src = data.icons[0].icon;
+			
+			if (data.psVr >0) {
+			document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Compatible">&nbsp;VR:&#9989;</span>';
+			} else {
+			document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Compatible">&nbsp;VR:&#10060;</span>';
+			}
+			
+			if (data.parentalLevel >= 0 && data.parentalLevel <= 9) {
+				document.getElementById("ratingImage").src = "icons/"+localStorage.getItem("region")+data.parentalLevel+".png";
+				document.getElementById("ratingImage").style.opacity="0.7";
+				} else {			
+				document.getElementById("ratingImage").src = "icons/RATING.png";
+				document.getElementById("ratingImage").style.opacity="0.7";
+			}
+			document.getElementById("cardtitle").onclick = function() { window.open(myJsonURL); };
+			});
+		}
+	getJsonURL(titleid);
 	} else if (cName.match("NPE")){
-		var myClient = new HttpClient();
-		myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
-		const Game = JSON.parse(response);
-		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/gb/en/999/"+cName+"_00/image?w=1024&amp;h=1024";
-		document.getElementById("ratingImage").src = Game.content_rating.url;
-		document.getElementById("ratingImage").style.opacity="0.7";
-		});
-	} else if (cName.match("NPUB")){
-		var myClient = new HttpClient();
-		myClient.get(localStorage.getItem("region")+cName+"_00/", function(response) {
-		const Game = JSON.parse(response);
-		document.getElementById("CUSART").src = "https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/us/en/999/"+cName+"_00/image?w=1024&amp;h=1024";
-		document.getElementById("ratingImage").src = Game.content_rating.url;
-		document.getElementById("ratingImage").style.opacity="0.7";
-		});
+		titleid = cName+"_00";
+			function getJsonURL(CUSA){
+			myJsonURL="https://store.playstation.com/store/api/chihiro/00_09_000/titlecontainer/gb/en/999/"+cName+"_00/";
+			readJsonfile(myJsonURL, function(text){
+			var data = JSON.parse(text);
+			document.getElementById("CUSART").src = myJsonURL+"image?w=1024&amp;h=1024";
+			document.getElementById("ratingImage").src = "icons/RATING.png";
+			document.getElementById("ratingImage").style.opacity="0.5";
+			document.getElementById("cardtitle").onclick = function() { window.open(myJsonURL); };
+			});
+		}
+	getJsonURL(titleid);
 	}
 };
 function firmResolve(){
@@ -1369,31 +1394,33 @@ document.getElementById("titleshout").innerHTML = "ALL DB ENTRIES:";
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'><span class='textcolor'>Scanning all " + (lines.length-firmz) + " entries in <br>the DB using range: <span class='textcolor'>1.00-9.99</span>.<br><br>Please wait...</span></span></center>";
 document.getElementById('callout').style.display='initial';
 closeTimer();
-};	
+};
 function snagImage() {
-if (document.getElementById("CUSART").src.match("CUSA")){
-fetch(document.getElementById("CUSART").src)
-  .then(res => res.blob())
-  .then(blob => {
-    let objectURL = URL.createObjectURL(blob);
-    var a = document.createElement("a");
-    document.body.appendChild(a);
-    a.style = "display: none";
-	a.href = objectURL;
-    a.download = cName+".jpg";
-    a.click();
-	window.URL.revokeObjectURL(URL.createObjectURL(blob));
-});
+if (document.getElementById("CUSART").src.match(/icon0/g)) {
+	if (document.getElementById("CUSART").getAttribute("BGI") == "undefined") {
+	var s = confirm("❓ 𝗩𝗶𝗲𝘄 𝗜𝗖𝗢𝗡𝟬 𝗳𝗼𝗿: "+cName+"?\n\nOne window will open.\n\nTo download: Right click > Save image as\n\n"+cName+"_ICON0.PNG");
+		if (s == true) {
+		window.open(document.getElementById("CUSART").src, "ICON0.PNG", "width=512,height=512");
+		} else {
+		}
+	} else {
+	var s = confirm("❓ 𝗩𝗶𝗲𝘄 𝗜𝗖𝗢𝗡𝟬/𝗣𝗜𝗖𝟬 𝗳𝗼𝗿: "+cName+"?\n\nTwo windows will open.\n\nTo download: Right click > Save image as\n\n"+cName+"_ PIC0/ICON0 .PNG");
+		if (s == true) {
+		window.open(document.getElementById("CUSART").getAttribute("BGI"), "PIC0.PNG", "width=1920,height=1080");
+		window.open(document.getElementById("CUSART").src, "ICON0.PNG", "width=512,height=512");
+		} else {
+		}
+	}
 } else {
-alert("No icon to download");
-}};
+	alert("𝗡𝗼 𝗜𝗖𝗢𝗡𝟬/𝗣𝗜𝗖𝟬 𝗳𝗼𝘂𝗻𝗱!");
+}
+};
 </script>
-<div id="myImg"></div>
 <input type="file" id="file" onchange="calculateAll();" accept=".pup" hidden></input>
 <abbr class="interact" title="Support this project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-1 (BETΔ)</div>
 </body>
 </html>
