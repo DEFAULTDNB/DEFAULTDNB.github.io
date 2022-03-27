@@ -784,7 +784,7 @@ function removeAll(){
 	} else {
 	var nTab = " tab will be deleted.";
 	}
-	var r = confirm("⚠️ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗮𝗹𝗹 𝗾𝘂𝗶𝗰𝗸 𝗹𝗼𝗼𝗸 𝘁𝗮𝗯𝘀?\n\n"+userButtons2.length+nTab);
+	var r = confirm("⚠️ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗮𝗹𝗹 𝗾𝘂𝗶𝗰𝗸 𝘁𝗮𝗯𝘀?\n\n"+userButtons2.length+nTab);
 	if (r == true) {
 	document.getElementById("userbuttons").innerHTML = "";
 	userButtons2.length = 0;
@@ -792,7 +792,7 @@ function removeAll(){
 	}
 };
 function clearStorage() {
-	var r = confirm("⚠️ 𝗧𝗵𝗶𝘀 𝘄𝗶𝗹𝗹 𝗿𝗲𝘀𝗲𝘁 𝗾𝘂𝗶𝗰𝗸 𝗹𝗼𝗼𝗸 𝘁𝗮𝗯𝘀 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗲𝗳𝗮𝘂𝗹𝘁 𝗲𝘅𝗮𝗺𝗽𝗹𝗲.\n\nProceed?");
+	var r = confirm("⚠️ 𝗧𝗵𝗶𝘀 𝘄𝗶𝗹𝗹 𝗿𝗲𝘀𝗲𝘁 𝗾𝘂𝗶𝗰𝗸 𝗹𝗼𝗼𝗸 𝘁𝗮𝗯𝘀 𝘁𝗼 𝗱𝗲𝗳𝗮𝘂𝗹𝘁.\n\nProceed?");
 	if (r == true) {
 	localStorage.removeItem("userButtons"); 
 	location.reload();
@@ -906,7 +906,7 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/PSVR.png');
 	} else if (lines[i].match("Requires PSN") || lines[i].match("F2P")){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/PSN.png');
-	} else if (lines[i].match(" / ")||lines[i].match(" + ")){
+	} else if (lines[i].match(/\+/)||lines[i].match(" / ")){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/MULTI.png');
 	} else if (lines[i].match("Homebrew")){
 	document.getElementById('cID').setAttribute("vrConf", 'icons/BREW.png');
@@ -1037,9 +1037,9 @@ function cusaResolve() {
 	} else {
 	document.getElementById("minfw").innerHTML = ["<span title='Firmware Estimated'>"+document.getElementById("minfw").innerHTML.slice(0, 1),'.', document.getElementById("minfw").innerHTML.slice(1)].join('') + "*</span>";
 	};
-	if (sName.match(" / ")){
+	if (sName.match(/\+/)||sName.match(" / ")){
 	document.getElementById("gameDump").innerHTML = "<span style='color:orange'>*LOOKUP INDIVIDUAL TITLES*</span>";
-	document.getElementById("gamecusa").innerHTML = "MULTI PACK";
+	document.getElementById("gamecusa").innerHTML = "&nbspMULTI PACK";
 	} else {
 		if (dMax == null){
 		document.getElementById("gameDump").innerHTML = "DUMP: <span style='color:red'>UNKNOWN</span>";
@@ -1051,15 +1051,14 @@ function cusaResolve() {
 		}
 	}
 	document.getElementById("gameBackport").innerHTML = "NOTES: " + backPort;
-	
 	if (vrSet == 'icons/DLC.png'){
 	document.getElementById("CUSART").src = 'icons/ADDON.png';
 	document.getElementById("ratingImage").style.opacity="0";
 	document.getElementById("gameBackport").innerHTML = "*USE NEWEST UPDATE*";
 		if (cName.includes("CUSA")){
-		document.getElementById("gamecusa").innerHTML = "DLC ITEM: " + cName;
+		document.getElementById("gamecusa").innerHTML = "&nbspDLC ITEM: " + cName;
 		}else{
-		document.getElementById("gamecusa").innerHTML = "DLC ITEM";
+		document.getElementById("gamecusa").innerHTML = "&nbspDLC ITEM";
 		};
 	} else if (vrSet == 'icons/UNREL.png'){
 	document.getElementById("CUSART").src = 'icons/UNREL.png';
@@ -1421,6 +1420,6 @@ if (document.getElementById("CUSART").src.match(/icon0/g)) {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8-1 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-2 (BETΔ)</div>
 </body>
 </html>
