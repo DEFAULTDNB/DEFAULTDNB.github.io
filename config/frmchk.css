@@ -126,7 +126,6 @@ button:hover {
 abbr {
 	text-decoration: none !important;
 	border-bottom: 0px !important;
-	display: static;
 	font-variant: none;
 }
 abbr:hover {
@@ -213,6 +212,7 @@ body {
   cursor: help;
   padding: 5px 5px;
   background: #17cdc4;
+  width: auto;
   font-size: 100%;
   color: white;
   z-index: 999;
@@ -220,6 +220,7 @@ body {
 .card-header2 {
   padding: 5px 5px;
   background: none;
+  width: auto;
   font-size: 100%;
   color: white;
 }

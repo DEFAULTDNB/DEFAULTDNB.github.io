@@ -216,9 +216,17 @@ body {
   cursor: move;
   padding: 10px 10px;
   background: RebeccaPurple;
+  width: auto;
   font-size: 100%;
   color: white;
   z-index: 999;
+}
+.card-header2 {
+  padding: 5px 5px;
+  background: none;
+  width: auto;
+  font-size: 100%;
+  color: white;
 }
 .card-container {
   padding: 15px;
