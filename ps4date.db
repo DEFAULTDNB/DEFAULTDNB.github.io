@@ -108,7 +108,7 @@
 8.52 (Firmware) [Jun 22, 2021] [r174732/release_branches/release_08.520 Jun 8 2021 05:27:23] [SYS 3b3fdf33f509311807792365dc0f13b5] [REC 264bbbf77f1e248ac804f039c83a9128] [OFW852]
 9.00b2 (Firmware) [Jul 26, 2021 [SYS a376ac66e6678827064c37b3e87bcda4] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW900] [BETAOFW]
 9.00b3 (Firmware) [Aug 16, 2021] [SYS 8613970f4ad9e4db1499c41e9f69ee90] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW900] [BETAOFW]
-9.00 (Firmware) [Sep 15, 2021] [SYS e923e6d210399f236177e332843e2754] [REC 674420f041cb5845aae85928751ccd0e] [OFW900] [KEX] [HEN]
+9.00 (Firmware) [Sep 15, 2021] [r178153/release_branches/release_09.000 Sep 1 2021 05:26:03] [SYS e923e6d210399f236177e332843e2754] [REC 674420f041cb5845aae85928751ccd0e] [OFW900] [KEX] [HEN]
 9.03 (Firmware) [Dec 1, 2021] [SYS a5d3b099d92f6f57671bb29a5d6e7a5c] [REC 2301db03e473b99ea195df0fe954c2f1] [OFW903]
 9.50b1 (Firmware) [Feb 4, 2022] [SYS 318a98777a5598aebbca159104a71b83] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW950] [BETAOFW]
 9.50b3 (Firmware) [Feb 4, 2022] [SYS a029e2af4c0b11826bb7f52ba5962c47] [REC NO REC EXSISTS FOR THIS FIRMWARE] [OFW950] [BETAOFW]
@@ -9480,7 +9480,7 @@ Manga Ipponmichi (Strategy) [May 14, 2020] [FULLPS5] [EST750] &#9989;
 Rock Band 4 Asking Alexandria Reckless & Relentless (DLC) [May 14, 2020] [FULLPS5] [EST750] &#9989;
 Train Sim World 2020 LIRR M3 EMU (DLC) [May 14, 2020] [DUMPED V1.46] [FULLPS5] [EST750] &#9989;
 Zaibatsu Towns V (Strategy) [May 14, 2020] [FULLPS5] [EST750] &#9989;
-'n Verlore Verstand Deluxe Edition (Adventure, First-Person) [May 15, 2020] [CUSA09781] [FULLPS5] [EST750] &#9989;
+'n Verlore Verstand Deluxe Edition (Compilation, Adventure, First-Person) [May 15, 2020] [CUSA09781] [FULLPS5] [EST750] &#9989;
 'n Verlore Verstand Soundtrack (DLC) [May 15, 2020] [CUSA13987, CUSA14004] [NOTPS5] [EST750] &#9989;
 Arcade Archives Plus Alpha (Shooter) [May 15, 2020] [CUSA19260] [OFW702] [FULLPS5] &#9989;
 Tacticool Champs (Action, Shooter) [May 15, 2020] [FULLPS5] [EST750] &#9989;
@@ -10747,7 +10747,7 @@ Friday the 13th Killer Puzzle (Puzzle) [Nov 13, 2020] [FULLPS5] [EST800] &#9989;
 Kingdom Hearts Melody of Memory (Action, Role-Playing) [Nov 13, 2020] [DUMPED V1.01] [CUSA18879] [505BP] [OFW755] [FULLPS5] &#x1F536;
 Let's Sing 2021 (Music, Rhythm) [Nov 13, 2020] <Lets Sing 2021 Lets Sing 13> [FULLPS5] [EST800] &#9989;
 Sims 4 Snowy Escape (DLC) [Nov 13, 2020] [DUMPED V1.24] <The Sims 4> [FULLPS5] [EST800] &#9989;
-Rocketbirds Hardboiled Chicken (2D, Action, Platform) [Nov 15, 2020] [FULLPS5] [EST800] &#9989;
+Rocketbirds Hardboiled Chicken (2D, Action, Platform) [Nov 15, 2020] [DUMPED V [FULLPS5] [EST800] &#9989;
 Darkness Rollercoaster Akimbo Edition (Shooter) [Nov 16, 2020] [VR] [3DRUD] [CUSA15912] [FULLPS5] [EST800] &#9989;
 SnowRunner Explore & Expand (DLC) [Nov 16, 2020] [DUMPED V1.12] [FULLPS5] [EST800] &#9989;
 SnowRunner Western Star 49x (DLC) [Nov 16, 2020] [DUMPED V1.12] [FULLPS5] [EST800] &#9989;
@@ -13896,15 +13896,20 @@ Lego Star Wars The Skywalker Saga The Trooper Pack (DLC) [Apr 5, 2022] [FULLPS5]
 MLB The Show 22 (Sports) [Apr 5, 2022] [CROSSPLAY] [FULLPS5] [EST950] &#9989;
 Crash Twinsanity (PS2TOPS4) [Apr 6, 2022] [DUMPED V1.00] [SLES52568] [IMP NOTE INTERVIKA RELEASE!] [OFW505] [NOTPS5] &#9989;
 Sonic Unleashed (PS2TOPS4) [Apr 6, 2022] [DUMPED V1.00] [SLUS21846] [IMP NOTE INTERVIKA RELEASE!] [OFW505] [NOTPS5] &#9989;
-Chrono Cross The Radical Dreamers Edition (Role-Playing) [Apr 7, 2022] [FULLPS5] [EST950] &#9989;
+Arcade Archives Pac-Land (Action) [Apr 7, 2022] [CUSA32437] [FULLPS5] [EST950] &#9989;
+Chrono Cross The Radical Dreamers Edition (Role-Playing) [Apr 7, 2022] [CUSA23909] [FULLPS5] [EST950] &#9989;
 Eschatos (Action, Shooter) [Apr 7, 2022] [FULLPS5] [EST950] &#9989;
+Gran turismo A-Spec (PS2TOPS4) [Apr 7, 2022] [DUMPED V1.00] [SCUS97102] [IMP NOTE INTERVIKA RELEASE!] [OFW505] [NOTPS5]  &#9989;
 Gunvolt Chronicles Luminous Avenger iX 2 Kirin (DLC) [Apr 7, 2022] [FULLPS5] [EST950] &#9989;
 Hello Neighbor 2 Beta Test (Demo/Trial) [Apr 7, 2022] [FULLPS5] [EST950] &#9989;
+Lucky's Tale (Adventure) [Apr 7, 2022] [CUSA30918] [VR] <Luckys Tale> [FULLPS5] [EST950] &#9989;
 Slipstream (Racing) [Apr 7, 2022] [CUSA30498] [FULLPS5] [EST950] &#9989;
-Clay Skeet Shooting PS4 & PS5 (Sports) [Apr 8, 2022] [CUSA33470] [FULLPS5] [EST950] &#9989;
+Whiskey & Zombies (Action) [Apr 7, 2022] [FULLPS5] [EST950] &#9989;
+Clay Skeet Shooting (Sports) [Apr 8, 2022] [CUSA33470] [FULLPS5] [EST950] &#9989;
 Lake (Simulation) [Apr 8, 2022] [CUSA31991] [FULLPS5] [EST950] &#9989;
 Liege Dragon (Role-Playing) [Apr 8, 2022] [CUSA23525, CUSA23524] [FULLPS5] [EST950] &#9989;
 Metal Dogs (Action) [Apr 8, 2022] [FULLPS5] [EST950] &#9989;
+Wild West Crops (Action) [Apr 8, 2022] [FULLPS5] [EST950] &#9989;
 Area 51 (PS2TOPS4) [Apr 9, 2022] [DUMPED V1.00] [SLES52570] [IMP NOTE INTERVIKA RELEASE!] [OFW505] [NOTPS5] &#9989;
 Ice Hockey Breakthrough Gaming Arcade (Sports) [Apr 10, 2022] [CUSA31906] [FULLPS5] [EST950] &#9989;
 Psychonauts (PS2TOPS4) [Apr 10, 2022] [DUMPED V1.00] [SLES53830] [IMP NOTE INTERVIKA RELEASE!] [OFW505] [NOTPS5] &#9989;
@@ -13913,13 +13918,22 @@ Cathedral (2D, Platform) [Apr 12, 2022] [FULLPS5] [EST950] &#9989;
 GrimGrimoire OnceMore (Real-Time, Strategy) [Apr 12, 2022] [FULLPS5] [EST950] &#9989;
 HiQ Ace Deluxe (Compilation, Puzzle) [Apr 12, 2022] [CUSA33199] [FULLPS5] [EST950] &#9989;
 HiQ Ace Chinatown Neon Alley Dynamic Theme and 3 Galaxy Wolves Avatars Bundle (DLC) [Apr 13, 2022] [FULLPS5] [EST951] &#10060;
+Pachi Pachi on a Roll Heart Theft (DLC) [Apr 13, 2022] [FULLPS5] [EST951] &#10060;
+Pachi Pachi on a Roll Heart Theft Bundle (Compilation, Puzzle) [Apr 13, 2022] [CUSA24395] [FULLPS5] [EST951] &#10060;
 Woody Woodpecker Escape From Buzz Buzzards Park (PS2TOPS4) [Apr 13, 2022] [DUMPED V1.00] [SLES50613] [IMP NOTE INTERVIKA RELEASE!] [OFW505] [NOTPS5]  &#9989;
+Arcade Archives The Legend of Valkyrie (Action) [Apr 14, 2022] [CUSA32431] [FULLPS5] [EST951] &#10060;
+Blast Brigade vs the Evil Legion of Dr Cread (2D, Action) [Apr 14, 2022] [FULLP5] [EST951] &#10060;
+Gran Turismo 2000 Demo (PS2TOPS4) [Apr 14, 2022] [DUMPED V1.00] [PAPX90203] [IMP NOTE INTERVIKA RELEASE!] [OFW505] [NOTPS5]  &#9989;
+Hidden Shapes Animals + Lovely Cats (Puzzle) [Apr 14, 2022] [CUSA31850] [FULLPS5] [EST951] &#10060;
 King of Fighters XV Boss Mode (DLC) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
 King of Fighters XV Omega Rugal (DLC) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
 Melty Blood Type Lumina Playable Character Mario Gallo Bestino (DLC) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
 Melty Blood Type Lumina Playable Character Power Ceil (DLC) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
 Nobody Saves the World (Action, Role-Playing) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
+Pretty Girls Rivers (Puzzle) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
 Road 96 (Adventure) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
+Tape Unveil the Memories (Adventure, Horror) [Apr 14, 2022] [CUSA25830] [FULLPS5] [EST951] &#10060;
+Them Bombs (Party) [Apr 14, 2022] [CUSA30844] [FULLPS5] [EST951] &#10060;
 Winning Post 9 2022 (Sports) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
 Yurukill The Calumniation Games (Action, Shooter) [Apr 14, 2022] [FULLPS5] [EST951] &#10060;
 Lego Star Wars The Skywalker Saga Rogue One A Star Wars Story Character Pack (DLC) [Apr 19, 2022] [FULLPS5] [EST951] &#10060;
@@ -14084,7 +14098,6 @@ Blackguards Definitive Edition (Turn-Based, Tactics) [UNRELEASED] [EST999] &#100
 Blade & Sorcery (First-Person, Action) [UNRELEASED] [VR] [EST999] &#10060;
 Blade & Soul Table Arena (Strategy) [UNRELEASED] [VR] [EST999] &#10060;
 Blade Runner Enhanced Edition (Point-and-Click, Adventure) [UNRELEASED] [EST999] &#10060;
-Blast Brigade vs the Evil Legion of Dr Cread (Platform, Metroidvania) [UNRELEASED] [EST999] &#10060;
 Blazing Strike (Fighting) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Bleak Faith Forsaken (Third-Person, Survival) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Blind Prophet (Adventure) [UNRELEASED] [EST999] &#10060;
@@ -14275,6 +14288,7 @@ Fobia St Dinfna Hote (First-Person, Horror) [UNRELEASED] [EST999] &#10060;
 Fort Triumph (Strategy) [UNRELEASED] [EST999] &#10060;
 Fossil Diggers VR (Simulation) [UNRELEASED] [VR] [EST999] &#10060;
 Frogun (Third-Person, Adventure) [UNRELEASED] [EST999] &#10060;
+Fueled Up (Action) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Fuga on the Battlefield (Strategy) [UNRELEASED] [EST999] &#10060;
 Fushigi no Gensokyo 3 (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Fuurraiki 4 Fukui and Shiga (DLC) [UNRELEASED] [EST999] &#10060;
@@ -14699,7 +14713,6 @@ Tactical Galactical (Real-Time, Strategy) [UNRELEASED] [EST999] &#10060;
 Tales of Aravorn Seasons Of The Wolf (Role-Playing) [UNRELEASED] [EST999] &#10060;
 Tales of the Neon Sea (Adventure) [UNRELEASED] [EST999] &#10060;
 Tank Brawl 2 (Action, Shooter) [UNRELEASED] [EST999] &#10060;
-Tape (Adventure) [UNRELEASED] [EST999] &#10060;
 Tchia (Open-World, Adventure) [UNRELEASED] [FULLPS5] [EST999] &#10060;
 Technolust Scanlines (Adventure) [UNRELEASED] [VR] [EST999] &#10060;
 Teenage Mutant Ninja Turtles Cowabunga Collection (Compilation, Action) [UNRELEASED] [FULLPS5] [EST999] &#10060;
