@@ -203,14 +203,32 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 570px;
-  height: fit-content;
+  min-width: 540px;
+  min-height: 275px;
   background: black;
   border: 2px solid RebeccaPurple;
   box-shadow: -1px 1px 5px 7px rgba(0,0,0,0.5);
   z-index: 999;
   touch-action: none;
   user-select: none;
+}
+#cardtitle {
+  cursor: help;
+  padding: 5px 5px;
+  background: RebeccaPurple;
+  width: auto;
+  font-size: 100%;
+  color: white;
+  z-index: 999;
+}
+#fcardtitle {
+  cursor: help;
+  padding: 5px 5px;
+  background: RebeccaPurple;
+  width: auto;
+  font-size: 100%;
+  color: white;
+  z-index: 999;
 }
 .card-header {
   cursor: move;
@@ -229,7 +247,7 @@ body {
   color: white;
 }
 .card-container {
-  padding: 15px;
+  padding: 5px;
   color: white;
   z-index: 999;
   font-size: 12px;
@@ -238,35 +256,65 @@ body {
 	position: static;
 	float: left;
 }
+#parent {
+    position:relative;
+}
 #CUSART {
-  float: left;
-  margin-right: 10px;
-  border-radius: 10px;
+	position:absolute;
+	top:0;
+	left:10px;
+	border-radius: 10px;
+}
+#ratingImage {
+  position:absolute;
+  top:120px;
+  left:155px;
+  opacity: 0.7;
+}
+#parent2 {
+    position:relative;
+}
+#parent2 > * {
+	position:absolute;
+	left: 215px;
+}
+#i0 {
+	top:0px;
+}
+#i2 {
+	top:20px;
+}
+#i3 {
+	top:40px;
+}
+#i4 {
+	top:70px;
+}
+#i5 {
+	top:100px;
+}
+#i6 {
+	top:130px;
+}
+#i7 {
+	top:160px;
+}
+#additionalImage {
+  float: right;
+  background: none;
+  margin-left: 10px;
+  border-radius: 5px;
 }
 #FCUSART {
   float: left;
   margin-right: 10px;
   border-radius: 10px;
 }
-#additionalImage {
-  float: right;
-  background: none;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-#ratingImage {
-  position: absolute;
-  left: 160px;
-  top: 195px;
-  opacity: 0.8;
-  background: none;
-  margin-right: 10px;
-}
 #display {
-	border: none;
-	background-color: silver;
-	padding-left: 25px;
-	font-size: 100%;
+  border: none;
+  background-color: silver;
+  padding-left: 20px;
+  font-size: 100%;
 }
 h1 {
 	color: white;
@@ -355,7 +403,6 @@ img.sticky {
 .reltext {
 	/*orange yellow*/
 	color: Orange;
-	font-size: 10px;
 }
 .textcolor {
 	color: Orange;
