@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="FRMCHK is a web-based all-in-one tool to deduce game firmware. I compile as much data as I possibly can each week so that you can access everything in one place!">
+<meta name="description" content="FRMCHK is a web-based all-in-one tool to show game firmware. I compile as much data as I possibly can each week so that you can access everything in one place!">
 <title>FRMCHK - GΔME FIRMWΔRE DΔTΔ</title>
 <link rel="stylesheet" id="stylesheet" type="text/css" href="config/frmchk.css">
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
@@ -23,10 +23,17 @@
 <div class="card" id="card" src="icons/generic.png" onmouseleave="this.style.display='none';">
   <div class="card-header" title="JSON info" id="cardtitle">GAME TITLE</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-  <div class="card-header2" id="gamecusa">GAME ID/NAME</div><img id="additionalImage" src="icons/PAD.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px">
-  <img id="ratingImage" src="icons/RATING.png" onerror="this.src='icons/RATING.png';" alt=" " style="width:50px"><div class="card-container" id="infocontainer">
+  <div class="card-header2" id="gamecusa">GAME ID/NAME</div>
+  
+  
+  <div id="gameinfo">
+	<div class="card-container" id="infocontainer">
+	<div id="parent">
 	<img id="CUSART" onclick="snagImage();" src="icons/generic.png" onerror="this.src='icons/generic.png';" alt=" " style="width:200px" title="Click to view game art">
-	<div id="gameinfo">
+	<img id="ratingImage" src="icons/RATING.png" onerror="this.src='icons/RATING.png';" alt=" " style="width:50px">
+	</div>
+	<img id="additionalImage" src="icons/PAD.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px">
+	<div id="parent2">
 	<div id="i0"><span id="gamesize"></span><span id="gameDump"></span></div>
 	<div id="i2"><span id="gameBackport"></span></div>
 	<div id="i3"><button title="Search Metacritic" id="gameReview" class="interact">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="r1"></span></button></div>
@@ -35,10 +42,11 @@
 	<div id="i6"><button title="Search Orbispatches" id="gamePatch" class="interact" onclick="">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p3"></span></button></div>
 	<div id="i7"><button title="Search Exophase" id="gameTrophy" class="interact" onclick="">&#x1F3C6;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p4"></span></button></div><br>
 	</div>
+	</div>
   </div>
 </div>
 <div class="card" id="fcard" onmouseleave="this.style.display='none';">
-  <div class="card-header" id="fcardtitle">FIRMWARE</div>
+  <div class="card-header" onclick="window.open('https://darthsternie.net/ps4-firmwares/')" id="fcardtitle">FIRMWARE</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
   <center><div class="card-header2" id="fwversion">FW VERSION</div><img id="additionalImage" src="icons/update.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px"></center>
   <div class="card-container" id="finfocontainer">
@@ -356,7 +364,7 @@ if (lines[i].match(latestOFW)){var lastFW = Date.parse(lines[i].slice(lines[i].i
 var todayFW = Date.parse(new Date());
 var Difference_In_Time = todayFW - lastFW;
 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br><span style='color:dimgrey'>(Released: "+parseInt(Difference_In_Days)+" Days Ago)</span><br><br><span id='jellybrek' title='https://sleirsgoevy.github.io/900-host/'> Highest Jailbreak: <span style='color:gold'>"+kexFW+"</span></span><br>Recommended FW: <span style='color:limegreen'>5.05</span></span></center>";
+document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br><span style='color:dimgrey'>(Released: "+parseInt(Difference_In_Days)+" Days Ago)</span><br><br><span id='jellybrek' style='cursor:help' title='https://sleirsgoevy.github.io/900-host/'> Highest Jailbreak: <span style='color:gold'>"+kexFW+"</span></span><br>Recommended FW: <span style='color:limegreen'>5.05</span></span></center>";
 //document.getElementById("rangeMax").innerHTML = latestOFW;
 document.getElementById("rangeMax").innerHTML = "9.03-9.04";
 //------------- Card Buttons -------------\\
@@ -745,6 +753,10 @@ function series(){
 	lookupDelay();
 };
 function regionChange(){
+	/*if (localStorage.region==null){
+	localStorage.setItem("region","EU")
+	document.getElementById("regionSelect").value = "EU";
+	} else */
 	if (document.getElementById("regionSelect").value == "EU"){
 	localStorage.setItem("region", "EU");
 	document.getElementById("regionSelect").value = "EU";
@@ -1420,6 +1432,6 @@ if (document.getElementById("CUSART").src.match(/icon0/g)) {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8-2 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-3 (BETΔ)</div>
 </body>
 </html>
