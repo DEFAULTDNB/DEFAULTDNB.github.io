@@ -24,8 +24,6 @@
   <div class="card-header" title="JSON info" id="cardtitle">GAME TITLE</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
   <div class="card-header2" id="gamecusa">GAME ID/NAME</div>
-  
-  
   <div id="gameinfo">
 	<div class="card-container" id="infocontainer">
 	<div id="parent">
@@ -34,7 +32,7 @@
 	</div>
 	<img id="additionalImage" src="icons/PAD.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px">
 	<div id="parent2">
-	<div id="i0"><span id="gamesize"></span><span id="gameDump"></span></div>
+	<div id="i0"><span id="gameDump"></span><span id="VRlabel"></span></div>
 	<div id="i2"><span id="gameBackport"></span></div>
 	<div id="i3"><button title="Search Metacritic" id="gameReview" class="interact">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="r1"></span></button></div>
 	<div id="i4"><button title="Search Serialstation" id="gamePKG" class="interact" onclick="">&#128269;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p1"></span></button></div>
@@ -45,12 +43,16 @@
 	</div>
   </div>
 </div>
+
 <div class="card" id="fcard" onmouseleave="this.style.display='none';">
   <div class="card-header" onclick="window.open('https://darthsternie.net/ps4-firmwares/')" id="fcardtitle">FIRMWARE</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-  <center><div class="card-header2" id="fwversion">FW VERSION</div><img id="additionalImage" src="icons/update.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px"></center>
+  <center><div class="card-header2" id="fwversion">FW VERSION</div></center>
   <div class="card-container" id="finfocontainer">
-		<img id="FCUSART" src="icons/FIRM.png" onerror="this.src='icons/generic.png';" alt=" " style="width:200px">
+	<div id="fparent">
+		<img id="FCUSART" src="icons/FIRM.png" onerror="this.src='icons/generic.png';" alt=" " style="height:200px;width:200px">
+	</div>
+	<img id="additionalImage" src="icons/update.png" onerror="this.src='icons/PAD.png';" alt=" " style="width:50px">
 	<div id="firminfo">
 	<div id="f0"><span id="rDate"></span></div><br>
 	<div id="f1"><span id="kString"></span></div>
@@ -60,8 +62,9 @@
 	</div><br>
   </div>
 </div>
+
 <div id="count"></div>
-<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-9.00 (Playable)<br>&#10060;&#xFE0E;: <span id="rangeMax"></span> (Unplayable)<br>&#x1F536;&#xFE0E;: 5.50-9.00 (Backports)</div>
+<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-9.00 (Playable)<br>&#10060;&#xFE0E;: <span id="rangeMax"></span> (Unplayable)<br>&#x1F536;&#xFE0E;: 5.50-9.XX (Backports)</div>
 <select id="FW" onchange="evalDelay();">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="ALL IN DB:">
@@ -140,6 +143,7 @@
 	<option value="OFW 9.03" >OFW 9.03</option>
 	<option value="OFW 9.04" >OFW 9.04</option>
 	<option value="OFW 9.50" >OFW 9.50</option>
+	<option value="OFW 9.51" >OFW 9.51</option>
 	<optgroup label="RANGES:">
 	<option value="1.00-5.05">1.00 - 5.05</option>
 	<option value="1.00-6.72">1.00 - 6.72</option>
@@ -228,7 +232,6 @@
 	<option id="DELISTED" value="DELISTED">DELISTED FROM PSN</option>
 	<option id="XLINKKAI" value="XLINKKAI">XLINK KAI</option>
 	<option id="UNPLAYABLE" value="UNPLAYABLE">UNPLAYABLE</option>
-	<option id="JCUSA" value="JCUSA">REGIONAL EXC</option>
 </select>
 <select id="regionSelect" onchange="regionChange();" title="Select data location">
 	<option value="" disabled selected>ZONE:</option>
@@ -262,8 +265,8 @@ for (j = 65; j <= 90; j++){
 }
 var qluid = "";
 </script>
-<abbr class="interact" title="Tip: Search for genres, title, or years"><input autocomplete="on" type="search" id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="clearsearch" title="Clear keywords" onclick="clearSearch()"><span class="rotate">+</span></button><button class="sbut" id="addQS" title="Add quick tab" onclick="addQS()">+</button><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookupDelay()">SEARCH</button><abbr  id="credz" class="sbut2" onclick="showGreetz();" title="Credits">&#9400;&nbsp </abbr><abbr  id="base64" class="sbut2" onclick="base64();" title="Base64 Decryption">&#9873;</abbr><abbr class="sbut2" onclick="document.getElementById('file').click();" title="MD5 files">&#8917;</abbr><abbr id="Contact" class="sbut2" onclick="window.open('https://forms.gle/px1igSvefUchD6zq5');" title="Contact">&#9993;&#xFE0E;</abbr>
-<abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr>
+<abbr class="interact" title="Tip: Search for genres, title, or years"><input autocomplete="on" type="search" id="searchbox" value="" onclick="this.value = this.value;" placeholder="Enter Keywords" autofocus></input></abbr><button class="sbut" id="clearsearch" title="Clear keywords" onclick="clearSearch()"><span class="rotate">+</span></button><button class="sbut" id="addQS" title="Add quick tab" onclick="addQS()">+</button><button class="sbut" id="searchbutton" title="Search for keywords" onclick="lookupDelay()">SEARCH</button><abbr  id="credz" class="sbut2" onclick="showGreetz();" title="Credits">&#9400;&nbsp </abbr><abbr  id="base64" class="sbut2" onclick="base64();" title="Base64 Decryption">&#9873;</abbr><abbr class="sbut2" onclick="document.getElementById('file').click();" title="MD5 files">&#8917;</abbr><abbr id="Contact" class="sbut2" onclick="window.open('https://forms.gle/px1igSvefUchD6zq5');" title="Contact" style="display:none">&#9993;&#xFE0E;</abbr>
+<abbr id="toggleLD" class="sbut2" onclick="lightDark()" title="Light/Dark Toggle">&#9680;</abbr><abbr id="Qtmdb" class="sbut2" onclick="tmdbcheck();" title="Check CUSA ID">&#10026;</abbr>
 </div>
 <div class="progress-container"><div class="progress-bar" id="scrollBar"></div></div>  
 <div id="display"></div>
@@ -366,7 +369,7 @@ var Difference_In_Time = todayFW - lastFW;
 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br><span style='color:dimgrey'>(Released: "+parseInt(Difference_In_Days)+" Days Ago)</span><br><br><span id='jellybrek' style='cursor:help' title='https://sleirsgoevy.github.io/900-host/'> Highest Jailbreak: <span style='color:gold'>"+kexFW+"</span></span><br>Recommended FW: <span style='color:limegreen'>5.05</span></span></center>";
 //document.getElementById("rangeMax").innerHTML = latestOFW;
-document.getElementById("rangeMax").innerHTML = "9.03-9.04";
+document.getElementById("rangeMax").innerHTML = "9.03-9.51";
 //------------- Card Buttons -------------\\
 document.getElementById("gameReview").addEventListener("click", function(){
 window.open("https://www.metacritic.com/search/game/"+document.getElementById("cardtitle").innerHTML+"/results?plats[72496]=1&search_type=advanced");
@@ -953,9 +956,7 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("ps5bc", 'fail');
 	};
 	//THIS MUST GO AT THE BOTTOM OF THIS FUNCTION
-	if (lines[i].match("JCUS")){
-	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("JCUS"), lines[i].indexOf("JCUS")+10);
-	} else if (lines[i].match("CUSA")){
+	if (lines[i].match("CUSA")){
 	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
 	} else if (lines[i].match("NPE")){
 	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("NPE"), lines[i].indexOf("NPE")+9);
@@ -983,7 +984,7 @@ function firmAttribs(){
 	if (lines[i].match("branches")){
 	document.getElementById('fID').setAttribute("kString", "<span style='color:limegreen'>"+lines[i].slice(lines[i].indexOf("[r")+1, lines[i].indexOf("SYS")-3).toUpperCase())+"</span>";
 	} else {
-	document.getElementById('fID').setAttribute("kString", "<span style='color:red'><br>UNAVAILABLE/UNKNOWN<br>AT THIS TIME..</span>");
+	document.getElementById('fID').setAttribute("kString", "<span style='color:red'><br>INFORMATION UNAVAILABLE</span>");
 	};
 	if (lines[i].match("BETAOFW")){
 	document.getElementById('fID').setAttribute("bOFW", "Beta");
@@ -1122,9 +1123,9 @@ function cusaResolve() {
 			document.getElementById("CUSART").src = data.icons[0].icon;
 			
 			if (data.psVr >0) {
-			document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Compatible">&nbsp;VR:&#9989;</span>';
+			document.getElementById("VRlabel").innerHTML = '<span title="VR Compatible">&nbsp;&nbsp;VR:&#9989;</span>';
 			} else {
-			document.getElementById("gamecusa").innerHTML += '<span id="PS5label" title="Compatible">&nbsp;VR:&#10060;</span>';
+			document.getElementById("VRlabel").innerHTML = '<span title="Not VR compatible">&nbsp;&nbsp;VR:&#10060;</span>';
 			}
 			
 			if (data.parentalLevel >= 0 && data.parentalLevel <= 9) {
@@ -1172,8 +1173,8 @@ function firmResolve(){
 		document.getElementById("FCUSART").src = 'icons/FIRM.png';
 	};
 	if (sploited == 'true'){document.getElementById("fwversion").innerHTML = "<span style='color:lime'>FULL EXPLOIT CHAIN</span>";}else{document.getElementById("fwversion").innerHTML = "<span style='color:red'>NO PUBLIC EXPLOIT</span>";}
-	document.getElementById("rDate").innerHTML = "RELEASED: "+fwreldate;
-	document.getElementById("kString").innerHTML = "KERNEL STRING: "+kStrings;
+	document.getElementById("rDate").innerHTML = "RELEASED: <span style='color:limegreen'>"+fwreldate+"</span>";
+	document.getElementById("kString").innerHTML = "K STRING: "+kStrings;
 	document.getElementById("link1").innerHTML = sysHash;
 	document.getElementById("fSYS").addEventListener("click", function(){
 	document.getElementById("myInput").value = sysHash; hash2cb();
@@ -1426,12 +1427,30 @@ if (document.getElementById("CUSART").src.match(/icon0/g)) {
 	alert("𝗡𝗼 𝗜𝗖𝗢𝗡𝟬/𝗣𝗜𝗖𝟬 𝗳𝗼𝘂𝗻𝗱!");
 }
 };
+function tmdbcheck() {
+	let CUSA = prompt("Enter Game Title ID [CUSAXXXXX]:", "CUSA");
+	
+	if (CUSA.length!=9 || CUSA.slice(0,4)!="CUSA" || isNaN(CUSA.slice(4,10))){
+	alert("INVALID CUSA NUMBER ENTERED!");
+	} else {
+		tmdb_key = 'F5DE66D2680E255B2DF79E74F890EBF349262F618BCAE2A9ACCDEE5156CE8DF2CDF2D48C71173CDC2594465B87405D197CF1AED3B7E9671EEB56CA6753C2E6B0';
+		tmdb_id = CUSA+"_00";
+		sha=new jsSHA("SHA-256","TEXT"),
+		sha1=new jsSHA("SHA-1","TEXT");
+		sha.update(tmdb_key);
+		sha1.setHMACKey(tmdb_key,"HEX");
+		sha1.update(tmdb_id);
+		hmac=sha1.getHMAC("HEX").toUpperCase();
+		tmdbJsonURL="https://tmdb.np.dl.playstation.net/tmdb2/"+tmdb_id+"_"+hmac+"/"+tmdb_id+".json";
+		window.open(tmdbJsonURL);
+		}
+}
 </script>
 <input type="file" id="file" onchange="calculateAll();" accept=".pup" hidden></input>
 <abbr class="interact" title="Support this project through Ko-Fi">
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8-3 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-4 (BETΔ)</div>
 </body>
 </html>
