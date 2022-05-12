@@ -41,9 +41,8 @@
 	<div id="i7"><button title="Search Exophase" id="gameTrophy" class="interact" onclick="">&#x1F3C6;&#xFE0E;<span style="font-size: 12px; font-family: verdana; font-weight: normal; color: #efefef;" id="p4"></span></button></div><br>
 	</div>
 	</div>
-  </div>
+  </div>  
 </div>
-
 <div class="card" id="fcard" onmouseleave="this.style.display='none';">
   <div class="card-header" onclick="window.open('https://darthsternie.net/ps4-firmwares/')" id="fcardtitle">FIRMWARE</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
@@ -62,7 +61,6 @@
 	</div><br>
   </div>
 </div>
-
 <div id="count"></div>
 <div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-9.00 (Playable)<br>&#10060;&#xFE0E;: <span id="rangeMax"></span> (Unplayable)<br>&#x1F536;&#xFE0E;: 5.50-9.XX (Backports)</div>
 <select id="FW" onchange="evalDelay();">
@@ -144,6 +142,7 @@
 	<option value="OFW 9.04" >OFW 9.04</option>
 	<option value="OFW 9.50" >OFW 9.50</option>
 	<option value="OFW 9.51" >OFW 9.51</option>
+	<option value="OFW 9.60" >OFW 9.60</option>
 	<optgroup label="RANGES:">
 	<option value="1.00-5.05">1.00 - 5.05</option>
 	<option value="1.00-6.72">1.00 - 6.72</option>
@@ -160,9 +159,7 @@
 	<option value="7.50-7.55">7.50 - 7.55</option>
 	<option value="7.50-9.00">7.50 - 9.00</option>
 	<option value="8.00-8.52">8.00 - 8.52</option>
-	<option value="8.00-9.00">8.00 - 9.00</option>
-	<option value="9.00-9.50">9.00 - 9.50</option>
-	<option value="8.00-LATEST"></option>
+	<option value="9.00-LATEST"></option>
 	<option value="1.00-LATEST"></option>
 </select>
 <select id="type" onchange="evalDelay()">
@@ -361,15 +358,14 @@ var latestOFW = lines[firmz-1].slice(0, lines[firmz-1].indexOf("(")-1);
 for (i = 0; i < firmz-1; i++){if (lines[i].match("HEN")){var kexFW = (lines[i].slice(0,4));}};
 document.getElementById("FW").options[optCount].innerHTML = "1.00 - "+latestOFW;
 document.getElementById("FW").options[optCount].value = "1.00-"+latestOFW;
-document.getElementById("FW").options[optCount-1].innerHTML = "8.00 - "+latestOFW;
-document.getElementById("FW").options[optCount-1].value = "8.00-"+latestOFW;
+document.getElementById("FW").options[optCount-1].innerHTML = "9.00 - "+latestOFW;
+document.getElementById("FW").options[optCount-1].value = "9.00-"+latestOFW;
 if (lines[i].match(latestOFW)){var lastFW = Date.parse(lines[i].slice(lines[i].indexOf("[")+1,lines[i].indexOf("]")));};
 var todayFW = Date.parse(new Date());
 var Difference_In_Time = todayFW - lastFW;
 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 document.getElementById("shout").innerHTML = "<center><span style='font-weight:bold'>Latest Firmware: <span style='color:silver'>"+latestOFW+"</span><br><span style='color:dimgrey'>(Released: "+parseInt(Difference_In_Days)+" Days Ago)</span><br><br><span id='jellybrek' style='cursor:help' title='https://sleirsgoevy.github.io/900-host/'> Highest Jailbreak: <span style='color:gold'>"+kexFW+"</span></span><br>Recommended FW: <span style='color:limegreen'>5.05</span></span></center>";
-//document.getElementById("rangeMax").innerHTML = latestOFW;
-document.getElementById("rangeMax").innerHTML = "9.03-9.51";
+document.getElementById("rangeMax").innerHTML = "9.03-"+latestOFW;
 //------------- Card Buttons -------------\\
 document.getElementById("gameReview").addEventListener("click", function(){
 window.open("https://www.metacritic.com/search/game/"+document.getElementById("cardtitle").innerHTML+"/results?plats[72496]=1&search_type=advanced");
@@ -1408,28 +1404,42 @@ document.getElementById('callout').style.display='initial';
 closeTimer();
 };
 function snagImage() {
-if (document.getElementById("CUSART").src.match(/icon0/g)) {
-	if (document.getElementById("CUSART").getAttribute("BGI") == "undefined") {
-	var s = confirm("❓ 𝗩𝗶𝗲𝘄 𝗜𝗖𝗢𝗡𝟬 𝗳𝗼𝗿: "+cName+"?\n\nOne window will open.\n\nTo download: Right click > Save image as\n\n"+cName+"_ICON0.PNG");
-		if (s == true) {
-		window.open(document.getElementById("CUSART").src, "ICON0.PNG", "width=512,height=512");
-		} else {
-		}
-	} else {
-	var s = confirm("❓ 𝗩𝗶𝗲𝘄 𝗜𝗖𝗢𝗡𝟬/𝗣𝗜𝗖𝟬 𝗳𝗼𝗿: "+cName+"?\n\nTwo windows will open.\n\nTo download: Right click > Save image as\n\n"+cName+"_ PIC0/ICON0 .PNG");
-		if (s == true) {
-		window.open(document.getElementById("CUSART").getAttribute("BGI"), "PIC0.PNG", "width=1920,height=1080");
-		window.open(document.getElementById("CUSART").src, "ICON0.PNG", "width=512,height=512");
-		} else {
-		}
-	}
-} else {
-	alert("𝗡𝗼 𝗜𝗖𝗢𝗡𝟬/𝗣𝗜𝗖𝟬 𝗳𝗼𝘂𝗻𝗱!");
-}
+  var x = document.createElement("DIALOG");
+  var p = document.createElement("P");
+  var t = document.createTextNode("𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗶𝗺𝗮𝗴𝗲𝘀?");
+  var b1 = document.createElement("BUTTON");
+  var b2 = document.createElement("BUTTON");
+  var b3 = document.createElement("BUTTON");
+//x.style.border = "none";
+  x.setAttribute("open", "open");
+  x.addEventListener("mouseleave", function(){
+  x.close()
+  });
+  b1.textContent = 'ICON0';
+  b1.addEventListener("click", function(){
+  window.open(document.getElementById("CUSART").src, "ICON0.PNG", "width=512,height=512")
+  });
+  b2.textContent = 'PIC0';
+  b2.addEventListener("click", function(){
+  if (document.getElementById("CUSART").getAttribute("BGI") == "undefined"){
+  alert("𝗡𝗼 𝗣𝗜𝗖𝟬 𝗳𝗼𝘂𝗻𝗱!");
+  } else {
+  window.open(document.getElementById("CUSART").getAttribute("BGI"), "PIC0.PNG", "width=1920,height=1080");
+  document.getElementById("CUSART").setAttribute("BGI", "undefined");
+  }});
+  b3.textContent = 'EXIT';
+  b3.addEventListener("click", function(){
+  x.close()
+  });
+  x.appendChild(p);
+  p.appendChild(t);
+  x.appendChild(b1);
+  x.appendChild(b2);
+  x.appendChild(b3);
+  document.getElementById("card").appendChild(x);
 };
 function tmdbcheck() {
 	let CUSA = prompt("Enter Game Title ID [CUSAXXXXX]:", "CUSA");
-	
 	if (CUSA.length!=9 || CUSA.slice(0,4)!="CUSA" || isNaN(CUSA.slice(4,10))){
 	alert("INVALID CUSA NUMBER ENTERED!");
 	} else {
@@ -1451,6 +1461,6 @@ function tmdbcheck() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8-4 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-5 (BETΔ)</div>
 </body>
 </html>
