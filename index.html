@@ -171,7 +171,10 @@
 	<option id="PSHITS" value="PSHITS">HITS COLLECTION</option>
 	<option id="PROENHANCED" value="{PRO}">PRO ENHANCED</option>
 	<option id="REMASTERED" value="REMASTERED">REMASTERED</option>
-	<option id="PS2" value="PS2]">PS2 CLASSICS</option>
+	<option id="PSC" value="PSCP">ALL PS CLASSICS</option>
+	<option id="PS1" value="PSCPS1">PS1 CLASSICS</option>
+	<option id="PS2" value="PSCPS2">PS2 CLASSICS</option>
+	<option id="PSP" value="PSCPSP">PSP CLASSICS</option>
 	<option id="PS2TOPS4" value="PS2TOPS4">PS2TOPS4</option>
 	<option id="HOMEBREW" value="HOMEBREW">HOMEBREW</option>
 	<option id="VR" value="VR">PSVR COMPAT</option>
@@ -909,6 +912,8 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("vrConf", "icons/DLC.png");
 	} else if (lines[i].match("KIOSK")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/OMSK.png");
+	} else if (lines[i].match("PS1") || lines[i].match("PSP")){
+	document.getElementById('cID').setAttribute("vrConf", "icons/PSC.png");
 	} else if (lines[i].match("PS2")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/PS2.png");
 	} else if (lines[i].match("VR AIM")){
@@ -1081,6 +1086,9 @@ function cusaResolve() {
 	document.getElementById("ratingImage").style.opacity="0";
 	} else if (vrSet == 'icons/BROKEN.png'){
 	document.getElementById("CUSART").src = "icons/BROKEN.png";
+	document.getElementById("ratingImage").style.opacity="0.7";
+	} else if (vrSet == 'icons/PSC.png'){
+	document.getElementById("CUSART").src = "icons/PSC.png";
 	document.getElementById("ratingImage").style.opacity="0.7";
 	} else if (vrSet == 'icons/PS2.png'){
 	document.getElementById("CUSART").src = "icons/PS2.png";
@@ -1404,6 +1412,13 @@ document.getElementById('callout').style.display='initial';
 closeTimer();
 };
 function snagImage() {
+//alert(document.getElementById('cardtitle').innerHTML);
+
+/*
+if (document.getElementById(cName).getAttribute("vrConf").match("DLC")){
+} else {
+*/
+
   var x = document.createElement("DIALOG");
   var p = document.createElement("P");
   var t = document.createTextNode("𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗶𝗺𝗮𝗴𝗲𝘀?");
@@ -1412,9 +1427,7 @@ function snagImage() {
   var b3 = document.createElement("BUTTON");
 //x.style.border = "none";
   x.setAttribute("open", "open");
-  x.addEventListener("mouseleave", function(){
-  x.close()
-  });
+  x.addEventListener("mouseleave", function(){x.close()});
   b1.textContent = 'ICON0';
   b1.addEventListener("click", function(){
   window.open(document.getElementById("CUSART").src, "ICON0.PNG", "width=512,height=512")
@@ -1428,9 +1441,7 @@ function snagImage() {
   document.getElementById("CUSART").setAttribute("BGI", "undefined");
   }});
   b3.textContent = 'EXIT';
-  b3.addEventListener("click", function(){
-  x.close()
-  });
+  b3.addEventListener("click", function(){x.close()});
   x.appendChild(p);
   p.appendChild(t);
   x.appendChild(b1);
@@ -1461,6 +1472,6 @@ function tmdbcheck() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8-5 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-6 (BETΔ)</div>
 </body>
 </html>
