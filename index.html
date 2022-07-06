@@ -220,7 +220,6 @@
 	<option id="DEMO" value="Demo/Trial">DEMO/TRIAL</option>
 	<option id="KIOSK" value="KIOSK">IDU/OMSK DISC</option>
 	<optgroup label="PLAYSTATION 5">
-	<option id="FULLPS5" value="FULLPS5">WORKING ON PS5</option>
 	<option id="BOOTPS5" value="BOOTPS5">ISSUES ON PS5</option>
 	<option id="NOTPS5" value="NOTPS5">NOT COMPATIBLE</option>
 	<optgroup label="★DEBUG">
@@ -949,13 +948,15 @@ function genericAttribs(){
 		document.getElementById('cID').setAttribute("bpIssue", '<span style="color:red">NO INFO</span>');
 		}
 	};
-	if (lines[i].match("FULLPS5")){
-	document.getElementById('cID').setAttribute("ps5bc", 'works');
-	}else if (lines[i].match("BOOTPS5")){
+	
+	if (lines[i].match("BOOTPS5")){
 	document.getElementById('cID').setAttribute("ps5bc", 'issue');
-	}else{
+	}else if (lines[i].match("NOTPS5")){
 	document.getElementById('cID').setAttribute("ps5bc", 'fail');
+	}else{
+	document.getElementById('cID').setAttribute("ps5bc", 'works');
 	};
+	
 	//THIS MUST GO AT THE BOTTOM OF THIS FUNCTION
 	if (lines[i].match("CUSA")){
 	document.getElementById('cID').id = lines[i].slice(lines[i].indexOf("CUSA"), lines[i].indexOf("CUSA")+9);
@@ -1472,6 +1473,6 @@ function tmdbcheck() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8-6 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-7 (BETΔ)</div>
 </body>
 </html>
