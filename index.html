@@ -62,7 +62,7 @@
   </div>
 </div>
 <div id="count"></div>
-<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-9.00 (Playable)<br>&#10060;&#xFE0E;: <span id="rangeMax"></span> (Unplayable)<br>&#x1F536;&#xFE0E;: 5.50-9.XX (Backports)</div>
+<div id="myProgress"><div id="myBar">0%</div></div><div id="smallinfo"><br><span id="sortstatus">SORT</span> / <span id="dlcstatus">DLC</span><br><span id="infoLength">INFO</span><br><br>QUICK ICONS:<br>&#9989;&#xFE0E;: 1.00-9.00 (Playable)<br>&#10060;&#xFE0E;: <span id="rangeMax"></span> (Unplayable)<br>&#x1F536;&#xFE0E;: 5.50-9.XX (Backports)</div><br>
 <select id="FW" onchange="evalDelay();">
 	<option value="" disabled selected>SELECT FIRMWARE:</option>
 	<optgroup label="ALL IN DB:">
@@ -175,7 +175,9 @@
 	<option id="PS1" value="PSCPS1">PS1 CLASSICS</option>
 	<option id="PS2" value="PSCPS2">PS2 CLASSICS</option>
 	<option id="PSP" value="PSCPSP">PSP CLASSICS</option>
+	<option id="PSXTOPS4" value="PSXTOPS4">PSXTOPS4</option>
 	<option id="PS2TOPS4" value="PS2TOPS4">PS2TOPS4</option>
+	<option id="PSPTOPS4" value="PSPTOPS4">PSPTOPS4</option>
 	<option id="HOMEBREW" value="HOMEBREW">HOMEBREW</option>
 	<option id="VR" value="VR">PSVR COMPAT</option>
 	<option id="3DRUD" value="3DRUD">3DRUDDER COMPAT</option>
@@ -911,9 +913,13 @@ function genericAttribs(){
 	document.getElementById('cID').setAttribute("vrConf", "icons/DLC.png");
 	} else if (lines[i].match("KIOSK")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/OMSK.png");
-	} else if (lines[i].match("PS1") || lines[i].match("PSP")){
+	} else if (lines[i].match("PSCP")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/PSC.png");
-	} else if (lines[i].match("PS2")){
+	} else if (lines[i].match("PSXTOPS4")){
+	document.getElementById('cID').setAttribute("vrConf", "icons/PS1.png");
+	} else if (lines[i].match("PSPTOPS4")){
+	document.getElementById('cID').setAttribute("vrConf", "icons/PSP.png");
+	} else if (lines[i].match("PS2TOPS4")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/PS2.png");
 	} else if (lines[i].match("VR AIM")){
 	document.getElementById('cID').setAttribute("vrConf", "icons/AIM.png");
@@ -1091,8 +1097,14 @@ function cusaResolve() {
 	} else if (vrSet == 'icons/PSC.png'){
 	document.getElementById("CUSART").src = "icons/PSC.png";
 	document.getElementById("ratingImage").style.opacity="0.7";
+	} else if (vrSet == 'icons/PS1.png'){
+	document.getElementById("CUSART").src = "icons/PS1.png";
+	document.getElementById("ratingImage").style.opacity="0";
 	} else if (vrSet == 'icons/PS2.png'){
 	document.getElementById("CUSART").src = "icons/PS2.png";
+	document.getElementById("ratingImage").style.opacity="0.7";
+	} else if (vrSet == 'icons/PSP.png'){
+	document.getElementById("CUSART").src = "icons/PSP.png";
 	document.getElementById("ratingImage").style.opacity="0.7";
 	} else if (vrSet == 'icons/BREW.png'){
 	document.getElementById("CUSART").src = "icons/BREW.png";
@@ -1473,6 +1485,6 @@ function tmdbcheck() {
 <a target="_blank" href="https://ko-fi.com/defaultdnb">
 <div id="KOFI" class="tooltip" onmouseenter="window.document.kofi.src='icons/kofi.png';" onmouseleave="window.document.kofi.src='icons/avatar.jpg';"><div class="chip"><img src="icons/avatar.jpg" name="kofi" alt="Creator" width="96" height="96">SUPPORT FRMCHK TODAY!
 </div></div></a></abbr>
-<div class="textcolor" id="end">VER: 0.8.8-7 (BETΔ)</div>
+<div class="textcolor" id="end">VER: 0.8.8-8 (BETΔ)</div>
 </body>
 </html>
